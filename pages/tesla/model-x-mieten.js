@@ -1,67 +1,58 @@
-import { Link, graphql } from 'gatsby'
 import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
-import AngeboteTXL from '@/ui/AngeboteTXL'
+
 import CTA from '@/ui/CTA'
 import Head from 'next/head'
-import Img from 'gatsby-image'
+
+import Image from 'next/image'
+import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-export const query = graphql`
-  query {
-    TeslaX1: file(relativePath: { eq: "cards/tesla-model-x.png" }) {
-      id
-      childImageSharp {
-        fluid(maxWidth: 1000, maxHeight: 600, cropFocus: SOUTH, quality: 60) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
+import Preisliste from '@/ui/Preisliste'
+import { getTXDataByArt } from 'lib/api'
 
-function TeslaModelX ({ data }) {
+function TeslaModelX({ modelXKurzzeit }) {
   return (
     <div>
       <SEO
-        title='Tesla Model X mieten | ab 83,30€ | Autoverleih - Itana GmbH'
-        description='Tesla Model X mieten | Bester Autoverleih | App Zugang auf ihrem Smartphone | SUV genießen ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450'
+        title="Tesla Model X mieten | ab 83,30€ | Autoverleih - Itana GmbH"
+        description="Tesla Model X mieten | Bester Autoverleih | App Zugang auf ihrem Smartphone | SUV genießen ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>
         <link
-          rel='canonical'
-          href='https://mobility.itana.de/tesla/model-x-mieten/'
+          rel="canonical"
+          href="https://mobility.itana.de/tesla/model-x-mieten/"
         />
       </Head>
       <section>
-        <h1 className='text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
+        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla Model X mieten
         </h1>
         <h2>Komfortables SUV-Powerhouse mit enormer Reichweite</h2>
 
-        <div className='relative text-center'>
-          <Img
-            objectFit='cover'
-            objectPosition='50% 50%'
-            className='mx-auto mt-4 h-96 rounded'
-            fluid={data.TeslaX1.childImageSharp.fluid}
-            alt='Tesla Model X silber mieten'
+        <div className="relative text-center">
+          <Image
+            src="/images/cards/tesla-model-x.png"
+            className="mx-auto mt-4 h-96 rounded"
+            alt="Tesla Model X silber mieten"
+            height="600"
+            width="1000"
           />
         </div>
       </section>
 
       <section>
-        <AngeboteTXL />
+        <Preisliste kurzzeit={modelXKurzzeit} />
         <CTA
-          data_cy='TeslaModelXMieten'
-          fillBG='true'
-          fullWidth='true'
-          title='Tesla Model X mieten'
-          link='https://reservation.itana.de/#tabs-fzggruppe-1'
+          data_cy="TeslaModelXMieten"
+          fillBG="true"
+          fullWidth="true"
+          title="Tesla Model X mieten"
+          link="https://reservation.itana.de/#tabs-fzggruppe-1"
         />
       </section>
       <TeslaQuickLinks />
-      <div className='mx-auto mt-24 prose lg:prose-md'>
+      <div className="mx-auto mt-24 prose lg:prose-md">
         <h2>Technische Fakten zum Tesla Model X</h2>
         <h3>Wie viel PS hat ein Tesla Model X?</h3>
         <p>
@@ -180,17 +171,16 @@ function TeslaModelX ({ data }) {
           mit Nachhaltigkeitsaspekten.&nbsp;Wir setzen das zus&auml;tzliche mit
           unserer{' '}
           <Link
-            className='font-semibold text-itana-red'
-            to='/photovoltaikanlage/'
+            className="font-semibold text-itana-red"
+            href="/photovoltaikanlage/"
           >
-            {' '}
-            hauseigenen Photovoltaikanlage
+            <a>hauseigenen Photovoltaikanlage</a>
           </Link>{' '}
           um, mit der wir&nbsp;die Teslas laden. Dadurch wird die Sonnenenergie
           direkt f&uuml;r das E-Fahrzeug genutzt.&nbsp;
         </p>
         <h2>Warum ein Tesla-Elektroauto?</h2>
-        <ul className='list-inside'>
+        <ul className="list-disc list-inside">
           <li>lautlos</li>
           <li>nachhaltig mit Photovoltaik aufladbar</li>
           <li>unfassbare Fahrgeschwindigkeit mit viel Fahrspa&szlig;</li>
@@ -214,6 +204,13 @@ function TeslaModelX ({ data }) {
       </div>
     </div>
   )
+}
+
+export async function getStaticProps(context) {
+  const modelXKurzzeit = await getTXDataByArt('K')
+  return {
+    props: { modelXKurzzeit }
+  }
 }
 
 export default TeslaModelX

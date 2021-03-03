@@ -11,7 +11,7 @@ export default function TeslaQuickLinks () {
           className='font-semibold text-itana-red'
           rel='noopener noreferrer'
         >
-          E-Auto mieten und abholen
+          <a>E-Auto mieten und abholen</a>
         </Link>
 
         <Link
@@ -20,7 +20,7 @@ export default function TeslaQuickLinks () {
           className='font-semibold text-itana-red'
           rel='noopener noreferrer'
         >
-          E-Auto zurückzugeben
+          <a>E-Auto zurückzugeben</a>
         </Link>
 
         <Link
@@ -29,7 +29,7 @@ export default function TeslaQuickLinks () {
           className='font-semibold text-itana-red'
           rel='noopener noreferrer'
         >
-          E-Auto laden und Reichweite
+          <a>E-Auto laden und Reichweite</a>
         </Link>
 
         <Link
@@ -38,7 +38,7 @@ export default function TeslaQuickLinks () {
           className='font-semibold text-itana-red'
           rel='noopener noreferrer'
         >
-          Was muss ich beachten?
+          <a>Was muss ich beachten?</a>
         </Link>
 
         <Link
@@ -47,7 +47,7 @@ export default function TeslaQuickLinks () {
           className='font-semibold text-itana-red'
           rel='noopener noreferrer'
         >
-          Versicherung
+          <a>Versicherung</a>
         </Link>
       </div>
     </div>

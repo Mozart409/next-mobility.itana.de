@@ -1,7 +1,7 @@
 import Breadcrum from '@/ui/Breadcrum'
-import CTA from '@/ui/CTA'
+import CTA from 'pages/tesla/node_modules/@/ui/CTA'
 import Head from 'next/head'
-import Img from 'gatsby-image'
+import Img from 'pages/tesla/node_modules/gatsby-image'
 
 import SEO from '@/ui/seo'
 

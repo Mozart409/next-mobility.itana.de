@@ -1,6 +1,6 @@
 import { Link, graphql } from 'gatsby'
 import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
-import AngeboteT3P from '@/ui/AngeboteT3P'
+import AngeboteT3P from 'components/old/AngeboteT3P'
 import CTA from '@/ui/CTA'
 import Head from 'next/head'
 import Img from 'gatsby-image'

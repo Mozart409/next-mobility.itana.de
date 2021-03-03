@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Img from 'gatsby-image'
+import Img from 'pages/tesla/node_modules/gatsby-image'
 
 import SEO from '@/ui/seo'
 

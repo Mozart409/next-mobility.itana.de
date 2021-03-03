@@ -2,7 +2,7 @@ import { helmetJsonLdProp } from 'react-schemaorg'
 import Breadcrum from '@/ui/Breadcrum'
 import Head from 'next/head'
 
-import Img from 'gatsby-image'
+import Img from 'pages/tesla/node_modules/gatsby-image'
 
 import SEO from '@/ui/seo'
 
@@ -169,7 +169,7 @@ function photovoltaikanlagePage ({ data }) {
         <Img
           objectFit='cover'
           objectPosition='50% 50%'
-          className={`${IsOpen ? `invisible` : `mt-4 h-72 w-72 mx-auto`}`}
+          className={`${IsOpen ? 'invisible' : 'mt-4 h-72 w-72 mx-auto'}`}
           fluid={data.Lademodus.childImageSharp.fluid}
           alt='Ladeanzeige'
         />

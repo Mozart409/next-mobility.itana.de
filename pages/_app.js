@@ -6,7 +6,7 @@ if (typeof window !== 'undefined') {
   setup(twindConfig)
 }
 
-export default function MyApp({ Component, pageProps }) {
+export default function MyApp ({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />

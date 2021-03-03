@@ -28,7 +28,7 @@ const Newsfeed = () => (
           </Link>
           <div className='mt-3'>
             <Link
-              to='/photovoltaikanlage/'
+              href='/photovoltaikanlage/'
               className='text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red'
             >
               Weiter lesen
@@ -51,7 +51,7 @@ const Newsfeed = () => (
           </Link>
           <div className='mt-3'>
             <Link
-              to='/tesla-supercharger-leonberg/'
+              href='/tesla-supercharger-leonberg/'
               className='text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red'
             >
               Weiter lesen
@@ -74,7 +74,7 @@ const Newsfeed = () => (
           </Link>
           <div className='mt-3'>
             <Link
-              to='/schulung-elektromobilitaet/'
+              href='/schulung-elektromobilitaet/'
               className='text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red'
             >
               Weiter lesen
@@ -97,7 +97,7 @@ const Newsfeed = () => (
           </Link>
           <div className='mt-3'>
             <Link
-              to='/tesla-langzeitmiete/'
+              href='/tesla-langzeitmiete/'
               className='text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red'
             >
               Weiter lesen

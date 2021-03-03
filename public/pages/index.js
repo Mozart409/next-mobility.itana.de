@@ -177,7 +177,7 @@ const ContentSection = () => (
       zum Charger auf Lade-Temperatur auf. Das spart 25 % der Ladezeit ein.
     </p>
     <h4 className='mt-2 text-lg'>V2</h4>
-    <ul className='list-inside'>
+    <ul className='list-disc list-inside'>
       <li>maximale Leistung 150 Kilowatt</li>
       <li>
         Pairing, d.h. jede Ladestation teilt sich die Leistung mit dem Nachbarn,
@@ -186,7 +186,7 @@ const ContentSection = () => (
       <li>Ladekabel ist dicker als beim V3</li>
     </ul>
     <h4 className='mt-2 text-lg'>V3</h4>
-    <ul className='list-inside'>
+    <ul className='list-disc list-inside'>
       <li>
         wird in Deutschland erst ausgebaut und benötigt ein Adapter für Model S
         und X (wir legen den Adapter kostenfrei bei)

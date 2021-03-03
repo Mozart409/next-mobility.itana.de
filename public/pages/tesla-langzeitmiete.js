@@ -1,11 +1,11 @@
-import { Link, graphql } from 'gatsby'
+import { Link, graphql } from 'pages/tesla/node_modules/gatsby'
 import { helmetJsonLdProp } from 'react-schemaorg'
 import Breadcrum from '@/ui/Breadcrum'
 import Head from 'next/head'
-import Img from 'gatsby-image'
+import Img from 'pages/tesla/node_modules/gatsby-image'
 
 import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import CTA from 'pages/tesla/node_modules/@/ui/CTA'
 
 export const query = graphql`
   query {
@@ -116,7 +116,7 @@ export default function langzeitmeitePage ({ data }) {
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von{' '}
               <b>mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
               Mietzeitraum flexibel.
-              <Link className='font-semibold text-itana-red' to='/kontakt/'>
+              <Link className='font-semibold text-itana-red' href='/kontakt/'>
                 {' '}
                 Kontaktiere uns jetzt,{' '}
               </Link>
@@ -126,7 +126,7 @@ export default function langzeitmeitePage ({ data }) {
             <p>
               {' '}
               Vorab kannst Du in unseren
-              <Link className='font-semibold text-itana-red' to='/faq/'>
+              <Link className='font-semibold text-itana-red' href='/faq/'>
                 {' '}
                 FAQs{' '}
               </Link>
@@ -142,7 +142,7 @@ export default function langzeitmeitePage ({ data }) {
               inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
-              to='/tesla/model-3-mieten/#tesla-standard-range-plus'
+              href='/tesla/model-3-mieten/#tesla-standard-range-plus'
               target='_blank'
               rel='noopener noreferrer'
               className='anfrage'
@@ -155,7 +155,7 @@ export default function langzeitmeitePage ({ data }) {
               inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
-              to='/tesla/model-3-mieten/#tesla-performance'
+              href='/tesla/model-3-mieten/#tesla-performance'
               target='_blank'
               rel='noopener noreferrer'
               className='anfrage'
@@ -167,7 +167,7 @@ export default function langzeitmeitePage ({ data }) {
               Tag bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
-              to='/tesla/model-x-mieten/'
+              href='/tesla/model-x-mieten/'
               target='_blank'
               rel='noopener noreferrer'
               className='anfrage'

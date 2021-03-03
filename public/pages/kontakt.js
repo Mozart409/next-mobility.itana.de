@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Iframe from 'react-iframe'
-import Img from 'gatsby-image'
+import Img from 'pages/tesla/node_modules/gatsby-image'
 
 import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import CTA from 'pages/tesla/node_modules/@/ui/CTA'
 
 function KontaktPage () {
   return (

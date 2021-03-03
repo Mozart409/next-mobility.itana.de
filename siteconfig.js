@@ -1,8 +1,7 @@
 export default {
-  title: `Mobility Itana`,
-  description: `Tesla mieten Stuttgart`,
-  author: `Jörg Weißleder`,
-  siteUrl: `https://mobility.itana.de/`,
+  title: 'Mobility Itana',
+  description: 'Tesla mieten Stuttgart',
+  siteUrl: 'https://mobility.itana.de/',
   author: {
     name: 'Jörg Weißleder',
     summary: 'Itana'

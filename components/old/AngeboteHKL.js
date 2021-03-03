@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'pages/tesla/node_modules/gatsby'
 
 const Angebot = () => {
   const [DisplaySpecials, setDisplaySpecials] = useState(false)
@@ -103,7 +103,7 @@ const Angebot = () => {
 
   return (
     <div>
-      <div className={`${DisplaySpecials ? `flex` : `hidden`} flex-col`}>
+      <div className={`${DisplaySpecials ? 'flex' : 'hidden'} flex-col`}>
         <h2 className='mt-4 mb-2 font-bold text-itana-red'>Unsere Aktionen</h2>
         <div className='overflow-x-auto py-2 -my-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8'>
           <div className='inline-block overflow-hidden min-w-full align-middle border-b border-gray-200 shadow sm:rounded-lg'>
@@ -142,7 +142,7 @@ const Angebot = () => {
         </div>
       </div>
 
-      <div className={`${DisplayAngebote ? `flex` : `hidden`} flex-col`}>
+      <div className={`${DisplayAngebote ? 'flex' : 'hidden'} flex-col`}>
         <h2 className='mt-4 mb-2 font-bold text-itana-red'>Unsere Angebote</h2>
         <div className='overflow-x-auto py-2 -my-2 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8'>
           <div className='inline-block overflow-hidden min-w-full align-middle border-b border-gray-200 shadow sm:rounded-lg'>

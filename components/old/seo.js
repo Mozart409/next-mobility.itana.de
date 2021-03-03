@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'pages/tesla/node_modules/gatsby'
 
 import Head from 'next/head'
 
@@ -23,30 +23,30 @@ function SEO ({ description, lang, meta, keywords, title }) {
         lang
       }}
       title={title}
-      titleTemplate={``}
+      titleTemplate={''}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: metaDescription
         },
         {
-          property: `og:title`,
+          property: 'og:title',
           content: title
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: metaDescription
         },
         {
-          property: `og:type`,
-          content: `website`
+          property: 'og:type',
+          content: 'website'
         }
       ]
         .concat(
           keywords.length > 0
             ? {
-                name: `keywords`,
-                content: keywords.join(`, `)
+                name: 'keywords',
+                content: keywords.join(', ')
               }
             : []
         )
@@ -56,7 +56,7 @@ function SEO ({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `de`,
+  lang: 'de',
   meta: [],
   keywords: []
 }

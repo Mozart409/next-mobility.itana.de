@@ -2,7 +2,7 @@ import { Collapser, Panel, Trigger } from 'react-collapser'
 import Head from 'next/head'
 import SEO from '@/ui/seo'
 import GoogleBewertungen from '@/ui/GoogleBewertungen'
-import CTA from '@/ui/CTA'
+import CTA from 'pages/tesla/node_modules/@/ui/CTA'
 
 function Collapse () {
   return (

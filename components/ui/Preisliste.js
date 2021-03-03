@@ -3,7 +3,6 @@ import React from 'react'
 export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
   return (
     <div>
-      {console.log(mehrkilometer)}
       <div>
         <ul className="space-y-3">
           <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">

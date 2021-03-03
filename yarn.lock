@@ -181,6 +181,21 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@twind/aspect-ratio@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@twind/aspect-ratio/-/aspect-ratio-0.1.4.tgz#4a294e3e44f636a0a4c326f2efec5dc4387f93cf"
+  integrity sha512-R8kHG8l3NV5dIcBn7LpP4a/qFNAb9+3wFk+OPucHJyygffiM31vji/udSTSaXthbvVXuj1n4sDNGuZv0wxwKHg==
+
+"@twind/forms@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@twind/forms/-/forms-0.1.4.tgz#b9d6edcd44bd216fe566199c77938a96f47cb46d"
+  integrity sha512-OwI3xd0NTDlQo2M9L3NDVnngBU/mGgHaIAif91taGfiN4zpbwvYLSpUFIeBlcD8XeGvdFQv07T5hxavFRsKa7Q==
+
+"@twind/typography@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@twind/typography/-/typography-0.0.1.tgz#4aa442125cc8d82b1b357450377d234e7dfeb504"
+  integrity sha512-LKtb18HjyekO5E+6tycottrQaADjOZtb7z4YfcUodbVF8/r2PWcaBWHvJtF3ljAdwjMEWwPGBiWMt0mVE6KADg==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"

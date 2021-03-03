@@ -51,9 +51,9 @@ export default function Layout({ children }) {
       <Footer />
       <style jsx global>{`
         * {
-          font-family: Inter, Menlo, Monaco, 'Lucida Console', 'Liberation Mono',
-            'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New',
-            monospace, serif;
+          font-family: 'Inter', Menlo, Monaco, 'Lucida Console',
+            'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+            'Courier New', monospace, serif;
         }
       `}</style>
     </div>

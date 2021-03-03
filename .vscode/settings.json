@@ -1,0 +1,12 @@
+{
+  "files.autoSave": "onFocusChange",
+  "telemetry.enableTelemetry": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.linkedEditing": true,
+  "deno.enable": false
+}

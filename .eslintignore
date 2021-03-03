@@ -1,0 +1,6 @@
+.next
+public
+node_modules
+gatsby-node.js
+tailwind.config.js
+cypress

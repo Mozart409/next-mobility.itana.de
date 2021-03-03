@@ -1,0 +1,218 @@
+[
+  {
+    "Typ": "0",
+    "Art": "K",
+    "Tarif": "Event",
+    "Beschreibung": "Werktags 9:00 bis 17:00",
+    "Inklusivkilometer": "100",
+    "Preis": "321,67",
+    "Preis pro Tag": "965,00"
+  },
+  {
+    "Typ": "1",
+    "Art": "K",
+    "Tarif": "Tag",
+    "Beschreibung": "24 Stunden",
+    "Inklusivkilometer": "200",
+    "Preis": "369,00",
+    "Preis pro Tag": "369,00"
+  },
+  {
+    "Typ": "1",
+    "Art": "K",
+    "Tarif": "Wochenende",
+    "Beschreibung": "Fr 13:00 - Mo. 8:00",
+    "Inklusivkilometer": "600",
+    "Preis": "649,00",
+    "Preis pro Tag": "231,79"
+  },
+  {
+    "Typ": "0",
+    "Art": "K",
+    "Tarif": "Vier Tage",
+    "Beschreibung": "Montag 11:00 bis Freitag 11:00",
+    "Inklusivkilometer": "600",
+    "Preis": "900,00",
+    "Preis pro Tag": "225,00"
+  },
+  {
+    "Typ": "1",
+    "Art": "K",
+    "Tarif": "Verlängerungstag",
+    "Beschreibung": "24 Stunden",
+    "Inklusivkilometer": "100",
+    "Preis": "95,00",
+    "Preis pro Tag": "95,00"
+  },
+  {
+    "Typ": "1",
+    "Art": "L",
+    "Tarif": "Woche",
+    "Beschreibung": "7 Tage",
+    "Inklusivkilometer": "800",
+    "Preis": "949,00",
+    "Preis pro Tag": "135,57"
+  },
+  {
+    "Typ": "0",
+    "Art": "L",
+    "Tarif": "2 Wochen",
+    "Beschreibung": "14 Tage",
+    "Inklusivkilometer": "1300",
+    "Preis": "1880,00",
+    "Preis pro Tag": "134,29"
+  },
+  {
+    "Typ": "0",
+    "Art": "L",
+    "Tarif": "3 Wochen",
+    "Beschreibung": "21 Tage",
+    "Inklusivkilometer": "1800",
+    "Preis": "2575,00",
+    "Preis pro Tag": "122,62"
+  },
+  {
+    "Typ": "1",
+    "Art": "L",
+    "Tarif": "Monat",
+    "Beschreibung": "30 Tage",
+    "Inklusivkilometer": "2000",
+    "Preis": "2499,00",
+    "Preis pro Tag": "83,30"
+  },
+  {
+    "Typ": "1",
+    "Art": "L",
+    "Tarif": "Verlängerungstag",
+    "Beschreibung": "24 Stunden",
+    "Inklusivkilometer": "67",
+    "Preis": "74,00",
+    "Preis pro Tag": "74,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Event",
+    "Beschreibung": "Werktags 9:00 bis 17:00",
+    "Inklusivkilometer": "100",
+    "Preis": "260,33",
+    "Preis pro Tag": "781,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Tag",
+    "Beschreibung": "24 Stunden",
+    "Inklusivkilometer": "200",
+    "Preis": "371,00",
+    "Preis pro Tag": "371,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Wochenende",
+    "Beschreibung": "Wochenendaktion",
+    "Inklusivkilometer": "600",
+    "Preis": "786,80",
+    "Preis pro Tag": "281,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Vier Tage",
+    "Beschreibung": "Vier Tage Aktion",
+    "Inklusivkilometer": "600",
+    "Preis": "824,00",
+    "Preis pro Tag": "206,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Woche",
+    "Beschreibung": "Aktionswoche",
+    "Inklusivkilometer": "800",
+    "Preis": "1097,00",
+    "Preis pro Tag": "156,71"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "2 Wochen",
+    "Beschreibung": "14 Tage Aktion",
+    "Inklusivkilometer": "1400",
+    "Preis": "1854,00",
+    "Preis pro Tag": "132,43"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "3 Wochen",
+    "Beschreibung": "21 Tage Aktion",
+    "Inklusivkilometer": "1700",
+    "Preis": "2341,00",
+    "Preis pro Tag": "111,48"
+  },
+  {
+    "Typ": "0",
+    "Art": "A",
+    "Tarif": "Monat",
+    "Beschreibung": "Aktionsmonat",
+    "Inklusivkilometer": "2000",
+    "Preis": "2890,00",
+    "Preis pro Tag": "96,33"
+  },
+  {
+    "Typ": "0",
+    "Art": "S",
+    "Tarif": "Special 1",
+    "Beschreibung": "0",
+    "Inklusivkilometer": "100",
+    "Preis": "345,00",
+    "Preis pro Tag": "345,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "S",
+    "Tarif": "Special 2",
+    "Beschreibung": "0",
+    "Inklusivkilometer": "100",
+    "Preis": "345,00",
+    "Preis pro Tag": "345,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "S",
+    "Tarif": "Special 3",
+    "Beschreibung": "0",
+    "Inklusivkilometer": "100",
+    "Preis": "345,00",
+    "Preis pro Tag": "345,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "S",
+    "Tarif": "Special 4",
+    "Beschreibung": "0",
+    "Inklusivkilometer": "100",
+    "Preis": "345,00",
+    "Preis pro Tag": "345,00"
+  },
+  {
+    "Typ": "0",
+    "Art": "S",
+    "Tarif": "Special 5",
+    "Beschreibung": "0",
+    "Inklusivkilometer": "100",
+    "Preis": "175,00",
+    "Preis pro Tag": "175,00"
+  },
+  {
+    "Typ": "1",
+    "Art": "M",
+    "Tarif": "Mehrkilometer",
+    "Beschreibung": "",
+    "Inklusivkilometer": "1",
+    "Preis": "0,60",
+    "Preis pro Tag": ""
+  }
+]

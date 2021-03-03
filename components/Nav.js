@@ -6,22 +6,22 @@ import { Menu, Transition } from '@headlessui/react'
 import YellowStar from '@/ui/YellowStar'
 
 const Bewertungen = () => (
-  <div>
+  <div className="hidden xl:inline-block px-3">
     <a
       href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
       target="_blank"
       className="block mt-1 text-white no-underline md:inline-block md:mt-0"
       rel="noopener noreferrer"
     >
-      <p className="flex justify-center mx-auto flex-no-wrap ">
+      {/*    <p className="flex justify-center mx-auto flex-no-wrap ">
         <YellowStar />
         <YellowStar />
         <YellowStar />
         <YellowStar />
         <YellowStar />
-      </p>
+      </p> */}
       <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
-        24 Bewertungen 4,8/5 Stand 03/2021
+        <b>24</b> Bewertungen <b>4,8/5</b> Stand 03/2021
       </p>
     </a>
   </div>
@@ -180,7 +180,7 @@ export default function Nav() {
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <img
-                  className="block lg:hidden h-8 w-auto"
+                  className="block lg:hidden h-10 w-auto"
                   src="/images/icon-192.png"
                   alt="Logo mobility.itana.de"
                 />
@@ -190,13 +190,13 @@ export default function Nav() {
                   alt="Logo mobility.itana.de"
                 />
                 <img
-                  className="hidden lg:block h-8 w-auto"
+                  className="hidden lg:block h-6 w-auto"
                   src="/images/mobility.itana.de-transparent.svg"
                   alt="Workflow"
                 />
               </div>
               <div className="hidden sm:block sm:ml-6">
-                <div className="flex space-x-4">
+                <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
                   <Link href="/">
                     <a className="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">

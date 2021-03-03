@@ -11,7 +11,7 @@ import SEO from '@/ui/seo'
 import Preisliste from '@/ui/Preisliste'
 import { getTXDataByArt } from 'lib/api'
 
-function TeslaModelX({ modelXKurzzeit, modelXLangzeit, modelXMehrkilometer }) {
+function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
     <div>
       <SEO
@@ -43,9 +43,9 @@ function TeslaModelX({ modelXKurzzeit, modelXLangzeit, modelXMehrkilometer }) {
 
       <section>
         <Preisliste
-          kurzzeit={modelXKurzzeit}
-          langzeit={modelXLangzeit}
-          mehrkilometer={modelXMehrkilometer}
+          kurzzeit={Kurzzeit}
+          langzeit={Langzeit}
+          mehrkilometer={Mehrkilometer}
         />
         <CTA
           data_cy="TeslaModelXMieten"
@@ -211,11 +211,11 @@ function TeslaModelX({ modelXKurzzeit, modelXLangzeit, modelXMehrkilometer }) {
 }
 
 export async function getStaticProps(context) {
-  const modelXKurzzeit = await getTXDataByArt('K')
-  const modelXLangzeit = await getTXDataByArt('L')
-  const modelXMehrkilometer = await getTXDataByArt('M')
+  const Kurzzeit = await getTXDataByArt('K')
+  const Langzeit = await getTXDataByArt('L')
+  const Mehrkilometer = await getTXDataByArt('M')
   return {
-    props: { modelXKurzzeit, modelXLangzeit, modelXMehrkilometer }
+    props: { Kurzzeit, Langzeit, Mehrkilometer }
   }
 }
 

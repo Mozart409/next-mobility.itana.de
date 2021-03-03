@@ -1,74 +1,48 @@
-import { Link, graphql } from 'gatsby'
 import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
-import AngeboteT3P from 'components/old/AngeboteT3P'
+
 import CTA from '@/ui/CTA'
 import Head from 'next/head'
-import Img from 'gatsby-image'
+
+import Image from 'next/image'
+import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-export const query = graphql`
-  query {
-    Tesla3P1: file(relativePath: { eq: "cards/tesla-3-performance.png" }) {
-      id
-      childImageSharp {
-        fluid(
-          maxWidth: 1000
-          maxHeight: 600
-          quality: 80
-          cropFocus: ATTENTION
-        ) {
-          ...GatsbyImageSharpFluid_withWebp_noBase64
-        }
-      }
-    }
+import Preisliste from '@/ui/Preisliste'
+import { getT3PDataByArt } from 'lib/api'
 
-    PreisT3P: t3PJson(
-      Typ: { eq: "1" }
-      Art: { eq: "L" }
-      Tarif: { eq: "Monat" }
-      Beschreibung: { eq: "30 Tage" }
-    ) {
-      Preis_pro_Tag
-    }
-  }
-`
-
-function TeslaModel3Page ({ data }) {
+function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
     <div>
       <SEO
-        title='Tesla Model 3 mieten | Elektroauto mieten | Sportwagen mieten'
-        description='Tesla Model 3 mieten ✓ viel Beschleunigungsspaß ✓ App-Zugang auf ihrem Smartphone ✓ Sportwagen mieten ✓ ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450'
+        title="Tesla Model 3 mieten | Elektroauto mieten | Sportwagen mieten"
+        description="Tesla Model 3 mieten ✓ viel Beschleunigungsspaß ✓ App-Zugang auf ihrem Smartphone ✓ Sportwagen mieten ✓ ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>
         <link
-          rel='canonical'
-          href='https://mobility.itana.de/tesla/model-3-mieten/'
+          rel="canonical"
+          href="https://mobility.itana.de/tesla/model-3-mieten/"
         />
       </Head>
       <section>
-        <h1 className='text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
+        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla Model 3 mieten - Sportwagen genießen
         </h1>
-        <div className='max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl'>
-          <div className='mx-auto'>
-            <div className='relative '>
+        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+          <div className="mx-auto">
+            <div className="relative ">
               <div>
                 <Link
-                  to='#tesla-performance'
-                  aria-label='Tesla Model 3 Performance'
+                  href="#tesla-performance"
+                  aria-label="Tesla Model 3 Performance"
                 >
-                  <Img
-                    fluid={data.Tesla3P1.childImageSharp.fluid}
-                    alt='Tesla Model 3 mieten'
-                    className='z-0 mx-auto mt-4 h-96 rounded'
+                  <Image
+                    src="/images/cards/tesla-3-performance.png"
+                    className="mx-auto mt-4 h-96 rounded"
+                    alt="Tesla Model 3 mieten"
+                    height="600"
+                    width="1000"
                   />
-
-                  <span className='absolute bottom-2 text-white text-md lg:text-2xl lg:right-2'>
-                    Performance ab {data.PreisT3P.Preis_pro_Tag}
-                    €/Tag im Monat
-                  </span>
                 </Link>
               </div>
             </div>
@@ -82,27 +56,31 @@ function TeslaModel3Page ({ data }) {
           </h2>
         </div>
       </section>
-      <section className='p-4 bg-gray-100 rounded border border-gray-400 sm:mt-8 md:mt-12'>
+      <section>
         <a
-          id='tesla-performance'
-          href='#tesla-performance'
-          role='button'
-          label='Tesla Model 3 Performance'
+          id="tesla-performance"
+          href="#tesla-performance"
+          role="button"
+          label="Tesla Model 3 Performance"
         >
           <h2>Tesla Model 3 Performance</h2>
         </a>
-        <AngeboteT3P />
+        <Preisliste
+          kurzzeit={Kurzzeit}
+          langzeit={Langzeit}
+          mehrkilometer={Mehrkilometer}
+        />
         <CTA
-          data_cy='TeslaModel3PerformanceMieten'
-          fillBG='true'
-          fullWidth='true'
-          title='Tesla Model 3 Performance mieten'
-          link='https://reservation.itana.de/#tabs-fzggruppe-4'
+          data_cy="TeslaModel3PerformanceMieten"
+          fillBG="true"
+          fullWidth="true"
+          title="Tesla Model 3 Performance mieten"
+          link="https://reservation.itana.de/#tabs-fzggruppe-4"
         />
       </section>
       <TeslaQuickLinks />
-      <div className='my-24 mx-auto'>
-        <div className='mx-auto prose lg:prose-md'>
+      <div className="my-24 mx-auto">
+        <div className="mx-auto prose lg:prose-md">
           <h2>Bereit für eine Testfahrt mit einem Sportwagen?</h2>
           <p>
             Wer möchte hier nicht einen Tesla Model 3 mieten und eine Probefahrt
@@ -113,7 +91,7 @@ function TeslaModel3Page ({ data }) {
         </div>
       </div>
 
-      <div className='mx-auto mt-8 prose lg:prose-md'>
+      <div className="mx-auto mt-8 prose lg:prose-md">
         <h2>Beschleunigung und Antrieb des Model 3 Performance </h2>
         <p>
           Es macht richtig Spaß, mit dem atemberaubenden Tesla Model 3 die
@@ -121,10 +99,10 @@ function TeslaModel3Page ({ data }) {
           PS stehenzulassen. Das kann nur auf abgesperrtem Gelände, wie z.B. auf
           dem
           <a
-            target='_blank'
-            rel='noopener noreferrer'
-            className='font-semibold text-itana-red'
-            href='https://www.youtube.com/watch?v=GUdSP5WuU6c'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-itana-red"
+            href="https://www.youtube.com/watch?v=GUdSP5WuU6c"
           >
             {' '}
             Drag Day Meinerzhagen{' '}
@@ -227,6 +205,14 @@ function TeslaModel3Page ({ data }) {
       </div>
     </div>
   )
+}
+export async function getStaticProps(context) {
+  const Kurzzeit = await getT3PDataByArt('K')
+  const Langzeit = await getT3PDataByArt('L')
+  const Mehrkilometer = await getT3PDataByArt('M')
+  return {
+    props: { Kurzzeit, Langzeit, Mehrkilometer }
+  }
 }
 
 export default TeslaModel3Page

@@ -1,0 +1,41 @@
+h1 {
+  @apply font-bold;
+}
+h2 {
+  @apply font-semibold;
+}
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold;
+}
+
+section {
+  @apply mt-4;
+}
+
+b {
+  @apply font-semibold;
+}
+
+.HeaderItem {
+  @apply block pr-1 mt-2 mr-1 text-sm font-semibold text-white no-underline hover:text-gray-300 md:inline-block md:mt-0;
+}
+
+.prose a {
+  @apply text-itana-red font-semibold;
+}
+
+.Trigger[aria-expanded='false'] > .Chevron {
+  transform: rotate(90deg);
+  transition-duration: 375ms;
+}
+.Trigger[aria-expanded='true'] > .Chevron {
+  transform: rotate(-90deg);
+  transition-duration: 375ms;
+}
+
+.ItanaRoundedButton {
+  @apply border border-itana-red rounded-full;
+}

@@ -77,7 +77,7 @@ const Dropdown = () => {
         leaveTo="opacity-0 scale-95"
       >
         <div
-          className="absolute z-50 right-0 mt-2 w-56 bg-white rounded-md ring-1 ring-black ring-opacity-5 shadow-lg origin-top-right"
+          className="absolute right-0 z-50 mt-2 w-56 bg-white rounded-md ring-1 ring-black ring-opacity-5 shadow-lg origin-top-right"
           onClick={() => setDropDownOpen(!isDropDownOpen)}
         >
           <div
@@ -130,6 +130,7 @@ export default function Nav() {
                 className="inline-flex justify-center items-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
+                data-cy="MobileMenuButton"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <span className="sr-only">Open main menu</span>

@@ -4,21 +4,21 @@ import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-function MietbedingungenPage () {
+function MietbedingungenPage() {
   return (
     <div>
       <SEO
-        title='Mietbedinungen | Tesla mieten - Itana GmbH'
-        description='Mietbedingungen - Tesla mieten, Autovermietung, Mietwagen'
+        title="Mietbedinungen | Tesla mieten - Itana GmbH"
+        description="Mietbedingungen - Tesla mieten, Autovermietung, Mietwagen"
       />
       <Head>
         <link
-          rel='canonical'
-          href='https://mobility.itana.de/mietbedingungen/'
+          rel="canonical"
+          href="https://mobility.itana.de/mietbedingungen/"
         />
       </Head>
 
-      <div className='prose lg:prose-md'>
+      <div className="prose">
         <h1>Mietbedingungen</h1>
         <p>
           <strong>Mietbedingungen und Wissenswertes.</strong>
@@ -33,21 +33,16 @@ function MietbedingungenPage () {
           Sie diesbezüglich schon vorab Informationen benötigen, senden Sie
           bitte eine E-Mail Nachricht an{' '}
           <a
-            href='mailto:mobility@itana.de'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="mailto:mobility@itana.de"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <span className='text-itana-red'>mobility@itana.de</span>
+            <span className="text-itana-red">mobility@itana.de</span>
           </a>{' '}
           oder nutzen Sie unser{' '}
-          <span className='text-itana-red'>
-            <Link
-              className='text-itana-red'
-              to='/kontakt/'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Kontaktformular.
+          <span className="text-itana-red">
+            <Link href="/kontakt/" target="_blank" rel="noopener noreferrer">
+              <a className="text-itana-red">Kontaktformular.</a>
             </Link>
           </span>
         </p>

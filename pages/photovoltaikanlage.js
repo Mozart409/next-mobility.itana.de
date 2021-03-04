@@ -1,53 +1,21 @@
 import { helmetJsonLdProp } from 'react-schemaorg'
 import Breadcrum from '@/ui/Breadcrum'
 import Head from 'next/head'
-
-import Img from 'pages/tesla/node_modules/gatsby-image'
+import Image from 'next/image'
 
 import SEO from '@/ui/seo'
 
-import useStore from '@lib/useStore'
-
-export const query = graphql`
-  query {
-    News2: file(relativePath: { eq: "news/solar.jpg" }) {
-      id
-      childImageSharp {
-        fluid(maxWidth: 1000, maxHeight: 600, quality: 85, cropFocus: SOUTH) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    Lademodus: file(relativePath: { eq: "news/lademodus.png" }) {
-      id
-      childImageSharp {
-        fluid(maxWidth: 400, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    Ladezustand: file(relativePath: { eq: "news/Ladezustand-Tesla.png" }) {
-      id
-      childImageSharp {
-        fluid(maxHeight: 900, quality: 85) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
-function photovoltaikanlagePage ({ data }) {
-  const IsOpen = useStore(state => state.IsOpen)
+function photovoltaikanlagePage({ data }) {
   return (
     <div>
       <SEO
-        title='Photovoltaikanlage | Nachhaltiges Laden eines Teslas - Itana GmbH'
-        description='CO2 Fußabdruck verringern | Ökologie'
+        title="Photovoltaikanlage | Nachhaltiges Laden eines Teslas - Itana GmbH"
+        description="CO2 Fußabdruck verringern | Ökologie"
       />
       <Head>
         <link
-          rel='canonical'
-          href='https://mobility.itana.de/photovoltaikanlage/'
+          rel="canonical"
+          href="https://mobility.itana.de/photovoltaikanlage/"
         />
       </Head>
       <Head
@@ -71,27 +39,27 @@ function photovoltaikanlagePage ({ data }) {
         ]}
       />
       <Breadcrum />
-      <div className='max-w-7xl prose sm:px-6 lg:px-8 lg:prose-md'>
+      <div className="max-w-7xl prose sm:px-6 lg:px-8 lg:prose-md">
         {/*  <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-06-12'>Juni 12, 2020</time>
         </p> */}
         <h1>Photovoltaikanlage</h1>
-        <Img
-          objectFit='cover'
-          objectPosition='50% 50%'
-          className='h-56 rounded'
-          fluid={data.News2.childImageSharp.fluid}
-          alt='Solar Panel'
+        <Image
+          className="h-56 rounded"
+          src="/images/news/solar.jpg"
+          height="200"
+          width="1000"
+          alt="Solar Panel"
         />
 
         <h2>Wie vereint man Spaß und Ökologie sinnvoll?</h2>
 
-        <Img
-          objectFit='cover'
-          objectPosition='50% 50%'
-          className='rounded'
-          fluid={data.Ladezustand.childImageSharp.fluid}
-          alt='Photovoltaikanlage'
+        <Image
+          className="rounded"
+          src="/images/news/Ladezustand-Tesla.png"
+          height="300"
+          width="800"
+          alt="Photovoltaikanlage"
         />
 
         <p>
@@ -166,12 +134,12 @@ function photovoltaikanlagePage ({ data }) {
           </b>
         </p>
 
-        <Img
-          objectFit='cover'
-          objectPosition='50% 50%'
-          className={`${IsOpen ? 'invisible' : 'mt-4 h-72 w-72 mx-auto'}`}
-          fluid={data.Lademodus.childImageSharp.fluid}
-          alt='Ladeanzeige'
+        <Image
+          className="mx-auto mt-4 w-72 h-72"
+          src="/images/news/lademodus.png"
+          height="300"
+          width="400"
+          alt="Ladeanzeige"
         />
       </div>
     </div>

@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { tw, apply } from 'twind'
 import { Menu, Transition } from '@headlessui/react'
-import YellowStar from '@/ui/YellowStar'
 
 const Bewertungen = () => (
   <div className="hidden px-3 xl:inline-block">
@@ -115,6 +114,7 @@ const Dropdown = () => {
     </div>
   )
 }
+
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
@@ -250,6 +250,7 @@ export default function Nav() {
                       Kontakt
                     </a>
                   </Link>
+
                   <Bewertungen />
                 </div>
               </div>
@@ -320,6 +321,13 @@ export default function Nav() {
                   Kontakt
                 </a>
               </Link>
+
+              <a
+                href="tel:+4971149066450"
+                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white"
+              >
+                +49 711 49 06 64 50
+              </a>
 
               <Bewertungen />
             </div>

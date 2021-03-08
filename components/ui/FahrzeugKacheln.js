@@ -30,8 +30,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
           <Link
-            className="Kachel"
             data-cy="KachelModel3Performance"
+            className="Kachel"
             href="/tesla/model-3-mieten/"
           >
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl ">

@@ -8,11 +8,7 @@ export default function FahrzeugKacheln() {
     <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:pb-28 lg:px-8">
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-5 mx-auto max-w-lg lg:grid-cols-2 lg:max-w-none">
-          <Link
-            data-cy="KachelModel3SR"
-            className="Kachel"
-            href="/tesla/model-3srmieten/"
-          >
+          <Link className="Kachel" href="/tesla/model-3srmieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -23,17 +19,16 @@ export default function FahrzeugKacheln() {
                   alt="Tesla Model 3 Standard Range Plus"
                 />
 
-                <h2 className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red">
+                <h2
+                  data-cy="KachelModel3SR"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
+                >
                   Tesla Model 3 SR+ mieten ab 149,00 €
                 </h2>
               </div>
             </div>
           </Link>
-          <Link
-            data-cy="KachelModel3Performance"
-            className="Kachel"
-            href="/tesla/model-3-mieten/"
-          >
+          <Link className="Kachel" href="/tesla/model-3-mieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl ">
               <div className="flex-shrink-0">
                 <Image
@@ -44,17 +39,16 @@ export default function FahrzeugKacheln() {
                   alt="Tesla Model 3 Performance mieten"
                 />
 
-                <h2 className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red ">
+                <h2
+                  data-cy="KachelModel3Performance"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red "
+                >
                   Tesla Model 3 Performance mieten ab 229,00 €
                 </h2>
               </div>
             </div>
           </Link>
-          <Link
-            data-cy="KachelModelX"
-            className="Kachel"
-            href="/tesla/model-x-mieten/"
-          >
+          <Link className="Kachel" href="/tesla/model-x-mieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -65,7 +59,10 @@ export default function FahrzeugKacheln() {
                   alt="Tesla Model X mieten"
                 />
 
-                <h2 className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red">
+                <h2
+                  data-cy="KachelModelX"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
+                >
                   Tesla Model X mieten ab 369,00€
                 </h2>
               </div>
@@ -83,7 +80,10 @@ export default function FahrzeugKacheln() {
                   alt="Tesla Langzeitmiete"
                 />
 
-                <h2 className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red">
+                <h2
+                  data-cy="KachelLangzeit"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
+                >
                   Tesla Langzeitmiete vs. Leasing
                 </h2>
               </div>
@@ -94,7 +94,7 @@ export default function FahrzeugKacheln() {
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
-                  className="object-cover h-72 kw-full"
+                  className="object-cover h-72"
                   height="300"
                   width="600"
                   src="/images/cards/faq.png"

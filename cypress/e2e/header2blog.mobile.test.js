@@ -3,11 +3,11 @@
 describe('Test header on mobile', () => {
   beforeEach(() => {
     cy.viewport('iphone-6')
-    cy.visit('http://localhost:3000/')
-    //   cy.get('[data-testid=uc-close-button]').click()
+    cy.clearCookies()
   })
 
   it('open mobilemenu and test if menuitems are visible', function () {
+    cy.visit('http://localhost:3000/')
     cy.get('[data-cy=MobileMenuButton]').click()
     cy.get('a').contains('Tesla mieten')
     cy.get('a').contains('FAQ')

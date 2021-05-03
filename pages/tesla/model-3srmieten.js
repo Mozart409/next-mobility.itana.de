@@ -62,6 +62,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           role="button"
           id="tesla-standard-range-plus"
           label="Tesla Model 3 Stanard Range Plus"
+          data-cy="RentTesla3SR"
         >
           <h2>Tesla Model 3 Standard Range Plus</h2>
         </a>

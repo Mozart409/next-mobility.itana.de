@@ -7,3 +7,5 @@ next-mobility.itana.de:
     publicDirectoryCache:
       value: public, max-age=604800
       test: /\.(gif|jpe?g|png|svg|jpeg|jpg|txt|woff2|xml)$/i
+    runtime:
+      defaultLambda: 'nodejs14.x'

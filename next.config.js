@@ -1,6 +1,9 @@
 module.exports = {
+  future: {
+    webpack5: true
+  },
   trailingSlash: true,
-  async headers () {
+  async headers() {
     return [
       {
         source: '/fonts/inter-var-latin.woff2',
@@ -13,7 +16,7 @@ module.exports = {
       }
     ]
   },
-  async redirects () {
+  async redirects() {
     return [
       {
         source: '/about',

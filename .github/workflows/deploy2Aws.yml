@@ -41,6 +41,8 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Build Project
+        env:
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
           npm install
           npm run build --if-present
@@ -89,7 +91,7 @@ jobs:
             ${{ runner.os }}-
       - name: Build Project
         env:
-          RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: |
           npm install
           npm run build --if-present

@@ -1,5 +1,5 @@
 next-mobility.itana.de:
-  component: '@sls-next/serverless-component@1.19.0-alpha.55'
+  component: '@sls-next/serverless-component@1.18.0'
   inputs:
     bucketName: bucket-next-mobility.itana.de
     bucketRegion: eu-central-1

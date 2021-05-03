@@ -1,9 +1,10 @@
-name: upload2HosterOld
-
+name: CI
 on:
   push:
-    branches: [master]
-
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 jobs:
   Cypress-Build-Test:
     name: Cypress Build and Test
@@ -40,8 +41,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: Build Project
-        env:
-          RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}
         run: |
           npm install
           npm run build --if-present
@@ -67,18 +66,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: List output files
         run: ls -lS
-
-  DeployFTP:
-    name: Deploy via FTP
+  build:
     runs-on: ubuntu-latest
     needs: [Cypress-Build-Test]
     steps:
-      - uses: actions/checkout@v2.1.0
-        with:
-          fetch-depth: 1
-
-      - name: Use Node.js 12.x
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
 
@@ -100,17 +93,11 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          npx relative-ci-agent
-
-      - name: list files
-        run: ls -lS
-      - name: Upload FTP
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.1.0
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          ftp_host: ${{ secrets.HOST }}
-          ftp_username: ${{ secrets.USERNAME }}
-          ftp_password: ${{ secrets.PASSWORD }}
-          local_source_dir: 'out'
-          dist_target_dir: '/'
-          delete: 'true'
-          exclude: "'^logs/' '^README.md' 'stats.json' 'webpack.stats.json'"
+          aws-access-key-id: ${{ secrets.AWS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET }}
+          aws-region: eu-central-1
+      - name: Deploy Next.js app
+        run: npx serverless

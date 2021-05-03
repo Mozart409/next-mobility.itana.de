@@ -1,10 +1,12 @@
 {
   "name": "next-mobility.itana.de",
-  "version": "0.2.4",
+  "version": "0.3.4",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
+    "dev:doppler": "doppler run yarn dev",
+    "build:doppler": "doppler run next build",
     "lint": "eslint '**/*.{js,css}' && yarn run rw",
     "format": "yarn run rw && eslint --fix '**/*.{js,css}' ",
     "cy:open": "cypress open",

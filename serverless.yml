@@ -1,0 +1,9 @@
+next-mobility.itana.de:
+  component: '@sls-next/serverless-component@1.19.0-alpha.55'
+  inputs:
+    bucketName: bucket-next-mobility.itana.de
+    bucketRegion: eu-central-1
+    memory: 1536
+    publicDirectoryCache:
+      value: public, max-age=604800
+      test: /\.(gif|jpe?g|png|svg|jpeg|jpg|txt|woff2|xml)$/i

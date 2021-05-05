@@ -20,7 +20,7 @@ const Bewertungen = () => (
         <YellowStar />
       </p> */}
       <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
-        <b>24</b> Bewertungen <b>4,8/5</b> Stand 03/2021
+        <b>32</b> Bewertungen <b>4,9/5</b> Stand 05/2021
       </p>
     </a>
   </div>

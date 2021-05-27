@@ -2,7 +2,7 @@ next-mobility.itana.de:
   component: '@sls-next/serverless-component@1.18.0'
   build:
     env:
-      API_KEY: API_KEY
+      API_KEY: ${API_KEY}
   inputs:
     bucketName: bucket-next-mobility.itana.de
     bucketRegion: eu-central-1

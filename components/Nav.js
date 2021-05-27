@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import { tw, apply } from 'twind'
 import { Menu, Transition } from '@headlessui/react'
 
 const Bewertungen = () => (

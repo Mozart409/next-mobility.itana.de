@@ -1,7 +1,3 @@
-import Link from 'next/link'
-import Head from 'next/head'
-import { tw } from 'twind'
-import 'twind/shim'
 import ScrollToTop from 'react-scroll-up'
 
 import Footer from './Footer'
@@ -9,7 +5,7 @@ import Nav from './Nav'
 
 export default function Layout({ children }) {
   return (
-    <div className={tw`flex flex-col min-h-screen text-gray-900`}>
+    <div className="flex flex-col min-h-screen text-trueGray-900">
       <Nav />
       <div id="main">
         <noscript>

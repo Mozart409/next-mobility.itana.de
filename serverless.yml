@@ -3,7 +3,7 @@ next-mobility.itana.de:
   env:
     API_KEY: ${env.API_KEY}
   inputs:
-    bucketName: bucket-next-mobility.itana.de
+    bucketName: bucket-next-mobility-itana-de
     bucketRegion: eu-central-1
     memory: 1536
     publicDirectoryCache:

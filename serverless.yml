@@ -1,5 +1,5 @@
 next-mobility.itana.de:
-  component: '@sls-next/serverless-component@1.18.0'
+  component: '@sls-next/serverless-component@1.19.0'
   env:
     API_KEY: ${env.API_KEY}
   inputs:

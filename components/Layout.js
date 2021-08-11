@@ -26,7 +26,7 @@ export default function Layout({ children }) {
         </main>
       </div>
       <ScrollToTop showUnder={200}>
-        <div className="invisible p-1 text-white rounded bg-itana-red xs:p-1 sm:p-2 md:p-4 sm:visible hover:shadow-xl">
+        <div className="invisible p-1 text-white rounded sm:visible sm:p-2 md:p-4 hover:shadow-xl bg-itana-red xs:p-1">
           <span className="">
             <svg
               role="img"

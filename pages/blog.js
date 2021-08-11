@@ -12,7 +12,7 @@ const Newsfeed = () => (
           Blog
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-16 mt-6 border-t-2 border-gray-100 lg:pt-10 lg:grid-cols-2 lg:col-gap-5 lg:row-gap-12">
+      <div className="grid grid-cols-1 gap-16 mt-6 border-t-2 border-gray-100 lg:grid-cols-2 lg:pt-10 lg:col-gap-5 lg:row-gap-12">
         <div>
           {/* <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-06-12'>Juni 12, 2020</time>

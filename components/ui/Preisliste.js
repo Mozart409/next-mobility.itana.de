@@ -27,7 +27,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -42,7 +42,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                             </p>
                             <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -59,7 +59,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -96,7 +96,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -111,7 +111,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                             </p>
                             <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -128,7 +128,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -167,7 +167,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -182,7 +182,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                             </p>
                             <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 h-5 w-5"
+                                className="flex-shrink-0 mr-1.5 w-5 h-5"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -199,7 +199,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
+                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"

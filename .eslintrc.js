@@ -16,7 +16,16 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/prop-types': 0,
     'react/no-unescaped-entities': 0,
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    'no-unused-vars': 0,
+    'css.lint.unknownAtRules': 0,
+    'at-rule-no-unknown': [
+      0,
+      {
+        ignoreAtRules: ['extends', 'tailwind']
+      }
+    ],
+    'block-no-empty': 0
   },
   settings: {
     react: {

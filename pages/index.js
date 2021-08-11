@@ -6,10 +6,10 @@ import SEO from '@/ui/seo'
 import GoogleBewertungen from '@/ui/GoogleBewertungen'
 
 const Heading1 = () => (
-  <div className='py-2 bg-white'>
-    <div className='px-4 mx-auto max-w-screen-xl sm:px-2 lg:px-8'>
-      <div className='lg:text-center'>
-        <h1 className='text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10'>
+  <div className="py-2 bg-white">
+    <div className="px-4 mx-auto max-w-screen-xl sm:px-2 lg:px-8">
+      <div className="lg:text-center">
+        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla mieten in Stuttgart - Elektromobilität erleben
         </h1>
       </div>
@@ -18,7 +18,7 @@ const Heading1 = () => (
 )
 
 const ContentSection = () => (
-  <div className='mx-auto mt-24 prose lg:prose-md lg:mt-8'>
+  <div className="mx-auto mt-24 lg:mt-8 prose lg:prose-md">
     <h2>Wo kann ich einen Tesla in Stuttgart mieten?</h2>
     <p>
       Bei uns in Markgröningen kannst Du einen Tesla mieten. Dort steht auch
@@ -27,7 +27,7 @@ const ContentSection = () => (
     </p>
     <h2>Wo kann ich mein eigenes Auto abstellen?</h2>
     <p>Wir haben genügend kostenlose Parkplätze an der Straße.</p>
-    <h2 id='tesla-mieten'> Wie kann ich einen Tesla ausleihen und abholen? </h2>
+    <h2 id="tesla-mieten"> Wie kann ich einen Tesla ausleihen und abholen? </h2>
     <p>
       Ruf in unserer Tesla Autovermietung an oder buche &uuml;ber unsere Website
       bei den&nbsp;Tarifpaketen ein E-Auto. Im &Uuml;bergabegespr&auml;ch (ca.
@@ -35,22 +35,22 @@ const ContentSection = () => (
       Handy mit der Tesla-App. Wir selbst sind begeisterte Tesla-Fans. Kunden,
       die bei uns ein Elektroauto ausgeliehen haben, waren bisher{' '}
       <a
-        href='https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de'
-        target='_blank'
-        rel='noopener noreferrer'
+        href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         rundum zufrieden!
       </a>{' '}
       <br />
       Übrigens haben wir keine versteckten Kosten.
     </p>
-    <h2 id='tesla-zurueckgeben'>Unkomplizierte Rückgabe in Stuttgart</h2>
+    <h2 id="tesla-zurueckgeben">Unkomplizierte Rückgabe in Stuttgart</h2>
     <p>
       Innerhalb
       <a
-        rel='noopener noreferrer'
-        target='_blank'
-        href='https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9a.0693609,12z/data=!4m12!1m6!3m5!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!2sItana+GmbH!8m2!3d48.902866!4d9.100305!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de'
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9a.0693609,12z/data=!4m12!1m6!3m5!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!2sItana+GmbH!8m2!3d48.902866!4d9.100305!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
       >
         {' '}
         unserer Gesch&auml;ftszeiten{' '}
@@ -61,7 +61,7 @@ const ContentSection = () => (
       App-Zugriff wird entzogen und das Fahrzeug verriegelt. Die Rückgabe ist
       beendet. &nbsp;
     </p>
-    <h2 id='versicherung'>
+    <h2 id="versicherung">
       {' '}
       Versicherung - Selbstbehalt, was muss ich beim Tesla mieten wissen?{' '}
     </h2>
@@ -70,7 +70,7 @@ const ContentSection = () => (
       Selbstbeteiligung von 2500 &euro; / 1000 &euro; oder 500 &euro;
       w&auml;hlen.
     </p>
-    <h2 id='beachten-beim-tesla-mieten'>
+    <h2 id="beachten-beim-tesla-mieten">
       {' '}
       Was muss ich beachten, wenn ich ein Elektorauto miete?{' '}
     </h2>
@@ -80,7 +80,7 @@ const ContentSection = () => (
       Navigationssystem mit der Anzeige der nächsten Ladestation und navigiert
       Dich dorthin. &nbsp;
     </p>
-    <h2 id='tesla-aufladen'> Aufladen + Reichweite beim Elektroauto</h2>
+    <h2 id="tesla-aufladen"> Aufladen + Reichweite beim Elektroauto</h2>
     <h3> Was kostet es, einen Tesla aufzuladen? </h3>
     <p>
       Das ist je nach Ladezeit, Anbieter, Batteriegröße und Art des Ladepunktes
@@ -98,7 +98,7 @@ const ContentSection = () => (
       steigendem Ladestand, sodass es auf der Reise nicht sinnvoll ist das
       Fahrzeug unterwegs immer voll aufzuladen.
     </p>
-    <h3 id='wo-tesla-aufladen'>Wo kann ich den Tesla aufladen?</h3>
+    <h3 id="wo-tesla-aufladen">Wo kann ich den Tesla aufladen?</h3>
     <p>
       Die innovativen Ladesäulen sind an strategischen Stellen wie
       Wi-Fi-Hotspots, Einkaufszentren, Restaurants oder an Autohöfen verfügbar.
@@ -113,18 +113,18 @@ const ContentSection = () => (
     </p>
     <br />
     <a
-      rel='noopener noreferrer'
-      target='_blank'
-      href='https://mobility.itana.de/tesla-supercharger-leonberg/'
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://mobility.itana.de/tesla-supercharger-leonberg/"
     >
       {' '}
       Tipps zum Aufladen findest Du hier.{' '}
     </a>
     Die
     <a
-      rel='noopener noreferrer'
-      target='_blank'
-      href='https://www.tesla.com/de_DE/supercharger'
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://www.tesla.com/de_DE/supercharger"
     >
       {' '}
       Tesla Supercharger Karte{' '}
@@ -133,9 +133,9 @@ const ContentSection = () => (
     <h3>Wie kann ich bezahlen?</h3>
     Mit{' '}
     <a
-      rel='noopener noreferrer'
-      target='_blank'
-      href='https://www.maingau-energie.de/e-mobilit%C3%A4t/Autostrom-Tarif'
+      rel="noopener noreferrer"
+      target="_blank"
+      href="https://www.maingau-energie.de/e-mobilit%C3%A4t/Autostrom-Tarif"
     >
       Maingau-Energie{' '}
     </a>{' '}
@@ -176,8 +176,8 @@ const ContentSection = () => (
       Battery Warmup" eingeführt hat, das wärmt die Batterie während der Fahrt
       zum Charger auf Lade-Temperatur auf. Das spart 25 % der Ladezeit ein.
     </p>
-    <h4 className='mt-2 text-lg'>V2</h4>
-    <ul className='list-disc list-inside'>
+    <h4 className="mt-2 text-lg">V2</h4>
+    <ul className="list-disc list-inside">
       <li>maximale Leistung 150 Kilowatt</li>
       <li>
         Pairing, d.h. jede Ladestation teilt sich die Leistung mit dem Nachbarn,
@@ -185,8 +185,8 @@ const ContentSection = () => (
       </li>
       <li>Ladekabel ist dicker als beim V3</li>
     </ul>
-    <h4 className='mt-2 text-lg'>V3</h4>
-    <ul className='list-disc list-inside'>
+    <h4 className="mt-2 text-lg">V3</h4>
+    <ul className="list-disc list-inside">
       <li>
         wird in Deutschland erst ausgebaut und benötigt ein Adapter für Model S
         und X (wir legen den Adapter kostenfrei bei)
@@ -202,7 +202,7 @@ const ContentSection = () => (
     </ul>
     <p>
       Der Ausbau der V3 Supercharger ist im vollen Gange, siehe&nbsp;
-      <a href='https://supercharge.info/changes'>supercharge.info/changes</a>.
+      <a href="https://supercharge.info/changes">supercharge.info/changes</a>.
     </p>
     <h3>Abrechnungsmethoden Supercharger</h3>
     <p>
@@ -298,9 +298,9 @@ const ContentSection = () => (
     <p>
       Das
       <a
-        rel='noopener noreferrer'
-        target='_blank'
-        href='https://www.tesla.com/de_DE/supercharger'
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.tesla.com/de_DE/supercharger"
       >
         {' '}
         Super Charger Netz von Tesla{' '}
@@ -315,9 +315,9 @@ const ContentSection = () => (
       <br />
       Wir als Verleiher bevorzugen erneuerbare Energien und haben eine
       <a
-        rel='noopener noreferrer'
-        target='_blank'
-        href='https://mobility.itana.de/photovoltaikanlage/'
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://mobility.itana.de/photovoltaikanlage/"
       >
         {' '}
         hauseigene Photovoltaik-Anlage{' '}
@@ -345,9 +345,9 @@ const ContentSection = () => (
       erhaltene Barockschloss Deutschlands erleben möchtest, findest Du weitere
       Informationen bei der{' '}
       <a
-        rel='noopener noreferrer'
-        target='_blank'
-        href='https://www.schloss-ludwigsburg.de/'
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://www.schloss-ludwigsburg.de/"
       >
         Schlossverwaltung Ludwigsburg
       </a>
@@ -363,14 +363,14 @@ const ContentSection = () => (
       doch technisch gesehen kann der Tesla ohne menschliche Lenkbefehle
       auskommen. Dabei zeigt er auf dem Display an, woran sich das Auto
       orientiert. Die Elemente, wie z.B. die Straßenmarkierung ist dann blau
-      eingefärbt. Ein Spurwechsel ist keine Herausforderung. Wenn die
+      eingefärbt. Ein Spurwechsel ist keine Herausforderung. Wenn die
       Straßenmarkierung bei einer Baustelle fehlt, hängt sich der Tesla einfach
       an das vorausfahrende Auto. Technisch ist dieses Feature schon sehr
       ausgereift, was dieses{' '}
       <a
-        rel='noopener noreferrer'
-        target='_blank'
-        href='https://vimeo.com/192179726'
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://vimeo.com/192179726"
       >
         Video
       </a>{' '}
@@ -397,9 +397,9 @@ const ContentSection = () => (
 )
 
 const FeatureSection = () => (
-  <div className='mx-auto '>
-    <div className='gap-x-4 gap-y-8 lg:grid lg:grid-cols-2 '>
-      <div className='mx-auto prose lg:prose-md'>
+  <div className="mx-auto">
+    <div className="gap-x-4 gap-y-8 lg:grid lg:grid-cols-2">
+      <div className="mx-auto prose lg:prose-md">
         <h2>Verknüpfung Tesla App</h2>
         <p>
           Wir richten die Tesla-App auf Deinem Handy ein und erklären Dir die{' '}
@@ -410,7 +410,7 @@ const FeatureSection = () => (
         </p>
       </div>
 
-      <div className='mx-auto prose lg:prose-md'>
+      <div className="mx-auto prose lg:prose-md">
         <h2>Bester Service </h2>
         <p>
           Wir haben Zeit für Dich und Deine Fragen. Bei uns ist eine
@@ -420,16 +420,16 @@ const FeatureSection = () => (
         </p>
       </div>
 
-      <div className='mx-auto prose lg:prose-md'>
-        <h2 id='kundenzufriedenheit'>Zufriedene Kunden</h2>
+      <div className="mx-auto prose lg:prose-md">
+        <h2 id="kundenzufriedenheit">Zufriedene Kunden</h2>
 
-        <p className=''>
+        <p className="">
           Kunden, die bei unserem Tesla-Verleih ein Elektroauto gemietet haben,
           waren <b> sehr zufrieden</b>. Sieh selbst und lies unbedingt die{' '}
           <a
-            href='https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {' '}
             Rezensionen
@@ -443,12 +443,12 @@ const FeatureSection = () => (
   </div>
 )
 
-function IndexPage () {
+function IndexPage() {
   return (
     <div>
       <SEO
-        title='Tesla mieten in Stuttgart | Elektromobilität | Autovermietung'
-        description='Tesla Model X | Tesla Model 3 | Elektroauto Tesla mieten in Stuttgarter Autovermietung ✓ Elektromobilität ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450'
+        title="Tesla mieten in Stuttgart | Elektromobilität | Autovermietung"
+        description="Tesla Model X | Tesla Model 3 | Elektroauto Tesla mieten in Stuttgarter Autovermietung ✓ Elektromobilität ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450"
       />
       <Head
         script={[
@@ -627,7 +627,7 @@ function IndexPage () {
         ]}
       />
       <Head>
-        <link rel='canonical' href='https://mobility.itana.de/' />
+        <link rel="canonical" href="https://mobility.itana.de/" />
       </Head>
 
       <div>

@@ -69,7 +69,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
         ]}
       />
       <Breadcrum />
-      <div className="max-w-7xl prose sm:px-6 lg:px-8 lg:prose-md">
+      <div className="max-w-7xl sm:px-6 lg:px-8 prose lg:prose-md">
         {/* <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-04-17'>August 03, 2020</time>
         </p> */}
@@ -165,7 +165,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <b>mieten Unternehmen</b> ihre <b>Firmenautos</b>. So kannst Du Deinen
           <b>Bedarf</b> an Fahrzeugen Deiner <b>Auftragslage anpassen</b>.
         </p>
-        <ul className="list-inside ">
+        <ul className="list-inside">
           <li>monatlicher Fixpreis</li>
           <li>alle Kosten sind inklusive</li>
           <li>flexibel kündbar</li>
@@ -180,7 +180,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           dazukommen. Daher prüfe, wer weitere Kosten übernimmt, bevor Du einen
           Vertrag schließt:
         </p>
-        <ul className="list-inside ">
+        <ul className="list-inside">
           <li>Haftpflichtversicherung </li>
           <li>Vollkaskoversicherung </li>
           <li>KFZ-Steuer </li>

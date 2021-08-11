@@ -10,7 +10,7 @@ const Bewertungen = () => (
       className="block mt-1 text-white no-underline md:inline-block md:mt-0"
       rel="noopener noreferrer"
     >
-      {/*    <p className="flex justify-center mx-auto flex-no-wrap ">
+      {/*    <p className="flex justify-center mx-auto flex-no-wrap">
         <YellowStar />
         <YellowStar />
         <YellowStar />
@@ -18,7 +18,7 @@ const Bewertungen = () => (
         <YellowStar />
       </p> */}
       <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
-        <b>32</b> Bewertungen <b>4,9/5</b> Stand 05/2021
+        <b>31</b> Bewertungen <b>4,9/5</b> Stand 08/2021
       </p>
     </a>
   </div>
@@ -31,7 +31,7 @@ const Dropdown = () => {
       <div>
         <button
           type="button"
-          className="inline-flex justify-center py-2 px-4 w-full text-sm font-medium text-gray-700 bg-white rounded-md border border-gray-300 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-red-500"
+          className="inline-flex justify-center py-2 px-4 w-full text-sm font-medium text-gray-700 bg-white rounded-md border border-gray-300 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-100 focus:outline-none"
           id="options-menu"
           aria-haspopup="true"
           aria-expanded="true"
@@ -84,25 +84,25 @@ const Dropdown = () => {
             aria-labelledby="options-menu"
           >
             <Link href="/tesla/model-3srmieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model 3 SR+
               </a>
             </Link>
 
             <Link href="/tesla/model-3-mieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model 3 Performance
               </a>
             </Link>
 
             <Link href="/tesla/model-x-mieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model X
               </a>
             </Link>
 
             <Link href="/tesla-langzeitmiete/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Langzeitmiete
               </a>
             </Link>
@@ -125,7 +125,7 @@ export default function Nav() {
               {/* <!-- Mobile menu button--> */}
               <button
                 type="button"
-                className="inline-flex justify-center items-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="inline-flex justify-center items-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:ring-2 focus:ring-inset focus:ring-white focus:outline-none"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 data-cy="MobileMenuButton"
@@ -176,7 +176,7 @@ export default function Nav() {
                 </svg>
               </button>
             </div>
-            <div className="flex flex-1 justify-center items-center sm:items-stretch sm:justify-start">
+            <div className="flex flex-1 justify-center items-center sm:justify-start sm:items-stretch">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <a className="flex flex-shrink-0 items-center">
@@ -202,49 +202,49 @@ export default function Nav() {
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
                   <Link href="/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla mieten
                     </a>
                   </Link>
                   <Dropdown />
                   {/*  <Link href="/tesla/model-3srmieten/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model 3 SR+
                     </a>
                   </Link>
 
                   <Link href="/tesla/model-3-mieten/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model 3 Performance
                     </a>
                   </Link>
 
                   <Link href="/tesla/model-x-mieten/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model X
                     </a>
                   </Link>
 
                   <Link href="/tesla-langzeitmiete/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Langzeitmiete
                     </a>
                   </Link> */}
 
                   <Link href="/blog/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Blog
                     </a>
                   </Link>
 
                   <Link href="/faq/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       FAQ
                     </a>
                   </Link>
 
                   <Link href="/kontakt/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Kontakt
                     </a>
                   </Link>
@@ -273,56 +273,56 @@ export default function Nav() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
               <Link href="/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla mieten
                 </a>
               </Link>
 
               <Link href="/tesla/model-3srmieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model 3 SR+
                 </a>
               </Link>
 
               <Link href="/tesla/model-3-mieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model 3 Performance
                 </a>
               </Link>
 
               <Link href="/tesla/model-x-mieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model X
                 </a>
               </Link>
 
               <Link href="/tesla-langzeitmiete/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Langzeitmiete
                 </a>
               </Link>
 
               <Link href="/blog/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Blog
                 </a>
               </Link>
 
               <Link href="/faq/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   FAQ
                 </a>
               </Link>
 
               <Link href="/kontakt/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Kontakt
                 </a>
               </Link>
 
               <a
                 href="tel:+4971149066450"
-                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:bg-gray-700 hover:text-white"
+                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
               >
                 +49 711 49 06 64 50
               </a>

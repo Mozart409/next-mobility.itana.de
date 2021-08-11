@@ -5,7 +5,7 @@ import CTAFahrbereit from './CTAFahrbereit'
 
 export default function FahrzeugKacheln() {
   return (
-    <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:pb-28 lg:px-8">
+    <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-5 mx-auto max-w-lg lg:grid-cols-2 lg:max-w-none">
           <Link className="Kachel" href="/tesla/model-3srmieten/">
@@ -29,7 +29,7 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
           <Link className="Kachel" href="/tesla/model-3-mieten/">
-            <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl ">
+            <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/cards/tesla-3-sr.png"
@@ -41,7 +41,7 @@ export default function FahrzeugKacheln() {
 
                 <h2
                   data-cy="KachelModel3Performance"
-                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red "
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
                   Tesla Model 3 Performance mieten ab 229,00 €
                 </h2>

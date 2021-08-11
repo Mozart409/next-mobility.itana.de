@@ -34,7 +34,7 @@ function MobilityPage({ data }) {
           </figcaption>
         </figure>
         <div className="flex flex-wrap text-gray-900">
-          <div className="p-2 w-1/1 md:w-1/3">
+          <div className="p-2 md:w-1/3 w-1/1">
             <p>
               Elektromobilität ist, wie das Team der Itana GmbH sie versteht,
               auf Umweltfreundlichkeit und Nachhaltigkeit ausgelegt und wird in
@@ -52,7 +52,7 @@ function MobilityPage({ data }) {
               Fahrer — also kein Grund zur Reichweitenangst.
             </p>
           </div>
-          <div className="w-1/2 p-2 md:w-1/3">
+          <div className="p-2 w-1/2 md:w-1/3">
             <p>
               Um die aktuelle, tatsächliche Reichweite richtig einschätzen zu
               können (z. B. Tesla Model X 100D) unterstützen unterschiedliche
@@ -64,7 +64,7 @@ function MobilityPage({ data }) {
               wird Ihnen der Energieverbrauch im Streckendiagramm angezeigt.
             </p>
           </div>
-          <div className="w-1/2 p-2 md:w-1/3">
+          <div className="p-2 w-1/2 md:w-1/3">
             <p>
               Tesla-Fahrzeuge <b>helfen</b> Ihnen auch{' '}
               <b>bei der Suche der geeigneten Ladesäulen</b> und <b>zeigen</b>{' '}
@@ -95,7 +95,7 @@ function MobilityPage({ data }) {
       </section>
       <section>
         <div className="flex flex-wrap">
-          <div className="p-2 w-1/1 md:w-1/2">
+          <div className="p-2 md:w-1/2 w-1/1">
             <p>
               Die{' '}
               <a
@@ -119,7 +119,7 @@ function MobilityPage({ data }) {
             </p>
           </div>
 
-          <div className="p-2 w-1/1 md:w-1/2">
+          <div className="p-2 md:w-1/2 w-1/1">
             <p>
               Wenn also jemand bereits auf 3B auflädt und Sie auf 3A laden,
               erhalten Sie möglicherweise eine geringe Leistung. Doch ist der

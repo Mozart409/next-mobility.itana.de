@@ -39,7 +39,7 @@ function photovoltaikanlagePage({ data }) {
         ]}
       />
       <Breadcrum />
-      <div className="max-w-7xl prose sm:px-6 lg:px-8 lg:prose-md">
+      <div className="max-w-7xl sm:px-6 lg:px-8 prose lg:prose-md">
         {/*  <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-06-12'>Juni 12, 2020</time>
         </p> */}

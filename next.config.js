@@ -2,9 +2,7 @@ module.exports = {
   env: {
     API_KEY: process.env.API_KEY
   },
-  future: {
-    webpack5: true
-  },
+  webpack5: true,
   trailingSlash: true,
   async headers() {
     return [

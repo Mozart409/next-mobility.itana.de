@@ -30,7 +30,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </h1>
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
-            <div className="relative ">
+            <div className="relative">
               <div>
                 <Link
                   href="#tesla-performance"

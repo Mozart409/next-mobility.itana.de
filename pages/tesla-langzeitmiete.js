@@ -1,15 +1,15 @@
-import { helmetJsonLdProp } from 'react-schemaorg'
-import Breadcrum from '@/ui/Breadcrum'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import { helmetJsonLdProp } from "react-schemaorg";
+import Breadcrum from "@/ui/Breadcrum";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import SEO from "@/ui/seo";
+import CTA from "@/ui/CTA";
 import {
   getT3SRDataByLowestPrice,
   getTXDataByLowestPrice,
-  getT3PDataByLowestPrice
-} from 'lib/api'
+  getT3PDataByLowestPrice,
+} from "lib/api";
 
 const InfoBanner = () => (
   <div className="bg-gray-50 border-l-4 border-itana-red">
@@ -33,7 +33,7 @@ const InfoBanner = () => (
       <p className="ml-2">Unsere Preise beinhalten keine versteckten Kosten</p>
     </div>
   </div>
-)
+);
 
 export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
@@ -51,21 +51,21 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <Head
         script={[
           helmetJsonLdProp({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            url: 'https://mobility.itana.de/tesla-langzeitmiete',
-            inLanguage: 'de-DE',
-            image: 'https://mobility.itana.de/news/tesla-model-x.jpg',
-            isFamilyFriendly: 'true',
-            copyrightYear: '2020',
-            headline: 'Tesla Langzeitmiete',
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            url: "https://mobility.itana.de/tesla-langzeitmiete",
+            inLanguage: "de-DE",
+            image: "https://mobility.itana.de/news/tesla-model-x.jpg",
+            isFamilyFriendly: "true",
+            copyrightYear: "2021",
+            headline: "Tesla Langzeitmiete",
             articleBody:
-              'Vorteile der Tesla Langzeitmiete gegenüber dem Leasing - viel mehr Flexibilität - kürzere Vertragsbindung - kurzfristigere Verfügbarkeit - fairer Preis und gute Leistung. Das klassische Leasing fordert einen Mietzeitraum von mindestens zwei Jahren! Bei der Itana GmbH ist der Mietzeitraum flexibel. Kontaktiere uns jetzt, gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse ein. Vorab kannst Du in unseren FAQs stöbern.',
+              "Vorteile der Tesla Langzeitmiete gegenüber dem Leasing - viel mehr Flexibilität - kürzere Vertragsbindung - kurzfristigere Verfügbarkeit - fairer Preis und gute Leistung. Das klassische Leasing fordert einen Mietzeitraum von mindestens zwei Jahren! Bei der Itana GmbH ist der Mietzeitraum flexibel. Kontaktiere uns jetzt, gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse ein. Vorab kannst Du in unseren FAQs stöbern.",
             contentLocation: {
-              '@type': 'Place',
-              name: 'Maulbronner Weg 33, 71706 Markgröningen, Germany'
-            }
-          })
+              "@type": "Place",
+              name: "Maulbronner Weg 33, 71706 Markgröningen, Germany",
+            },
+          }),
         ]}
       />
       <Breadcrum />
@@ -116,7 +116,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             <h2>Empfehlungen</h2>
             <InfoBanner />
             <p>
-              Langzeitmiete für das Model 3 Standard Range Plus :<b>31,63 € </b>{' '}
+              Langzeitmiete für das Model 3 Standard Range Plus :<b>31,63 € </b>{" "}
               / Tag bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
@@ -193,7 +193,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 /* export async function getStaticProps(context) {

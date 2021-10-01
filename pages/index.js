@@ -172,9 +172,10 @@ const ContentSection = () => (
       finden, werden die Stationen angezeigt. Durch Klick auf die Station sieht
       man in den Details die Ladeleistung von 150 (V2) oder 250 Kilowatt (V3).
       Kann nur 130 Kilowatt Strom entnommen werden, wurde die Station noch nicht
-      aktualisiert. Es gab es ein Software-Update, das die Funktion "On-Route
-      Battery Warmup" eingeführt hat, das wärmt die Batterie während der Fahrt
-      zum Charger auf Lade-Temperatur auf. Das spart 25 % der Ladezeit ein.
+      aktualisiert. Es gab es ein Software-Update, das die Funktion
+      &quot;On-Route Battery Warmup&quot; eingeführt hat, das wärmt die Batterie
+      während der Fahrt zum Charger auf Lade-Temperatur auf. Das spart 25 % der
+      Ladezeit ein.
     </p>
     <h4 className="mt-2 text-lg">V2</h4>
     <ul className="list-disc list-inside">
@@ -214,7 +215,7 @@ const ContentSection = () => (
     <p>
       Weil es richtig Spaß macht, seinen Körper mit einer atemberaubenden
       Beschleunigung in den Sitz drücken zu lassen. Teile Deinem Beifahrer
-      vorher mit, den Kopf gerade zu halten! Tesla's Leitspruch lautet: „To
+      vorher mit, den Kopf gerade zu halten! Tesla&apos;s Leitspruch lautet: „To
       create the most compelling car company of the 21st century by driving the
       world’s transition to electric vehicels”. Das ist purer Fahrspaß mit
       atemberaubendem Fahrgefühl. Leise ist der Stromer im Gegensatz zum

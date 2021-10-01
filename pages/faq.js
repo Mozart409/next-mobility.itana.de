@@ -29,9 +29,9 @@ function Collapse() {
               </AccordionButton>
               <AccordionPanel>
                 <p className="mb-4 text-base leading-6 text-gray-500">
-                  Klicken Sie auf einen roten Button „Buchungsanfrage“ oder "Zur
-                  Buchung". Oder klicken Sie direkt beim Auto auf den Button
-                  „Jetzt unverbindlich anfragen“.{' '}
+                  Klicken Sie auf einen roten Button „Buchungsanfrage“ oder
+                  &quot;Zur Buchung&quot;. Oder klicken Sie direkt beim Auto auf
+                  den Button „Jetzt unverbindlich anfragen“.{' '}
                 </p>
 
                 <a href="https://reservation.itana.de/">

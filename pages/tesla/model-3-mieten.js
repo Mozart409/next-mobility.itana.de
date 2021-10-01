@@ -127,10 +127,11 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           als bei einem Benziner.
           <br />
           Der Antriebsstrang liegt kompakt zwischen den Rädern und verbindet das
-          Getriebe, den Elektromotor und den Wechselrichter. Die Bezeichnung "D"
-          bedeutet Dualmotor und bezeichnet, dass zwei Motoren an den jeweiligen
-          Fahrzeugachseln liegen. Je nachdem wie die Elektrik verbaut wird, kann
-          mehr oder weniger Leistung aus dem Motor abgerufen werden.
+          Getriebe, den Elektromotor und den Wechselrichter. Die Bezeichnung
+          &quot;D&quot; bedeutet Dualmotor und bezeichnet, dass zwei Motoren an
+          den jeweiligen Fahrzeugachseln liegen. Je nachdem wie die Elektrik
+          verbaut wird, kann mehr oder weniger Leistung aus dem Motor abgerufen
+          werden.
         </p>
 
         <h2>Rückwärtsfahren </h2>

@@ -113,17 +113,17 @@ function photovoltaikanlagePage({ data }) {
           <br />
           Richtig nachhaltig wird das erst, wenn nur so viel Strom in die
           Tesla-Batterie geladen wird, wie Strom zu Verfügung steht. Unsere
-          "Open WB Wallbox" managed das sehr gut und trägt noch zur
+          &quot;Open WB Wallbox&quot; managed das sehr gut und trägt noch zur
           Ladesicherheit bei. Somit verbrauchen wir fast keine unnötigen
           fossilen Brennstoffe.
         </p>
         <h3>Steuerung der Wallbox</h3>
         <p>
           In der Konfiguration der Wallbox gibt man die Präferenz des Lademodi
-          an. Ist die Präferenz auf "PV" gesetzt, wird der Tesla nur mit so viel
-          Strom geladen, wie Sonnenenergie vorhanden ist. In diesem Beispiel
-          kann man noch wählen, ob man das Elektroauto oder den Speicher
-          bevorzugt laden möchte.
+          an. Ist die Präferenz auf &quot;PV&quot; gesetzt, wird der Tesla nur
+          mit so viel Strom geladen, wie Sonnenenergie vorhanden ist. In diesem
+          Beispiel kann man noch wählen, ob man das Elektroauto oder den
+          Speicher bevorzugt laden möchte.
         </p>
 
         <p>

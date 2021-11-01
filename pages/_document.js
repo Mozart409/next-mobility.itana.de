@@ -22,8 +22,7 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          {/* // eslint-disable-next-line @next/next/no-css-tags */}
-          <link rel="stylesheet" href="/fonts/inter.css" />
+
           <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index,follow" />
           <meta name="HandheldFriendly" content="true" />

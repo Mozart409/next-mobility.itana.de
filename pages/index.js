@@ -113,7 +113,7 @@ const ContentSection = () => (
       Belegung in Echtzeit.
     </p>
     <br />
-    <Link href="/tesla-supercharger-leonberg/">
+    <Link passHref href="/tesla-supercharger-leonberg/">
       <a rel="noopener noreferrer"> Tipps zum Aufladen findest Du hier. </a>
     </Link>
     Die
@@ -311,7 +311,7 @@ const ContentSection = () => (
       <br />
       <br />
       Wir als Verleiher bevorzugen erneuerbare Energien und haben eine
-      <Link href="/photovoltaikanlage/">
+      <Link passHref href="/photovoltaikanlage/">
         <a rel="noopener noreferrer"> hauseigene Photovoltaik-Anlage </a>
       </Link>
       mit der wir die E-Autos emissionsfrei laden. Bei Abholung ist der Akku

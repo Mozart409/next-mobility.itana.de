@@ -17,7 +17,7 @@ const CTAFahrbereit = () => (
             </a>
           </div>
           <div className="inline-flex ml-3">
-            <Link href="/tesla/model-3-mieten/">
+            <Link passHref href="/tesla/model-3-mieten/">
               <a className="inline-flex justify-center items-center py-3 px-5 text-base font-semibold leading-6 text-gray-700 bg-red-100 rounded-md border border-transparent transition duration-150 ease-in-out hover:text-red-600 hover:bg-red-50 focus:border-indigo-300 focus:outline-none Kachel focus:shadow-outline">
                 Mehr Informationen
               </a>

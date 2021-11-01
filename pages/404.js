@@ -10,7 +10,7 @@ function NotFoundPage() {
         <link rel="canonical" href="https://mobility.itana.de/404/" />
       </Head>
       <div className="mx-auto prose lg:prose-md">
-        <Link href="/">
+        <Link passHref href="/">
           <div>
             <h2 className="inline-block p-3 my-8 mt-4 mb-2 text-2xl font-bold bg-yellow-400">
               Diese Seite konnte nicht gefunden werden.

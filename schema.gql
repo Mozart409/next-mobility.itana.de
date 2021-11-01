@@ -28,13 +28,25 @@ type TeslaModel3SRPlus {
   PreisproTag: String
 }
 
+type TeslaModel3LongRange {
+  Typ: String
+  Art: String
+  Tarif: String
+  Beschreibung: String
+  Inklusivkilometer: String
+  Preis: String
+  PreisproTag: String
+}
+
 type Query {
   TeslaModelX: [TeslaModelX]
   TeslaModel3Performance: [TeslaModel3Performance]
   TeslaModel3SRPlus: [TeslaModel3SRPlus]
+  TeslaModel3LongRange: [TeslaModel3LongRange]
   TeslaModelXbyArt(Art: String): [TeslaModelX]
   TeslaModel3PerformancebyArt(Art: String): [TeslaModel3Performance]
   TeslaModel3SRPlusbyArt(Art: String): [TeslaModel3SRPlus]
+  TeslaModel3LongRangebyArt(Art: String): [TeslaModel3LongRange]
   TeslaModelXbyLowestPrice(Art: String, Beschreibung: String): [TeslaModelX]
   TeslaModel3PerformancebyLowestPrice(
     Art: String
@@ -44,4 +56,8 @@ type Query {
     Art: String
     Beschreibung: String
   ): [TeslaModel3SRPlus]
+  TeslaModel3LongRangebyLowestPrice(
+    Art: String
+    Beschreibung: String
+  ): [TeslaModel3LongRange]
 }

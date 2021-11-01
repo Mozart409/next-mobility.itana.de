@@ -98,7 +98,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
               <b>mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
               Mietzeitraum flexibel.
-              <Link className="font-semibold text-itana-red" href="/kontakt/">
+              <Link
+                passHref
+                className="font-semibold text-itana-red"
+                href="/kontakt/"
+              >
                 Kontaktiere uns jetzt,
               </Link>
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
@@ -106,7 +110,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             </p>
             <p>
               Vorab kannst Du in unseren
-              <Link className="font-semibold text-itana-red" href="/faq/">
+              <Link
+                passHref
+                className="font-semibold text-itana-red"
+                href="/faq/"
+              >
                 FAQs
               </Link>
               stöbern.

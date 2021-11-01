@@ -15,18 +15,18 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
     <div>
       <SEO
-        title="Tesla Model 3 SR+ mieten in Stuttgart | 31,63 € / Tag für 30 Tage"
+        title="Tesla Model 3 LR mieten in Stuttgart | 49,08 € / Tag für 30 Tage"
         description="Bestes Preis-Leistungs-Verhältnis ✓ E-Auto leihen | agiler Sportwagen ✓ Stuttgarter Autovermietung ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>
         <link
           rel="canonical"
-          href="https://mobility.itana.de/tesla/model-3srmieten/"
+          href="https://mobility.itana.de/tesla/model-3-long-range-mieten/"
         />
       </Head>
       <section>
         <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
-          Tesla Model 3 SR+ mieten - Leichten und agilen Sportwagen fahren
+          Tesla Model 3 LR mieten - Leichten und agilen Sportwagen fahren
         </h1>
 
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
@@ -35,13 +35,13 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
               <div>
                 <Link
                   href="#tesla-standard-range-plus"
-                  title="Tesla Model 3 Standard Range Plus"
-                  aria-label="Tesla Model 3 Standard Range Plus"
+                  title="Tesla Model 3 Long Range"
+                  aria-label="Tesla Model 3 Long Range"
                 >
                   <Image
                     src="/images/cards/tesla-3-sr.png"
                     className="mx-auto mt-4 h-96 rounded"
-                    alt="Tesla Model 3 Standard Range Plus mieten"
+                    alt="Tesla Model 3 Long Range mieten"
                     height="600"
                     width="1000"
                   />
@@ -53,18 +53,18 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
       <section>
         <div>
-          <h2>Wie viel kostet es, einen Tesla Model 3 SR+ zu mieten?</h2>
+          <h2>Wie viel kostet es, einen Tesla Model 3 LR zu mieten?</h2>
         </div>
       </section>
       <section>
         <a
-          href="#tesla-standard-range-plus"
+          href="#tesla-long-range"
           role="button"
-          id="tesla-standard-range-plus"
-          label="Tesla Model 3 Stanard Range Plus"
-          data-cy="RentTesla3SR"
+          id="tesla-long-range"
+          label="Tesla Model 3 Long Range"
+          data-cy="RentTesla3LR"
         >
-          <h2>Tesla Model 3 Standard Range Plus</h2>
+          <h2>Tesla Model 3 Long Range</h2>
         </a>
 
         <Preisliste
@@ -76,30 +76,30 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           data_cy="TeslaModel3StandardRangePlusMieten"
           fillBG="true"
           fullWidth="true"
-          title="Tesla Model 3 Standard Range Plus mieten"
+          title="Tesla Model 3 Long Range mieten"
           link="https://reservation.itana.de/#tabs-fzggruppe-4"
         />
       </section>
       <TeslaQuickLinks />
-      <div className="my-24 mx-auto">
+      {/* <div className="my-24 mx-auto">
         <div className="mx-auto prose lg:prose-md">
           <h2>
             Was sind die Unterschiede zwischen dem Model 3 Performance und dem
-            Model 3 SR+?
+            Model 3 LR?
           </h2>
           <p>
             Auf den ersten Blick kann man die Modelle durch die Felgen
-            unterscheiden. Beim SR+ sind die Räder mit den Felgen mehr verdeckt
+            unterscheiden. Beim LR sind die Räder mit den Felgen mehr verdeckt
             und dunkler.
             <br />
-            Der Standard Range Plus braucht laut Herstellerangaben von 0 auf 100
-            km/h 5,6 Sekunden, im Vergleich dazu braucht der Performance 3,4
-            Sekunden. <br />
-            Wir als Autovermietung in Stuttgart empfehlen Dir, den SR+ länger zu
+            Der Long Range braucht laut Herstellerangaben von 0 auf 100 km/h 5,6
+            Sekunden, im Vergleich dazu braucht der Performance 3,4 Sekunden.{' '}
+            <br />
+            Wir als Autovermietung in Stuttgart empfehlen Dir, den LR länger zu
             mieten, dadurch ist der Preis geringer und Du kannst alles in Ruhe
-            ausprobieren. Der Fahrspaß wird Dir nicht entgehen, der SR+ hat
-            nicht so viel Leistung wie der Performance, ist aber leichter und
-            agiler. Wir sind auf Deine Meinung gespannt.
+            ausprobieren. Der Fahrspaß wird Dir nicht entgehen, der LR hat nicht
+            so viel Leistung wie der Performance, ist aber leichter und agiler.
+            Wir sind auf Deine Meinung gespannt.
           </p>
         </div>
       </div>
@@ -113,7 +113,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           mehr Kilometer als vereinbart. Du kannst uns anrufen oder über die
           Website einen Buchungszeitraum aussuchen und verbindlich buchen.
         </p>
-      </div>
+      </div> */}
     </div>
   )
 }

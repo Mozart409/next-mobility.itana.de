@@ -18,7 +18,7 @@ const Bewertungen = () => (
         <YellowStar />
       </p> */}
       <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
-        <b>31</b> Bewertungen <b>4,9/5</b> Stand 08/2021
+        <b>31</b> Bewertungen <b>4,9/5</b> Stand 11/2021
       </p>
     </a>
   </div>
@@ -83,25 +83,31 @@ const Dropdown = () => {
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
-            <Link href="/tesla/model-3srmieten/">
+            <Link passHref href="/tesla/model-3srmieten/">
               <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model 3 SR+
               </a>
             </Link>
 
-            <Link href="/tesla/model-3-mieten/">
+            <Link passHref href="/tesla/model-3-long-range-mieten/">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Tesla Model 3 Long Range
+              </a>
+            </Link>
+
+            <Link passHref href="/tesla/model-3-mieten/">
               <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model 3 Performance
               </a>
             </Link>
 
-            <Link href="/tesla/model-x-mieten/">
+            <Link passHref href="/tesla/model-x-mieten/">
               <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model X
               </a>
             </Link>
 
-            <Link href="/tesla-langzeitmiete/">
+            <Link passHref href="/tesla-langzeitmiete/">
               <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Langzeitmiete
               </a>
@@ -178,7 +184,7 @@ export default function Nav() {
             </div>
             <div className="flex flex-1 justify-center items-center sm:justify-start sm:items-stretch">
               <div className="flex flex-shrink-0 items-center">
-                <Link href="/">
+                <Link passHref href="/">
                   <a className="flex flex-shrink-0 items-center">
                     <img
                       className="block w-auto h-10 lg:hidden"
@@ -201,49 +207,49 @@ export default function Nav() {
               <div className="hidden sm:block sm:ml-6">
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-                  <Link href="/">
+                  <Link passHref href="/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla mieten
                     </a>
                   </Link>
                   <Dropdown />
-                  {/*  <Link href="/tesla/model-3srmieten/">
+                  {/*  <Link passHref href="/tesla/model-3srmieten/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model 3 SR+
                     </a>
                   </Link>
 
-                  <Link href="/tesla/model-3-mieten/">
+                  <Link passHref href="/tesla/model-3-mieten/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model 3 Performance
                     </a>
                   </Link>
 
-                  <Link href="/tesla/model-x-mieten/">
+                  <Link passHref href="/tesla/model-x-mieten/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model X
                     </a>
                   </Link>
 
-                  <Link href="/tesla-langzeitmiete/">
+                  <Link passHref href="/tesla-langzeitmiete/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Langzeitmiete
                     </a>
                   </Link> */}
 
-                  <Link href="/blog/">
+                  <Link passHref href="/blog/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Blog
                     </a>
                   </Link>
 
-                  <Link href="/faq/">
+                  <Link passHref href="/faq/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       FAQ
                     </a>
                   </Link>
 
-                  <Link href="/kontakt/">
+                  <Link passHref href="/kontakt/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Kontakt
                     </a>
@@ -272,49 +278,49 @@ export default function Nav() {
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-              <Link href="/">
+              <Link passHref href="/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla mieten
                 </a>
               </Link>
 
-              <Link href="/tesla/model-3srmieten/">
+              <Link passHref href="/tesla/model-3srmieten/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model 3 SR+
                 </a>
               </Link>
 
-              <Link href="/tesla/model-3-mieten/">
+              <Link passHref href="/tesla/model-3-mieten/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model 3 Performance
                 </a>
               </Link>
 
-              <Link href="/tesla/model-x-mieten/">
+              <Link passHref href="/tesla/model-x-mieten/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model X
                 </a>
               </Link>
 
-              <Link href="/tesla-langzeitmiete/">
+              <Link passHref href="/tesla-langzeitmiete/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Langzeitmiete
                 </a>
               </Link>
 
-              <Link href="/blog/">
+              <Link passHref href="/blog/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Blog
                 </a>
               </Link>
 
-              <Link href="/faq/">
+              <Link passHref href="/faq/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   FAQ
                 </a>
               </Link>
 
-              <Link href="/kontakt/">
+              <Link passHref href="/kontakt/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Kontakt
                 </a>

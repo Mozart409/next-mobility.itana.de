@@ -8,7 +8,7 @@ export default function FahrzeugKacheln() {
     <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-5 mx-auto max-w-lg lg:grid-cols-2 lg:max-w-none">
-          <Link className="Kachel" href="/tesla/model-3srmieten/">
+          <Link passHref className="Kachel" href="/tesla/model-3srmieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -23,12 +23,38 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3SR"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 SR+ mieten ab 149,00 €
+                  Tesla Model 3 SR+ mieten ab 130,90 €
                 </h2>
               </div>
             </div>
           </Link>
-          <Link className="Kachel" href="/tesla/model-3-mieten/">
+
+          <Link
+            passHref
+            className="Kachel"
+            href="/tesla/model-3-long-range-mieten/"
+          >
+            <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
+              <div className="flex-shrink-0">
+                <Image
+                  src="/images/cards/tesla-3-lr.jpg"
+                  height="300"
+                  width="600"
+                  className="object-cover w-full h-72"
+                  alt="Tesla Model 3 Standard Range Plus"
+                />
+
+                <h2
+                  data-cy="KachelModel3SR"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
+                >
+                  Tesla Model 3 LR mieten ab 178,50 €
+                </h2>
+              </div>
+            </div>
+          </Link>
+
+          <Link passHref className="Kachel" href="/tesla/model-3-mieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -43,12 +69,12 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3Performance"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 Performance mieten ab 229,00 €
+                  Tesla Model 3 Performance mieten ab 202,30 €
                 </h2>
               </div>
             </div>
           </Link>
-          <Link className="Kachel" href="/tesla/model-x-mieten/">
+          <Link passHref className="Kachel" href="/tesla/model-x-mieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -63,13 +89,13 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModelX"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model X mieten ab 369,00€
+                  Tesla Model X mieten ab 297,50 €
                 </h2>
               </div>
             </div>
           </Link>
 
-          <Link className="Kachel" href="/tesla-langzeitmiete/">
+          <Link passHref className="Kachel" href="/tesla-langzeitmiete/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -90,7 +116,7 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
           <CTAFahrbereit />
-          <Link className="Kachel" href="/faq/">
+          <Link passHref className="Kachel" href="/faq/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -108,7 +134,7 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
 
-          <Link className="Kachel" href="/faq/">
+          <Link passHref className="Kachel" href="/faq/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image
@@ -125,7 +151,7 @@ export default function FahrzeugKacheln() {
               </div>
             </div>
           </Link>
-          <Link className="Kachel" href="/schulung-elektromobilitaet/">
+          <Link passHref className="Kachel" href="/schulung-elektromobilitaet/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
                 <Image

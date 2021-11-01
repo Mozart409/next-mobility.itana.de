@@ -23,11 +23,33 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3SR"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 SR+ mieten ab 149,00 €
+                  Tesla Model 3 SR+ mieten ab 130,90 €
                 </h2>
               </div>
             </div>
           </Link>
+
+          <Link className="Kachel" href="/tesla/model-3-long-range-mieten/">
+            <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
+              <div className="flex-shrink-0">
+                <Image
+                  src="/images/cards/tesla-3-lr.jpg"
+                  height="300"
+                  width="600"
+                  className="object-cover w-full h-72"
+                  alt="Tesla Model 3 Standard Range Plus"
+                />
+
+                <h2
+                  data-cy="KachelModel3SR"
+                  className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
+                >
+                  Tesla Model 3 LR mieten ab 178,50 €
+                </h2>
+              </div>
+            </div>
+          </Link>
+
           <Link className="Kachel" href="/tesla/model-3-mieten/">
             <div className="flex overflow-hidden flex-col rounded-lg shadow-2xl">
               <div className="flex-shrink-0">
@@ -43,7 +65,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3Performance"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 Performance mieten ab 229,00 €
+                  Tesla Model 3 Performance mieten ab 202,30 €
                 </h2>
               </div>
             </div>
@@ -63,7 +85,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModelX"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model X mieten ab 369,00€
+                  Tesla Model X mieten ab 297,50 €
                 </h2>
               </div>
             </div>

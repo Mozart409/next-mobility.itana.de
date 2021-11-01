@@ -18,7 +18,7 @@ const Bewertungen = () => (
         <YellowStar />
       </p> */}
       <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
-        <b>31</b> Bewertungen <b>4,9/5</b> Stand 08/2021
+        <b>31</b> Bewertungen <b>4,9/5</b> Stand 11/2021
       </p>
     </a>
   </div>
@@ -86,6 +86,12 @@ const Dropdown = () => {
             <Link href="/tesla/model-3srmieten/">
               <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
                 Tesla Model 3 SR+
+              </a>
+            </Link>
+
+            <Link href="/tesla/model-3-long-range-mieten/">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+                Tesla Model 3 Long Range
               </a>
             </Link>
 

@@ -2,7 +2,6 @@ module.exports = {
   env: {
     API_KEY: process.env.API_KEY
   },
-  webpack5: true,
   trailingSlash: true,
   async headers() {
     return [
@@ -20,8 +19,8 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: '/about',
-        destination: '/',
+        source: '/mobility/',
+        destination: '/tesla-supercharger-leonberg/',
         permanent: true
       }
     ]

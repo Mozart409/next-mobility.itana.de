@@ -17,5 +17,5 @@ jobs:
           wait-on: 'http://localhost:3000'
           wait-on-timeout: 10
           env:
-          # pass the Dashboard record key as an environment variable
-          API_KEY: ${{ secrets.API_KEY }}
+            # pass the Dashboard record key as an environment variable
+            API_KEY: ${{ secrets.API_KEY }}

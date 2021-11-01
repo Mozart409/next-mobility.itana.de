@@ -33,6 +33,9 @@
     "tailwindcss": "^2.2.19"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
   "prettier": {
     "tabWidth": 2,
     "useTabs": false,

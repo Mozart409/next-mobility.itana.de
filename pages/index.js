@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { helmetJsonLdProp } from 'react-schemaorg'
 import FahrzeugKacheln from '@/ui/FahrzeugKacheln'
 
@@ -112,14 +113,9 @@ const ContentSection = () => (
       Belegung in Echtzeit.
     </p>
     <br />
-    <a
-      rel="noopener noreferrer"
-      target="_blank"
-      href="https://mobility.itana.de/tesla-supercharger-leonberg/"
-    >
-      {' '}
-      Tipps zum Aufladen findest Du hier.{' '}
-    </a>
+    <Link href="/tesla-supercharger-leonberg/">
+      <a rel="noopener noreferrer"> Tipps zum Aufladen findest Du hier. </a>
+    </Link>
     Die
     <a
       rel="noopener noreferrer"
@@ -315,14 +311,9 @@ const ContentSection = () => (
       <br />
       <br />
       Wir als Verleiher bevorzugen erneuerbare Energien und haben eine
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://mobility.itana.de/photovoltaikanlage/"
-      >
-        {' '}
-        hauseigene Photovoltaik-Anlage{' '}
-      </a>
+      <Link href="/photovoltaikanlage/">
+        <a rel="noopener noreferrer"> hauseigene Photovoltaik-Anlage </a>
+      </Link>
       mit der wir die E-Autos emissionsfrei laden. Bei Abholung ist der Akku
       nachhaltig mit <b>Sonnenenergie</b> geladen.
     </p>

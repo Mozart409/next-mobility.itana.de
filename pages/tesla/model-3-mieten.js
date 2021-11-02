@@ -76,7 +76,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Performance mieten"
-          link="https://reservation.itana.de/#tabs-fzggruppe-4"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

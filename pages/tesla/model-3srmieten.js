@@ -77,7 +77,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Standard Range Plus mieten"
-          link="https://reservation.itana.de/#tabs-fzggruppe-4"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

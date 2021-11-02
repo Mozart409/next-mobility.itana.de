@@ -52,7 +52,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model X mieten"
-          link="https://reservation.itana.de/#tabs-fzggruppe-1"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />
@@ -77,7 +77,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </p>
         <h3>Wie schnell ist das Model X von null auf 100 km/h?</h3>
         <p>
-          Die bemerkenswerte Beschleunigung des Elektro-SUV von 2,8 Sekunden
+          Die bemerkenswerte Beschleunigung des Elektro-SUV von 4,9 Sekunden
           laut Tesla, l&auml;sst den Nachbarn an der Ampel stehen.
           Das&nbsp;elektrische Universal Sport Vehicle ist schneller als alle
           anderen auf der Stra&szlig;e.

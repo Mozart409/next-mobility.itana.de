@@ -34,7 +34,7 @@ function Collapse() {
                   den Button „Jetzt unverbindlich anfragen“.{' '}
                 </p>
 
-                <a href="https://reservation.itana.de/">
+                <a href="https://itana.rentware.io/">
                   <CTA title="Zur Buchung" fillBG="true" />
                 </a>
 

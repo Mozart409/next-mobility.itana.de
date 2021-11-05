@@ -39,7 +39,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
                   aria-label="Tesla Model 3 Long Range"
                 >
                   <Image
-                    src="/images/cards/tesla-3-sr.png"
+                    src="/images/cards/tesla-3-lr.jpg"
                     className="mx-auto mt-4 h-96 rounded"
                     alt="Tesla Model 3 Long Range mieten"
                     height="600"

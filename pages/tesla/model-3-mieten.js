@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-import Preisliste from '@/ui/Preisliste'
 import { getT3PDataByArt } from 'lib/api'
 
 function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
@@ -26,7 +25,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </Head>
       <section>
         <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
-          Tesla Model 3 mieten - Sportwagen genießen
+          Tesla Model 3 Performance mieten - Sportwagen genießen
         </h1>
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
@@ -34,6 +33,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
               <div>
                 <Link
                   href="#tesla-performance"
+                  passHref
                   aria-label="Tesla Model 3 Performance"
                 >
                   <Image
@@ -49,13 +49,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>
-            Wie viel kostet es, einen Tesla Model 3 als Sportwagen zu mieten?
-          </h2>
-        </div>
-      </section>
+
       <section>
         <a
           id="tesla-performance"
@@ -66,17 +60,12 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           <h2>Tesla Model 3 Performance</h2>
         </a>
 
-        <Preisliste
-          kurzzeit={Kurzzeit}
-          langzeit={Langzeit}
-          mehrkilometer={Mehrkilometer}
-        />
         <CTA
           data_cy="TeslaModel3PerformanceMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Performance mieten"
-          link="https://reservation.itana.de/#tabs-fzggruppe-4"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

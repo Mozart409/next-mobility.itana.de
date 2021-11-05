@@ -10,7 +10,7 @@ const CTAFahrbereit = () => (
         <div className="flex justify-center mt-8">
           <div className="inline-flex rounded-md shadow">
             <a
-              href="https://reservation.itana.de/"
+              href="https://itana.rentware.io/"
               className="inline-flex justify-center items-center py-3 px-5 text-base font-semibold leading-6 text-gray-900 rounded-md border border-transparent transition duration-150 ease-in-out hover:text-white hover:bg-red-500 focus:outline-none Kachel border-itana-red focus:shadow-outline"
             >
               Tesla mieten

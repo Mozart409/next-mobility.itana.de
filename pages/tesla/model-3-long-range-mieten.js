@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-import Preisliste from '@/ui/Preisliste'
 import { getT3SRPDataByArt } from 'lib/api'
 
 function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
@@ -34,6 +33,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
             <div className="relative">
               <div>
                 <Link
+                  passHref
                   href="#tesla-standard-range-plus"
                   title="Tesla Model 3 Long Range"
                   aria-label="Tesla Model 3 Long Range"
@@ -51,11 +51,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Wie viel kostet es, einen Tesla Model 3 LR zu mieten?</h2>
-        </div>
-      </section>
+
       <section>
         <a
           href="#tesla-long-range"
@@ -67,17 +63,12 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           <h2>Tesla Model 3 Long Range</h2>
         </a>
 
-        <Preisliste
-          kurzzeit={Kurzzeit}
-          langzeit={Langzeit}
-          mehrkilometer={Mehrkilometer}
-        />
         <CTA
           data_cy="TeslaModel3StandardRangePlusMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Long Range mieten"
-          link="https://reservation.itana.de/#tabs-fzggruppe-4"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

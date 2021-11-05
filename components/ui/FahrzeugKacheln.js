@@ -23,7 +23,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3SR"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 SR+ mieten ab 130,90 €
+                  Tesla Model 3 SR+ mieten ab 32,73 € / Tag
                 </h2>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3SR"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 LR mieten ab 178,50 €
+                  Tesla Model 3 Long Range mieten ab 44,63 € / Tag
                 </h2>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3Performance"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model 3 Performance mieten ab 202,30 €
+                  Tesla Model 3 Performance mieten ab 50,58 € / Tag
                 </h2>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModelX"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
-                  Tesla Model X mieten ab 297,50 €
+                  Tesla Model X mieten ab 74,38 € / Tag
                 </h2>
               </div>
             </div>

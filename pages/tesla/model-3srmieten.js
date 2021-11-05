@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-import Preisliste from '@/ui/Preisliste'
 import { getT3SRPDataByArt } from 'lib/api'
 
 function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
@@ -51,11 +50,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Wie viel kostet es, einen Tesla Model 3 SR+ zu mieten?</h2>
-        </div>
-      </section>
+
       <section>
         <a
           href="#tesla-standard-range-plus"
@@ -67,11 +62,6 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           <h2>Tesla Model 3 Standard Range Plus</h2>
         </a>
 
-        <Preisliste
-          kurzzeit={Kurzzeit}
-          langzeit={Langzeit}
-          mehrkilometer={Mehrkilometer}
-        />
         <CTA
           data_cy="TeslaModel3StandardRangePlusMieten"
           fillBG="true"

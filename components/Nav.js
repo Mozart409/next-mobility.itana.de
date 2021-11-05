@@ -207,11 +207,14 @@ export default function Nav() {
               <div className="hidden sm:block sm:ml-6">
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-                  <Link passHref href="/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
-                      Tesla mieten
-                    </a>
-                  </Link>
+
+                  <a
+                    href="https://itana.rentware.io/"
+                    className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
+                  >
+                    Tesla mieten
+                  </a>
+
                   <Dropdown />
                   {/*  <Link passHref href="/tesla/model-3srmieten/">
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
@@ -278,15 +281,23 @@ export default function Nav() {
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-              <Link passHref href="/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
-                  Tesla mieten
-                </a>
-              </Link>
+
+              <a
+                href="https://itana.rentware.io/"
+                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
+              >
+                Tesla mieten
+              </a>
 
               <Link passHref href="/tesla/model-3srmieten/">
                 <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                   Tesla Model 3 SR+
+                </a>
+              </Link>
+
+              <Link passHref href="/tesla/model-3-long-range-mieten/">
+                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                  Tesla Model 3 Long Range
                 </a>
               </Link>
 

@@ -8,7 +8,6 @@ import Link from 'next/link'
 
 import SEO from '@/ui/seo'
 
-import Preisliste from '@/ui/Preisliste'
 import { getTXDataByArt } from 'lib/api'
 
 function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
@@ -42,11 +41,6 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <Preisliste
-          kurzzeit={Kurzzeit}
-          langzeit={Langzeit}
-          mehrkilometer={Mehrkilometer}
-        />
         <CTA
           data_cy="TeslaModelXMieten"
           fillBG="true"

@@ -33,6 +33,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
             <div className="relative">
               <div>
                 <Link
+                  passHref
                   href="#tesla-standard-range-plus"
                   title="Tesla Model 3 Standard Range Plus"
                   aria-label="Tesla Model 3 Standard Range Plus"

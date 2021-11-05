@@ -33,6 +33,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
               <div>
                 <Link
                   href="#tesla-performance"
+                  passHref
                   aria-label="Tesla Model 3 Performance"
                 >
                   <Image

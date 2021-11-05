@@ -128,6 +128,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               / Tag bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
+              passHref
               href="/tesla/model-3-mieten/#tesla-standard-range-plus"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,6 +141,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
+              passHref
               href="/tesla/model-3-mieten/#tesla-performance"
               target="_blank"
               rel="noopener noreferrer"
@@ -152,6 +154,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               Miete, inklusive 2.000 Inklusivkilometer.
             </p>
             <Link
+              passHref
               href="/tesla/model-x-mieten/"
               target="_blank"
               rel="noopener noreferrer"

@@ -39,7 +39,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
     <div>
       <SEO
-        title="Tesla Langzeitmiete | ab 57€/Tag im Monat | Autovermietung"
+        title="Tesla Langzeitmiete | ab 32,73€/Tag im Monat | Autovermietung"
         description="Elektroauto | Tesla Langzeitmiete &#x2705; Bester Preis &#x2705; Super Service &#x2705; Du musst Dich um nichts kümmern &#x2705; Dein zukunftsweisender Auftritt &#x1F680;"
       />
       <Head>

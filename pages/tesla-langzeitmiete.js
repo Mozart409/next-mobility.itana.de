@@ -124,12 +124,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             <h2>Empfehlungen</h2>
             <InfoBanner />
             <p>
-              Langzeitmiete für das Model 3 Standard Range Plus :<b>31,63 € </b>{' '}
-              / Tag bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
+              Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus mieten! 
             </p>
             <Link
               passHref
-              href="/tesla/model-3-mieten/#tesla-standard-range-plus"
+              href="https://itana.rentware.io"
               target="_blank"
               rel="noopener noreferrer"
               className="anfrage"
@@ -137,12 +136,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
             </Link>
             <p>
-              Langzeitmiete für das Model 3 Performance :<b>56,63 €</b> / Tag
-              bei 30 Tagen Miete, inklusive 2.000 Inklusivkilometer.
+              Langzeitmiete für das Model 3 Performance: 
             </p>
             <Link
               passHref
-              href="/tesla/model-3-mieten/#tesla-performance"
+              href="https://itana.rentware.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="anfrage"
@@ -150,12 +148,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <CTA title="Tesla Model 3 mieten" />
             </Link>
             <p>
-              Langzeitmiete für das Model X: <b>83,30 €</b> / Tag bei 30 Tagen
-              Miete, inklusive 2.000 Inklusivkilometer.
+              Langzeitmiete für das Model X:
             </p>
             <Link
               passHref
-              href="/tesla/model-x-mieten/"
+              href="https://itana.rentware.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="anfrage"

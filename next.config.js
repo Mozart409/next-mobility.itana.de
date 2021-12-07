@@ -22,6 +22,26 @@ module.exports = {
         source: '/mobility/',
         destination: '/tesla-supercharger-leonberg/',
         permanent: true
+      },
+      {
+        source: '/comments/:slug*',
+        destination: '/',
+        permanent: true
+      },
+      {
+        source: '/index.php/:slug*',
+        destination: '/',
+        permanent: true
+      },
+      {
+        source: '/fahrzeuge/:slug*',
+        destination: '/',
+        permanent: true
+      },
+      {
+        source: '/page-data/:slug*',
+        destination: '/',
+        permanent: true
       }
     ]
   },

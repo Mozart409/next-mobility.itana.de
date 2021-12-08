@@ -1,8 +1,16 @@
-module.exports = {
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
   env: {
     API_KEY: process.env.API_KEY
   },
   trailingSlash: true,
+  pwa: {
+    dest: 'public',
+    disable: false,
+    register: false,
+    skipWaiting: false
+  },
   async headers() {
     return [
       {
@@ -56,4 +64,4 @@ module.exports = {
 
     return config
   }
-}
+})

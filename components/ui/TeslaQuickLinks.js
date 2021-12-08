@@ -38,7 +38,7 @@ export default function TeslaQuickLinks() {
           className="font-semibold text-itana-red"
           rel="noopener noreferrer"
         >
-          <a>Was muss ich beachten?</a>
+          <a>Was muss ich beachten ?</a>
         </Link>
 
         <Link

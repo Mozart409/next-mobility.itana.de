@@ -169,9 +169,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           Unsere Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
           Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto geleast
           oder gekauft, ist das Geld gebunden, das an anderer Stelle kurzfristig
-          gebraucht werden könnte und dann fehlt. In den letzten Jahren
-          <b>mieten Unternehmen</b> ihre <b>Firmenautos</b>. So kannst Du Deinen
-          <b>Bedarf</b> an Fahrzeugen Deiner <b>Auftragslage anpassen</b>.
+          gebraucht werden könnte und dann fehlt. In den letzten Jahren 
+          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b>. So kannst Du Deinen
+          <b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
         </p>
         <ul className="list-inside">
           <li>monatlicher Fixpreis</li>

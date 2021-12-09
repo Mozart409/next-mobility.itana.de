@@ -7,7 +7,7 @@ import {
   Accordion,
   AccordionItem,
   AccordionButton,
-  AccordionPanel
+  AccordionPanel,
 } from '@reach/accordion'
 import '@reach/accordion/styles.css'
 

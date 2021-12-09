@@ -454,57 +454,57 @@ function IndexPage() {
               'https://www.google.com/maps/place/Itana+GmbH/@48.9028695,9.098111,17z/data=!3m1!4b1!4m5!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              url: 'https://mobility.itana.de/icon-192.png',
             },
             image: {
               '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              url: 'https://mobility.itana.de/icon-192.png',
             },
             areaServed: [
               {
                 '@type': 'City',
-                name: 'Stuttgart'
+                name: 'Stuttgart',
               },
               {
                 '@type': 'State',
-                name: 'Baden-Württemberg'
-              }
+                name: 'Baden-Württemberg',
+              },
             ],
             branchOf: {
               '@type': 'Organization',
-              name: 'Itana GmbH'
+              name: 'Itana GmbH',
             },
             openingHoursSpecification: [
               {
                 '@type': 'OpeningHoursSpecification',
                 closes: '18:00:00',
                 dayOfWeek: 'http://schema.org/Thursday',
-                opens: '08:00:00'
+                opens: '08:00:00',
               },
               {
                 '@type': 'OpeningHoursSpecification',
                 closes: '18:00:00',
                 dayOfWeek: 'http://schema.org/Tuesday',
-                opens: '08:00:00'
+                opens: '08:00:00',
               },
               {
                 '@type': 'OpeningHoursSpecification',
                 closes: '18:00:00',
                 dayOfWeek: 'http://schema.org/Friday',
-                opens: '08:00:00'
+                opens: '08:00:00',
               },
               {
                 '@type': 'OpeningHoursSpecification',
                 closes: '18:00:00',
                 dayOfWeek: 'http://schema.org/Monday',
-                opens: '08:00:00'
+                opens: '08:00:00',
               },
               {
                 '@type': 'OpeningHoursSpecification',
                 closes: '18:00:00',
                 dayOfWeek: 'http://schema.org/Wednesday',
-                opens: '08:00:00'
-              }
+                opens: '08:00:00',
+              },
             ],
             name: 'Tesla mieten Stuttgart',
             url: 'https://www.mobility.itana.de/',
@@ -518,9 +518,9 @@ function IndexPage() {
               addressRegion: 'Markgröningen',
               postalCode: '71706',
               addressCountry: 'Germany',
-              telephone: '+49 711 49066 450'
-            }
-          })
+              telephone: '+49 711 49066 450',
+            },
+          }),
         ]}
       />
       <Head
@@ -532,11 +532,11 @@ function IndexPage() {
             name: 'Mobility Itana GmbH',
             image: {
               '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              url: 'https://mobility.itana.de/icon-192.png',
             },
             logo: {
               '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              url: 'https://mobility.itana.de/icon-192.png',
             },
             url: 'https://mobility.itana.de/',
             telephone: '+49 711 49066 450',
@@ -548,12 +548,12 @@ function IndexPage() {
               addressRegion: 'Markgröningen',
               postalCode: '71706',
               addressCountry: 'Germany',
-              telephone: '+49 711 49066 450'
+              telephone: '+49 711 49066 450',
             },
             aggregateRating: {
               '@type': 'AggregateRating',
               ratingValue: '5.0',
-              ratingCount: '10'
+              ratingCount: '10',
             },
             review: [
               {
@@ -566,8 +566,8 @@ function IndexPage() {
                   '@type': 'Rating',
                   bestRating: '5',
                   ratingValue: '5',
-                  worstRating: '1'
-                }
+                  worstRating: '1',
+                },
               },
               {
                 '@type': 'Review',
@@ -580,8 +580,8 @@ function IndexPage() {
                   '@type': 'Rating',
                   bestRating: '5',
                   ratingValue: '5',
-                  worstRating: '1'
-                }
+                  worstRating: '1',
+                },
               },
               {
                 '@type': 'Review',
@@ -594,8 +594,8 @@ function IndexPage() {
                   '@type': 'Rating',
                   bestRating: '5',
                   ratingValue: '5',
-                  worstRating: '1'
-                }
+                  worstRating: '1',
+                },
               },
               {
                 '@type': 'Review',
@@ -608,14 +608,14 @@ function IndexPage() {
                   '@type': 'Rating',
                   bestRating: '5',
                   ratingValue: '5',
-                  worstRating: '1'
-                }
-              }
+                  worstRating: '1',
+                },
+              },
             ],
             priceRange: 'ab 31,63 €',
             description:
-              'Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450'
-          })
+              'Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450',
+          }),
         ]}
       />
       <Head>

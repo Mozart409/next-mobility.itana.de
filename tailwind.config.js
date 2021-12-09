@@ -1,26 +1,28 @@
 module.exports = {
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Helvetica', 'sans-serif']
+        sans: ['Helvetica', 'sans-serif'],
       },
       colors: {
-        'itana-red': '#d40000'
+        'itana-red': '#d40000',
       },
       screens: {
-        standalone: { raw: '(display-mode:standalone)' }
-      }
-    }
+        standalone: { raw: '(display-mode:standalone)' },
+      },
+    },
   },
   variants: {
-    extend: {}
+    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio')
-  ]
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

@@ -39,8 +39,8 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
     <div>
       <SEO
-        title="Tesla Langzeitmiete | ab 32,73€/Tag im Monat | Autovermietung"
-        description="Elektroauto | Tesla Langzeitmiete &#x2705; Bester Preis &#x2705; Super Service &#x2705; Du musst Dich um nichts kümmern &#x2705; Dein zukunftsweisender Auftritt &#x1F680;"
+        title="Tesla Langzeitmiete | ab 32,73€/Tag/Monat | Flexibel | Schnell"
+        description="Elektroauto | Tesla Langzeitmiete | Bester Preis | Super Service | Du musst Dich um nichts kümmern | Jetzt hier klicken + buchen | Anruf: +4971149066450"
       />
       <Head>
         <link
@@ -169,9 +169,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           Unsere Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
           Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto geleast
           oder gekauft, ist das Geld gebunden, das an anderer Stelle kurzfristig
-          gebraucht werden könnte und dann fehlt. In den letzten Jahren
-          <b>mieten Unternehmen</b> ihre <b>Firmenautos</b>. So kannst Du Deinen
-          <b>Bedarf</b> an Fahrzeugen Deiner <b>Auftragslage anpassen</b>.
+          gebraucht werden könnte und dann fehlt. In den letzten Jahren 
+          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b>. So kannst Du Deinen
+          <b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
         </p>
         <ul className="list-inside">
           <li>monatlicher Fixpreis</li>

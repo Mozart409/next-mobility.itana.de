@@ -2,14 +2,14 @@ const withPWA = require('next-pwa')
 
 module.exports = withPWA({
   env: {
-    API_KEY: process.env.API_KEY
+    API_KEY: process.env.API_KEY,
   },
   trailingSlash: true,
   pwa: {
     dest: 'public',
-    disable: false,
+    disable: process.env.NODE_ENV === 'development',
     register: false,
-    skipWaiting: false
+    skipWaiting: false,
   },
   async headers() {
     return [
@@ -18,10 +18,10 @@ module.exports = withPWA({
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable'
-          }
-        ]
-      }
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
     ]
   },
   async redirects() {
@@ -29,28 +29,28 @@ module.exports = withPWA({
       {
         source: '/mobility/',
         destination: '/tesla-supercharger-leonberg/',
-        permanent: true
+        permanent: true,
       },
       {
         source: '/comments/:slug*/',
         destination: '/',
-        permanent: true
+        permanent: true,
       },
       {
         source: '/index.php/:slug*/',
         destination: '/',
-        permanent: true
+        permanent: true,
       },
       {
         source: '/fahrzeuge/:slug*/',
         destination: '/',
-        permanent: true
+        permanent: true,
       },
       {
         source: '/page-data/:slug*/',
         destination: '/',
-        permanent: true
-      }
+        permanent: true,
+      },
     ]
   },
   webpack: (config, { dev, isServer }) => {
@@ -58,10 +58,10 @@ module.exports = withPWA({
       Object.assign(config.resolve.alias, {
         react: 'preact/compat',
         'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat'
+        'react-dom': 'preact/compat',
       })
     }
 
     return config
-  }
+  },
 })

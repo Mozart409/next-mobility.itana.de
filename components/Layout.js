@@ -5,7 +5,7 @@ import Nav from './Nav'
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen text-gray-900 scroll-smooth">
+    <div className="flex flex-col min-h-screen text-gray-900 scroll-smooth font-sans antialiased">
       <Nav />
       <div id="main">
         <noscript>

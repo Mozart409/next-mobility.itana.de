@@ -22,6 +22,7 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
+
           {/* // eslint-disable-next-line @next/next/no-css-tags */}
 
           <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
@@ -42,7 +43,7 @@ class MyDocument extends Document {
             type="text/plain"
             dangerouslySetInnerHTML={{
               __html:
-                "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K56QMGF');"
+                "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K56QMGF');",
             }}
           />
           <Script
@@ -55,7 +56,7 @@ class MyDocument extends Document {
             type="text/plain"
             dangerouslySetInnerHTML={{
               __html:
-                "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0G43K9BEPW');"
+                "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0G43K9BEPW');",
             }}
           />
         </Head>

@@ -1,15 +1,15 @@
-import { helmetJsonLdProp } from 'react-schemaorg'
-import Breadcrum from '@/ui/Breadcrum'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import { helmetJsonLdProp } from "react-schemaorg";
+import Breadcrum from "@/ui/Breadcrum";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import SEO from "@/ui/seo";
+import CTA from "@/ui/CTA";
 import {
   getT3SRDataByLowestPrice,
   getTXDataByLowestPrice,
-  getT3PDataByLowestPrice
-} from 'lib/api'
+  getT3PDataByLowestPrice,
+} from "lib/api";
 
 const InfoBanner = () => (
   <div className="bg-gray-50 border-l-4 border-itana-red">
@@ -33,7 +33,7 @@ const InfoBanner = () => (
       <p className="ml-2">Unsere Preise beinhalten keine versteckten Kosten</p>
     </div>
   </div>
-)
+);
 
 export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
@@ -51,35 +51,33 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <Head
         script={[
           helmetJsonLdProp({
-            "legalName": "Itana GmbH",
-            "founders": [
+            legalName: "Itana GmbH",
+            founders: [
               {
-                "name": "Jörg Weißleder",
-                "@type": "Person"
-              }
+                name: "Jörg Weißleder",
+                "@type": "Person",
+              },
             ],
-            "name": "Itana GmbH",
-            "url": "https://mobility.itana.de/",
+            name: "Itana GmbH",
+            url: "https://mobility.itana.de/",
             "@context": "http://schema.org",
-            "contactPoint": {
+            contactPoint: {
               "@type": "ContactPoint",
-              "email": "mobility@itana.de",
-              "telephone": "[+4971149066450]",
-              "contactType": "customer support"
+              email: "mobility@itana.de",
+              telephone: "[+4971149066450]",
+              contactType: "customer support",
             },
-            "address": {
+            address: {
               "@type": "PostalAddress",
-              "postalCode": "71706",
-              "addressRegion": "Baden-Württemberg",
-              "streetAddress": "Maulbronner Weg 33",
-              "addressCountry": "Germany",
-              "addressLocality": "Markgröningen"
+              postalCode: "71706",
+              addressRegion: "Baden-Württemberg",
+              streetAddress: "Maulbronner Weg 33",
+              addressCountry: "Germany",
+              addressLocality: "Markgröningen",
             },
-            "sameAs": [
-              "https://twitter.com/mobility_gmbh"
-            ],
-            "@type": "Organization"
-          })
+            sameAs: ["https://twitter.com/mobility_gmbh"],
+            "@type": "Organization",
+          }),
         ]}
       />
       <Breadcrum />
@@ -111,27 +109,27 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             </ul>
             <p>
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
-              <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist der
-              Mietzeitraum flexibel.  
+              <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist
+              der Mietzeitraum flexibel.
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/kontakt/"
               >
-                <br/>
-               {" "}  Kontaktiere uns jetzt,
+                <br /> Kontaktiere uns jetzt,
               </Link>
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
               ein.
             </p>
             <p>
-              Vorab kannst Du in unseren  {" "} 
+              Vorab kannst Du in unseren{" "}
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/faq/"
               >
-                {" "} FAQs
+                {" "}
+                FAQs
               </Link>
               stöbern.
             </p>
@@ -140,7 +138,8 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
             <p>
-              Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus mieten! 
+              Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus
+              mieten!
             </p>
             <Link
               passHref
@@ -151,9 +150,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             >
               <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
             </Link>
-            <p>
-              Langzeitmiete für das Model 3 Performance: 
-            </p>
+            <p>Langzeitmiete für das Model 3 Performance:</p>
             <Link
               passHref
               href="https://itana.rentware.io/"
@@ -163,9 +160,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             >
               <CTA title="Tesla Model 3 mieten" />
             </Link>
-            <p>
-              Langzeitmiete für das Model X:
-            </p>
+            <p>Langzeitmiete für das Model X:</p>
             <Link
               passHref
               href="https://itana.rentware.io/"
@@ -182,11 +177,13 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <div className="mx-auto mt-12 prose lg:prose-md">
         <h2>Was bedeutet die Tesla Langzeitmiete für Dein Unternehmen?</h2>
         <p>
-          Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
-          Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto geleast
-          oder gekauft, ist das Geld gebunden, das an anderer Stelle kurzfristig
-          gebraucht werden könnte und dann fehlt. In den letzten Jahren 
-          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b>. So kannst Du Deinen
+          Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt
+          den Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto
+          geleast oder gekauft, ist das Geld gebunden, das an anderer Stelle
+          kurzfristig gebraucht werden könnte und dann fehlt. In den letzten
+          Jahren
+          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b>. So kannst Du
+          Deinen
           <b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
         </p>
         <ul className="list-inside">
@@ -198,11 +195,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>einfache Aufstockung Deines Fuhrparks</li>
         </ul>
         <p>
-          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum <b>vereinbarten Preis</b>.
-          Beim <b>Leasing</b> oder auch der <b>Fahrzeugfinanzierung</b> würden
-          noch <b>zusätzliche Kosten</b> wie Inspektion, KFZ-Steuer etc.
-          dazukommen. Daher prüfe, wer weitere Kosten übernimmt, bevor Du einen
-          Vertrag schließt:
+          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{" "}
+          <b>vereinbarten Preis</b>. Beim <b>Leasing</b> oder auch der{" "}
+          <b>Fahrzeugfinanzierung</b> würden noch <b>zusätzliche Kosten</b> wie
+          Inspektion, KFZ-Steuer etc. dazukommen. Daher prüfe, wer weitere
+          Kosten übernimmt, bevor Du einen Vertrag schließt:
         </p>
         <ul className="list-inside">
           <li>Haftpflichtversicherung </li>
@@ -217,7 +214,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 /* export async function getStaticProps(context) {

@@ -137,7 +137,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             </p>
           </div>
           <div>
-            <h2>Empfehlungen</h2>
+            <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
             <p>
               Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus mieten! 
@@ -180,9 +180,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       </div>
 
       <div className="mx-auto mt-12 prose lg:prose-md">
-        <h2>Was bedeutet die Langzeitmiete für Dein Unternehmen?</h2>
+        <h2>Was bedeutet die Tesla Langzeitmiete für Dein Unternehmen?</h2>
         <p>
-          Unsere Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
+          Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
           Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto geleast
           oder gekauft, ist das Geld gebunden, das an anderer Stelle kurzfristig
           gebraucht werden könnte und dann fehlt. In den letzten Jahren 
@@ -198,7 +198,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>einfache Aufstockung Deines Fuhrparks</li>
         </ul>
         <p>
-          Bei uns bekommst Du das Elektroauto zum <b>vereinbarten Preis</b>.
+          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum <b>vereinbarten Preis</b>.
           Beim <b>Leasing</b> oder auch der <b>Fahrzeugfinanzierung</b> würden
           noch <b>zusätzliche Kosten</b> wie Inspektion, KFZ-Steuer etc.
           dazukommen. Daher prüfe, wer weitere Kosten übernimmt, bevor Du einen

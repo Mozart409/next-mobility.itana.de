@@ -111,7 +111,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             </ul>
             <p>
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
-              <b> mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
+              <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist der
               Mietzeitraum flexibel.  
               <Link
                 passHref

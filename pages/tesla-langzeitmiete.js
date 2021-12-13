@@ -107,23 +107,24 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <li>kürzere Vertragsbindung</li>
               <li>kurzfristigere Verfügbarkeit</li>
               <li>fairer Preis und gute Leistung</li>
+              <li>vergünstigte Konditionen</li>
             </ul>
             <p>
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
               <b> mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
-              Mietzeitraum flexibel.
+              Mietzeitraum flexibel.  
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/kontakt/"
               >
-                Kontaktiere uns jetzt,
+                 Kontaktiere uns jetzt,
               </Link>
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
               ein.
             </p>
             <p>
-              Vorab kannst Du in unseren
+              Vorab kannst Du in unseren  
               <Link
                 passHref
                 className="font-semibold text-itana-red"

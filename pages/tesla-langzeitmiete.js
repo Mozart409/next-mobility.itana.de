@@ -118,19 +118,20 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
                 className="font-semibold text-itana-red"
                 href="/kontakt/"
               >
-                 Kontaktiere uns jetzt,
+                <br/>
+               {" "}  Kontaktiere uns jetzt,
               </Link>
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
               ein.
             </p>
             <p>
-              Vorab kannst Du in unseren  
+              Vorab kannst Du in unseren  {" "} 
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/faq/"
               >
-                FAQs
+                {" "} FAQs
               </Link>
               stöbern.
             </p>

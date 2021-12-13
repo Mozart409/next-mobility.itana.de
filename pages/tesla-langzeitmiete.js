@@ -51,20 +51,34 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <Head
         script={[
           helmetJsonLdProp({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            url: 'https://mobility.itana.de/tesla-langzeitmiete',
-            inLanguage: 'de-DE',
-            image: 'https://mobility.itana.de/news/tesla-model-x.jpg',
-            isFamilyFriendly: 'true',
-            copyrightYear: '2021',
-            headline: 'Tesla Langzeitmiete',
-            articleBody:
-              'Vorteile der Tesla Langzeitmiete gegenüber dem Leasing - viel mehr Flexibilität - kürzere Vertragsbindung - kurzfristigere Verfügbarkeit - fairer Preis und gute Leistung. Das klassische Leasing fordert einen Mietzeitraum von mindestens zwei Jahren! Bei der Itana GmbH ist der Mietzeitraum flexibel. Kontaktiere uns jetzt, gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse ein. Vorab kannst Du in unseren FAQs stöbern.',
-            contentLocation: {
-              '@type': 'Place',
-              name: 'Maulbronner Weg 33, 71706 Markgröningen, Germany'
-            }
+            "legalName": "Itana GmbH",
+            "founders": [
+              {
+                "name": "Jörg Weißleder",
+                "@type": "Person"
+              }
+            ],
+            "name": "Itana GmbH",
+            "url": "https://mobility.itana.de/",
+            "@context": "http://schema.org",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "mobility@itana.de",
+              "telephone": "[+4971149066450]",
+              "contactType": "customer support"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "postalCode": "71706",
+              "addressRegion": "Baden-Württemberg",
+              "streetAddress": "Maulbronner Weg 33",
+              "addressCountry": "Germany",
+              "addressLocality": "Markgröningen"
+            },
+            "sameAs": [
+              "https://twitter.com/mobility_gmbh"
+            ],
+            "@type": "Organization"
           })
         ]}
       />
@@ -96,7 +110,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             </ul>
             <p>
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
-              <b>mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
+              <b> mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
               Mietzeitraum flexibel.
               <Link
                 passHref

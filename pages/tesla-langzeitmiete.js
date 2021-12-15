@@ -152,7 +152,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             >
               <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
             </Link>
-            <p>Langzeitmiete für das Model 3 Performance:</p>
+            <p>
+              Langzeitmiete für das Model 3 SR+ Performance
+              <br />
+              ca. 350 KM praktische Reichweite
+            </p>
             <Link
               passHref
               href="https://itana.rentware.io/"
@@ -162,7 +166,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             >
               <CTA title="Tesla Model 3 mieten" />
             </Link>
-            <p>Langzeitmiete für das Model X:</p>
+            <p>
+              Langzeitmiete für das Tesla Model 3:
+              <br />
+              ca. 350 KM praktische Reichweite
+            </p>
             <Link
               passHref
               href="https://itana.rentware.io/"
@@ -171,6 +179,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               className="anfrage"
             >
               <CTA title="Tesla Model X mieten" />
+              <p>
+                Langzeitmiete für das Model X:
+                <br />
+                ca. KM praktische Reichweite
+              </p>
             </Link>
           </div>
         </div>

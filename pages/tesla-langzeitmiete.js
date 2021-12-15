@@ -215,8 +215,8 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>Zulassung </li>
         </ul>
         <p>
-          Wir empfehlen die Tesla Langzeitmiete, da die Vorteile auf der Hand
-          liegen.
+          Wir von mobility empfehlen die Tesla Langzeitmiete!
+          <br />
           <Link
             passHref
             className="font-semibold text-itana-red"

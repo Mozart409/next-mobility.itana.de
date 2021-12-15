@@ -86,7 +86,10 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <time dateTime='2020-04-17'>August 03, 2020</time>
         </p> */}
         <h1>Tesla Langzeitmiete</h1>
-        <p>Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto?</p>
+        <p>
+          Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto? Wir
+          empfehlen die Tesla Langzeitmiete.
+        </p>
 
         <Image
           className="mx-auto h-56 rounded"
@@ -181,8 +184,8 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           geleast oder gekauft, ist das Geld gebunden, das an anderer Stelle
           kurzfristig gebraucht werden könnte und dann fehlt. In den letzten
           Jahren
-          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b>. So kannst Du
-          Deinen
+          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b> mit der Tesla
+          Langzeitmiete. So kannst Du Deinen
           <b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
         </p>
         <ul className="list-inside">
@@ -211,6 +214,18 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>Steuer</li>
           <li>Zulassung </li>
         </ul>
+        <p>
+          Wir empfehlen die Tesla Langzeitmiete, da die Vorteile auf der Hand
+          liegen.
+          <Link
+            passHref
+            className="font-semibold text-itana-red"
+            href="/kontakt/"
+          >
+            Kontaktiere uns jetzt,
+          </Link>{" "}
+          und genieße die volle Kostenkontrolle.
+        </p>
       </div>
     </div>
   );

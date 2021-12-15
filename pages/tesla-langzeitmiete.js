@@ -1,15 +1,15 @@
-import { helmetJsonLdProp } from "react-schemaorg";
-import Breadcrum from "@/ui/Breadcrum";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import SEO from "@/ui/seo";
-import CTA from "@/ui/CTA";
+import { helmetJsonLdProp } from 'react-schemaorg'
+import Breadcrum from '@/ui/Breadcrum'
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import SEO from '@/ui/seo'
+import CTA from '@/ui/CTA'
 import {
   getT3SRDataByLowestPrice,
   getTXDataByLowestPrice,
   getT3PDataByLowestPrice,
-} from "lib/api";
+} from 'lib/api'
 
 const InfoBanner = () => (
   <div className="bg-gray-50 border-l-4 border-itana-red">
@@ -33,7 +33,7 @@ const InfoBanner = () => (
       <p className="ml-2">Unsere Preise beinhalten keine versteckten Kosten</p>
     </div>
   </div>
-);
+)
 
 export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
@@ -51,32 +51,32 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <Head
         script={[
           helmetJsonLdProp({
-            legalName: "Itana GmbH",
+            legalName: 'Itana GmbH',
             founders: [
               {
-                name: "Jörg Weißleder",
-                "@type": "Person",
+                name: 'Jörg Weißleder',
+                '@type': 'Person',
               },
             ],
-            name: "Itana GmbH",
-            url: "https://mobility.itana.de/",
-            "@context": "http://schema.org",
+            name: 'Itana GmbH',
+            url: 'https://mobility.itana.de/',
+            '@context': 'http://schema.org',
             contactPoint: {
-              "@type": "ContactPoint",
-              email: "mobility@itana.de",
-              telephone: "[+4971149066450]",
-              contactType: "customer support",
+              '@type': 'ContactPoint',
+              email: 'mobility@itana.de',
+              telephone: '[+4971149066450]',
+              contactType: 'customer support',
             },
             address: {
-              "@type": "PostalAddress",
-              postalCode: "71706",
-              addressRegion: "Baden-Württemberg",
-              streetAddress: "Maulbronner Weg 33",
-              addressCountry: "Germany",
-              addressLocality: "Markgröningen",
+              '@type': 'PostalAddress',
+              postalCode: '71706',
+              addressRegion: 'Baden-Württemberg',
+              streetAddress: 'Maulbronner Weg 33',
+              addressCountry: 'Germany',
+              addressLocality: 'Markgröningen',
             },
-            sameAs: ["https://twitter.com/mobility_gmbh"],
-            "@type": "Organization",
+            sameAs: ['https://twitter.com/mobility_gmbh'],
+            '@type': 'Organization',
           }),
         ]}
       />
@@ -120,19 +120,19 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
                 href="/kontakt/"
               >
                 Kontaktiere uns jetzt,
-              </Link>{" "}
+              </Link>{' '}
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
               ein.
             </p>
             <p>
-              Vorab kannst Du in unseren{" "}
+              Vorab kannst Du in unseren{' '}
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/faq/"
               >
                 FAQs
-              </Link>{" "}
+              </Link>{' '}
               stöbern.
             </p>
           </div>
@@ -143,36 +143,33 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus
               mieten!
             </p>
-            <Link
-              passHref
+            <a
               href="https://itana.rentware.io"
               target="_blank"
               rel="noopener noreferrer"
               className="anfrage"
             >
               <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
-            </Link>
+            </a>
             <p>
               Langzeitmiete für das Model 3 SR+ Performance
               <br />
               ca. 350 KM praktische Reichweite
             </p>
-            <Link
-              passHref
+            <a
               href="https://itana.rentware.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="anfrage"
             >
               <CTA title="Tesla Model 3 mieten" />
-            </Link>
+            </a>
             <p>
               Langzeitmiete für das Tesla Model 3:
               <br />
               ca. 350 KM praktische Reichweite
             </p>
-            <Link
-              passHref
+            <a
               href="https://itana.rentware.io/"
               target="_blank"
               rel="noopener noreferrer"
@@ -184,7 +181,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
                 <br />
                 ca. KM praktische Reichweite
               </p>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -210,8 +207,8 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>einfache Aufstockung Deines Fuhrparks</li>
         </ul>
         <p>
-          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{" "}
-          <b>vereinbarten Preis</b>. Beim <b>Leasing</b> oder auch der{" "}
+          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{' '}
+          <b>vereinbarten Preis</b>. Beim <b>Leasing</b> oder auch der{' '}
           <b>Fahrzeugfinanzierung</b> würden noch <b>zusätzliche Kosten</b> wie
           Inspektion, KFZ-Steuer etc. dazukommen. Daher prüfe, wer weitere
           Kosten übernimmt, bevor Du einen Vertrag schließt:
@@ -236,12 +233,12 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             href="/kontakt/"
           >
             Kontaktiere uns jetzt,
-          </Link>{" "}
+          </Link>{' '}
           und genieße die volle Kostenkontrolle.
         </p>
       </div>
     </div>
-  );
+  )
 }
 
 /* export async function getStaticProps(context) {

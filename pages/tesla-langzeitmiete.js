@@ -89,9 +89,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
         <p>Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto?</p>
 
         <Image
-          className="mx-auto h-28 rounded"
+          className="mx-auto h-56 rounded"
           alt="Tesla Model X"
-          src="/images/cards/tesla-model-x.png"
+          src="/images/cards/rental.jpg"
           height="600"
           width="1000"
         />

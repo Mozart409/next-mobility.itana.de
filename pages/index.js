@@ -216,7 +216,7 @@ const ContentSection = () => (
       Beschleunigung in den Sitz drücken zu lassen. Teile Deinem Beifahrer
       vorher mit, den Kopf gerade zu halten! Tesla&apos;s Leitspruch lautet: „To
       create the most compelling car company of the 21st century by driving the
-      world's transition to electric vehicels”. Das ist purer Fahrspaß mit
+      world"`"s transition to electric vehicels”. Das ist purer Fahrspaß mit
       atemberaubendem Fahrgefühl. Willkommen bei der umweltfreundlichen und
       sportlichen E-Mobilität von Elon Musk. Die einzigartigen Flügeltüren
       passen sich per Sensoren an die Umgebung an und stoßen so nicht an. Wir

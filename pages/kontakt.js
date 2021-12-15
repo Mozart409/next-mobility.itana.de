@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import Iframe from 'react-iframe'
-import Image from 'next/image'
-import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import Head from "next/head";
+import Iframe from "react-iframe";
+import Image from "next/image";
+import SEO from "@/ui/seo";
+import CTA from "@/ui/CTA";
 
 function KontaktPage() {
   return (
@@ -52,18 +52,19 @@ function KontaktPage() {
             <h2>Itana GmbH</h2>
             <p>
               Itana GmbH <br />
+              Jörg Weißleder <br />
               Maulbronner Weg 33
               <br />
               71706 Markgröningen
               <br />
-              Telefon:{' '}
+              Telefon:{" "}
               <a href="tel:+4971149066450" className="text-itana-red">
                 +49 711 49066 450
               </a>
               <br />
               Telefax: +49 711 49066 455
               <br />
-              E-Mail:{' '}
+              E-Mail:{" "}
               <a
                 href="mailto:mobility@itana.de"
                 target="_blank"
@@ -86,7 +87,7 @@ function KontaktPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default KontaktPage
+export default KontaktPage;

@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { helmetJsonLdProp } from 'react-schemaorg'
-import FahrzeugKacheln from '@/ui/FahrzeugKacheln'
+import Head from "next/head";
+import Link from "next/link";
+import { helmetJsonLdProp } from "react-schemaorg";
+import FahrzeugKacheln from "@/ui/FahrzeugKacheln";
 
-import SEO from '@/ui/seo'
-import GoogleBewertungen from '@/ui/GoogleBewertungen'
+import SEO from "@/ui/seo";
+import GoogleBewertungen from "@/ui/GoogleBewertungen";
 
 const Heading1 = () => (
   <div className="py-2 bg-white">
@@ -16,32 +16,33 @@ const Heading1 = () => (
       </div>
     </div>
   </div>
-)
+);
 
 const ContentSection = () => (
   <div className="mx-auto mt-24 lg:mt-8 prose lg:prose-md">
     <h2>Wo kann ich einen Tesla in Stuttgart mieten?</h2>
     <p>
-      Bei uns in Markgröningen kannst Du einen Tesla mieten. Dort steht auch
-      unser Fuhrpark. Stelle uns gerne eine Anfrage. Verschenkte Gutscheine
-      kommen bei interessierten E-Fahrzeug-Liebhabern gut an.{' '}
+      Bei uns in Markgröningen können Sie einen Tesla mieten. Dort steht auch
+      unser Fuhrpark. Prüfen Sie in Echtzeit die Verfügbarkeit, und buchen Sie
+      direkt Ihr Wunschauto. Verschenkte Gutscheine kommen bei interessierten
+      E-Fahrzeug-Liebhabern gut an.{" "}
     </p>
     <h2>Wo kann ich mein eigenes Auto abstellen?</h2>
-    <p>Wir haben genügend kostenlose Parkplätze an der Straße.</p>
+    <p>Wir haben genügend kostenlose Parkplätze an unserem Standort.</p>
     <h2 id="tesla-mieten"> Wie kann ich einen Tesla ausleihen und abholen? </h2>
     <p>
-      Ruf in unserer Tesla Autovermietung an oder buche &uuml;ber unsere Website
-      bei den&nbsp;Tarifpaketen ein E-Auto. Im &Uuml;bergabegespr&auml;ch (ca.
-      30 - 60 Minuten) kl&auml;ren wir alle Deine Fragen und verbinden Dein
-      Handy mit der Tesla-App. Wir selbst sind begeisterte Tesla-Fans. Kunden,
-      die bei uns ein Elektroauto ausgeliehen haben, waren bisher{' '}
+      uchen Sie &uuml;ber unsere Website bei den&nbsp;Tarifpaketen ein E-Auto.
+      Im &Uuml;bergabegespr&auml;ch (ca. 30 - 60 Minuten) kl&auml;ren wir alle
+      Ihre Fragen und unterstützen Sie gerne bei der Tesla-App. Wir selbst sind
+      begeisterte E-Auto-Fahrer! Kunden, die bei uns ein Elektroauto ausgeliehen
+      haben, waren bisher{" "}
       <a
         href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
         target="_blank"
         rel="noopener noreferrer"
       >
         rundum zufrieden!
-      </a>{' '}
+      </a>{" "}
       <br />
       Übrigens haben wir keine versteckten Kosten.
     </p>
@@ -53,27 +54,27 @@ const ContentSection = () => (
         target="_blank"
         href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9a.0693609,12z/data=!4m12!1m6!3m5!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!2sItana+GmbH!8m2!3d48.902866!4d9.100305!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
       >
-        {' '}
-        unserer Gesch&auml;ftszeiten{' '}
+        {" "}
+        unserer Gesch&auml;ftszeiten{" "}
       </a>
       wird das&nbsp;Fahrzeug von unseren freundlichen Mitarbeitern
       entgegengenommen. Au&szlig;erhalb der&nbsp;Gesch&auml;ftszeiten kommt der
-      Schl&uuml;ssel in den Frunk (vorderseitiger Kofferraum) und der
-      App-Zugriff wird entzogen und das Fahrzeug verriegelt. Die Rückgabe ist
+      Schl&uuml;ssel in den Frunk (Front-Kofferraum), der App-Zugriff wird
+      entzogen, und das Fahrzeug wird verriegelt. Die Rückgabe ist damit
       beendet. &nbsp;
     </p>
     <h2 id="versicherung">
-      {' '}
-      Versicherung - Selbstbehalt, was muss ich beim Tesla mieten wissen?{' '}
+      {" "}
+      Versicherung - Selbstbehalt, was muss ich beim Tesla mieten wissen?{" "}
     </h2>
     <p>
-      Sie k&ouml;nnen zwischen einer Vollkasko-Versicherung mit
-      Selbstbeteiligung von 2500 &euro; / 1000 &euro; oder 500 &euro;
-      w&auml;hlen.
+      Alle unser Fahrzeuge sind ohne Mehrkosten mit einer Selbstbeteiligung von
+      2500 &euro; Vollkaskoversichert. Sie k&ouml;nnen gegen Aufpreis die
+      Selbstbeteiligung auf 1000 &euro; oder 500 &euro; reduzieren.
     </p>
     <h2 id="beachten-beim-tesla-mieten">
-      {' '}
-      Was muss ich beachten, wenn ich ein Elektorauto miete?{' '}
+      {" "}
+      Was muss ich beachten, wenn ich ein Elektorauto miete?{" "}
     </h2>
     <p>
       Das Elektroauto muss rechtzeitig aufgeladen werden, so wie der Verbrenner
@@ -86,16 +87,16 @@ const ContentSection = () => (
     <p>
       Das ist je nach Ladezeit, Anbieter, Batteriegröße und Art des Ladepunktes
       sehr unterschiedlich. An einer urbanen Typ 2 AC Ladesäule kostet die kWh
-      zwischen 30 und 40 Cent. Bei einer Schnellladesäule (DC) muss man zwischen
-      30 und 80 Cent pro kWh rechnen.
+      zwischen 30 und 60 Cent. Bei einer Schnellladesäule (DC) muss man zwischen
+      40 und 80 Cent pro kWh rechnen.
     </p>
     <h3> Wie lange braucht ein Tesla, bis er aufgeladen ist? </h3>
     <p>
-      Am Supercharger und anderen HPC Chargern dauert es ca. <b>20 Minuten</b>{' '}
+      Am Supercharger und anderen HPC Chargern dauert es ca. <b>20 Minuten</b>{" "}
       bis die Batterie eines Tesla Model 3 zu <b>75 %</b> geladen ist. An
       älteren 50 kW CCS Ladern dauert es je nach Batteriegröße bis zu zwei
       Stunden abhängig ist das von der genutzten Technik des Fahrzeuges und der
-      Säule. Bei den meisten Fahrzeugen reduziert sich die Ladeleistung mit
+      Ladesäule. Bei den meisten Fahrzeugen reduziert sich die Ladeleistung mit
       steigendem Ladestand, sodass es auf der Reise nicht sinnvoll ist das
       Fahrzeug unterwegs immer voll aufzuladen.
     </p>
@@ -103,10 +104,9 @@ const ContentSection = () => (
     <p>
       Die innovativen Ladesäulen sind an strategischen Stellen wie
       Wi-Fi-Hotspots, Einkaufszentren, Restaurants oder an Autohöfen verfügbar.
-      Es gibt immer mehrere Ladeplätze, die Dich mit Strom versorgen. Auf dem
-      Bildschirm im Auto oder am Smartphone einfach den nächsten Charger suchen
-      lassen. Das Smartphone teilt das Ergebnis direkt mit dem Auto und
-      navigiert Dich dorthin.
+      Es gibt immer mehrere Ladeplätze, die das Fahrzeug mit Strom versorgen.
+      Auf dem Bildschirm im Auto oder am Smartphone einfach den nächsten Charger
+      suchen lassen.
       <br />
       Die intelligente Suche im Tesla zeigt alle Parameter der Ladesäule, wie
       Öffnungszeiten, wie schnell geladen werden kann und sogar die tatsächliche
@@ -122,84 +122,87 @@ const ContentSection = () => (
       target="_blank"
       href="https://www.tesla.com/de_DE/supercharger"
     >
-      {' '}
-      Tesla Supercharger Karte{' '}
-    </a>{' '}
-    auf dem Display navigiert Dich zur nächsten Ladestation.
+      {" "}
+      Tesla Supercharger Karte{" "}
+    </a>{" "}
+    auf dem Display navigiert Sie zur nächsten Ladestation.
     <h3>Wie kann ich bezahlen?</h3>
-    Mit{' '}
+    Mit{" "}
     <a
       rel="noopener noreferrer"
       target="_blank"
       href="https://www.maingau-energie.de/e-mobilit%C3%A4t/Autostrom-Tarif"
     >
-      Maingau-Energie{' '}
-    </a>{' '}
-    kannst Du einfach <b>Strom laden</b> und <b>bequem bezahlen</b>.{' '}
+      Maingau-Energie{" "}
+    </a>{" "}
+    können Sie einfach <b>Strom laden</b> und <b>bequem bezahlen</b>.{" "}
     <b>Ohne Vertragslaufzeit</b> und <b>ohne Grundgebühr</b> gibt es eine faire
     kWh-basierte Abrechnung. Das flächendeckende Ladenetz ist einfach und bequem
     zu handhaben. Für zu Hause ist eine Wallbox sinnvoll.
     <h3> Wie weit kann ich mit einem Elektroauto fahren? </h3>
     <p>
-      Das kommt auf das Modell an, beim <b>Model 3</b> Performance, dem
-      Sportwagen, liegt die Reichweite nach Herstellerangaben bei{' '}
-      <b>530 km (WLTP)</b>. Die Batteriekapazität liegt bei 75 kWh. Beim{' '}
-      <b>Model X</b> beträgt die Reichweite <b>565 km (NEFZ)</b>. Die
-      Batteriekapazität liegt bei 100 kWh.
+      Das kommt auf das Modell an, beim <b>Model 3</b> Performance liegt die
+      Reichweite nach Herstellerangaben bei <b>530 km (WLTP)</b>. Die
+      Batteriekapazität liegt bei 75 kWh. Beim <b>Model X</b> beträgt die
+      Reichweite <b>507 km (WLTP)</b>. Die Batteriekapazität liegt bei 100 kWh.
       <br />
-      Die realistische Reichweite eines Model 3 mit vollem Akku beim Start liegt
-      je nach Fahrstil, Außentemperatur und anderen Faktoren bei 300-400 km.
+      Die realistische Reichweite eines Model 3 mit vollem Akku liegt je nach
+      Fahrstil, Außentemperatur und anderen Faktoren bei rund 350 km.
     </p>
     <h3>Realer Verbrauch des Model X</h3>
     <p>
       Im Schnitt verbraucht das Model X nach unseren Erfahrungen 26 kWh/100 km.
-      Im Vergleich verbraucht die Model 3 Limousine 16-20 kWh/100 km.
+      Im Vergleich verbraucht das Model 3 je nach Modellvariante 16-20 kWh/100
+      km.
     </p>
     <h3>Kosten</h3>
     <p>
-      Die Kosten sind von vielen Faktoren abhängig, deshalb hier nur ein grober
-      Richtwert. Am Supercharger kostet die Kilowattstunde 33 Cent. Bei einem
-      Verbrauch von 26 kWh/100 km kosten die ca. 8,60 €.
+      Die Kosten sind von vielen Faktoren abhängig, deshalb kann hier nur ein
+      grober Richtwert angegeben werden. Beim Model 3 kosten 100 Kilometer bei
+      einem Strompreis von 30ct/kWh rund 6 €.
     </p>
     <h3>Gibt es unterschiedliche Tesla-Supercharger?</h3>
     <p>
       Ja, die neueste Ausbaustufes ist der Supercharger V3. Klickt man auf der
-      Übersichtskarte im Bildschirm rechts unten, um den nächsten Charger zu
-      finden, werden die Stationen angezeigt. Durch Klick auf die Station sieht
-      man in den Details die Ladeleistung von 150 (V2) oder 250 Kilowatt (V3).
-      Kann nur 130 Kilowatt Strom entnommen werden, wurde die Station noch nicht
-      aktualisiert. Es gab es ein Software-Update, das die Funktion
-      &quot;On-Route Battery Warmup&quot; eingeführt hat, das wärmt die Batterie
-      während der Fahrt zum Charger auf Lade-Temperatur auf. Das spart 25 % der
-      Ladezeit ein.
+      Übersichtskarte im Fahrzeugbildschirm rechts unten, um den nächsten
+      Charger zu finden, werden die Stationen angezeigt. Durch Klick auf die
+      Station sieht man in den Details die Ladeleistung von 150 (V2) oder 250
+      Kilowatt (V3). Die Funktion &quot;On-Route Battery Warmup&quot; wärmt die
+      Batterie während der Fahrt zum Supercharger auf Lade-Temperatur auf. Das
+      verkürzt die Ladezeit ;&ndash; vor allem im Winter ;&ndash; signifikant.
     </p>
     <h4 className="mt-2 text-lg">V2</h4>
     <ul className="list-disc list-inside">
-      <li>maximale Leistung 150 Kilowatt</li>
+      <li>maximale Leistung 150 kW</li>
       <li>
-        Pairing, d.h. jede Ladestation teilt sich die Leistung mit dem Nachbarn,
-        falls dort jemand lädt
+        Jede Ladestation teilt sich die Leistung mit dem Nachbarn, falls dort
+        jemand lädt (A/B)
       </li>
       <li>Ladekabel ist dicker als beim V3</li>
     </ul>
     <h4 className="mt-2 text-lg">V3</h4>
     <ul className="list-disc list-inside">
       <li>
-        wird in Deutschland erst ausgebaut und benötigt ein Adapter für Model S
-        und X (wir legen den Adapter kostenfrei bei)
+        Benötigt einen Adapter für Model S und X (wir legen den Adapter
+        kostenfrei bei)
       </li>
       <li>maximale Leistung 250 Kilowatt</li>
       <li>schnelleres Laden</li>
-      <li>
-        kein Pairing, d.h. jede einzelne Ladestation hat die volle Leistung
-      </li>
+      <li>Jede einzelne Ladestation hat die volle Leistung</li>
       <li>wassergek&uuml;hlte Kabel</li>
 
       <li>Ladekabel ist d&uuml;nner als beim V2</li>
     </ul>
     <p>
       Der Ausbau der V3 Supercharger ist im vollen Gange, siehe&nbsp;
-      <a href="https://supercharge.info/changes">supercharge.info/changes</a>.
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="https://supercharge.info/changes"
+      >
+        supercharge.info/changes
+      </a>
+      .
     </p>
     <h3>Abrechnungsmethoden Supercharger</h3>
     <p>
@@ -213,33 +216,23 @@ const ContentSection = () => (
       Beschleunigung in den Sitz drücken zu lassen. Teile Deinem Beifahrer
       vorher mit, den Kopf gerade zu halten! Tesla&apos;s Leitspruch lautet: „To
       create the most compelling car company of the 21st century by driving the
-      world’s transition to electric vehicels”. Das ist purer Fahrspaß mit
-      atemberaubendem Fahrgefühl. Leise ist der Stromer im Gegensatz zum
-      Benziner auch. Willkommen bei der umweltfreundlichen und sportlichen
-      E-Mobilität von Elon Musk. Die einzigartigen Flügeltüren passen sich per
-      Sensoren an die Umgebung an und stoßen so nicht an. Wir als
-      Teslavermietung sind bei so viel Innovation begeistert.
-    </p>
-    <h3>Umwelt und Feinstaub</h3>
-    <p>
-      Um seinen CO2-Fußabdruck gering zu halten, kann man öffentliche
-      Verkehrsmittel nutzen. Doch wenn man ungern mit Bus oder Bahn in die
-      Stuttgarter Innenstadt fährt, hat man immer noch die Alternative, ein
-      Elektroauto zu mieten und schadstoffarm die Innenstadt aufzusuchen. Es ist
-      eine traumhafte Alternative ein Elektrofahrzeug zu mieten, egal ob Model 3
-      oder Model X.
+      world&apos;s transition to electric vehicels”. Das ist purer Fahrspaß mit
+      atemberaubendem Fahrgefühl. Willkommen bei der umweltfreundlichen und
+      sportlichen E-Mobilität von Elon Musk. Die einzigartigen Flügeltüren
+      passen sich per Sensoren an die Umgebung an und stoßen so nicht an. Wir
+      als Teslavermietung sind bei so viel Innovation begeistert.
     </p>
     <h3>Innovation</h3>
     <p>
       Schaut man sich das einfache Cockpit eines Porsche 911 von 1963 an und
       vergleicht es mit einer Oberklassen-Limousine, gibt es sehr viel mehr
       Knöpfe, die von der Fahrbahn ablenken. Ganz anders ist das beim Tesla,
-      dort gibt es ein 17 Zoll großes Display rechts vom Fahrer das als
-      Schaltzentrale dient. Hier bündeln sich alle Funktionen wie den Sound
-      auswählen, das Navigationssystem bedienen, Termine im Kalender
-      organisieren oder im Web surfen. Falls sich in Deutschland die
-      Gesetzeslage zum autonomen Fahren ändert, kann man diese Funktionen in der
-      Zukunft auch während der Fahrt benutzen.
+      dort gibt es ein großes Display rechts vom Fahrer das als Schaltzentrale
+      dient. Hier bündeln sich alle Funktionen wie den Sound auswählen, das
+      Navigationssystem bedienen, Termine im Kalender organisieren oder im Web
+      surfen. Falls sich in Deutschland die Gesetzeslage zum autonomen Fahren
+      ändert, kann man diese Funktionen in der Zukunft auch während der Fahrt
+      benutzen.
     </p>
     <h3>Sicherheit</h3>
     <p>
@@ -247,8 +240,8 @@ const ContentSection = () => (
       der Schwerpunkt des Autos sehr tief, da die Batterie unter dem Innenraum
       des Fahrzeuges befestigt ist. Somit sinkt die Wahrscheinlichkeit stark,
       dass das Elektrofahrzeug sich bei einem Unfall überschlägt. Dadurch hat
-      der Stromer auch eine bessere Straßenlage. Bei einem Aufprall schützen den
-      Fahrer Schienen aus Ultra-festem Borstahl zur effizienten
+      des Elektroauto auch eine bessere Straßenlage. Bei einem Aufprall schützen
+      den Fahrer Schienen aus ultra-festem Borstahl zur effizienten
       Energieabsorbierung.
     </p>
     <h3>Dual-Motor</h3>
@@ -256,14 +249,14 @@ const ContentSection = () => (
       Das Tesla Model 3 Performance hat einen elektrischen Allrad-Antrieb mit
       einem Dual-Motor. Das heißt, ein Motor treibt die Vorderachse, der andere
       die Hinterachse an. Der eine Motor sorgt für Leistung, der andere für
-      Reichweite. <b>Fällt ein Motor aus</b>, kann man trotzdem{' '}
+      Reichweite. <b>Fällt ein Motor aus</b>, kann man trotzdem{" "}
       <b>weiterfahren</b>. Das Model X ist das elektrische SUV der Flotte. Die
       unglaubliche Beschleunigung begeistert fast jeden.
     </p>
     <h3>Updates</h3>
     <p>
       Über Nacht wird beim Tesla ein neues Update eingespielt und die Funktionen
-      der Limousine erheblich erweitert. Zum Beispiel gab es eine{' '}
+      der Limousine erheblich erweitert. Zum Beispiel gab es eine{" "}
       <b>Anfahrtshilfe </b>
       am Berg gratis per Update. Tesla setzt auch auf Schwarmintelligenz, die
       Telemetriedaten werden anonymisiert an die Tesla Cloud geschickt. Bremsen
@@ -272,24 +265,23 @@ const ContentSection = () => (
     </p>
     <h3>Komfort</h3>
     <p>
-      Teilst Du dem Betriebssystem Deinen Termin mit, wärmt es den Innenraum vor
-      Antritt der Fahrt für Dich vor. Über das Verkehrsgeschehen, Route und
-      Cloud-Anbindung kennt Dein Auto Deine Abfahrtszeit. Über Deine App kannst
-      Du auch Dein Auto orten oder die Reichweite überprüfen. Oder Du hörst im
-      Premium-Audiosystem Deine Lieblingsmusik. Diese Features der neuen
-      Mobilität faszinieren uns.
+      Der Fahrzeuginnenraum kann automatisch, vorgewärmt oder vorklimatisiert
+      werden. Über die Tesla-App ko&uml;nnen Sie das Fahrzeug orten, oder die
+      Reichweite überprüfen. Oder Sie hören im Premium-Audiosystem Ihre
+      Lieblingsmusik. Diese Features der neuen Mobilität faszinieren uns.
     </p>
     <h3>Langläufer</h3>
     <p>
-      Die Antriebseinheit des Teslas ist dafür ausgelegt,{' '}
+      Die Antriebseinheit des Teslas ist dafür ausgelegt,{" "}
       <b>1,6 Millionen Kilometer wartungsfrei zu laufen</b>. Das liegt auch
       daran, dass ein E-Auto technisch einfacher als ein Verbrennungsmotor ist.
-      Das Getriebe z.B. entfällt hier, möchte der Fahrer rückwärtsfahren, dreht
-      sich der Motor einfach in die andere Richtung. Der Antrieb liegt kompakt
-      zwischen den Rädern und verbindet Elektromotor, Getriebe und den
-      Wechselrichter. Anfangs experimentierte Musk mit Zweigang-Getrieben, da
-      die Beschleunigung von 100 auf 200 km/h damit besser wäre. Leider war kein
-      Hersteller in der Lage, ein langlebiges Getriebe zu liefern.
+      Das variable Getriebe z.B. entfällt hier, möchte der Fahrer
+      rückwärtsfahren, dreht sich der Motor einfach in die andere Richtung. Der
+      Antrieb liegt kompakt zwischen den Rädern und verbindet Elektromotor,
+      Getriebe und den Umrichter. Anfangs experimentierte Tesla mit
+      Zweigang-Getrieben, da die Beschleunigung von 100 auf 200 km/h damit
+      besser wäre. Leider war kein Hersteller in der Lage, ein langlebiges
+      Getriebe zu liefern.
     </p>
     <h3>Super Charger Netz</h3>
     <p>
@@ -299,18 +291,18 @@ const ContentSection = () => (
         target="_blank"
         href="https://www.tesla.com/de_DE/supercharger"
       >
-        {' '}
-        Super Charger Netz von Tesla{' '}
+        {" "}
+        Super Charger Netz von Tesla{" "}
       </a>
       steht allen Tesla Fahrzeugen mit Ausnahme des Roadster der ersten
-      Generation zur Verfügung. In Deutschland gibt es 69 Standorte (Stand
-      Januar 2019). Es wird für alle europäischen Ladestationen laut Tesla,
-      Ökostrom gekauft. Weltweit gibt es 13.000 Super-Charger-Anschlüsse.
+      Generation zur Verfügung. In Deutschland gibt es bereits über 100
+      Standorte. Es wird für alle europäischen Ladestationen laut Tesla,
+      Ökostrom gekauft. Weltweit gibt über 30.000 Super-Charger-Anschlüsse.
       Innerhalb kurzer Zeit lädt der Akku halb voll und die Reise geht weiter,
       denn das reicht bis zum nächsten Stopp.
       <br />
       <br />
-      Wir als Verleiher bevorzugen erneuerbare Energien und haben eine
+      Wir bevorzugen regenerative Energien und haben eine
       <Link passHref href="/photovoltaikanlage/">
         <a rel="noopener noreferrer"> hauseigene Photovoltaik-Anlage </a>
       </Link>
@@ -322,20 +314,20 @@ const ContentSection = () => (
       Stuttgart bietet einiges an Kultur und Sehenswürdigkeiten, die man mit dem
       Mietwagen komfortabel besuchen kann. Die grandiose 360 Grad Sicht auf dem
       Fernsehturm in 150 Meter Höhe bietet einen schönen Start für eine
-      Sightseeing-Tour durch Stuttgart. Kauf Deine Tickets am besten Online.
-      Anschließend empfehlen wir eine Zeitreise zum Schloss Solitude von Herzog
-      Carl Eugen. Die herausragende Architektur mit ihrem herrlichen Ausblick
-      über Stuttgart fasziniert Dich sicherlich. Der Stromer kann bequem in
-      Laufentfernung geparkt werden. Besuch auch die Triberger Wasserfälle im
-      140 km entfernten Triberg. So kannst Du den gemieteten Tesla auf der
-      Autobahn richtig testen und die Beschleunigung spüren.
+      Sightseeing-Tour durch Stuttgart. Kaufen Sie Ihre Tickets am besten
+      online. Anschließend empfehlen wir eine Zeitreise zum Schloss Solitude von
+      Herzog Carl Eugen. Die herausragende Architektur mit ihrem herrlichen
+      Ausblick über Stuttgart fasziniert Sie sicherlich. Der Tesla kann bequem
+      in Laufentfernung geparkt werden. Besuch auch die Triberger Wasserfälle im
+      140 km entfernten Triberg. So können Sie den gemieteten Tesla auf der
+      Autobahn, wie auch im malerischen Schwarzwald ausgiebig genießen.
     </p>
     <h3>Ludwigsburg</h3>
     <p>
       Empfehlenswert ist ein Abstecher in das am Anfang des 18. Jahrhunderts
-      gegründeten Ludwigsburg. Wenn Du dort das größte und auch noch im Original
-      erhaltene Barockschloss Deutschlands erleben möchtest, findest Du weitere
-      Informationen bei der{' '}
+      gegründeten Ludwigsburg. Wenn Sie dort das größte und auch noch im
+      Original erhaltene Barockschloss Deutschlands erleben möchten, finden Sie
+      weitere Informationen bei der{" "}
       <a
         rel="noopener noreferrer"
         target="_blank"
@@ -343,50 +335,28 @@ const ContentSection = () => (
       >
         Schlossverwaltung Ludwigsburg
       </a>
-      {'. '}
-      Eine kurvenreiche Strecke durch den Wald genießt Du bei der Rundfahrt ab
+      {". "}
+      Eine kurvenreiche Strecke durch den Wald genießt man bei der Rundfahrt ab
       Ludwigsburg über Sulzbach an der Murr, Spiegelberg, Löwenstein, Mainhardt,
       Pfedelbach, Obersteinbach, Michelfeld, Murrhardt und wieder zurück. Eine
       tolle Strecke zum cruisen.
     </p>
-    <h3>Autonomes Fahren</h3>
-    <p>
-      In Deutschland ist es noch nicht erlaubt, ohne Hände am Steuer zu fahren,
-      doch technisch gesehen kann der Tesla ohne menschliche Lenkbefehle
-      auskommen. Dabei zeigt er auf dem Display an, woran sich das Auto
-      orientiert. Die Elemente, wie z.B. die Straßenmarkierung ist dann blau
-      eingefärbt. Ein Spurwechsel ist keine Herausforderung. Wenn die
-      Straßenmarkierung bei einer Baustelle fehlt, hängt sich der Tesla einfach
-      an das vorausfahrende Auto. Technisch ist dieses Feature schon sehr
-      ausgereift, was dieses{' '}
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://vimeo.com/192179726"
-      >
-        Video
-      </a>{' '}
-      zeigt. Man kann sogar das Auto auf Zuruf <b>autonom einparken</b> lassen.
-    </p>
     <h3>Kein Zwischenvertrieb</h3>
     <p>
       Tesla gewährt keine Rabatte und vertreibt seine Autos direkt. Das hat den
-      Vorteil die Rabatte über die hauseigene Werkstatt nicht wieder
+      Vorteil, die Rabatte über die hauseigene Werkstatt nicht wieder
       zurückverdienen zu müssen. Um das Elektrofahrzeug vor dem Kauf ausgiebig
       zu testen, bietet es sich an, eines in unserer Autovermietung zu leihen.
       Wir als Vermieter empfehlen einen Monat, als Mietzeit zu buchen, dann sind
-      die Tarife günstiger und desto besser kannst Du alles ausprobieren und
-      testen. Die Elektro-Autobauer sind eben nicht durchschnittlich, eher
-      großartig. Die Begeisterung bringt die Tesla Emotion voll zum Ausdruck.
+      die Tarife günstiger und desto besser können Sie alles ausprobieren und
+      testen. Die Begeisterung bringt die Tesla Emotion voll zum Ausdruck.
       Leihen Sie einen atemberaubenden Tesla und erhalten Sie ein stilvolles
-      E-Fahrzeug mit einer unglaublichen Beschleunigung. Der Mietpreis des
-      Elektroautos sinkt, desto länger sie es mieten. Wir beraten Sie gerne.
-      Wählen Sie jetzt unverbindlich die Telefonnummer unserer E-Auto-Vermietung
-      und erwarten Sie allerhöchsten Service. Die Anmietung ist einfach und
-      schnell.
+      E-Fahrzeug mit einer unglaublichen Beschleunigung. Wählen Sie jetzt
+      unverbindlich die Telefonnummer unserer E-Auto-Vermietung und erwarten Sie
+      allerhöchsten Service. Die Anmietung ist einfach und schnell.
     </p>
   </div>
-)
+);
 
 const FeatureSection = () => (
   <div className="mx-auto">
@@ -394,21 +364,20 @@ const FeatureSection = () => (
       <div className="mx-auto prose lg:prose-md">
         <h2>Verknüpfung Tesla App</h2>
         <p>
-          Wir richten die Tesla-App auf Deinem Handy ein und erklären Dir die{' '}
-          <b> interessanten Funktionen</b>. Genieße sofort Deine{' '}
-          <b>Lieblingsmusik</b>. Oder verknüpfe Deinen <b>Kalender</b> und lass
-          den Innenraum vor der Fahrt <b>aufwärmen</b>. Erlebe Elektromobilität
-          von heute.
+          Wir richten gerne die Tesla-App auf Ihrem Smartphone ein und erklären
+          Ihnen die <b> interessanten Funktionen</b>. Genießen Sie sofort Ihre{" "}
+          <b>Lieblingsmusik</b>. Oder verknüpfen Sie Ihren <b>Kalender</b> und
+          lassen den Innenraum vor der Fahrt <b>aufwärmen</b>. Erleben Sie
+          Elektromobilität von heute.
         </p>
       </div>
 
       <div className="mx-auto prose lg:prose-md">
         <h2>Bester Service </h2>
         <p>
-          Wir haben Zeit für Dich und Deine Fragen. Bei uns ist eine
+          Wir haben Zeit für Sie und Ihre Fragen. Bei uns ist eine
           <b> umfangreiche Einweisung</b> mit <b>praxisnahen Hinweisen</b>
-          <b> inklusive einer Probefahrt</b> immer enthalten. Selbstverständlich
-          kannst Du uns zu den Öffnungszeiten telefonisch erreichen.
+          <b> inklusive einer Probefahrt</b> immer enthalten.
         </p>
       </div>
 
@@ -417,15 +386,15 @@ const FeatureSection = () => (
 
         <p className="">
           Kunden, die bei unserem Tesla-Verleih ein Elektroauto gemietet haben,
-          waren <b> sehr zufrieden</b>. Sieh selbst und lies unbedingt die{' '}
+          waren <b> sehr zufrieden</b>. Sieh selbst und lies unbedingt die{" "}
           <a
             href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {' '}
+            {" "}
             Rezensionen
-          </a>{' '}
+          </a>{" "}
           unserer Kunden.
         </p>
 
@@ -433,7 +402,7 @@ const FeatureSection = () => (
       </div>
     </div>
   </div>
-)
+);
 
 function IndexPage() {
   return (
@@ -445,177 +414,177 @@ function IndexPage() {
       <Head
         script={[
           helmetJsonLdProp({
-            '@context': 'https://schema.org/',
-            '@type': 'AutoRental',
-            slogan: 'Super Service',
-            currenciesAccepted: 'EUR',
-            paymentAccepted: 'Cash, Credit Card',
+            "@context": "https://schema.org/",
+            "@type": "AutoRental",
+            slogan: "Super Service",
+            currenciesAccepted: "EUR",
+            paymentAccepted: "Cash, Credit Card",
             hasMap:
-              'https://www.google.com/maps/place/Itana+GmbH/@48.9028695,9.098111,17z/data=!3m1!4b1!4m5!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305',
+              "https://www.google.com/maps/place/Itana+GmbH/@48.9028695,9.098111,17z/data=!3m1!4b1!4m5!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305",
             logo: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              "@type": "ImageObject",
+              url: "https://mobility.itana.de/icon-192.png",
             },
             image: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              "@type": "ImageObject",
+              url: "https://mobility.itana.de/icon-192.png",
             },
             areaServed: [
               {
-                '@type': 'City',
-                name: 'Stuttgart'
+                "@type": "City",
+                name: "Stuttgart",
               },
               {
-                '@type': 'State',
-                name: 'Baden-Württemberg'
-              }
+                "@type": "State",
+                name: "Baden-Württemberg",
+              },
             ],
             branchOf: {
-              '@type': 'Organization',
-              name: 'Itana GmbH'
+              "@type": "Organization",
+              name: "Itana GmbH",
             },
             openingHoursSpecification: [
               {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Thursday',
-                opens: '08:00:00'
+                "@type": "OpeningHoursSpecification",
+                closes: "18:00:00",
+                dayOfWeek: "http://schema.org/Thursday",
+                opens: "08:00:00",
               },
               {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Tuesday',
-                opens: '08:00:00'
+                "@type": "OpeningHoursSpecification",
+                closes: "18:00:00",
+                dayOfWeek: "http://schema.org/Tuesday",
+                opens: "08:00:00",
               },
               {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Friday',
-                opens: '08:00:00'
+                "@type": "OpeningHoursSpecification",
+                closes: "18:00:00",
+                dayOfWeek: "http://schema.org/Friday",
+                opens: "08:00:00",
               },
               {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Monday',
-                opens: '08:00:00'
+                "@type": "OpeningHoursSpecification",
+                closes: "18:00:00",
+                dayOfWeek: "http://schema.org/Monday",
+                opens: "08:00:00",
               },
               {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Wednesday',
-                opens: '08:00:00'
-              }
+                "@type": "OpeningHoursSpecification",
+                closes: "18:00:00",
+                dayOfWeek: "http://schema.org/Wednesday",
+                opens: "08:00:00",
+              },
             ],
-            name: 'Tesla mieten Stuttgart',
-            url: 'https://www.mobility.itana.de/',
-            priceRange: 'ab 31,63 €',
+            name: "Tesla mieten Stuttgart",
+            url: "https://www.mobility.itana.de/",
+            priceRange: "ab 31,63 €",
             description:
-              'Tesla mieten in Stuttgart ✓ Sofort  verfügbar ✓ einfach ✓  preisgünstig ► Montag - Freitag von 8:00 - 18:00 Uhr | Jetzt anfragen ☎ +49 711 49066 450',
+              "Tesla mieten in Stuttgart ✓ Sofort  verfügbar ✓ einfach ✓  preisgünstig ► Montag - Freitag von 8:00 - 18:00 Uhr | Jetzt anfragen ☎ +49 711 49066 450",
             address: {
-              '@type': 'PostalAddress',
-              name: 'Itana GmbH',
-              streetAddress: 'Maulbronner Weg 33',
-              addressRegion: 'Markgröningen',
-              postalCode: '71706',
-              addressCountry: 'Germany',
-              telephone: '+49 711 49066 450'
-            }
-          })
+              "@type": "PostalAddress",
+              name: "Itana GmbH",
+              streetAddress: "Maulbronner Weg 33",
+              addressRegion: "Markgröningen",
+              postalCode: "71706",
+              addressCountry: "Germany",
+              telephone: "+49 711 49066 450",
+            },
+          }),
         ]}
       />
       <Head
         script={[
           helmetJsonLdProp({
-            '@context': 'http://schema.org',
-            '@type': 'LocalBusiness',
-            '@id': 'https://mobility.itana.de/',
-            name: 'Mobility Itana GmbH',
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://mobility.itana.de/",
+            name: "Mobility Itana GmbH",
             image: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              "@type": "ImageObject",
+              url: "https://mobility.itana.de/icon-192.png",
             },
             logo: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png'
+              "@type": "ImageObject",
+              url: "https://mobility.itana.de/icon-192.png",
             },
-            url: 'https://mobility.itana.de/',
-            telephone: '+49 711 49066 450',
+            url: "https://mobility.itana.de/",
+            telephone: "+49 711 49066 450",
 
             address: {
-              '@type': 'PostalAddress',
-              name: 'Itana GmbH',
-              streetAddress: 'Maulbronner Weg 33',
-              addressRegion: 'Markgröningen',
-              postalCode: '71706',
-              addressCountry: 'Germany',
-              telephone: '+49 711 49066 450'
+              "@type": "PostalAddress",
+              name: "Itana GmbH",
+              streetAddress: "Maulbronner Weg 33",
+              addressRegion: "Markgröningen",
+              postalCode: "71706",
+              addressCountry: "Germany",
+              telephone: "+49 711 49066 450",
             },
             aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '5.0',
-              ratingCount: '10'
+              "@type": "AggregateRating",
+              ratingValue: "5.0",
+              ratingCount: "10",
             },
             review: [
               {
-                '@type': 'Review',
-                author: 'Ste Ke',
-                datePublished: '2020-03-11',
+                "@type": "Review",
+                author: "Ste Ke",
+                datePublished: "2020-03-11",
                 description:
-                  'Perfekt - super freundlich, top Service, einfach eine tolle Erfahrung!',
+                  "Perfekt - super freundlich, top Service, einfach eine tolle Erfahrung!",
                 reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1'
-                }
+                  "@type": "Rating",
+                  bestRating: "5",
+                  ratingValue: "5",
+                  worstRating: "1",
+                },
               },
               {
-                '@type': 'Review',
-                author: 'OLIVER Schindele',
-                datePublished: '2020-01-02',
+                "@type": "Review",
+                author: "OLIVER Schindele",
+                datePublished: "2020-01-02",
                 description:
-                  'Es war eine tolle Erfahrung. Ich durfte eine Woche lang das Model 3 Performance testen. Der Kontakt per E-Mail war schnell und ausführlich. Man merkt, für die Jungs ist es mehr als nur eine Arbeit! Sie leben die E-Mobilität! Die Übergabe und die Fahrzeugrücknahme waren sehr angenehm und unkompliziert. Meine Fragen wurden, auch nach der Rückgabe, schnell und ausführlich beantwortet. Es gab keine versteckten Kosten oder Einschränkungen. Auch ein Ausflug nach Österreich war kein Problem. Die Sache hat nur einen Nachteil! Ich möchte jetzt auch einen eigenen Tesla!',
+                  "Es war eine tolle Erfahrung. Ich durfte eine Woche lang das Model 3 Performance testen. Der Kontakt per E-Mail war schnell und ausführlich. Man merkt, für die Jungs ist es mehr als nur eine Arbeit! Sie leben die E-Mobilität! Die Übergabe und die Fahrzeugrücknahme waren sehr angenehm und unkompliziert. Meine Fragen wurden, auch nach der Rückgabe, schnell und ausführlich beantwortet. Es gab keine versteckten Kosten oder Einschränkungen. Auch ein Ausflug nach Österreich war kein Problem. Die Sache hat nur einen Nachteil! Ich möchte jetzt auch einen eigenen Tesla!",
 
                 reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1'
-                }
+                  "@type": "Rating",
+                  bestRating: "5",
+                  ratingValue: "5",
+                  worstRating: "1",
+                },
               },
               {
-                '@type': 'Review',
-                author: 'Valentina Hütten',
-                datePublished: '2019-12-12',
+                "@type": "Review",
+                author: "Valentina Hütten",
+                datePublished: "2019-12-12",
                 description:
-                  'Herr Weißleder ist ein Experte auf dem Gebiet der Elektromobilität. Freundlich, kompetent und verlässlich! Vielen Dank für die tolle Zusammenarbeit!',
+                  "Herr Weißleder ist ein Experte auf dem Gebiet der Elektromobilität. Freundlich, kompetent und verlässlich! Vielen Dank für die tolle Zusammenarbeit!",
 
                 reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1'
-                }
+                  "@type": "Rating",
+                  bestRating: "5",
+                  ratingValue: "5",
+                  worstRating: "1",
+                },
               },
               {
-                '@type': 'Review',
-                author: 'Thomas Luz',
-                datePublished: '2019-12-10',
+                "@type": "Review",
+                author: "Thomas Luz",
+                datePublished: "2019-12-10",
                 description:
-                  'Das Mietfahrzeug war außen wie innen sehr sauber. Alle meine Fragen rund um das Thema Elektromobilität und Mietfahrzeug wurden ausführlich und kompetent beantwortet, selbst nach Rückgabe des Autos. Es wird sehr angenehm und freundlich mit dem Kunden umgegangen.',
+                  "Das Mietfahrzeug war außen wie innen sehr sauber. Alle meine Fragen rund um das Thema Elektromobilität und Mietfahrzeug wurden ausführlich und kompetent beantwortet, selbst nach Rückgabe des Autos. Es wird sehr angenehm und freundlich mit dem Kunden umgegangen.",
 
                 reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1'
-                }
-              }
+                  "@type": "Rating",
+                  bestRating: "5",
+                  ratingValue: "5",
+                  worstRating: "1",
+                },
+              },
             ],
-            priceRange: 'ab 31,63 €',
+            priceRange: "ab 31,63 €",
             description:
-              'Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450'
-          })
+              "Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450",
+          }),
         ]}
       />
       <Head>
@@ -629,7 +598,7 @@ function IndexPage() {
         <ContentSection />
       </div>
     </div>
-  )
+  );
 }
 
-export default IndexPage
+export default IndexPage;

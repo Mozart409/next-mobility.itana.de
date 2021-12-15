@@ -1,15 +1,15 @@
-import { helmetJsonLdProp } from 'react-schemaorg'
-import Breadcrum from '@/ui/Breadcrum'
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import SEO from '@/ui/seo'
-import CTA from '@/ui/CTA'
+import { helmetJsonLdProp } from "react-schemaorg";
+import Breadcrum from "@/ui/Breadcrum";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import SEO from "@/ui/seo";
+import CTA from "@/ui/CTA";
 import {
   getT3SRDataByLowestPrice,
   getTXDataByLowestPrice,
-  getT3PDataByLowestPrice
-} from 'lib/api'
+  getT3PDataByLowestPrice,
+} from "lib/api";
 
 const InfoBanner = () => (
   <div className="bg-gray-50 border-l-4 border-itana-red">
@@ -33,14 +33,14 @@ const InfoBanner = () => (
       <p className="ml-2">Unsere Preise beinhalten keine versteckten Kosten</p>
     </div>
   </div>
-)
+);
 
 export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
   return (
     <div>
       <SEO
-        title="Tesla Langzeitmiete | ab 32,73€/Tag im Monat | Autovermietung"
-        description="Elektroauto | Tesla Langzeitmiete &#x2705; Bester Preis &#x2705; Super Service &#x2705; Du musst Dich um nichts kümmern &#x2705; Dein zukunftsweisender Auftritt &#x1F680;"
+        title="Tesla Langzeitmiete | ab 32,73€/Tag/Monat | Flexibel | Schnell"
+        description="Elektroauto | Tesla Langzeitmiete | Bester Preis | Super Service | Du musst Dich um nichts kümmern | Jetzt hier klicken + buchen | Anruf: +4971149066450"
       />
       <Head>
         <link
@@ -51,21 +51,33 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <Head
         script={[
           helmetJsonLdProp({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            url: 'https://mobility.itana.de/tesla-langzeitmiete',
-            inLanguage: 'de-DE',
-            image: 'https://mobility.itana.de/news/tesla-model-x.jpg',
-            isFamilyFriendly: 'true',
-            copyrightYear: '2021',
-            headline: 'Tesla Langzeitmiete',
-            articleBody:
-              'Vorteile der Tesla Langzeitmiete gegenüber dem Leasing - viel mehr Flexibilität - kürzere Vertragsbindung - kurzfristigere Verfügbarkeit - fairer Preis und gute Leistung. Das klassische Leasing fordert einen Mietzeitraum von mindestens zwei Jahren! Bei der Itana GmbH ist der Mietzeitraum flexibel. Kontaktiere uns jetzt, gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse ein. Vorab kannst Du in unseren FAQs stöbern.',
-            contentLocation: {
-              '@type': 'Place',
-              name: 'Maulbronner Weg 33, 71706 Markgröningen, Germany'
-            }
-          })
+            legalName: "Itana GmbH",
+            founders: [
+              {
+                name: "Jörg Weißleder",
+                "@type": "Person",
+              },
+            ],
+            name: "Itana GmbH",
+            url: "https://mobility.itana.de/",
+            "@context": "http://schema.org",
+            contactPoint: {
+              "@type": "ContactPoint",
+              email: "mobility@itana.de",
+              telephone: "[+4971149066450]",
+              contactType: "customer support",
+            },
+            address: {
+              "@type": "PostalAddress",
+              postalCode: "71706",
+              addressRegion: "Baden-Württemberg",
+              streetAddress: "Maulbronner Weg 33",
+              addressCountry: "Germany",
+              addressLocality: "Markgröningen",
+            },
+            sameAs: ["https://twitter.com/mobility_gmbh"],
+            "@type": "Organization",
+          }),
         ]}
       />
       <Breadcrum />
@@ -74,12 +86,15 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <time dateTime='2020-04-17'>August 03, 2020</time>
         </p> */}
         <h1>Tesla Langzeitmiete</h1>
-        <p>Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto?</p>
+        <p>
+          Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto? Wir
+          empfehlen die Tesla Langzeitmiete.
+        </p>
 
         <Image
           className="mx-auto h-56 rounded"
           alt="Tesla Model X"
-          src="/images/news/tesla-model-x.jpg"
+          src="/images/cards/rental.jpg"
           height="600"
           width="1000"
         />
@@ -93,38 +108,40 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <li>kürzere Vertragsbindung</li>
               <li>kurzfristigere Verfügbarkeit</li>
               <li>fairer Preis und gute Leistung</li>
+              <li>vergünstigte Konditionen</li>
             </ul>
             <p>
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
-              <b>mindestens zwei Jahren!</b> Bei der Itana GmbH ist der
-              Mietzeitraum flexibel.
+              <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist
+              der Mietzeitraum flexibel. <br />
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/kontakt/"
               >
                 Kontaktiere uns jetzt,
-              </Link>
+              </Link>{" "}
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
               ein.
             </p>
             <p>
-              Vorab kannst Du in unseren
+              Vorab kannst Du in unseren{" "}
               <Link
                 passHref
                 className="font-semibold text-itana-red"
                 href="/faq/"
               >
                 FAQs
-              </Link>
+              </Link>{" "}
               stöbern.
             </p>
           </div>
           <div>
-            <h2>Empfehlungen</h2>
+            <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
             <p>
-              Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus mieten! 
+              Jetzt günsitg und umweltschonend das Model 3 Standard Range Plus
+              mieten!
             </p>
             <Link
               passHref
@@ -136,7 +153,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
             </Link>
             <p>
-              Langzeitmiete für das Model 3 Performance: 
+              Langzeitmiete für das Model 3 SR+ Performance
+              <br />
+              ca. 350 KM praktische Reichweite
             </p>
             <Link
               passHref
@@ -148,7 +167,9 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               <CTA title="Tesla Model 3 mieten" />
             </Link>
             <p>
-              Langzeitmiete für das Model X:
+              Langzeitmiete für das Tesla Model 3:
+              <br />
+              ca. 350 KM praktische Reichweite
             </p>
             <Link
               passHref
@@ -158,20 +179,27 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               className="anfrage"
             >
               <CTA title="Tesla Model X mieten" />
+              <p>
+                Langzeitmiete für das Model X:
+                <br />
+                ca. KM praktische Reichweite
+              </p>
             </Link>
           </div>
         </div>
       </div>
 
       <div className="mx-auto mt-12 prose lg:prose-md">
-        <h2>Was bedeutet die Langzeitmiete für Dein Unternehmen?</h2>
+        <h2>Was bedeutet die Tesla Langzeitmiete für Dein Unternehmen?</h2>
         <p>
-          Unsere Langzeitmiete als Alternative zum eigenen Fuhrpark birgt den
-          Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto geleast
-          oder gekauft, ist das Geld gebunden, das an anderer Stelle kurzfristig
-          gebraucht werden könnte und dann fehlt. In den letzten Jahren
-          <b>mieten Unternehmen</b> ihre <b>Firmenautos</b>. So kannst Du Deinen
-          <b>Bedarf</b> an Fahrzeugen Deiner <b>Auftragslage anpassen</b>.
+          Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt
+          den Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto
+          geleast oder gekauft, ist das Geld gebunden, das an anderer Stelle
+          kurzfristig gebraucht werden könnte und dann fehlt. In den letzten
+          Jahren
+          <b> mieten Unternehmen</b> ihre <b> Firmenautos</b> mit der Tesla
+          Langzeitmiete. So kannst Du Deinen
+          <b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
         </p>
         <ul className="list-inside">
           <li>monatlicher Fixpreis</li>
@@ -182,11 +210,11 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>einfache Aufstockung Deines Fuhrparks</li>
         </ul>
         <p>
-          Bei uns bekommst Du das Elektroauto zum <b>vereinbarten Preis</b>.
-          Beim <b>Leasing</b> oder auch der <b>Fahrzeugfinanzierung</b> würden
-          noch <b>zusätzliche Kosten</b> wie Inspektion, KFZ-Steuer etc.
-          dazukommen. Daher prüfe, wer weitere Kosten übernimmt, bevor Du einen
-          Vertrag schließt:
+          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{" "}
+          <b>vereinbarten Preis</b>. Beim <b>Leasing</b> oder auch der{" "}
+          <b>Fahrzeugfinanzierung</b> würden noch <b>zusätzliche Kosten</b> wie
+          Inspektion, KFZ-Steuer etc. dazukommen. Daher prüfe, wer weitere
+          Kosten übernimmt, bevor Du einen Vertrag schließt:
         </p>
         <ul className="list-inside">
           <li>Haftpflichtversicherung </li>
@@ -199,9 +227,21 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <li>Steuer</li>
           <li>Zulassung </li>
         </ul>
+        <p>
+          Wir von mobility empfehlen die Tesla Langzeitmiete!
+          <br />
+          <Link
+            passHref
+            className="font-semibold text-itana-red"
+            href="/kontakt/"
+          >
+            Kontaktiere uns jetzt,
+          </Link>{" "}
+          und genieße die volle Kostenkontrolle.
+        </p>
       </div>
     </div>
-  )
+  );
 }
 
 /* export async function getStaticProps(context) {

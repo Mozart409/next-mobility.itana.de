@@ -32,22 +32,22 @@ module.exports = withPWA({
         permanent: true,
       },
       {
-        source: '/comments/:slug*',
+        source: '/comments/:slug*/',
         destination: '/',
         permanent: true,
       },
       {
-        source: '/index.php/:slug*',
+        source: '/index.php/:slug*/',
         destination: '/',
         permanent: true,
       },
       {
-        source: '/fahrzeuge/:slug*',
+        source: '/fahrzeuge/:slug*/',
         destination: '/',
         permanent: true,
       },
       {
-        source: '/page-data/:slug*',
+        source: '/page-data/:slug*/',
         destination: '/',
         permanent: true,
       },

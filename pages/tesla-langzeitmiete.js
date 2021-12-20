@@ -149,12 +149,12 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               rel="noopener noreferrer"
               className="anfrage"
             >
-              <CTA title="Tesla Model 3 SR+ mieten" fillBG="true" />
+              <CTA title="Tesla Model 3 mieten" fillBG="true" />
             </a>
             <p>
-              Langzeitmiete für das Model 3 SR+ Performance
+              Langzeitmiete für das Model 3
               <br />
-              ca. 350 KM praktische Reichweite
+              ca. 250 km Reichweite in der Praxis
             </p>
             <a
               href="https://itana.rentware.io/"
@@ -162,12 +162,25 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
               rel="noopener noreferrer"
               className="anfrage"
             >
-              <CTA title="Tesla Model 3 mieten" />
+              <CTA title="Tesla Model 3 Long Range mieten" />
             </a>
             <p>
-              Langzeitmiete für das Tesla Model 3:
+              Langzeitmiete für das Tesla Model 3 Long Range:
               <br />
-              ca. 350 KM praktische Reichweite
+              ca. 350 km Reichweite in der Praxis
+            </p>
+            <a
+              href="https://itana.rentware.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="anfrage"
+            >
+              <CTA title="Tesla Model 3 Performance mieten" />
+            </a>
+            <p>
+              Langzeitmiete für das Model 3 Performance:
+              <br />
+              ca. 300 km Reichweite in der Praxis
             </p>
             <a
               href="https://itana.rentware.io/"
@@ -180,7 +193,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
             <p>
               Langzeitmiete für das Model X:
               <br />
-              ca. KM praktische Reichweite
+              ca. 270 km Reichweite in der Praxis
             </p>
           </div>
         </div>

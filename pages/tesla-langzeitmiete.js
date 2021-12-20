@@ -139,7 +139,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
           <div>
             <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
-            <p>Jetzt einen Tesla Model 3 mieten!</p>
+            <p>Jetzt einen Tesla mieten!</p>
             <a
               href="https://itana.rentware.io"
               target="_blank"

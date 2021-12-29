@@ -118,12 +118,13 @@ const ContentSection = () => (
     <Link passHref href="/tesla-supercharger-leonberg/">
       <a rel="noopener noreferrer"> Tipps zum Aufladen findest Du hier. </a>
     </Link>
-    Die
     <a
       rel="noopener noreferrer"
       target="_blank"
       href="https://www.tesla.com/de_DE/supercharger"
-    ></a>{" "}
+    >
+      Supercharger-Karte
+    </a>{" "}
     <h3>Wie kann ich bezahlen?</h3>
     Es gibt zahlreiche Anbieter von Ladekarten und Ladeapps. Wir empfehlen die
     mobility+ App von EnBW. Die Abrechnung erfolgt in der Regel kWh-basiert.

@@ -31,7 +31,7 @@ const ContentSection = () => (
     <p>Wir haben genügend kostenlose Parkplätze an unserem Standort.</p>
     <h2 id="tesla-mieten"> Wie kann ich einen Tesla ausleihen und abholen? </h2>
     <p>
-      uchen Sie &uuml;ber unsere Website bei den&nbsp;Tarifpaketen ein E-Auto.
+      Buchen Sie &uuml;ber unsere Website bei den&nbsp;Tarifpaketen ein E-Auto.
       Im &Uuml;bergabegespr&auml;ch (ca. 30 - 60 Minuten) kl&auml;ren wir alle
       Ihre Fragen und unterstützen Sie gerne bei der Tesla-App. Wir selbst sind
       begeisterte E-Auto-Fahrer! Kunden, die bei uns ein Elektroauto ausgeliehen
@@ -77,18 +77,19 @@ const ContentSection = () => (
       Was muss ich beachten, wenn ich ein Elektorauto miete?{" "}
     </h2>
     <p>
-      Das Elektroauto muss rechtzeitig aufgeladen werden, so wie der Verbrenner
-      rechtzeitig tanken muss. Beim Tesla unterstützt Dich das intelligente
-      Navigationssystem mit der Anzeige der nächsten Ladestation und navigiert
-      Dich dorthin. &nbsp;
+      Mittlerweile ist die Ladeinfrastruktur in Deutschland sehr gut ausgebaut.
+      Dadurch kann wie mit einem Verbrenner jeder Ort problemlos erreicht
+      werden. Beim Tesla unterstützt Sie das intelligente Navigationssystem auf
+      Reisen, die die Reichweite des Akkus übersteigen bei der Planung der
+      Ladestopps, und navigiert Sie direkt zu den optimalen Ladesationen. &nbsp;
     </p>
     <h2 id="tesla-aufladen"> Aufladen + Reichweite beim Elektroauto</h2>
     <h3> Was kostet es, einen Tesla aufzuladen? </h3>
     <p>
-      Das ist je nach Ladezeit, Anbieter, Batteriegröße und Art des Ladepunktes
-      sehr unterschiedlich. An einer urbanen Typ 2 AC Ladesäule kostet die kWh
-      zwischen 30 und 60 Cent. Bei einer Schnellladesäule (DC) muss man zwischen
-      40 und 80 Cent pro kWh rechnen.
+      Das ist je nach Fahrzeugmodell, Anbieter, Batteriegröße und Art des
+      Ladepunktes sehr unterschiedlich. An einer urbanen Typ 2 AC Ladesäule
+      kostet die kWh zwischen 30 und 60 Cent. Bei einer Schnellladesäule (DC)
+      muss man zwischen 40 und 80 Cent pro kWh rechnen.
     </p>
     <h3> Wie lange braucht ein Tesla, bis er aufgeladen ist? </h3>
     <p>
@@ -97,20 +98,21 @@ const ContentSection = () => (
       älteren 50 kW CCS Ladern dauert es je nach Batteriegröße bis zu zwei
       Stunden abhängig ist das von der genutzten Technik des Fahrzeuges und der
       Ladesäule. Bei den meisten Fahrzeugen reduziert sich die Ladeleistung mit
-      steigendem Ladestand, sodass es auf der Reise nicht sinnvoll ist das
-      Fahrzeug unterwegs immer voll aufzuladen.
+      steigendem Ladestand, sodass es auf der Reise nicht immer sinnvoll ist,
+      das Fahrzeug unterwegs vollständig aufzuladen.
     </p>
     <h3 id="wo-tesla-aufladen">Wo kann ich den Tesla aufladen?</h3>
     <p>
-      Die innovativen Ladesäulen sind an strategischen Stellen wie
-      Wi-Fi-Hotspots, Einkaufszentren, Restaurants oder an Autohöfen verfügbar.
-      Es gibt immer mehrere Ladeplätze, die das Fahrzeug mit Strom versorgen.
-      Auf dem Bildschirm im Auto oder am Smartphone einfach den nächsten Charger
-      suchen lassen.
+      Supercharger sind an strategischen Stellen wie Wi-Fi-Hotspots,
+      Einkaufszentren, Restaurants oder an Autohöfen verfügbar. Es gibt immer
+      mehrere Ladeplätze, sodass auch bei starker Frequentierung fast immer ohne
+      Wartezeit geladen werden kann.
       <br />
-      Die intelligente Suche im Tesla zeigt alle Parameter der Ladesäule, wie
-      Öffnungszeiten, wie schnell geladen werden kann und sogar die tatsächliche
-      Belegung in Echtzeit.
+      Das Navigationssystem des Tesla zeigt alle Parameter des Ladeparks, wie
+      die Anzahl der Stalls (Ladeplätze), die mögliche Ladeleistung, und sogar
+      die tatsächliche Belegung in Echtzeit. Darüber hinaus erhalten Sie
+      Informationen über Infrastruktur am Standort (Restaurants, Hotels, WC und
+      Shops)
     </p>
     <br />
     <Link passHref href="/tesla-supercharger-leonberg/">
@@ -123,25 +125,12 @@ const ContentSection = () => (
       href="https://www.tesla.com/de_DE/supercharger"
     >
       {" "}
-      Tesla Supercharger Karte{" "}
-    </a>{" "}
-    auf dem Display navigiert Sie zur nächsten Ladestation.
     <h3>Wie kann ich bezahlen?</h3>
-    Mit{" "}
-    <a
-      rel="noopener noreferrer"
-      target="_blank"
-      href="https://www.maingau-energie.de/e-mobilit%C3%A4t/Autostrom-Tarif"
-    >
-      Maingau-Energie{" "}
-    </a>{" "}
-    können Sie einfach <b>Strom laden</b> und <b>bequem bezahlen</b>.{" "}
-    <b>Ohne Vertragslaufzeit</b> und <b>ohne Grundgebühr</b> gibt es eine faire
-    kWh-basierte Abrechnung. Das flächendeckende Ladenetz ist einfach und bequem
-    zu handhaben. Für zu Hause ist eine Wallbox sinnvoll.
+    Es gibt zahlreiche Anbieter von Ladekarten und Ladeapps. Wir empfehlen die mobility+ App von EnBW. Die Abrechnung erfolgt in der Regel kWh-basiert. Manche Anbieter von Ladeapps bieten Abomodelle für Vielfahrer. Grundsätzlich können nach einer Registrierung nahezu alle Ladeapps ohne Grundgebühr genutzt werden. Für zu Hause ist je nach Fahrzeugmodell eine Wallbox sinnvoll.
     <h3> Wie weit kann ich mit einem Elektroauto fahren? </h3>
     <p>
-      Das kommt auf das Modell an, beim <b>Model 3</b> Performance liegt die
+      Wie bei einem Verbrennerfahrzeug die maximale Reisedistanz nicht durch den Tankinhalt limitiert ist, so ist auch bei einem Elektrofahrzeug die möglich Länge der Reise nicht durch die Batteriekapazität begrenzt.
+      Die Reichweite einer Ladung hängt vom Modell ab. Beim <b>Model 3</b> Performance liegt die
       Reichweite nach Herstellerangaben bei <b>530 km (WLTP)</b>. Die
       Batteriekapazität liegt bei 75 kWh. Beim <b>Model X</b> beträgt die
       Reichweite <b>507 km (WLTP)</b>. Die Batteriekapazität liegt bei 100 kWh.
@@ -149,7 +138,7 @@ const ContentSection = () => (
       Die realistische Reichweite eines Model 3 mit vollem Akku liegt je nach
       Fahrstil, Außentemperatur und anderen Faktoren bei rund 350 km.
     </p>
-    <h3>Realer Verbrauch des Model X</h3>
+    <h3>Realer Verbrauch des Tesla Model 3 und des Tesla Model X</h3>
     <p>
       Im Schnitt verbraucht das Model X nach unseren Erfahrungen 26 kWh/100 km.
       Im Vergleich verbraucht das Model 3 je nach Modellvariante 16-20 kWh/100
@@ -166,8 +155,8 @@ const ContentSection = () => (
       Ja, die neueste Ausbaustufes ist der Supercharger V3. Klickt man auf der
       Übersichtskarte im Fahrzeugbildschirm rechts unten, um den nächsten
       Charger zu finden, werden die Stationen angezeigt. Durch Klick auf die
-      Station sieht man in den Details die Ladeleistung von 150 (V2) oder 250
-      Kilowatt (V3). Die Funktion &quot;On-Route Battery Warmup&quot; wärmt die
+      Station sieht man in den Details die Ladeleistung von 150 kW (V2) oder 250
+      kW (V3). Die Funktion &quot;On-Route Battery Warmup&quot; wärmt die
       Batterie während der Fahrt zum Supercharger auf Lade-Temperatur auf. Das
       verkürzt die Ladezeit ;&ndash; vor allem im Winter ;&ndash; signifikant.
     </p>
@@ -186,7 +175,7 @@ const ContentSection = () => (
         Benötigt einen Adapter für Model S und X (wir legen den Adapter
         kostenfrei bei)
       </li>
-      <li>maximale Leistung 250 Kilowatt</li>
+      <li>maximale Leistung 250 kW</li>
       <li>schnelleres Laden</li>
       <li>Jede einzelne Ladestation hat die volle Leistung</li>
       <li>wassergek&uuml;hlte Kabel</li>
@@ -218,9 +207,7 @@ const ContentSection = () => (
       create the most compelling car company of the 21st century by driving the
       world&apos;s transition to electric vehicels”. Das ist purer Fahrspaß mit
       atemberaubendem Fahrgefühl. Willkommen bei der umweltfreundlichen und
-      sportlichen E-Mobilität von Elon Musk. Die einzigartigen Flügeltüren
-      passen sich per Sensoren an die Umgebung an und stoßen so nicht an. Wir
-      als Teslavermietung sind bei so viel Innovation begeistert.
+      sportlichen E-Mobilität von Elon Musk.
     </p>
     <h3>Innovation</h3>
     <p>
@@ -256,9 +243,7 @@ const ContentSection = () => (
     <h3>Updates</h3>
     <p>
       Über Nacht wird beim Tesla ein neues Update eingespielt und die Funktionen
-      der Limousine erheblich erweitert. Zum Beispiel gab es eine{" "}
-      <b>Anfahrtshilfe </b>
-      am Berg gratis per Update. Tesla setzt auch auf Schwarmintelligenz, die
+      der Limousine erheblich erweitert. Tesla setzt auch auf Schwarmintelligenz, die
       Telemetriedaten werden anonymisiert an die Tesla Cloud geschickt. Bremsen
       viele Fahrer in einer Kurve auf 35 km/h ab, merkt sich das der Autopilot
       und gibt dem Fahrer einen Hinweis.
@@ -278,10 +263,7 @@ const ContentSection = () => (
       Das variable Getriebe z.B. entfällt hier, möchte der Fahrer
       rückwärtsfahren, dreht sich der Motor einfach in die andere Richtung. Der
       Antrieb liegt kompakt zwischen den Rädern und verbindet Elektromotor,
-      Getriebe und den Umrichter. Anfangs experimentierte Tesla mit
-      Zweigang-Getrieben, da die Beschleunigung von 100 auf 200 km/h damit
-      besser wäre. Leider war kein Hersteller in der Lage, ein langlebiges
-      Getriebe zu liefern.
+      Getriebe und den Umrichter.
     </p>
     <h3>Super Charger Netz</h3>
     <p>
@@ -298,8 +280,7 @@ const ContentSection = () => (
       Generation zur Verfügung. In Deutschland gibt es bereits über 100
       Standorte. Es wird für alle europäischen Ladestationen laut Tesla,
       Ökostrom gekauft. Weltweit gibt über 30.000 Super-Charger-Anschlüsse.
-      Innerhalb kurzer Zeit lädt der Akku halb voll und die Reise geht weiter,
-      denn das reicht bis zum nächsten Stopp.
+      Innerhalb kurzer Zeit lädt der Akku auf 80%, und die Reise geht weiter.
       <br />
       <br />
       Wir bevorzugen regenerative Energien und haben eine
@@ -351,9 +332,7 @@ const ContentSection = () => (
       die Tarife günstiger und desto besser können Sie alles ausprobieren und
       testen. Die Begeisterung bringt die Tesla Emotion voll zum Ausdruck.
       Leihen Sie einen atemberaubenden Tesla und erhalten Sie ein stilvolles
-      E-Fahrzeug mit einer unglaublichen Beschleunigung. Wählen Sie jetzt
-      unverbindlich die Telefonnummer unserer E-Auto-Vermietung und erwarten Sie
-      allerhöchsten Service. Die Anmietung ist einfach und schnell.
+      E-Fahrzeug mit einer unglaublichen Beschleunigung. Buchen Sie Ihr Wunschfahrzeug mit wenigen Klicks und sofortiger Buchungsbestätigung.  Die Anmietung ist einfach und schnell.
     </p>
   </div>
 );

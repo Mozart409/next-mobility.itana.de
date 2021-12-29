@@ -123,17 +123,24 @@ const ContentSection = () => (
       rel="noopener noreferrer"
       target="_blank"
       href="https://www.tesla.com/de_DE/supercharger"
-    >
-      {" "}
+    ></a>{" "}
     <h3>Wie kann ich bezahlen?</h3>
-    Es gibt zahlreiche Anbieter von Ladekarten und Ladeapps. Wir empfehlen die mobility+ App von EnBW. Die Abrechnung erfolgt in der Regel kWh-basiert. Manche Anbieter von Ladeapps bieten Abomodelle für Vielfahrer. Grundsätzlich können nach einer Registrierung nahezu alle Ladeapps ohne Grundgebühr genutzt werden. Für zu Hause ist je nach Fahrzeugmodell eine Wallbox sinnvoll.
+    Es gibt zahlreiche Anbieter von Ladekarten und Ladeapps. Wir empfehlen die
+    mobility+ App von EnBW. Die Abrechnung erfolgt in der Regel kWh-basiert.
+    Manche Anbieter von Ladeapps bieten Abomodelle für Vielfahrer. Grundsätzlich
+    können nach einer Registrierung nahezu alle Ladeapps ohne Grundgebühr
+    genutzt werden. Für zu Hause ist je nach Fahrzeugmodell eine Wallbox
+    sinnvoll.
     <h3> Wie weit kann ich mit einem Elektroauto fahren? </h3>
     <p>
-      Wie bei einem Verbrennerfahrzeug die maximale Reisedistanz nicht durch den Tankinhalt limitiert ist, so ist auch bei einem Elektrofahrzeug die möglich Länge der Reise nicht durch die Batteriekapazität begrenzt.
-      Die Reichweite einer Ladung hängt vom Modell ab. Beim <b>Model 3</b> Performance liegt die
-      Reichweite nach Herstellerangaben bei <b>530 km (WLTP)</b>. Die
-      Batteriekapazität liegt bei 75 kWh. Beim <b>Model X</b> beträgt die
-      Reichweite <b>507 km (WLTP)</b>. Die Batteriekapazität liegt bei 100 kWh.
+      Wie bei einem Verbrennerfahrzeug die maximale Reisedistanz nicht durch den
+      Tankinhalt limitiert ist, so ist auch bei einem Elektrofahrzeug die
+      möglich Länge der Reise nicht durch die Batteriekapazität begrenzt. Die
+      Reichweite einer Ladung hängt vom Modell ab. Beim <b>Model 3</b>{" "}
+      Performance liegt die Reichweite nach Herstellerangaben bei{" "}
+      <b>530 km (WLTP)</b>. Die Batteriekapazität liegt bei 75 kWh. Beim{" "}
+      <b>Model X</b> beträgt die Reichweite <b>507 km (WLTP)</b>. Die
+      Batteriekapazität liegt bei 100 kWh.
       <br />
       Die realistische Reichweite eines Model 3 mit vollem Akku liegt je nach
       Fahrstil, Außentemperatur und anderen Faktoren bei rund 350 km.
@@ -243,10 +250,10 @@ const ContentSection = () => (
     <h3>Updates</h3>
     <p>
       Über Nacht wird beim Tesla ein neues Update eingespielt und die Funktionen
-      der Limousine erheblich erweitert. Tesla setzt auch auf Schwarmintelligenz, die
-      Telemetriedaten werden anonymisiert an die Tesla Cloud geschickt. Bremsen
-      viele Fahrer in einer Kurve auf 35 km/h ab, merkt sich das der Autopilot
-      und gibt dem Fahrer einen Hinweis.
+      der Limousine erheblich erweitert. Tesla setzt auch auf
+      Schwarmintelligenz, die Telemetriedaten werden anonymisiert an die Tesla
+      Cloud geschickt. Bremsen viele Fahrer in einer Kurve auf 35 km/h ab, merkt
+      sich das der Autopilot und gibt dem Fahrer einen Hinweis.
     </p>
     <h3>Komfort</h3>
     <p>
@@ -332,7 +339,9 @@ const ContentSection = () => (
       die Tarife günstiger und desto besser können Sie alles ausprobieren und
       testen. Die Begeisterung bringt die Tesla Emotion voll zum Ausdruck.
       Leihen Sie einen atemberaubenden Tesla und erhalten Sie ein stilvolles
-      E-Fahrzeug mit einer unglaublichen Beschleunigung. Buchen Sie Ihr Wunschfahrzeug mit wenigen Klicks und sofortiger Buchungsbestätigung.  Die Anmietung ist einfach und schnell.
+      E-Fahrzeug mit einer unglaublichen Beschleunigung. Buchen Sie Ihr
+      Wunschfahrzeug mit wenigen Klicks und sofortiger Buchungsbestätigung. Die
+      Anmietung ist einfach und schnell.
     </p>
   </div>
 );

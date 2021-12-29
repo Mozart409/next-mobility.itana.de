@@ -118,6 +118,8 @@ const ContentSection = () => (
     <Link passHref href="/tesla-supercharger-leonberg/">
       <a rel="noopener noreferrer"> Tipps zum Aufladen findest Du hier. </a>
     </Link>
+    <br />
+    <br />
     <a
       rel="noopener noreferrer"
       target="_blank"
@@ -132,6 +134,7 @@ const ContentSection = () => (
     können nach einer Registrierung nahezu alle Ladeapps ohne Grundgebühr
     genutzt werden. Für zu Hause ist je nach Fahrzeugmodell eine Wallbox
     sinnvoll.
+    <br />
     <h3> Wie weit kann ich mit einem Elektroauto fahren? </h3>
     <p>
       Wie bei einem Verbrennerfahrzeug die maximale Reisedistanz nicht durch den

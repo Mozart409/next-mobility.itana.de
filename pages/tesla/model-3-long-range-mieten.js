@@ -28,6 +28,13 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
           Tesla Model 3 LR mieten - Leichten und agilen Sportwagen fahren
         </h1>
 
+        <rentware-article
+          article-id="6WVT9M"
+          booking-view="calendar"
+        ></rentware-article>
+
+        <rentware-search></rentware-search>
+
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
@@ -114,7 +121,7 @@ export async function getStaticProps(context) {
   const Langzeit = await getT3SRPDataByArt('L')
   const Mehrkilometer = await getT3SRPDataByArt('M')
   return {
-    props: { Kurzzeit, Langzeit, Mehrkilometer }
+    props: { Kurzzeit, Langzeit, Mehrkilometer },
   }
 }
 

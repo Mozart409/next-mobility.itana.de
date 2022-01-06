@@ -3,6 +3,13 @@ import { useEffect } from 'react'
 import '../lib/global.css'
 
 export default function MyApp({ Component, pageProps }) {
+  {
+    /* <Script id="rentware" strategy="lazyOnload">
+            window.RENTWARE_BASE_API_URL = &quot;https://itana.rentware.io&quot;
+            window.RENTWARE_LANGUAGE = &quot;de-DE&quot;;
+          </Script> */
+  }
+
   useEffect(() => {
     if (
       typeof window !== 'undefined' &&
@@ -80,6 +87,11 @@ export default function MyApp({ Component, pageProps }) {
       // never forget to call register as auto register is turned off in next.config.js
       wb.register()
     }
+  }, [])
+
+  useEffect(() => {
+    window.RENTWARE_BASE_API_URL = 'https://itana.rentware.io'
+    window.RENTWARE_LANGUAGE = 'de-DE'
   }, [])
   return (
     <Layout>

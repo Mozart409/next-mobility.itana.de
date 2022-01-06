@@ -45,7 +45,7 @@ export default function FahrzeugKacheln() {
                 />
 
                 <h2
-                  data-cy="KachelModel3SR"
+                  data-cy="KachelModel3LR"
                   className="static px-1 text-lg text-center text-white rounded-b box-border bg-itana-red"
                 >
                   Tesla Model 3 Long Range mieten ab 44,63 € / Tag

@@ -12,8 +12,7 @@
     "format": "yarn run rw && eslint --fix '**/*.{js,css}'",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "rw": "yarn run rustywind --write .",
-    "generate:gql": "graphql-codegen --config codegen.yml"
+    "rw": "yarn run rustywind --write ."
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -40,10 +39,6 @@
     "node": ">=12"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "2.2.2",
-    "@graphql-codegen/introspection": "2.1.0",
-    "@graphql-codegen/typescript": "2.3.0",
-    "@graphql-codegen/typescript-operations": "2.2.0",
     "@testing-library/cypress": "^8.0.2",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.37",

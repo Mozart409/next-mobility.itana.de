@@ -1,7 +1,0 @@
-overwrite: true
-schema: './gql/schema.graphql'
-documents: './gql/schema.graphql'
-generates:
-  graphql.ts:
-    plugins:
-      - 'typescript'

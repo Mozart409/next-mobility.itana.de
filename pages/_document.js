@@ -48,7 +48,7 @@ class MyDocument extends Document {
             data-settings-id="oVM0OC3Mr"
           ></script>
 
-          <Script
+          <script
             id="GTM"
             strategy="afterInteractive"
             data-usercentrics="Google Tag Manager"
@@ -58,11 +58,11 @@ class MyDocument extends Document {
                 "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K56QMGF');",
             }}
           />
-          <Script
+          <script
             data-usercentrics="Google Analytics"
             type="text/plain"
             src="https://www.googletagmanager.com/gtag/js?id=G-0G43K9BEPW"
-          ></Script>
+          ></script>
           <script
             data-usercentrics="Google Analytics"
             type="text/plain"

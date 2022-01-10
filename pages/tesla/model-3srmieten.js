@@ -24,28 +24,38 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla Model 3 SR+ mieten - Leichten und agilen Sportwagen fahren
         </h1>
 
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <div>
-                <Link
-                  passHref
-                  href="#tesla-standard-range-plus"
-                  title="Tesla Model 3 Standard Range Plus"
-                  aria-label="Tesla Model 3 Standard Range Plus"
-                >
-                  <Image
-                    src="/images/cards/tesla-3-sr.png"
-                    className="mx-auto mt-4 h-96 rounded"
-                    alt="Tesla Model 3 Standard Range Plus mieten"
-                    height="600"
-                    width="1000"
-                  />
-                </Link>
+              <div className="md:grid md:grid-cols-8">
+                <div className="col-span-4 lg:col-span-6 my-auto">
+                  <Link
+                    passHref
+                    href="#tesla-standard-range-plus"
+                    title="Tesla Model 3 Standard Range Plus"
+                    aria-label="Tesla Model 3 Standard Range Plus"
+                  >
+                    <Image
+                      src="/images/cards/tesla-3-sr.png"
+                      className="mx-auto mt-4 h-96 rounded"
+                      alt="Tesla Model 3 Standard Range Plus mieten"
+                      height="600"
+                      width="1000"
+                    />
+                  </Link>
+                </div>
+                <div className="col-span-4 lg:col-span-2">
+                  <div className="hidden mx-auto md:grid grid-cols-1 justify-items-center">
+                    <rentware-article-booking
+                      article-id="9QD87M"
+                      view="calendar"
+                    ></rentware-article-booking>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -53,16 +63,12 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <a
-          href="#tesla-standard-range-plus"
-          role="button"
-          id="tesla-standard-range-plus"
-          label="Tesla Model 3 Stanard Range Plus"
-          data-cy="RentTesla3SR"
-        >
-          <h2>Tesla Model 3 Standard Range Plus</h2>
-        </a>
-
+        <div className="md:hidden mx-auto grid grid-cols-1 justify-items-center">
+          <rentware-article-booking
+            article-id="9QD87M"
+            view="calendar"
+          ></rentware-article-booking>
+        </div>
         <CTA
           data_cy="TeslaModel3StandardRangePlusMieten"
           fillBG="true"
@@ -114,7 +120,7 @@ export async function getStaticProps(context) {
   const Langzeit = await getT3SRPDataByArt('L')
   const Mehrkilometer = await getT3SRPDataByArt('M')
   return {
-    props: { Kurzzeit, Langzeit, Mehrkilometer }
+    props: { Kurzzeit, Langzeit, Mehrkilometer },
   }
 }
 

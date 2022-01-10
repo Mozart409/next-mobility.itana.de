@@ -1,15 +1,10 @@
 import Layout from 'components/Layout'
+import Script from 'next/script'
+import Head from 'next/head'
 import { useEffect } from 'react'
 import '../lib/global.css'
 
 export default function MyApp({ Component, pageProps }) {
-  {
-    /* <Script id="rentware" strategy="lazyOnload">
-            window.RENTWARE_BASE_API_URL = &quot;https://itana.rentware.io&quot;
-            window.RENTWARE_LANGUAGE = &quot;de-DE&quot;;
-          </Script> */
-  }
-
   useEffect(() => {
     if (
       typeof window !== 'undefined' &&
@@ -95,6 +90,12 @@ export default function MyApp({ Component, pageProps }) {
   }, [])
   return (
     <Layout>
+      <Script
+        strategy="afterInteractive"
+        type="module"
+        src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
+      ></Script>
+
       <Component {...pageProps} />
     </Layout>
   )

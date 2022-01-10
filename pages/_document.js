@@ -27,12 +27,11 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://app.usercentrics.eu" />
           <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-          <Script
-            defer
-            strategy="lazyOnload"
+          {/* <Script
+            strategy="afterInteractive"
             type="module"
             src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
-          ></Script>
+          ></Script> */}
 
           <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index,follow" />

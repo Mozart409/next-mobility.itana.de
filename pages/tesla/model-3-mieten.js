@@ -32,7 +32,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           <div className="mx-auto">
             <div className="relative">
               <div className="md:grid md:grid-cols-8">
-                <div className="col-span-4 lg:col-span-6 my-auto">
+                <div className="col-span-4 my-auto lg:col-span-6">
                   <Link
                     passHref
                     href="#tesla-performance"
@@ -49,7 +49,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
                   </Link>
                 </div>
                 <div className="col-span-4 lg:col-span-2">
-                  <div className="hidden mx-auto md:grid grid-cols-1 justify-items-center">
+                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
                     <rentware-article-booking
                       article-id="9YTCVE"
                       view="calendar"
@@ -63,7 +63,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <div className="md:hidden mx-auto grid grid-cols-1 justify-items-center">
+        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="9YTCVE"
             view="calendar"

@@ -33,7 +33,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
           <div className="mx-auto">
             <div className="relative">
               <div className="md:grid md:grid-cols-8">
-                <div className="col-span-4 lg:col-span-6 my-auto">
+                <div className="col-span-4 my-auto lg:col-span-6">
                   <Link
                     passHref
                     href="#tesla-model-x"
@@ -42,7 +42,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
                   >
                     <Image
                       src="/images/cards/tesla-model-x.png"
-                      className="mx-auto mt-4 h-96 rounded "
+                      className="mx-auto mt-4 h-96 rounded"
                       alt="Tesla Model X mieten"
                       height="600"
                       width="1000"
@@ -50,7 +50,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
                   </Link>
                 </div>
                 <div className="col-span-4 lg:col-span-2">
-                  <div className="hidden mx-auto md:grid grid-cols-1 justify-items-center">
+                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
                     <rentware-article-booking
                       article-id="11JUVM"
                       view="calendar"
@@ -73,7 +73,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <div className="md:hidden mx-auto grid grid-cols-1 justify-items-center">
+        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="11JUVM"
             view="calendar"

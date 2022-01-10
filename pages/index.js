@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { helmetJsonLdProp } from 'react-schemaorg'
+
 import FahrzeugKacheln from '@/ui/FahrzeugKacheln'
 
 import SEO from '@/ui/seo'
 import GoogleBewertungen from '@/ui/GoogleBewertungen'
+import { JsonLD } from 'components/JsonLD'
 
 const Heading1 = () => (
   <div className="py-2 bg-white">
@@ -398,188 +399,121 @@ const FeatureSection = () => (
 )
 
 function IndexPage() {
+  const jsonLD1 = {
+    '@context': 'https://schema.org/',
+    '@type': 'AutoRental',
+    slogan: 'Super Service',
+    currenciesAccepted: 'EUR',
+    paymentAccepted: 'Cash, Credit Card',
+    hasMap:
+      'https://www.google.com/maps/place/Itana+GmbH/@48.9028695,9.098111,17z/data=!3m1!4b1!4m5!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://mobility.itana.de/icon-192.png',
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://mobility.itana.de/icon-192.png',
+    },
+    areaServed: [
+      {
+        '@type': 'City',
+        name: 'Stuttgart',
+      },
+      {
+        '@type': 'State',
+        name: 'Baden-Württemberg',
+      },
+    ],
+    branchOf: {
+      '@type': 'Organization',
+      name: 'Itana GmbH',
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        closes: '18:00:00',
+        dayOfWeek: 'http://schema.org/Thursday',
+        opens: '08:00:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        closes: '18:00:00',
+        dayOfWeek: 'http://schema.org/Tuesday',
+        opens: '08:00:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        closes: '18:00:00',
+        dayOfWeek: 'http://schema.org/Friday',
+        opens: '08:00:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        closes: '18:00:00',
+        dayOfWeek: 'http://schema.org/Monday',
+        opens: '08:00:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        closes: '18:00:00',
+        dayOfWeek: 'http://schema.org/Wednesday',
+        opens: '08:00:00',
+      },
+    ],
+    name: 'Tesla mieten Stuttgart',
+    url: 'https://www.mobility.itana.de/',
+    priceRange: 'ab 31,63 €',
+    description:
+      'Tesla mieten in Stuttgart ✓ Sofort  verfügbar ✓ einfach ✓  preisgünstig ► Montag - Freitag von 8:00 - 18:00 Uhr | Jetzt anfragen ☎ +49 711 49066 450',
+    address: {
+      '@type': 'PostalAddress',
+      name: 'Itana GmbH',
+      streetAddress: 'Maulbronner Weg 33',
+      addressRegion: 'Markgröningen',
+      postalCode: '71706',
+      addressCountry: 'Germany',
+      telephone: '+49 711 49066 450',
+    },
+  }
+  const jsonLD2 = {
+    '@context': 'http://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': 'https://mobility.itana.de/',
+    name: 'Mobility Itana GmbH',
+    image: {
+      '@type': 'ImageObject',
+      url: 'https://mobility.itana.de/icon-192.png',
+    },
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://mobility.itana.de/icon-192.png',
+    },
+    url: 'https://mobility.itana.de/',
+    telephone: '+49 711 49066 450',
+    address: {
+      '@type': 'PostalAddress',
+      name: 'Itana GmbH',
+      streetAddress: 'Maulbronner Weg 33',
+      addressRegion: 'Markgröningen',
+      postalCode: '71706',
+      addressCountry: 'Germany',
+      telephone: '+49 711 49066 450',
+    },
+    priceRange: 'ab 31,63 €',
+    description:
+      'Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450',
+  }
   return (
     <div>
       <SEO
         title="Tesla mieten in Stuttgart | Elektromobilität | Autovermietung"
         description="Tesla Model X | Tesla Model 3 | Elektroauto Tesla mieten in Stuttgarter Autovermietung ✓ Elektromobilität ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450"
       />
-      <Head
-        script={[
-          helmetJsonLdProp({
-            '@context': 'https://schema.org/',
-            '@type': 'AutoRental',
-            slogan: 'Super Service',
-            currenciesAccepted: 'EUR',
-            paymentAccepted: 'Cash, Credit Card',
-            hasMap:
-              'https://www.google.com/maps/place/Itana+GmbH/@48.9028695,9.098111,17z/data=!3m1!4b1!4m5!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305',
-            logo: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png',
-            },
-            image: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png',
-            },
-            areaServed: [
-              {
-                '@type': 'City',
-                name: 'Stuttgart',
-              },
-              {
-                '@type': 'State',
-                name: 'Baden-Württemberg',
-              },
-            ],
-            branchOf: {
-              '@type': 'Organization',
-              name: 'Itana GmbH',
-            },
-            openingHoursSpecification: [
-              {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Thursday',
-                opens: '08:00:00',
-              },
-              {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Tuesday',
-                opens: '08:00:00',
-              },
-              {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Friday',
-                opens: '08:00:00',
-              },
-              {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Monday',
-                opens: '08:00:00',
-              },
-              {
-                '@type': 'OpeningHoursSpecification',
-                closes: '18:00:00',
-                dayOfWeek: 'http://schema.org/Wednesday',
-                opens: '08:00:00',
-              },
-            ],
-            name: 'Tesla mieten Stuttgart',
-            url: 'https://www.mobility.itana.de/',
-            priceRange: 'ab 31,63 €',
-            description:
-              'Tesla mieten in Stuttgart ✓ Sofort  verfügbar ✓ einfach ✓  preisgünstig ► Montag - Freitag von 8:00 - 18:00 Uhr | Jetzt anfragen ☎ +49 711 49066 450',
-            address: {
-              '@type': 'PostalAddress',
-              name: 'Itana GmbH',
-              streetAddress: 'Maulbronner Weg 33',
-              addressRegion: 'Markgröningen',
-              postalCode: '71706',
-              addressCountry: 'Germany',
-              telephone: '+49 711 49066 450',
-            },
-          }),
-        ]}
-      />
-      <Head
-        script={[
-          helmetJsonLdProp({
-            '@context': 'http://schema.org',
-            '@type': 'LocalBusiness',
-            '@id': 'https://mobility.itana.de/',
-            name: 'Mobility Itana GmbH',
-            image: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png',
-            },
-            logo: {
-              '@type': 'ImageObject',
-              url: 'https://mobility.itana.de/icon-192.png',
-            },
-            url: 'https://mobility.itana.de/',
-            telephone: '+49 711 49066 450',
 
-            address: {
-              '@type': 'PostalAddress',
-              name: 'Itana GmbH',
-              streetAddress: 'Maulbronner Weg 33',
-              addressRegion: 'Markgröningen',
-              postalCode: '71706',
-              addressCountry: 'Germany',
-              telephone: '+49 711 49066 450',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '5.0',
-              ratingCount: '10',
-            },
-            review: [
-              {
-                '@type': 'Review',
-                author: 'Ste Ke',
-                datePublished: '2020-03-11',
-                description:
-                  'Perfekt - super freundlich, top Service, einfach eine tolle Erfahrung!',
-                reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1',
-                },
-              },
-              {
-                '@type': 'Review',
-                author: 'OLIVER Schindele',
-                datePublished: '2020-01-02',
-                description:
-                  'Es war eine tolle Erfahrung. Ich durfte eine Woche lang das Model 3 Performance testen. Der Kontakt per E-Mail war schnell und ausführlich. Man merkt, für die Jungs ist es mehr als nur eine Arbeit! Sie leben die E-Mobilität! Die Übergabe und die Fahrzeugrücknahme waren sehr angenehm und unkompliziert. Meine Fragen wurden, auch nach der Rückgabe, schnell und ausführlich beantwortet. Es gab keine versteckten Kosten oder Einschränkungen. Auch ein Ausflug nach Österreich war kein Problem. Die Sache hat nur einen Nachteil! Ich möchte jetzt auch einen eigenen Tesla!',
+      <JsonLD jsonld={jsonLD1} />
+      <JsonLD jsonld={jsonLD2} />
 
-                reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1',
-                },
-              },
-              {
-                '@type': 'Review',
-                author: 'Valentina Hütten',
-                datePublished: '2019-12-12',
-                description:
-                  'Herr Weißleder ist ein Experte auf dem Gebiet der Elektromobilität. Freundlich, kompetent und verlässlich! Vielen Dank für die tolle Zusammenarbeit!',
-
-                reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1',
-                },
-              },
-              {
-                '@type': 'Review',
-                author: 'Thomas Luz',
-                datePublished: '2019-12-10',
-                description:
-                  'Das Mietfahrzeug war außen wie innen sehr sauber. Alle meine Fragen rund um das Thema Elektromobilität und Mietfahrzeug wurden ausführlich und kompetent beantwortet, selbst nach Rückgabe des Autos. Es wird sehr angenehm und freundlich mit dem Kunden umgegangen.',
-
-                reviewRating: {
-                  '@type': 'Rating',
-                  bestRating: '5',
-                  ratingValue: '5',
-                  worstRating: '1',
-                },
-              },
-            ],
-            priceRange: 'ab 31,63 €',
-            description:
-              'Tesla Model X | Tesla Model 3 | Tesla mieten in Stuttgarter E-Autovermietung ✓ Elektromobilität erleben ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +4971149066450',
-          }),
-        ]}
-      />
       <Head>
         <link rel="canonical" href="https://mobility.itana.de/" />
       </Head>

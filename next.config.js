@@ -51,6 +51,62 @@ module.exports = withPWA({
         destination: '/',
         permanent: true,
       },
+
+      {
+        source: '/itana-fahrzeuge-und-preise/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/impressum/',
+        destination: '/https://itana.de/impressum/',
+        permanent: false,
+      },
+
+      {
+        source: '/.well-known/apple-app-site-association/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/apple-app-site-association/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/tesla-model-x/',
+        destination: '/tesla/model-x-mieten/',
+        permanent: true,
+      },
+      {
+        source: '/tesla-model-3-performance/',
+        destination: '/tesla/model-3-mieten/',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2013/12/p-project1-03.jpg',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/component/tags/tag/hyundai-kona/?format=feed&type=rss',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/10-fahrzeuge/7-hyundai-kona-elektro/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/component/tags/tag/hyundai-kona/',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
   webpack: (config, { dev, isServer }) => {

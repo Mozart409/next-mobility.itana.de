@@ -70,13 +70,13 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
           ></rentware-article-booking>
         </div>
 
-        <CTA
+        {/* <CTA
           data_cy="TeslaModel3PerformanceMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Performance mieten"
           link="https://itana.rentware.io/"
-        />
+        /> */}
       </section>
       <TeslaQuickLinks />
       <div className="my-24 mx-auto">

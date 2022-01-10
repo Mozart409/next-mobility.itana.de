@@ -80,13 +80,13 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
           ></rentware-article-booking>
         </div>
 
-        <CTA
+        {/* <CTA
           data_cy="TeslaModelXMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model X mieten"
           link="https://itana.rentware.io/"
-        />
+        /> */}
       </section>
       <TeslaQuickLinks />
       <div className="mx-auto mt-24 prose lg:prose-md">

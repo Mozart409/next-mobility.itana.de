@@ -60,7 +60,7 @@ module.exports = withPWA({
 
       {
         source: '/impressum/',
-        destination: '/https://itana.de/impressum/',
+        destination: 'https://itana.de/impressum/',
         permanent: false,
       },
 
@@ -92,7 +92,7 @@ module.exports = withPWA({
       },
 
       {
-        source: '/component/tags/tag/hyundai-kona/?format=feed&type=rss',
+        source: '/component/tags/tag/hyundai-kona/',
         destination: '/',
         permanent: true,
       },

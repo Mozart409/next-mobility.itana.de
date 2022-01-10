@@ -10,7 +10,7 @@ async function generate() {
     '!data/*.mdx',
     '!pages/_*.js',
     '!pages/api',
-    '!pages/404.js'
+    '!pages/404.js',
   ])
 
   const sitemap = `
@@ -27,7 +27,7 @@ async function generate() {
 
             return `
               <url>
-                  <loc>${`https://mobility.itana.de${route}`}</loc>
+                  <loc>${`https://mobility.itana.de${route}/`}</loc>
               </url>
             `
           })
@@ -37,7 +37,7 @@ async function generate() {
 
   const formatted = prettier.format(sitemap, {
     ...prettierConfig,
-    parser: 'html'
+    parser: 'html',
   })
 
   writeFileSync('public/sitemap.xml', formatted)

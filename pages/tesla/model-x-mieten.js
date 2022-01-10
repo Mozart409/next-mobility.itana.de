@@ -24,12 +24,44 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla Model X mieten
         </h1>
         <h2>Komfortables SUV-Powerhouse mit enormer Reichweite</h2>
 
-        <div className="relative text-center">
+        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+          <div className="mx-auto">
+            <div className="relative">
+              <div className="md:grid md:grid-cols-8">
+                <div className="col-span-4 my-auto lg:col-span-6">
+                  <Link
+                    passHref
+                    href="#tesla-model-x"
+                    title="Tesla Model X"
+                    aria-label="Tesla Model X"
+                  >
+                    <Image
+                      src="/images/cards/tesla-model-x.png"
+                      className="mx-auto mt-4 h-96 rounded"
+                      alt="Tesla Model X mieten"
+                      height="600"
+                      width="1000"
+                    />
+                  </Link>
+                </div>
+                <div className="col-span-4 lg:col-span-2">
+                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
+                    <rentware-article-booking
+                      article-id="11JUVM"
+                      view="calendar"
+                    ></rentware-article-booking>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*   <div className="relative text-center">
           <Image
             src="/images/cards/tesla-model-x.png"
             className="mx-auto mt-4 h-96 rounded"
@@ -37,10 +69,17 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
             height="600"
             width="1000"
           />
-        </div>
+        </div> */}
       </section>
 
       <section>
+        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+          <rentware-article-booking
+            article-id="11JUVM"
+            view="calendar"
+          ></rentware-article-booking>
+        </div>
+
         <CTA
           data_cy="TeslaModelXMieten"
           fillBG="true"
@@ -209,7 +248,7 @@ export async function getStaticProps(context) {
   const Langzeit = await getTXDataByArt('L')
   const Mehrkilometer = await getTXDataByArt('M')
   return {
-    props: { Kurzzeit, Langzeit, Mehrkilometer }
+    props: { Kurzzeit, Langzeit, Mehrkilometer },
   }
 }
 

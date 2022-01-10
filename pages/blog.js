@@ -8,7 +8,7 @@ const Newsfeed = () => (
   <div className="pb-20 bg-white lg:pb-28">
     <div className="mx-auto max-w-lg lg:max-w-7xl">
       <div>
-        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Blog
         </h1>
       </div>

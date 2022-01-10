@@ -4,7 +4,7 @@ const CTAFahrbereit = () => (
   <div className="flex overflow-hidden bg-gray-50 rounded-lg border border-gray-200 border-1">
     <div className="my-auto mx-auto text-center">
       <div className="flex-1 items-center">
-        <h2 className="mt-4 mb-2 text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h2 className="mt-4 mb-2 text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Bereit zum Fahren?
         </h2>
         <div className="flex justify-center mt-8">

@@ -1,4 +1,6 @@
 import Layout from 'components/Layout'
+import Script from 'next/script'
+import Head from 'next/head'
 import { useEffect } from 'react'
 import '../lib/global.css'
 
@@ -81,8 +83,19 @@ export default function MyApp({ Component, pageProps }) {
       wb.register()
     }
   }, [])
+
+  useEffect(() => {
+    window.RENTWARE_BASE_API_URL = 'https://itana.rentware.io'
+    window.RENTWARE_LANGUAGE = 'de-DE'
+  }, [])
   return (
     <Layout>
+      <Script
+        strategy="afterInteractive"
+        type="module"
+        src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
+      ></Script>
+
       <Component {...pageProps} />
     </Layout>
   )

@@ -23,7 +23,15 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          {/* // eslint-disable-next-line @next/next/no-css-tags */}
+          <link rel="preconnect" href="https://w-cdn.rentware.io" />
+          <link rel="preconnect" href="https://app.usercentrics.eu" />
+          <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+          {/* <Script
+            strategy="afterInteractive"
+            type="module"
+            src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
+          ></Script> */}
 
           <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index,follow" />
@@ -40,7 +48,9 @@ class MyDocument extends Document {
             data-settings-id="oVM0OC3Mr"
           ></script>
 
-          <script
+          <Script
+            id="GTM"
+            strategy="afterInteractive"
             data-usercentrics="Google Tag Manager"
             type="text/plain"
             dangerouslySetInnerHTML={{
@@ -68,6 +78,7 @@ class MyDocument extends Document {
             <Main />
             <NextScript />
           </div>
+          <rentware-checkout></rentware-checkout>
         </body>
       </Html>
     )

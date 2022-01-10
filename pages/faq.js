@@ -3,17 +3,17 @@ import SEO from "@/ui/seo";
 
 function Display(items) {
   return (
-    <div className="pt-6 mt-6 text-lg space-y-6">
+    <div className="pt-6 mt-6 space-y-6 text-lg">
       {items.map((item) => (
         <details
           className="p-4 rounded-lg open:bg-neutral-100 open:shadow-lg open:shadow-itana-red/20"
           key={item.id}
         >
-          <summary className="text-lg leading-6 font-semibold">
+          <summary className="text-lg font-semibold leading-6">
             {item.question}
           </summary>
           <div className="mt-3">
-            <p className="text-gray-600 text-md leading-6">{item.answer}</p>
+            <p className="leading-6 text-gray-600 text-md">{item.answer}</p>
           </div>
         </details>
       ))}

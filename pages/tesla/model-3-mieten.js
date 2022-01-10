@@ -1,14 +1,14 @@
-import TeslaQuickLinks from "@/ui/TeslaQuickLinks";
+import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
 
-import CTA from "@/ui/CTA";
-import Head from "next/head";
+import CTA from '@/ui/CTA'
+import Head from 'next/head'
 
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
-import SEO from "@/ui/seo";
+import SEO from '@/ui/seo'
 
-import { getT3PDataByArt } from "lib/api";
+import { getT3PDataByArt } from 'lib/api'
 
 function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
@@ -24,26 +24,38 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           Tesla Model 3 Performance mieten - Sportwagen genießen
         </h1>
+
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <div>
-                <Link
-                  href="#tesla-performance"
-                  passHref
-                  aria-label="Tesla Model 3 Performance"
-                >
-                  <Image
-                    src="/images/cards/tesla-3-performance.png"
-                    className="mx-auto mt-4 h-96 rounded"
-                    alt="Tesla Model 3 mieten"
-                    height="600"
-                    width="1000"
-                  />
-                </Link>
+              <div className="md:grid md:grid-cols-8">
+                <div className="col-span-4 my-auto lg:col-span-6">
+                  <Link
+                    passHref
+                    href="#tesla-performance"
+                    title="Tesla Model 3 Performance"
+                    aria-label="Tesla Model 3 Performance"
+                  >
+                    <Image
+                      src="/images/cards/tesla-3-performance.png"
+                      className="mx-auto mt-4 h-96 rounded"
+                      alt="Tesla Model 3 mieten"
+                      height="600"
+                      width="1000"
+                    />
+                  </Link>
+                </div>
+                <div className="col-span-4 lg:col-span-2">
+                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
+                    <rentware-article-booking
+                      article-id="9YTCVE"
+                      view="calendar"
+                    ></rentware-article-booking>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -51,14 +63,12 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <a
-          id="tesla-performance"
-          href="#tesla-performance"
-          role="button"
-          label="Tesla Model 3 Performance"
-        >
-          <h2>Tesla Model 3 Performance</h2>
-        </a>
+        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+          <rentware-article-booking
+            article-id="9YTCVE"
+            view="calendar"
+          ></rentware-article-booking>
+        </div>
 
         <CTA
           data_cy="TeslaModel3PerformanceMieten"
@@ -94,8 +104,8 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
             className="font-semibold text-itana-red"
             href="https://www.youtube.com/watch?v=GUdSP5WuU6c"
           >
-            {" "}
-            Drag Day Meinerzhagen{" "}
+            {' '}
+            Drag Day Meinerzhagen{' '}
           </a>
           stattfinden. Im Video kommt die PS starke Corvette Z06 nicht
           hinterher. Dein Mitfahrer sollte den Kopf bei der Beschleunigung
@@ -195,15 +205,15 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 export async function getStaticProps(context) {
-  const Kurzzeit = await getT3PDataByArt("K");
-  const Langzeit = await getT3PDataByArt("L");
-  const Mehrkilometer = await getT3PDataByArt("M");
+  const Kurzzeit = await getT3PDataByArt('K')
+  const Langzeit = await getT3PDataByArt('L')
+  const Mehrkilometer = await getT3PDataByArt('M')
   return {
     props: { Kurzzeit, Langzeit, Mehrkilometer },
-  };
+  }
 }
 
-export default TeslaModel3Page;
+export default TeslaModel3Page

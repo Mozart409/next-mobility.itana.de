@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Iframe from "react-iframe";
-import Image from "next/image";
-import SEO from "@/ui/seo";
-import CTA from "@/ui/CTA";
+import Head from 'next/head'
+import Iframe from 'react-iframe'
+import Image from 'next/image'
+import SEO from '@/ui/seo'
+import CTA from '@/ui/CTA'
 
 function KontaktPage() {
   return (
@@ -16,7 +16,7 @@ function KontaktPage() {
       </Head>
 
       <div className="mx-auto prose lg:prose-md">
-        <h1 className="text-3xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
           So finden Sie uns
         </h1>
 
@@ -57,14 +57,14 @@ function KontaktPage() {
               <br />
               71706 Markgröningen
               <br />
-              Telefon:{" "}
+              Telefon:{' '}
               <a href="tel:+4971149066450" className="text-itana-red">
                 +49 711 49066 450
               </a>
               <br />
               Telefax: +49 711 49066 455
               <br />
-              E-Mail:{" "}
+              E-Mail:{' '}
               <a
                 href="mailto:mobility@itana.de"
                 target="_blank"
@@ -87,7 +87,7 @@ function KontaktPage() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default KontaktPage;
+export default KontaktPage

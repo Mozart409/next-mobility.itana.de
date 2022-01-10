@@ -63,7 +63,10 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+        <div
+          data_cy="TeslaModel3PerformanceMieten"
+          className="grid grid-cols-1 justify-items-center mx-auto md:hidden"
+        >
           <rentware-article-booking
             article-id="9YTCVE"
             view="calendar"

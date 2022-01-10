@@ -63,7 +63,10 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
 
       <section>
-        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+        <div
+          data_cy="TeslaModel3LongRangeMieten"
+          className="grid grid-cols-1 justify-items-center mx-auto md:hidden"
+        >
           <rentware-article-booking
             article-id="6WVT9M"
             view="calendar"
@@ -71,7 +74,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
 
         {/* <CTA
-          data_cy="TeslaModel3StandardRangePlusMieten"
+          data_cy="TeslaModel3LongRangeMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Long Range mieten"

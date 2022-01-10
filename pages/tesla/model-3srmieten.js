@@ -62,7 +62,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </section>
 
-      <section>
+      <section data_cy="TeslaModel3StandardRangePlusMieten">
         <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="9QD87M"

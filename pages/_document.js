@@ -42,23 +42,45 @@ class MyDocument extends Document {
           />
 
           <script
-            defer
             id="usercentrics-cmp"
             src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
             data-settings-id="oVM0OC3Mr"
+            async
+          ></script>
+
+          <script
+            data-usercentrics="Google Tag Manager"
+            type="text/plain"
+            async
+            defer
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer', 'GTM-K56QMGF');
+              `,
+            }}
+          />
+
+          {/* <script
+            id="usercentrics-cmp"
+            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+            data-settings-id="oVM0OC3Mr"
+            async
           ></script>
 
           <script
             id="GTM"
-            strategy="afterInteractive"
             data-usercentrics="Google Tag Manager"
             type="text/plain"
             dangerouslySetInnerHTML={{
               __html:
                 "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-K56QMGF');",
             }}
-          />
-          <script
+          /> */}
+          {/*  <script
             data-usercentrics="Google Analytics"
             type="text/plain"
             src="https://www.googletagmanager.com/gtag/js?id=G-0G43K9BEPW"
@@ -70,7 +92,7 @@ class MyDocument extends Document {
               __html:
                 "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0G43K9BEPW');",
             }}
-          />
+          /> */}
         </Head>
 
         <body>

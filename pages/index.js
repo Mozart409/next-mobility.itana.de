@@ -10,7 +10,7 @@ const Heading1 = () => (
   <div className="py-2 bg-white">
     <div className="px-4 mx-auto max-w-screen-xl sm:px-2 lg:px-8">
       <div className="lg:text-center">
-        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
           Tesla mieten in Stuttgart - Elektromobilität erleben
         </h1>
         <div>{/*  <rentware-search view="slots"></rentware-search> */}</div>
@@ -127,7 +127,7 @@ const ContentSection = () => (
       href="https://www.tesla.com/de_DE/supercharger"
     >
       Supercharger-Karte
-    </a>{" "}
+    </a>{' '}
     <h3>Wie kann ich bezahlen?</h3>
     Es gibt zahlreiche Anbieter von Ladekarten und Ladeapps. Wir empfehlen die
     mobility+ App von EnBW. Die Abrechnung erfolgt in der Regel kWh-basiert.
@@ -136,15 +136,14 @@ const ContentSection = () => (
     genutzt werden. Für zu Hause ist je nach Fahrzeugmodell eine Wallbox
     sinnvoll.
     <br />
-
     <h3> Wie weit kann ich mit einem Elektroauto fahren? </h3>
     <p>
       Wie bei einem Verbrennerfahrzeug die maximale Reisedistanz nicht durch den
       Tankinhalt limitiert ist, so ist auch bei einem Elektrofahrzeug die
       möglich Länge der Reise nicht durch die Batteriekapazität begrenzt. Die
-      Reichweite einer Ladung hängt vom Modell ab. Beim <b>Model 3</b>{" "}
-      Performance liegt die Reichweite nach Herstellerangaben bei{" "}
-      <b>530 km (WLTP)</b>. Die Batteriekapazität liegt bei 75 kWh. Beim{" "}
+      Reichweite einer Ladung hängt vom Modell ab. Beim <b>Model 3</b>{' '}
+      Performance liegt die Reichweite nach Herstellerangaben bei{' '}
+      <b>530 km (WLTP)</b>. Die Batteriekapazität liegt bei 75 kWh. Beim{' '}
       <b>Model X</b> beträgt die Reichweite <b>507 km (WLTP)</b>. Die
       Batteriekapazität liegt bei 100 kWh.
       <br />
@@ -256,12 +255,10 @@ const ContentSection = () => (
     <h3>Updates</h3>
     <p>
       Über Nacht wird beim Tesla ein neues Update eingespielt und die Funktionen
-
       der Limousine erheblich erweitert. Tesla setzt auch auf
       Schwarmintelligenz, die Telemetriedaten werden anonymisiert an die Tesla
       Cloud geschickt. Bremsen viele Fahrer in einer Kurve auf 35 km/h ab, merkt
       sich das der Autopilot und gibt dem Fahrer einen Hinweis.
-
     </p>
     <h3>Komfort</h3>
     <p>

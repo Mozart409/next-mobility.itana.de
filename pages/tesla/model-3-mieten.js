@@ -24,7 +24,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-2xl font-bold tracking-tight leading-9 text-gray-900 sm:text-4xl sm:leading-10">
+        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
           Tesla Model 3 Performance mieten - Sportwagen genießen
         </h1>
 

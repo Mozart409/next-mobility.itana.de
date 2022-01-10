@@ -40,11 +40,13 @@ class MyDocument extends Document {
             name="google-site-verification"
             content="y0fNm10Zw-mMjHsc7sW-SHicOMEldY3I6d2K4KGUBYY"
           />
-          <Script
+
+          <script
+            defer
             id="usercentrics-cmp"
+            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
             data-settings-id="oVM0OC3Mr"
-            src="https://app.usercentrics.eu/browser-ui/latest/bundle.js"
-          ></Script>
+          ></script>
 
           <Script
             id="GTM"

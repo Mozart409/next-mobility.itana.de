@@ -4,5 +4,7 @@
   "video": false,
   "projectId": "5k6fpq",
   "chromeWebSecurity": false,
-  "experimentalStudio": true
+  "experimentalStudio": true,
+  "screenshotOnRunFailure": false,
+  "trashAssetsBeforeRuns": true
 }

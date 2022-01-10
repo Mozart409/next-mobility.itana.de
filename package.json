@@ -5,7 +5,7 @@
     "dev": "next",
     "build": "next build",
     "postbuild": "node ./scripts/generate-sitemap.mjs",
-    "start": "next start --port 3002",
+    "start": "next start",
     "dev:doppler": "doppler run yarn dev",
     "build:doppler": "doppler run next build",
     "lint": "yarn run rw && yarn run next lint",

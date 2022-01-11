@@ -107,6 +107,115 @@ module.exports = withPWA({
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/component/tags/tag/model-s/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/fahrzeuge/hyundai-kona-elektro/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/fahrzeuge/tesla-model-x/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/fahrzeuge/tesla-model-3/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/component/tags/tag/dual-motor/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/fahrzeuge/hyundai-kona-elektro-150kw/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/fahrzeuge/tesla-model-3-performance/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/component/tags/tag/e-go-life/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/comments/feed/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/index.php/8-elektromobilitaet/3-home/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/component/tags/tag/model-x/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.php/component/tags/tag/e-go-life/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.php/component/tags/tag/supercharger/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/datenschutz/',
+        destination: 'https://itana.de/datenschutz/',
+        permanent: false,
+      },
+      {
+        source: '/index.php/component/tags/tag/supercharger/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/component/tags/tag/tesla/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/component/tags/tag/id-3/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/.well-known/apple-app-site-association/',
+        destination: '/',
+        permanent: true,
+      },
+
+      {
+        source: '/component/tags/tag/ccs/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/itana-fahrzeuge-und-preise/tesla-model-x/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/component/tags/tag/supercharger/',
+        destination: '/',
+        permanent: true,
+      },
     ]
   },
   webpack: (config, { dev, isServer }) => {

@@ -14,7 +14,6 @@ const Heading1 = () => (
         <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
           Tesla mieten in Stuttgart - Elektromobilität erleben
         </h1>
-        <div>{/*  <rentware-search view="slots"></rentware-search> */}</div>
       </div>
     </div>
   </div>

@@ -32,61 +32,40 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <div className="md:grid md:grid-cols-8">
-                <div className="col-span-4 my-auto lg:col-span-6">
-                  <Link
-                    passHref
-                    href="#tesla-model-x"
-                    title="Tesla Model X"
-                    aria-label="Tesla Model X"
-                  >
-                    <Image
-                      src="/images/cards/tesla-model-x.png"
-                      className="mx-auto mt-4 h-96 rounded"
-                      alt="Tesla Model X mieten"
-                      height="600"
-                      width="1000"
-                    />
-                  </Link>
-                </div>
-                <div className="col-span-4 lg:col-span-2">
-                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
-                    <rentware-article-booking
-                      article-id="11JUVM"
-                      view="calendar"
-                    ></rentware-article-booking>
-                  </div>
-                </div>
-              </div>
+              <Link
+                passHref
+                href="#tesla-model-x"
+                title="Tesla Model X"
+                aria-label="Tesla Model X"
+              >
+                <Image
+                  src="/images/cards/tesla-model-x.png"
+                  className="mx-auto mt-4 h-96 rounded"
+                  alt="Tesla Model X mieten"
+                  height="600"
+                  width="1000"
+                />
+              </Link>
             </div>
           </div>
         </div>
-        {/*   <div className="relative text-center">
-          <Image
-            src="/images/cards/tesla-model-x.png"
-            className="mx-auto mt-4 h-96 rounded"
-            alt="Tesla Model X silber mieten"
-            height="600"
-            width="1000"
-          />
-        </div> */}
       </section>
 
       <section data_cy="TeslaModelXMieten">
-        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+        {/* <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="11JUVM"
             view="calendar"
           ></rentware-article-booking>
-        </div>
+        </div> */}
 
-        {/* <CTA
+        <CTA
           data_cy="TeslaModelXMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model X mieten"
           link="https://itana.rentware.io/"
-        /> */}
+        />
       </section>
       <TeslaQuickLinks />
       <div className="mx-auto mt-24 prose lg:prose-md">

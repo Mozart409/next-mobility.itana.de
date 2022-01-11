@@ -31,55 +31,33 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <div className="md:grid md:grid-cols-8">
-                <div className="col-span-4 my-auto lg:col-span-6">
-                  <Link
-                    passHref
-                    href="#tesla-performance"
-                    title="Tesla Model 3 Performance"
-                    aria-label="Tesla Model 3 Performance"
-                  >
-                    <Image
-                      src="/images/cards/tesla-3-performance.png"
-                      className="mx-auto mt-4 h-96 rounded"
-                      alt="Tesla Model 3 mieten"
-                      height="600"
-                      width="1000"
-                    />
-                  </Link>
-                </div>
-                <div className="col-span-4 lg:col-span-2">
-                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
-                    <rentware-article-booking
-                      article-id="9YTCVE"
-                      view="calendar"
-                    ></rentware-article-booking>
-                  </div>
-                </div>
-              </div>
+              <Link
+                passHref
+                href="#tesla-performance"
+                title="Tesla Model 3 Performance"
+                aria-label="Tesla Model 3 Performance"
+              >
+                <Image
+                  src="/images/cards/tesla-3-performance.png"
+                  className="mx-auto mt-4 h-96 rounded"
+                  alt="Tesla Model 3 mieten"
+                  height="600"
+                  width="1000"
+                />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div
-          data_cy="TeslaModel3PerformanceMieten"
-          className="grid grid-cols-1 justify-items-center mx-auto md:hidden"
-        >
-          <rentware-article-booking
-            article-id="9YTCVE"
-            view="calendar"
-          ></rentware-article-booking>
-        </div>
-
-        {/* <CTA
+        <CTA
           data_cy="TeslaModel3PerformanceMieten"
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Performance mieten"
           link="https://itana.rentware.io/"
-        /> */}
+        />
       </section>
       <TeslaQuickLinks />
       <div className="my-24 mx-auto">

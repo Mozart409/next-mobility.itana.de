@@ -31,51 +31,39 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <div className="md:grid md:grid-cols-8">
-                <div className="col-span-4 my-auto lg:col-span-6">
-                  <Link
-                    passHref
-                    href="#tesla-standard-range-plus"
-                    title="Tesla Model 3 Standard Range Plus"
-                    aria-label="Tesla Model 3 Standard Range Plus"
-                  >
-                    <Image
-                      src="/images/cards/tesla-3-sr.png"
-                      className="mx-auto mt-4 h-96 rounded"
-                      alt="Tesla Model 3 Standard Range Plus mieten"
-                      height="600"
-                      width="1000"
-                    />
-                  </Link>
-                </div>
-                <div className="col-span-4 lg:col-span-2">
-                  <div className="hidden grid-cols-1 justify-items-center mx-auto md:grid">
-                    <rentware-article-booking
-                      article-id="9QD87M"
-                      view="calendar"
-                    ></rentware-article-booking>
-                  </div>
-                </div>
-              </div>
+              <Link
+                passHref
+                href="#tesla-standard-range-plus"
+                title="Tesla Model 3 Standard Range Plus"
+                aria-label="Tesla Model 3 Standard Range Plus"
+              >
+                <Image
+                  src="/images/cards/tesla-3-sr.png"
+                  className="mx-auto mt-4 h-96 rounded"
+                  alt="Tesla Model 3 Standard Range Plus mieten"
+                  height="600"
+                  width="1000"
+                />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       <section data_cy="TeslaModel3StandardRangePlusMieten">
-        <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
+        {/* <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="9QD87M"
             view="calendar"
           ></rentware-article-booking>
-        </div>
-        {/* <CTA
+        </div> */}
+        <CTA
           data_cy="TeslaModel3StandardRangePlusMieten"
           fillBG="true"
           fullWidth="true"
-          title="Tesla Model 3 Standard Range Plus mieten"
+          title="Tesla Model 3 SR+ mieten"
           link="https://itana.rentware.io/"
-        /> */}
+        />
       </section>
       <TeslaQuickLinks />
       <div className="my-24 mx-auto">

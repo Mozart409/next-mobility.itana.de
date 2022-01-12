@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 
 import FahrzeugKacheln from '@/ui/FahrzeugKacheln'
 
 import SEO from '@/ui/seo'
 import GoogleBewertungen from '@/ui/GoogleBewertungen'
 import { JsonLD } from 'components/JsonLD'
+
+const DynamicCarSearch = dynamic(() => import('components/CarSearch'))
 
 const Heading1 = () => (
   <div className="py-2 bg-white">
@@ -519,6 +522,7 @@ function IndexPage() {
 
       <div>
         <Heading1 />
+        <DynamicCarSearch />
         <FahrzeugKacheln />
         <FeatureSection />
         <ContentSection />

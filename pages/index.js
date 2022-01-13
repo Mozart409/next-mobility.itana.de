@@ -7,6 +7,7 @@ import FahrzeugKacheln from '@/ui/FahrzeugKacheln'
 import SEO from '@/ui/seo'
 import GoogleBewertungen from '@/ui/GoogleBewertungen'
 import { JsonLD } from 'components/JsonLD'
+import CarSearch from 'components/CarSearch'
 
 const DynamicCarSearch = dynamic(() => import('components/CarSearch'))
 
@@ -522,7 +523,7 @@ function IndexPage() {
 
       <div>
         <Heading1 />
-        {/*   <DynamicCarSearch /> */}
+        <CarSearch />
         <FahrzeugKacheln />
         <FeatureSection />
         <ContentSection />

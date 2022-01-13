@@ -79,7 +79,7 @@ function CarSearch({}: Props): ReactElement {
           </li>
         </div>
 
-        <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">
+        <li className="overflow-hidden py-4 px-4 bg-white sm:px-6 sm:rounded-md">
           <a
             href={`https://itana.rentware.io/?fromTime=${pickUpTime}&toTime=${returnTime}&fromDate=${pickUpDate}&toDate=${returnDate}&tab=0`}
             target="_blank"

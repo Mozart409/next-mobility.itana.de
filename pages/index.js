@@ -522,7 +522,7 @@ function IndexPage() {
 
       <div>
         <Heading1 />
-        <DynamicCarSearch />
+        {/*   <DynamicCarSearch /> */}
         <FahrzeugKacheln />
         <FeatureSection />
         <ContentSection />

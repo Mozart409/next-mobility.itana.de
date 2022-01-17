@@ -21,7 +21,7 @@ async function generate() {
             const path = page
               .replace('pages', '')
               .replace('data', '')
-              .replace('.js', '')
+              .replace(/\.js$/, '')
               .replace('.mdx', '')
             const route = path === '/index' ? '' : path
 

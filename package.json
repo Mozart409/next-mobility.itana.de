@@ -41,10 +41,12 @@
     "node": ">=12"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^3.9.12",
     "@testing-library/cypress": "^8.0.2",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "cy-view": "^1.0.11",
     "cypress": "^9.2.0",
     "eslint": "7.28.0",
     "eslint-config-next": "^12.0.2",

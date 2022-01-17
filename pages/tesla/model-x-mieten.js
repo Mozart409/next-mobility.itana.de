@@ -51,7 +51,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </section>
 
-      <section data_cy="TeslaModelXMieten">
+      <section>
         {/* <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
           <rentware-article-booking
             article-id="11JUVM"

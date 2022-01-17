@@ -18,7 +18,9 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  function terminalLog (violations) {
+  // require('@cypress/code-coverage/task')(on, config)
+
+  function terminalLog(violations) {
     cy.task(
       'log',
       `${violations.length} accessibility violation${
@@ -31,10 +33,11 @@ module.exports = (on, config) => {
         id,
         impact,
         description,
-        nodes: nodes.length
+        nodes: nodes.length,
       })
     )
 
     cy.task('table', violationData)
   }
+  return config
 }

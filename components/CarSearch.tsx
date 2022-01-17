@@ -1,5 +1,5 @@
-import { ReactElement, useState } from 'react'
-import { addDays, format } from 'date-fns'
+import { FC, ReactElement, useEffect, useState } from 'react'
+import { addDays, format, toDate } from 'date-fns'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 interface Props {}
 
-function CarSearch({}: Props): ReactElement {
+export const CarSearch: FC<Props> = ({}) => {
   const today = new Date()
   const tomorrow = addDays(today, 3)
   const todayDays = format(today, 'yyyy-MM-dd')
@@ -18,13 +18,23 @@ function CarSearch({}: Props): ReactElement {
   const [returnDate, setReturnDate] = useState(tomorrowDays)
   const [pickUpTime, setPickUpTime] = useState('08:00')
   const [returnTime, setReturnTime] = useState('17:00')
+
+  /*  useEffect(() => {
+    const p = toDate(pickUpDate)
+    const newEndDate = addDays(pickUpDate, 1)
+    return () => {
+      cleanup
+    }
+  }, [input]) */
+
+  const testDate = todayDays + 1
   return (
     <div>
       <ul role="list" className="space-y-3">
         <h2>Buchungszeitraum</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">
-            {/* Your content */}
+            {/*  <p>{JSON.stringify(testDate)}</p> */}
             <label htmlFor="pickUpDate">Von </label>
             <input
               type="date"
@@ -98,5 +108,3 @@ function CarSearch({}: Props): ReactElement {
     </div>
   )
 }
-
-export default CarSearch

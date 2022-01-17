@@ -9,32 +9,27 @@ interface Props {}
 
 export const CarSearch: FC<Props> = ({}) => {
   const today = new Date()
+
   const tomorrow = addDays(today, 3)
   const todayDays = format(today, 'yyyy-MM-dd')
   const tomorrowDays = format(tomorrow, 'yyyy-MM-dd')
-  const currentHoures = new Date().getUTCHours()
 
   const [pickUpDate, setPickUpDate] = useState(todayDays)
   const [returnDate, setReturnDate] = useState(tomorrowDays)
   const [pickUpTime, setPickUpTime] = useState('08:00')
   const [returnTime, setReturnTime] = useState('17:00')
 
-  /*  useEffect(() => {
-    const p = toDate(pickUpDate)
-    const newEndDate = addDays(pickUpDate, 1)
-    return () => {
-      cleanup
-    }
-  }, [input]) */
+  useEffect(() => {
+    setReturnDate(pickUpDate)
+    return () => {}
+  }, [pickUpDate])
 
-  const testDate = todayDays + 1
   return (
     <div>
       <ul role="list" className="space-y-3">
         <h2>Buchungszeitraum</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">
-            {/*  <p>{JSON.stringify(testDate)}</p> */}
             <label htmlFor="pickUpDate">Von </label>
             <input
               type="date"
@@ -57,7 +52,7 @@ export const CarSearch: FC<Props> = ({}) => {
               className="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm focus:ring-itana-red/50 focus:border-itana-red/50"
               onChange={(e) => setReturnDate(e.target.value)}
               value={returnDate}
-              min={todayDays}
+              min={pickUpDate}
               required
             />
           </li>

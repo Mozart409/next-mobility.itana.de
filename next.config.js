@@ -1,5 +1,12 @@
 const withPWA = require('next-pwa')
 
+const securityHeaders = [
+  {
+    key: 'X-DNS-Prefetch-Control',
+    value: 'on',
+  },
+]
+
 module.exports = withPWA({
   env: {
     API_KEY: process.env.API_KEY,
@@ -21,6 +28,11 @@ module.exports = withPWA({
             value: 'public, max-age=31536000, immutable',
           },
         ],
+      },
+      {
+        // Apply these headers to all routes in your application.
+        source: '/:path*',
+        headers: securityHeaders,
       },
     ]
   },

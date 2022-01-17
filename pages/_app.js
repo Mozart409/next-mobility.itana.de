@@ -58,15 +58,33 @@ export default function MyApp({ Component, pageProps }) {
 
       // ISSUE - this is not working as expected, why?
       // I could only make message event listenser work when I manually add this listenser into sw.js file
-      wb.addEventListener('message', (event) => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
 
-      wb.addEventListener('redundant', (event) => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      wb.addEventListener(
+        'message',
+        (event) => {
+          if (event.origin !== 'https://mobility.itana.de') return
+          console.log(`Event ${event.type} is triggered.`)
+          console.log(event)
+        },
+        false
+      )
+
+      /*  wb.addEventListener("message", (event) => {
+        if (event.origin !== "https://mobility.itana.de")
+          return;
+      
+        // ...
+      }, false); */
+
+      wb.addEventListener(
+        'redundant',
+        (event) => {
+          if (event.origin !== 'https://mobility.itana.de') return
+          console.log(`Event ${event.type} is triggered.`)
+          console.log(event)
+        },
+        false
+      )
 
       /*
       wb.addEventListener('externalinstalled', event => {

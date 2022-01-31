@@ -5,14 +5,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+function formatDate(date: number | Date) {
+  return format(date, 'yyyy-MM-dd')
+}
+
 interface Props {}
 
 export const CarSearch: FC<Props> = ({}) => {
   const today = new Date()
 
-  const tomorrow = addDays(today, 3)
-  const todayDays = format(today, 'yyyy-MM-dd')
-  const tomorrowDays = format(tomorrow, 'yyyy-MM-dd')
+  const startDate = addDays(today, 2)
+  const endDate = addDays(startDate, 7)
+  const todayDays = formatDate(startDate)
+  const tomorrowDays = formatDate(endDate)
 
   const [pickUpDate, setPickUpDate] = useState(todayDays)
   const [returnDate, setReturnDate] = useState(tomorrowDays)
@@ -20,7 +25,9 @@ export const CarSearch: FC<Props> = ({}) => {
   const [returnTime, setReturnTime] = useState('17:00')
 
   useEffect(() => {
-    setReturnDate(pickUpDate)
+    const d = new Date(pickUpDate)
+    const date = addDays(d, 7)
+    setReturnDate(formatDate(date))
     return () => {}
   }, [pickUpDate])
 

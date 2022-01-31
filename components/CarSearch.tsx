@@ -22,7 +22,7 @@ export const CarSearch: FC<Props> = ({}) => {
   const [pickUpDate, setPickUpDate] = useState(todayDays)
   const [returnDate, setReturnDate] = useState(tomorrowDays)
   const [pickUpTime, setPickUpTime] = useState('08:00')
-  const [returnTime, setReturnTime] = useState('17:00')
+  const [returnTime, setReturnTime] = useState('08:00')
 
   useEffect(() => {
     const d = new Date(pickUpDate)

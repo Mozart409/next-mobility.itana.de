@@ -20,7 +20,7 @@ export default function GoogleBewertungen() {
                   <YellowStar />
                 </p>
                 <p className="mt-2 font-medium leading-6 text-center text-gray-500 text-">
-                  31 Bewertungen 4.9/5 Stand 11/2021
+                  31 Bewertungen 4.9/5 Stand 2/2022
                 </p>
               </div>
             </a>

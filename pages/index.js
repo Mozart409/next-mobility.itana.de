@@ -384,14 +384,6 @@ const FeatureSection = () => (
         <p className="">
           Kunden, die bei unserem Tesla-Verleih ein Elektroauto gemietet haben,
           waren <b> sehr zufrieden</b>.{" "}
-          <a
-            href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Was unsere Kunden über uns sagen:
-          </a>{" "}
         </p>
 
         <GoogleBewertungen />

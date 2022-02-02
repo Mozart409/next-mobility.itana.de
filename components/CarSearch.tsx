@@ -33,7 +33,7 @@ export const CarSearch: FC<Props> = ({}) => {
 
   return (
     <div>
-      <ul role="list" className="space-y-3">
+      <ul role="list" className="space-y-3 ">
         <h2>Buchungszeitraum</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">

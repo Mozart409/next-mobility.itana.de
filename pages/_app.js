@@ -1,33 +1,33 @@
-import Layout from 'components/Layout'
-import Script from 'next/script'
-import Head from 'next/head'
-import { useEffect } from 'react'
-import '../lib/global.css'
+import Layout from "components/Layout";
+import Script from "next/script";
+import Head from "next/head";
+import { useEffect } from "react";
+import "../lib/global.css";
 
 export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (
-      typeof window !== 'undefined' &&
-      'serviceWorker' in navigator &&
+      typeof window !== "undefined" &&
+      "serviceWorker" in navigator &&
       window.workbox !== undefined
     ) {
-      const wb = window.workbox
+      const wb = window.workbox;
       // add event listeners to handle any of PWA lifecycle event
       // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-window.Workbox#events
-      wb.addEventListener('installed', (event) => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      wb.addEventListener("installed", (event) => {
+        console.log(`Event ${event.type} is triggered.`);
+        console.log(event);
+      });
 
-      wb.addEventListener('controlling', (event) => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      wb.addEventListener("controlling", (event) => {
+        console.log(`Event ${event.type} is triggered.`);
+        console.log(event);
+      });
 
-      wb.addEventListener('activated', (event) => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      wb.addEventListener("activated", (event) => {
+        console.log(`Event ${event.type} is triggered.`);
+        console.log(event);
+      });
 
       // A common UX pattern for progressive web apps is to show a banner when a service worker has updated and waiting to install.
       // NOTE: MUST set skipWaiting to false in next.config.js pwa object
@@ -38,36 +38,36 @@ export default function MyApp({ Component, pageProps }) {
         // You may want to customize the UI prompt accordingly.
         if (
           confirm(
-            'A newer version of this web app is available, reload to update?'
+            "A newer version of this web app is available, reload to update?"
           )
         ) {
-          wb.addEventListener('controlling', (event) => {
-            window.location.reload()
-          })
+          wb.addEventListener("controlling", (event) => {
+            window.location.reload();
+          });
 
           // Send a message to the waiting service worker, instructing it to activate.
-          wb.messageSkipWaiting()
+          wb.messageSkipWaiting();
         } else {
           console.log(
-            'User rejected to reload the web app, keep using old version. New version will be automatically load when user open the app next time.'
-          )
+            "User rejected to reload the web app, keep using old version. New version will be automatically load when user open the app next time."
+          );
         }
-      }
+      };
 
-      wb.addEventListener('waiting', promptNewVersionAvailable)
+      wb.addEventListener("waiting", promptNewVersionAvailable);
 
       // ISSUE - this is not working as expected, why?
       // I could only make message event listenser work when I manually add this listenser into sw.js file
 
       wb.addEventListener(
-        'message',
+        "message",
         (event) => {
-          if (event.origin !== 'https://mobility.itana.de') return
-          console.log(`Event ${event.type} is triggered.`)
-          console.log(event)
+          if (event.origin !== "https://mobility.itana.de") return;
+          console.log(`Event ${event.type} is triggered.`);
+          console.log(event);
         },
         false
-      )
+      );
 
       /*  wb.addEventListener("message", (event) => {
         if (event.origin !== "https://mobility.itana.de")
@@ -77,14 +77,14 @@ export default function MyApp({ Component, pageProps }) {
       }, false); */
 
       wb.addEventListener(
-        'redundant',
+        "redundant",
         (event) => {
-          if (event.origin !== 'https://mobility.itana.de') return
-          console.log(`Event ${event.type} is triggered.`)
-          console.log(event)
+          if (event.origin !== "https://mobility.itana.de") return;
+          console.log(`Event ${event.type} is triggered.`);
+          console.log(event);
         },
         false
-      )
+      );
 
       /*
       wb.addEventListener('externalinstalled', event => {
@@ -98,9 +98,9 @@ export default function MyApp({ Component, pageProps }) {
       */
 
       // never forget to call register as auto register is turned off in next.config.js
-      wb.register()
+      wb.register();
     }
-  }, [])
+  }, []);
 
   /*   useEffect(() => {
     window.RENTWARE_BASE_API_URL = 'https://itana.rentware.io'
@@ -116,5 +116,5 @@ export default function MyApp({ Component, pageProps }) {
 
       <Component {...pageProps} />
     </Layout>
-  )
+  );
 }

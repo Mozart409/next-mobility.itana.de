@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 // eslint-disable-next-line @next/next/no-script-in-document
-import Script from 'next/script'
+import Script from "next/script";
 
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   render() {
@@ -103,8 +103,8 @@ class MyDocument extends Document {
           {/* <rentware-checkout></rentware-checkout> */}
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;

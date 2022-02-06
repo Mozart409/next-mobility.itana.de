@@ -1,14 +1,14 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
+import TeslaQuickLinks from "@/ui/TeslaQuickLinks";
 
-import CTA from '@/ui/CTA'
-import Head from 'next/head'
+import CTA from "@/ui/CTA";
+import Head from "next/head";
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import SEO from '@/ui/seo'
+import SEO from "@/ui/seo";
 
-import { getTXDataByArt } from 'lib/api'
+import { getTXDataByArt } from "lib/api";
 
 function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
@@ -185,13 +185,13 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         <p>
           Elektromobilit&auml;t beschreibt&nbsp;das Nutzen von Elektrofahrzeugen
           mit Nachhaltigkeitsaspekten.&nbsp;Wir setzen das zus&auml;tzliche mit
-          unserer{' '}
+          unserer{" "}
           <Link
             className="font-semibold text-itana-red"
             href="/photovoltaikanlage/"
           >
             <a>hauseigenen Photovoltaikanlage</a>
-          </Link>{' '}
+          </Link>{" "}
           um, mit der wir&nbsp;die Teslas laden. Dadurch wird die Sonnenenergie
           direkt f&uuml;r das E-Fahrzeug genutzt.&nbsp;
         </p>
@@ -219,16 +219,16 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
 export async function getStaticProps(context) {
-  const Kurzzeit = await getTXDataByArt('K')
-  const Langzeit = await getTXDataByArt('L')
-  const Mehrkilometer = await getTXDataByArt('M')
+  const Kurzzeit = await getTXDataByArt("K");
+  const Langzeit = await getTXDataByArt("L");
+  const Mehrkilometer = await getTXDataByArt("M");
   return {
     props: { Kurzzeit, Langzeit, Mehrkilometer },
-  }
+  };
 }
 
-export default TeslaModelX
+export default TeslaModelX;

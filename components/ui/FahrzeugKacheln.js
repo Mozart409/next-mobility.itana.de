@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import CTAFahrbereit from './CTAFahrbereit'
+import CTAFahrbereit from "./CTAFahrbereit";
 
 export default function FahrzeugKacheln() {
   return (
@@ -171,5 +171,5 @@ export default function FahrzeugKacheln() {
         </div>
       </div>
     </div>
-  )
+  );
 }

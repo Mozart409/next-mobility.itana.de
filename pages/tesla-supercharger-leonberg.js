@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import SEO from '@/ui/seo'
+import Head from "next/head";
+import Image from "next/image";
+import SEO from "@/ui/seo";
 
 function MobilityPage({ data }) {
   return (
@@ -66,9 +66,9 @@ function MobilityPage({ data }) {
           </div>
           <div className="p-2 w-1/2 md:w-1/3">
             <p>
-              Tesla-Fahrzeuge <b>helfen</b> Ihnen auch{' '}
-              <b>bei der Suche der geeigneten Ladesäulen</b> und <b>zeigen</b>{' '}
-              Ihnen u.a. die Lage und{' '}
+              Tesla-Fahrzeuge <b>helfen</b> Ihnen auch{" "}
+              <b>bei der Suche der geeigneten Ladesäulen</b> und <b>zeigen</b>{" "}
+              Ihnen u.a. die Lage und{" "}
               <b>Distanz bis zum nächsten Tesla-Supercharger</b> an – inkl. der
               zu erwartenden Restenergie bei aktueller Fahrweise und Routenwahl.
               Herstellerunabhängig gibt es inzwischen auch ein ganze Reihe von
@@ -97,7 +97,7 @@ function MobilityPage({ data }) {
         <div className="flex flex-wrap">
           <div className="p-2 md:w-1/2 w-1/1">
             <p>
-              Die{' '}
+              Die{" "}
               <a
                 href="https://www.tesla.com/de_DE/findus/location/supercharger/leonbergsupercharger"
                 target="_blank"
@@ -105,7 +105,7 @@ function MobilityPage({ data }) {
                 className="text-itana-red"
               >
                 Tesla Supercharger in Leonberg
-              </a>{' '}
+              </a>{" "}
               wurden 2018 um 20 Supercharger-Stationen (auch Stall genannt)
               erweitert.
             </p>
@@ -136,7 +136,7 @@ function MobilityPage({ data }) {
               </li>
             </ul>
             <p>
-              Tesla Fahrer wünschen sich{' '}
+              Tesla Fahrer wünschen sich{" "}
               <a
                 href="https://www.tesla.com/de_DE/findus/location/supercharger/leonbergsupercharger"
                 target="_blank"
@@ -144,7 +144,7 @@ function MobilityPage({ data }) {
                 className="text-itana-red"
               >
                 eine Funktion
-              </a>{' '}
+              </a>{" "}
               die genau das abbildet: Zeige mir den Supercharger mit der besten
               Ladeleistung.
             </p>
@@ -152,7 +152,7 @@ function MobilityPage({ data }) {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default MobilityPage
+export default MobilityPage;

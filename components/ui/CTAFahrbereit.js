@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const CTAFahrbereit = () => (
   <div className="flex overflow-hidden bg-gray-50 rounded-lg border border-gray-200 border-1">
@@ -27,6 +27,6 @@ const CTAFahrbereit = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default CTAFahrbereit
+export default CTAFahrbereit;

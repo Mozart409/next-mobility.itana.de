@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import SEO from '@/ui/seo'
+import SEO from "@/ui/seo";
 
 const Newsfeed = () => (
   <div className="pb-20 bg-white lg:pb-28">
@@ -96,7 +96,7 @@ const Newsfeed = () => (
               <p className="mt-3 text-base leading-6 text-gray-500">
                 Im Gegensatz zum Leasing gibt es bei der Tesla Langzeitmiete,
                 viel mehr <b>Flexibilität</b>, kürzere <b>Vertragsbindung</b>,
-                kurzfristigere <b>Verfügbarkeit</b> und einen <b>fairen</b>{' '}
+                kurzfristigere <b>Verfügbarkeit</b> und einen <b>fairen</b>{" "}
                 Preis.
               </p>
             </div>
@@ -112,7 +112,7 @@ const Newsfeed = () => (
       </div>
     </div>
   </div>
-)
+);
 
 export default function BlogPage() {
   return (
@@ -127,5 +127,5 @@ export default function BlogPage() {
 
       <Newsfeed />
     </div>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
+import TeslaQuickLinks from "@/ui/TeslaQuickLinks";
 
-import CTA from '@/ui/CTA'
-import Head from 'next/head'
+import CTA from "@/ui/CTA";
+import Head from "next/head";
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import SEO from '@/ui/seo'
+import SEO from "@/ui/seo";
 
-import { getT3SRPDataByArt } from 'lib/api'
+import { getT3SRPDataByArt } from "lib/api";
 
 function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
@@ -94,16 +94,16 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </p>
       </div> */}
     </div>
-  )
+  );
 }
 
 export async function getStaticProps(context) {
-  const Kurzzeit = await getT3SRPDataByArt('K')
-  const Langzeit = await getT3SRPDataByArt('L')
-  const Mehrkilometer = await getT3SRPDataByArt('M')
+  const Kurzzeit = await getT3SRPDataByArt("K");
+  const Langzeit = await getT3SRPDataByArt("L");
+  const Mehrkilometer = await getT3SRPDataByArt("M");
   return {
     props: { Kurzzeit, Langzeit, Mehrkilometer },
-  }
+  };
 }
 
-export default TeslaModel3SRPage
+export default TeslaModel3SRPage;

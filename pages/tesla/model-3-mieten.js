@@ -1,14 +1,14 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks'
+import TeslaQuickLinks from "@/ui/TeslaQuickLinks";
 
-import CTA from '@/ui/CTA'
-import Head from 'next/head'
+import CTA from "@/ui/CTA";
+import Head from "next/head";
 
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import SEO from '@/ui/seo'
+import SEO from "@/ui/seo";
 
-import { getT3PDataByArt } from 'lib/api'
+import { getT3PDataByArt } from "lib/api";
 
 function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
   return (
@@ -85,8 +85,8 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
             className="font-semibold text-itana-red"
             href="https://www.youtube.com/watch?v=GUdSP5WuU6c"
           >
-            {' '}
-            Drag Day Meinerzhagen{' '}
+            {" "}
+            Drag Day Meinerzhagen{" "}
           </a>
           stattfinden. Im Video kommt die PS starke Corvette Z06 nicht
           hinterher. Dein Mitfahrer sollte den Kopf bei der Beschleunigung
@@ -186,15 +186,15 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 export async function getStaticProps(context) {
-  const Kurzzeit = await getT3PDataByArt('K')
-  const Langzeit = await getT3PDataByArt('L')
-  const Mehrkilometer = await getT3PDataByArt('M')
+  const Kurzzeit = await getT3PDataByArt("K");
+  const Langzeit = await getT3PDataByArt("L");
+  const Mehrkilometer = await getT3PDataByArt("M");
   return {
     props: { Kurzzeit, Langzeit, Mehrkilometer },
-  }
+  };
 }
 
-export default TeslaModel3Page
+export default TeslaModel3Page;

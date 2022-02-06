@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import Link from 'next/link'
-import { Menu, Transition } from '@headlessui/react'
+import React, { useState } from "react";
+import Link from "next/link";
+import { Menu, Transition } from "@headlessui/react";
 
 const Bewertungen = () => (
   <div className="hidden px-3 xl:inline-block">
@@ -22,10 +22,10 @@ const Bewertungen = () => (
       </p>
     </a>
   </div>
-)
+);
 
 const Dropdown = () => {
-  const [isDropDownOpen, setDropDownOpen] = useState(false)
+  const [isDropDownOpen, setDropDownOpen] = useState(false);
   return (
     <div className="inline-block relative text-left">
       <div>
@@ -114,13 +114,13 @@ const Dropdown = () => {
             </Link>
           </div>
         </div>
-      </Transition>{' '}
+      </Transition>{" "}
     </div>
-  )
-}
+  );
+};
 
 export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
       {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
@@ -347,8 +347,8 @@ export default function Nav() {
               <Bewertungen />
             </div>
           </div>
-        </Transition>{' '}
+        </Transition>{" "}
       </nav>
     </div>
-  )
+  );
 }

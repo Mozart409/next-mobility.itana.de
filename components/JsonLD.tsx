@@ -1,12 +1,12 @@
-import React from 'react'
-import Head from 'next/head'
+import React from "react";
+import Head from "next/head";
 
 interface Props {
-  jsonld: object
+  jsonld: object;
 }
 
 export const JsonLD = ({ jsonld }: Props) => {
-  const str = JSON.stringify(jsonld)
+  const str = JSON.stringify(jsonld);
   return (
     <div>
       <Head>
@@ -18,5 +18,5 @@ export const JsonLD = ({ jsonld }: Props) => {
         />
       </Head>
     </div>
-  )
-}
+  );
+};

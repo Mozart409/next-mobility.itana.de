@@ -1,39 +1,39 @@
-import { FC, ReactElement, useEffect, useState } from 'react'
-import { addDays, format, toDate } from 'date-fns'
+import { FC, ReactElement, useEffect, useState } from "react";
+import { addDays, format, toDate } from "date-fns";
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 function formatDate(date: number | Date) {
-  return format(date, 'yyyy-MM-dd')
+  return format(date, "yyyy-MM-dd");
 }
 
 interface Props {}
 
 export const CarSearch: FC<Props> = ({}) => {
-  const today = new Date()
+  const today = new Date();
 
-  const startDate = addDays(today, 2)
-  const endDate = addDays(startDate, 7)
-  const todayDays = formatDate(startDate)
-  const tomorrowDays = formatDate(endDate)
+  const startDate = addDays(today, 2);
+  const endDate = addDays(startDate, 7);
+  const todayDays = formatDate(startDate);
+  const tomorrowDays = formatDate(endDate);
 
-  const [pickUpDate, setPickUpDate] = useState(todayDays)
-  const [returnDate, setReturnDate] = useState(tomorrowDays)
-  const [pickUpTime, setPickUpTime] = useState('08:00')
-  const [returnTime, setReturnTime] = useState('08:00')
+  const [pickUpDate, setPickUpDate] = useState(todayDays);
+  const [returnDate, setReturnDate] = useState(tomorrowDays);
+  const [pickUpTime, setPickUpTime] = useState("08:00");
+  const [returnTime, setReturnTime] = useState("08:00");
 
   useEffect(() => {
-    const d = new Date(pickUpDate)
-    const date = addDays(d, 7)
-    setReturnDate(formatDate(date))
-    return () => {}
-  }, [pickUpDate])
+    const d = new Date(pickUpDate);
+    const date = addDays(d, 7);
+    setReturnDate(formatDate(date));
+    return () => {};
+  }, [pickUpDate]);
 
   return (
     <div>
-      <ul role="list" className="space-y-3 ">
+      <ul role="list" className="space-y-3">
         <h2>Buchungszeitraum</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">
@@ -108,5 +108,5 @@ export const CarSearch: FC<Props> = ({}) => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
   return (
@@ -294,5 +294,5 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
         </ul>
       </div>
     </div>
-  )
+  );
 }

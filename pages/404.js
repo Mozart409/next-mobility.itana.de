@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import SEO from '@/ui/seo'
+import Head from "next/head";
+import Link from "next/link";
+import SEO from "@/ui/seo";
 
 function NotFoundPage() {
   return (
@@ -23,7 +23,7 @@ function NotFoundPage() {
         </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;

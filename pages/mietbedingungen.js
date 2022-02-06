@@ -1,8 +1,8 @@
-import Head from 'next/head'
+import Head from "next/head";
 
-import Link from 'next/link'
+import Link from "next/link";
 
-import SEO from '@/ui/seo'
+import SEO from "@/ui/seo";
 
 function MietbedingungenPage() {
   return (
@@ -31,15 +31,15 @@ function MietbedingungenPage() {
           persönlichen Übergabegespräch Praxistipps und aktuelle
           herstellerunabhängige Informationen zum Thema Elektromobilität. Falls
           Sie diesbezüglich schon vorab Informationen benötigen, senden Sie
-          bitte eine E-Mail Nachricht an{' '}
+          bitte eine E-Mail Nachricht an{" "}
           <a
             href="mailto:mobility@itana.de"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="text-itana-red">mobility@itana.de</span>
-          </a>{' '}
-          oder nutzen Sie unser{' '}
+          </a>{" "}
+          oder nutzen Sie unser{" "}
           <span className="text-itana-red">
             <Link
               passHref
@@ -461,7 +461,7 @@ function MietbedingungenPage() {
         <p>&copy; {new Date().getFullYear()} Itana GmbH.</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default MietbedingungenPage
+export default MietbedingungenPage;

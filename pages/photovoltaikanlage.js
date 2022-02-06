@@ -1,32 +1,32 @@
-import Breadcrum from '@/ui/Breadcrum'
-import Head from 'next/head'
-import Image from 'next/image'
+import Breadcrum from "@/ui/Breadcrum";
+import Head from "next/head";
+import Image from "next/image";
 
-import SEO from '@/ui/seo'
-import { JsonLD } from 'components/JsonLD'
+import SEO from "@/ui/seo";
+import { JsonLD } from "components/JsonLD";
 
 function photovoltaikanlagePage({ data }) {
   const jsonld1 = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    url: 'https://mobility.itana.de/photovoltaikanlage',
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    url: "https://mobility.itana.de/photovoltaikanlage",
     author: {
-      name: 'Jörg Weißleder',
-      summary: 'Itana',
-      url: 'https://mobility.itana.de',
+      name: "Jörg Weißleder",
+      summary: "Itana",
+      url: "https://mobility.itana.de",
     },
-    inLanguage: 'de-DE',
-    image: 'https://mobility.itana.de/news/solar.jpg',
-    isFamilyFriendly: 'true',
-    copyrightYear: '2020',
-    headline: 'Photovoltaikanlage',
+    inLanguage: "de-DE",
+    image: "https://mobility.itana.de/news/solar.jpg",
+    isFamilyFriendly: "true",
+    copyrightYear: "2020",
+    headline: "Photovoltaikanlage",
     articleBody:
       'CO2 Fußabdruck. Um unseren CO2 Fußabdruck zu verringern, laden wir unsere Teslas mit der hauseigenen 24 kW Photovoltaikanlage (PV) auf. In diesem Beispiel war der Tesla Model 3 komplett leer. Der Tesla wurde um ca. 07:15 Uhr an die Wallbox angeschlossen, dort startet die dunkelblaue Linie senkrecht nach oben, sie repräsentiert den Tesla. Ladesicherheit. Kurz nach Sonnenaufgang, um ca. 05:45 Uhr, fängt die grüne Ladekurve der Photovoltaikanlage an zu steigen und lädt den Speicher so lange auf (orange Linie), bis der Tesla angeschlossen wird. Da um 7 Uhr nur wenig Sonne vorhanden ist, kann die PV-Anlage nur ca. 3 kW leisten. Der Tesla braucht aber eine minimale Leistung von 4 kW. Deshalb muss in den nächsten Minuten Strom außerhalb der PV-Anlage gezogen werden. Unsere Wallbox steuert das vollautomatisch und trägt so zur Ladesicherheit bei. Der Bezug außerhalb der PV-Anlage relativiert sich schnell, wenn die Sonne mehr scheint. Nachhaltiges Laden. Der Zeitraum von ca. 8 Uhr - 10 Uhr zeigt, dass der Tesla nur so viel Strom eingespeist bekommt, wie Sonnenenergie vorhanden ist. Die blaue Linie des Teslas ist immer unterhalb der grünen von der PV-Anlage. Nur so ist das Laden nachhaltig und sinnvoll. Ab ca. 10 Uhr ist die Leistung der PV-Anlage bei 11 kW, mehr kann der Tesla Model 3 über diesen Anschluss nicht aufnehmen. Somit verläuft die Ladekurve waagerecht, der restliche Strom steht zur freien Verfügung. An einem sonnigen Tag können wir so 1000 km Reichweite laden!Tipp: Richtig nachhaltig wird das erst, wenn nur so viel Strom in die Tesla-Batterie geladen wird, wie Strom zu Verfügung steht. Unsere "Open WB Wallbox" managed das sehr gut und trägt noch zur Ladesicherheit bei. Somit verbrauchen wir fast keine unnötigen fossilen Brennstoffe. Steuerung der Wallbox. In der Konfiguration der Wallbox gibt man die Präferenz des Lademodi an. Ist die Präferenz auf "PV" gesetzt, wird der Tesla nur mit so viel Strom geladen, wie Sonnenenergie vorhanden ist. In diesem Beispiel kann man noch wählen, ob man das Elektroauto oder den Speicher bevorzugt laden möchte. Alles andere wäre ökologisch nicht sinnvoll! Achten Sie beim Kauf einer Photovoltaikanlage und Wallbox auf diese Funktion! ',
     contentLocation: {
-      '@type': 'Place',
-      name: 'Maulbronner Weg 33, 71706 Markgröningen, Germany',
+      "@type": "Place",
+      name: "Maulbronner Weg 33, 71706 Markgröningen, Germany",
     },
-  }
+  };
   return (
     <div>
       <SEO
@@ -73,7 +73,7 @@ function photovoltaikanlagePage({ data }) {
         <h3>CO2 Fußabdruck</h3>
         <p>
           Um unseren <b>CO2 Fußabdruck</b> zu <b>verringern</b>, laden wir
-          unsere Teslas mit der <b>hauseigenen</b> 24 kW{' '}
+          unsere Teslas mit der <b>hauseigenen</b> 24 kW{" "}
           <b>Photovoltaikanlage</b> (PV) auf. In diesem Beispiel war der Tesla
           Model 3 komplett leer. Der Tesla wurde um ca. 07:15 Uhr an die Wallbox
           angeschlossen, dort startet die dunkelblaue Linie senkrecht nach oben,
@@ -131,10 +131,10 @@ function photovoltaikanlagePage({ data }) {
         </p>
 
         <p>
-          Alles andere wäre ökologisch nicht sinnvoll!{' '}
+          Alles andere wäre ökologisch nicht sinnvoll!{" "}
           <b>
             Achten Sie beim Kauf einer Photovoltaikanlage und Wallbox auf diese
-            Funktion!{' '}
+            Funktion!{" "}
           </b>
         </p>
 
@@ -147,7 +147,7 @@ function photovoltaikanlagePage({ data }) {
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default photovoltaikanlagePage
+export default photovoltaikanlagePage;

@@ -43,7 +43,7 @@ function photovoltaikanlagePage({ data }) {
       <JsonLD jsonld={jsonld1} />
 
       <Breadcrum />
-      <div className="max-w-7xl sm:px-6 lg:px-8 prose lg:prose-md">
+      <div className="lg:prose-md prose max-w-7xl sm:px-6 lg:px-8">
         {/*  <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-06-12'>Juni 12, 2020</time>
         </p> */}
@@ -139,7 +139,7 @@ function photovoltaikanlagePage({ data }) {
         </p>
 
         <Image
-          className="mx-auto mt-4 w-72 h-72"
+          className="mx-auto mt-4 h-72 w-72"
           src="/images/news/lademodus.png"
           height="300"
           width="400"

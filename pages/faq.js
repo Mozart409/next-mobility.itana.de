@@ -3,17 +3,17 @@ import SEO from "@/ui/seo";
 
 function Display(items) {
   return (
-    <div className="pt-6 mt-6 space-y-6 text-lg">
+    <div className="mt-6 space-y-6 pt-6 text-lg">
       {items.map((item) => (
         <details
-          className="p-4 rounded-lg open:bg-neutral-100 open:shadow-lg open:shadow-itana-red/20"
+          className="rounded-lg p-4 open:bg-neutral-100 open:shadow-lg open:shadow-itana-red/20"
           key={item.id}
         >
           <summary className="text-lg font-semibold leading-6">
             {item.question}
           </summary>
           <div className="mt-3">
-            <p className="leading-6 text-gray-600 text-md">{item.answer}</p>
+            <p className="text-md leading-6 text-gray-600">{item.answer}</p>
           </div>
         </details>
       ))}
@@ -54,7 +54,7 @@ function Collapse() {
     },
   ];
   return (
-    <div className="py-6 px-4 mx-auto max-w-4xl sm:py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
       <div className="">
         <h1 className="text-6xl font-black tracking-tight text-gray-900">
           Häufig gestellte Fragen
@@ -105,10 +105,10 @@ function CollapseVersicherung() {
     },
   ];
   return (
-    <div className="py-6 px-4 mx-auto max-w-4xl sm:py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
       <div className="">
         <h2 className="text-4xl font-black">Versicherung </h2>
-        <div className="pt-6 mt-6 text-lg border-t-2 border-gray-200 cursor-pointer">
+        <div className="mt-6 cursor-pointer border-t-2 border-gray-200 pt-6 text-lg">
           {Display(items)}
         </div>
       </div>
@@ -143,7 +143,7 @@ function CollapseLeben() {
     },
   ];
   return (
-    <div className="py-6 px-4 mx-auto max-w-4xl sm:py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
       <div className="">
         <h2 className="text-4xl font-black">Rund ums Leben </h2>
         {Display(items)}
@@ -206,7 +206,7 @@ function CollapseAufladen() {
     },
   ];
   return (
-    <div className="py-6 px-4 mx-auto max-w-4xl sm:py-8 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
       <div className="">
         <h2 className="text-4xl font-black">Das Elektroauto aufladen</h2>
         {Display(items)}

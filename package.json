@@ -9,6 +9,7 @@
     "dev:doppler": "doppler run yarn dev",
     "build:doppler": "doppler run next build",
     "lint": "yarn run next lint",
+    "eslint": "eslint --fix '**/*.{js,ts,tsx}'",
     "fix:check": "npx prettier --check .",
     "fix": "npx prettier --write .",
     "cy:open": "cypress open",
@@ -50,13 +51,16 @@
     "cypress": "^9.2.0",
     "eslint": "7.28.0",
     "eslint-config-next": "^12.0.2",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-react": "^7.26.1",
     "globby": "^12.2.0",
     "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.5",
     "typescript": "^4.4.4"
   }
 }

@@ -24,7 +24,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           Tesla Model 3 Performance mieten - Sportwagen genießen
         </h1>
 
@@ -61,7 +61,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
       <TeslaQuickLinks />
       <div className="my-24 mx-auto">
-        <div className="mx-auto prose lg:prose-md">
+        <div className="lg:prose-md prose mx-auto">
           <h2>Bereit für eine Testfahrt mit einem Sportwagen?</h2>
           <p>
             Wer möchte hier nicht einen Tesla Model 3 mieten und eine Probefahrt
@@ -72,7 +72,7 @@ function TeslaModel3Page({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto mt-8">
         <h2>Beschleunigung und Antrieb des Model 3 Performance </h2>
         <p>
           Es macht richtig Spaß, mit dem atemberaubenden Tesla Model 3 die

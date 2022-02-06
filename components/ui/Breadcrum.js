@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Breadcrum() {
   return (
@@ -19,7 +19,7 @@ export default function Breadcrum() {
           <a>Home</a>
         </Link>
         <svg
-          className="flex-shrink-0 mx-2 w-5 h-5 text-gray-400"
+          className="mx-2 h-5 w-5 flex-shrink-0 text-gray-400"
           fill="currentColor"
           viewBox="0 0 20 20"
         >
@@ -37,5 +37,5 @@ export default function Breadcrum() {
         </Link>
       </div>
     </div>
-  )
+  );
 }

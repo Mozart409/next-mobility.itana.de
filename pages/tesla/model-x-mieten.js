@@ -24,7 +24,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           Tesla Model X mieten
         </h1>
         <h2>Komfortables SUV-Powerhouse mit enormer Reichweite</h2>
@@ -68,7 +68,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </section>
       <TeslaQuickLinks />
-      <div className="mx-auto mt-24 prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto mt-24">
         <h2>Technische Fakten zum Tesla Model X</h2>
         <h3>Wie viel PS hat ein Tesla Model X?</h3>
         <p>
@@ -196,7 +196,7 @@ function TeslaModelX({ Kurzzeit, Langzeit, Mehrkilometer }) {
           direkt f&uuml;r das E-Fahrzeug genutzt.&nbsp;
         </p>
         <h2>Warum ein Tesla-Elektroauto?</h2>
-        <ul className="list-disc list-inside">
+        <ul className="list-inside list-disc">
           <li>lautlos</li>
           <li>nachhaltig mit Photovoltaik aufladbar</li>
           <li>unfassbare Fahrgeschwindigkeit mit viel Fahrspa&szlig;</li>

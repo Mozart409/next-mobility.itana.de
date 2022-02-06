@@ -9,14 +9,14 @@ function NotFoundPage() {
       <Head>
         <link rel="canonical" href="https://mobility.itana.de/404/" />
       </Head>
-      <div className="mx-auto prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto">
         <Link passHref href="/">
           <div>
-            <h2 className="inline-block p-3 my-8 mt-4 mb-2 text-2xl font-bold bg-yellow-400">
+            <h2 className="my-8 mt-4 mb-2 inline-block bg-yellow-400 p-3 text-2xl font-bold">
               Diese Seite konnte nicht gefunden werden.
             </h2>
 
-            <button className="p-4 mx-auto text-lg font-bold text-black bg-yellow-400 border-2 border-gray-900 border-solid hover:shadow-xl">
+            <button className="mx-auto border-2 border-solid border-gray-900 bg-yellow-400 p-4 text-lg font-bold text-black hover:shadow-xl">
               Startseite
             </button>
           </div>

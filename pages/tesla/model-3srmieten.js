@@ -24,7 +24,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         />
       </Head>
       <section>
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           Tesla Model 3 SR+ mieten - Leichten und agilen Sportwagen fahren
         </h1>
 
@@ -69,7 +69,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
       </section>
       <TeslaQuickLinks />
       <div className="my-24 mx-auto">
-        <div className="mx-auto prose lg:prose-md">
+        <div className="lg:prose-md prose mx-auto">
           <h2>
             Was sind die Unterschiede zwischen dem Model 3 Performance und dem
             Model 3 SR+?
@@ -91,7 +91,7 @@ function TeslaModel3SRPage({ Kurzzeit, Langzeit, Mehrkilometer }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto mt-8">
         <h2> Du möchtest günstig einen Tesla mieten?</h2>
         <p>
           Dann bist Du bei uns richtig. Vergleiche die Preise und prüfe

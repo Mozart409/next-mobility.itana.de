@@ -18,7 +18,7 @@ export default function schulungElektromobilität({ data }) {
         />
       </Head>
       <Breadcrum />
-      <div className="max-w-7xl sm:px-6 lg:px-8 prose lg:prose-md">
+      <div className="lg:prose-md prose max-w-7xl sm:px-6 lg:px-8">
         {/* <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-05-4'>Mai 4, 2020</time>
         </p> */}

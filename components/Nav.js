@@ -7,7 +7,7 @@ const Bewertungen = () => (
     <a
       href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
       target="_blank"
-      className="block mt-1 text-white no-underline md:inline-block md:mt-0"
+      className="mt-1 block text-white no-underline md:mt-0 md:inline-block"
       rel="noopener noreferrer"
     >
       {/*    <p className="flex justify-center mx-auto flex-no-wrap">
@@ -17,7 +17,7 @@ const Bewertungen = () => (
         <YellowStar />
         <YellowStar />
       </p> */}
-      <p className="mt-2 text-sm leading-6 text-center text-white no-underline">
+      <p className="mt-2 text-center text-sm leading-6 text-white no-underline">
         <b>32</b> Bewertungen <b>4,9/5</b> Stand 01/2022
       </p>
     </a>
@@ -27,11 +27,11 @@ const Bewertungen = () => (
 const Dropdown = () => {
   const [isDropDownOpen, setDropDownOpen] = useState(false);
   return (
-    <div className="inline-block relative text-left">
+    <div className="relative inline-block text-left">
       <div>
         <button
           type="button"
-          className="inline-flex justify-center py-2 px-4 w-full text-sm font-medium text-gray-700 bg-white rounded-md border border-gray-300 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-100 focus:outline-none"
+          className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-100"
           id="options-menu"
           aria-haspopup="true"
           aria-expanded="true"
@@ -40,7 +40,7 @@ const Dropdown = () => {
           Preise + Fahrzeuge
           {/* <!-- Heroicon name: solid/chevron-down --> */}
           <svg
-            className="ml-2 -mr-1 w-5 h-5"
+            className="ml-2 -mr-1 h-5 w-5"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
@@ -74,7 +74,7 @@ const Dropdown = () => {
         leaveTo="opacity-0 scale-95"
       >
         <div
-          className="absolute right-0 z-50 mt-2 w-56 bg-white rounded-md ring-1 ring-black ring-opacity-5 shadow-lg origin-top-right"
+          className="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
           onClick={() => setDropDownOpen(!isDropDownOpen)}
         >
           <div
@@ -84,31 +84,31 @@ const Dropdown = () => {
             aria-labelledby="options-menu"
           >
             <Link passHref href="/tesla/model-3srmieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model 3 SR+
               </a>
             </Link>
 
             <Link passHref href="/tesla/model-3-long-range-mieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model 3 Long Range
               </a>
             </Link>
 
             <Link passHref href="/tesla/model-3-mieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model 3 Performance
               </a>
             </Link>
 
             <Link passHref href="/tesla/model-x-mieten/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model X
               </a>
             </Link>
 
             <Link passHref href="/tesla-langzeitmiete/">
-              <a className="block py-2 px-4 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-100">
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Langzeitmiete
               </a>
             </Link>
@@ -125,13 +125,13 @@ export default function Nav() {
     <div>
       {/* <!-- This example requires Tailwind CSS v2.0+ --> */}
       <nav className="bg-itana-red">
-        <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="flex relative justify-between items-center h-16">
-            <div className="flex absolute inset-y-0 left-0 items-center sm:hidden">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="relative flex h-16 items-center justify-between">
+            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
               <button
                 type="button"
-                className="inline-flex justify-center items-center p-2 text-gray-400 rounded-md hover:text-white hover:bg-gray-700 focus:ring-2 focus:ring-inset focus:ring-white focus:outline-none"
+                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 data-cy="MobileMenuButton"
@@ -145,7 +145,7 @@ export default function Nav() {
             Menu open: "hidden", Menu closed: "block"
           --> */}
                 <svg
-                  className="block w-6 h-6 text-gray-300"
+                  className="block h-6 w-6 text-gray-300"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -166,7 +166,7 @@ export default function Nav() {
             Menu open: "block", Menu closed: "hidden"
           --> */}
                 <svg
-                  className="hidden w-6 h-6"
+                  className="hidden h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -182,35 +182,35 @@ export default function Nav() {
                 </svg>
               </button>
             </div>
-            <div className="flex flex-1 justify-center items-center sm:justify-start sm:items-stretch">
+            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <Link passHref href="/">
                   <a className="flex flex-shrink-0 items-center">
                     <img
-                      className="block w-auto h-10 lg:hidden"
+                      className="block h-10 w-auto lg:hidden"
                       src="/images/icon-192.png"
                       alt="Logo mobility.itana.de"
                     />
                     <img
-                      className="hidden mx-2 w-auto h-8 lg:block"
+                      className="mx-2 hidden h-8 w-auto lg:block"
                       src="/images/icon-192.png"
                       alt="Logo mobility.itana.de"
                     />
                     <img
-                      className="hidden w-auto h-6 lg:block"
+                      className="hidden h-6 w-auto lg:block"
                       src="/images/mobility.itana.de-transparent.svg"
                       alt="Workflow"
                     />
                   </a>
                 </Link>
               </div>
-              <div className="hidden sm:block sm:ml-6">
+              <div className="hidden sm:ml-6 sm:block">
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
 
                   <a
                     href="https://itana.rentware.io/"
-                    className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
+                    className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
                   >
                     Tesla mieten
                   </a>
@@ -241,19 +241,19 @@ export default function Nav() {
                   </Link> */}
 
                   <Link passHref href="/blog/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                    <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       Blog
                     </a>
                   </Link>
 
                   <Link passHref href="/faq/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                    <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       FAQ
                     </a>
                   </Link>
 
                   <Link passHref href="/kontakt/">
-                    <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                    <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       Kontakt
                     </a>
                   </Link>
@@ -279,67 +279,67 @@ export default function Nav() {
             id="mobile-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="space-y-1 px-2 pt-2 pb-3">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
 
               <a
                 href="https://itana.rentware.io/"
-                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
+                className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
               >
                 Tesla mieten
               </a>
 
               <Link passHref href="/tesla/model-3srmieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 SR+
                 </a>
               </Link>
 
               <Link passHref href="/tesla/model-3-long-range-mieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 Long Range
                 </a>
               </Link>
 
               <Link passHref href="/tesla/model-3-mieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 Performance
                 </a>
               </Link>
 
               <Link passHref href="/tesla/model-x-mieten/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model X
                 </a>
               </Link>
 
               <Link passHref href="/tesla-langzeitmiete/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Langzeitmiete
                 </a>
               </Link>
 
               <Link passHref href="/blog/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Blog
                 </a>
               </Link>
 
               <Link passHref href="/faq/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   FAQ
                 </a>
               </Link>
 
               <Link passHref href="/kontakt/">
-                <a className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Kontakt
                 </a>
               </Link>
 
               <a
                 href="tel:+4971149066450"
-                className="block py-2 px-3 text-base font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700"
+                className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
               >
                 +49 711 49 06 64 50
               </a>

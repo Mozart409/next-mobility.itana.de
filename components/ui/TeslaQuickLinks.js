@@ -4,7 +4,7 @@ export default function TeslaQuickLinks() {
   return (
     <div className="mt-4" data-cy="QuickLinks">
       <h2 className="mb-2 text-3xl">Mieten - Rückgabe - Reichweite </h2>
-      <div className="grid gap-y-1 gap-x-2 mx-auto max-w-lg md:grid-cols-3 md:max-w-none">
+      <div className="mx-auto grid max-w-lg gap-y-1 gap-x-2 md:max-w-none md:grid-cols-3">
         <Link
           href="/#tesla-mieten"
           target="_blank"

@@ -10,10 +10,10 @@ import { JsonLD } from "components/JsonLD";
 import { CarSearch } from "components/CarSearch";
 
 const Heading1 = () => (
-  <div className="py-2 bg-white">
-    <div className="px-4 mx-auto max-w-screen-xl sm:px-2 lg:px-8">
+  <div className="bg-white py-2">
+    <div className="mx-auto max-w-screen-xl px-4 sm:px-2 lg:px-8">
       <div className="lg:text-center">
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           Tesla mieten in Stuttgart - Elektromobilität erleben
         </h1>
       </div>
@@ -22,7 +22,7 @@ const Heading1 = () => (
 );
 
 const ContentSection = () => (
-  <div className="mx-auto mt-24 lg:mt-8 prose lg:prose-md">
+  <div className="lg:prose-md prose mx-auto mt-24 lg:mt-8">
     <h2>Wo kann ich einen Tesla in Stuttgart mieten?</h2>
     <p>
       Bei uns in Markgröningen können Sie einen Tesla mieten. Dort steht auch
@@ -175,7 +175,7 @@ const ContentSection = () => (
       verkürzt die Ladezeit ;&ndash; vor allem im Winter ;&ndash; signifikant.
     </p>
     <h4 className="mt-2 text-lg">V2</h4>
-    <ul className="list-disc list-inside">
+    <ul className="list-inside list-disc">
       <li>maximale Leistung 150 kW</li>
       <li>
         Jede Ladestation teilt sich die Leistung mit dem Nachbarn, falls dort
@@ -184,7 +184,7 @@ const ContentSection = () => (
       <li>Ladekabel ist dicker als beim V3</li>
     </ul>
     <h4 className="mt-2 text-lg">V3</h4>
-    <ul className="list-disc list-inside">
+    <ul className="list-inside list-disc">
       <li>
         Benötigt einen Adapter für Model S und X (wir legen den Adapter
         kostenfrei bei)
@@ -356,7 +356,7 @@ const ContentSection = () => (
 const FeatureSection = () => (
   <div className="mx-auto">
     <div className="gap-x-4 gap-y-8 lg:grid lg:grid-cols-2">
-      <div className="mx-auto prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto">
         <h2>Verknüpfung Tesla App</h2>
         <p>
           Wir richten gerne die Tesla-App auf Ihrem Smartphone ein und erklären
@@ -367,7 +367,7 @@ const FeatureSection = () => (
         </p>
       </div>
 
-      <div className="mx-auto prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto">
         <h2>Bester Service </h2>
         <p>
           Wir haben Zeit für Sie und Ihre Fragen. Bei uns ist eine
@@ -376,7 +376,7 @@ const FeatureSection = () => (
         </p>
       </div>
 
-      <div className="mx-auto prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto">
         <h2 id="kundenzufriedenheit">Zufriedene Kunden</h2>
 
         <p className="">

@@ -5,21 +5,21 @@ import Link from "next/link";
 import SEO from "@/ui/seo";
 
 const Newsfeed = () => (
-  <div className="pb-20 bg-white lg:pb-28">
+  <div className="bg-white pb-20 lg:pb-28">
     <div className="mx-auto max-w-lg lg:max-w-7xl">
       <div>
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           Blog
         </h1>
       </div>
-      <div className="grid grid-cols-1 gap-16 mt-6 border-t-2 border-gray-100 lg:grid-cols-2 lg:pt-10 lg:col-gap-5 lg:row-gap-12">
+      <div className="lg:col-gap-5 lg:row-gap-12 mt-6 grid grid-cols-1 gap-16 border-t-2 border-gray-100 lg:grid-cols-2 lg:pt-10">
         <div>
           {/* <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-06-12'>Juni 12, 2020</time>
           </p> */}
           <Link passHref href="/photovoltaikanlage/" className="block">
             <div>
-              <h2 className="mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900 BlogTitle">
+              <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Photovoltaikanlage
               </h2>
               <p className="mt-3 text-base leading-6 text-gray-500">
@@ -30,7 +30,7 @@ const Newsfeed = () => (
           </Link>
           <div className="mt-3">
             <Link passHref href="/photovoltaikanlage/">
-              <a className="text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red">
+              <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
             </Link>
@@ -42,7 +42,7 @@ const Newsfeed = () => (
           </p> */}
           <Link passHref href="/tesla-supercharger-leonberg/">
             <div className="block">
-              <h2 className="mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900 BlogTitle">
+              <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Tesla Supercharger Leonberg
               </h2>
               <p className="mt-3 text-base leading-6 text-gray-500">
@@ -54,7 +54,7 @@ const Newsfeed = () => (
           </Link>
           <div className="mt-3">
             <Link passHref href="/tesla-supercharger-leonberg/">
-              <a className="text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red">
+              <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
             </Link>
@@ -66,7 +66,7 @@ const Newsfeed = () => (
           </p> */}
           <Link passHref href="/schulung-elektromobilitaet/" className="block">
             <div>
-              <h2 className="mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900 BlogTitle">
+              <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Schulung Elektromobilität
               </h2>
               <p className="mt-3 text-base leading-6 text-gray-500">
@@ -78,7 +78,7 @@ const Newsfeed = () => (
           </Link>
           <div className="mt-3">
             <Link passHref href="/schulung-elektromobilitaet/">
-              <a className="text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red">
+              <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
             </Link>
@@ -90,7 +90,7 @@ const Newsfeed = () => (
           </p> */}
           <Link passHref href="/tesla-langzeitmiete/" className="block">
             <div>
-              <h2 className="mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900 BlogTitle">
+              <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Tesla Langzeitmiete
               </h2>
               <p className="mt-3 text-base leading-6 text-gray-500">
@@ -103,7 +103,7 @@ const Newsfeed = () => (
           </Link>
           <div className="mt-3">
             <Link passHref href="/tesla-langzeitmiete/">
-              <a className="text-base font-semibold leading-6 transition duration-150 ease-in-out text-itana-red hover:text-itana-red">
+              <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
             </Link>

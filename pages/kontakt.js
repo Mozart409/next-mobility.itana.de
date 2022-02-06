@@ -15,8 +15,8 @@ function KontaktPage() {
         <link rel="canonical" href="https://itana.de/kontakt/" />
       </Head>
 
-      <div className="mx-auto prose lg:prose-md">
-        <h1 className="text-xl font-bold tracking-tight leading-6 text-gray-900 sm:text-2xl sm:leading-8">
+      <div className="lg:prose-md prose mx-auto">
+        <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
           So finden Sie uns
         </h1>
 
@@ -28,7 +28,7 @@ function KontaktPage() {
                 url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6572191742066!2d9.098110951472483!3d48.90286950542604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d6c0c4e1f9d5%3A0xa49fe7c8f1996367!2sMaulbronner%20Weg%2033%2C%2071706%20Markgr%C3%B6ningen!5e0!3m2!1sde!2sde!4v1582817225514!5m2!1sde!2sde"
                 width="720"
                 height="480"
-                className="mt-2 sm:max-w-max md:max-w-6xl border-md"
+                className="border-md mt-2 sm:max-w-max md:max-w-6xl"
               />
 
               <CTA
@@ -38,12 +38,12 @@ function KontaktPage() {
             </div>
           </div>
         </section>
-        <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2">
+        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           <section>
             <Image
               src="/images/joerg.png"
               alt="Jörg Weißleder"
-              className="mt-4 w-72 h-auto rounded border-md"
+              className="border-md mt-4 h-auto w-72 rounded"
               width="275"
               height="325"
             />

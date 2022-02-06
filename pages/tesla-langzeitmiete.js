@@ -7,9 +7,9 @@ import CTA from "@/ui/CTA";
 import { JsonLD } from "components/JsonLD";
 
 const InfoBanner = () => (
-  <div className="bg-gray-50 border-l-4 border-itana-red">
+  <div className="border-l-4 border-itana-red bg-gray-50">
     <div className="flex">
-      <div className="my-auto ml-2 w-6 h-6 text-itana-red">
+      <div className="my-auto ml-2 h-6 w-6 text-itana-red">
         <svg
           aria-label="Info Icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
       <JsonLD jsonld={jsonLD1} />
 
       <Breadcrum />
-      <div className="max-w-7xl sm:px-6 lg:px-8 prose lg:prose-md">
+      <div className="lg:prose-md prose max-w-7xl sm:px-6 lg:px-8">
         {/* <p className='text-sm leading-5 text-gray-500'>
           <time dateTime='2020-04-17'>August 03, 2020</time>
         </p> */}
@@ -190,7 +190,7 @@ export default function langzeitmeitePage({ t3pPrice, txlPrice, t3srPrice }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 prose lg:prose-md">
+      <div className="lg:prose-md prose mx-auto mt-12">
         <h2>Was bedeutet die Tesla Langzeitmiete für Dein Unternehmen?</h2>
         <p>
           Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt

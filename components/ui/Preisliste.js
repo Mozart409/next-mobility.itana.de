@@ -5,7 +5,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
     <div>
       <div>
         <ul className="space-y-3">
-          <li className="overflow-hidden py-4 px-4 bg-white shadow sm:px-6 sm:rounded-md">
+          <li className="overflow-hidden bg-white py-4 px-4 shadow sm:rounded-md sm:px-6">
             <div className="overflow-hidden bg-white shadow sm:rounded-md">
               <ul className="divide-y divide-gray-200">
                 <h2>Kurzzeittarife</h2>
@@ -14,12 +14,12 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                   <li key={item._id}>
                     <div className="block hover:bg-gray-50">
                       <div className="py-4 px-4 sm:px-6">
-                        <div className="flex justify-between items-center">
-                          <p className="text-sm font-medium text-indigo-600 truncate">
+                        <div className="flex items-center justify-between">
+                          <p className="truncate text-sm font-medium text-indigo-600">
                             {item.Preis} €
                           </p>
-                          <div className="flex flex-shrink-0 ml-2">
-                            <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
+                          <div className="ml-2 flex flex-shrink-0">
+                            <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                               {item.Tarif}
                             </p>
                           </div>
@@ -28,7 +28,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -41,9 +41,9 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               </svg>
                               {item.PreisproTag} € pro Tag
                             </p>
-                            <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -57,10 +57,10 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               {item.Inklusivkilometer} Inklusivkilometer
                             </p>
                           </div>
-                          <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
+                          <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
+                              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -83,12 +83,12 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                   <li key={item._id}>
                     <div className="block hover:bg-gray-50">
                       <div className="py-4 px-4 sm:px-6">
-                        <div className="flex justify-between items-center">
-                          <p className="text-sm font-medium text-indigo-600 truncate">
+                        <div className="flex items-center justify-between">
+                          <p className="truncate text-sm font-medium text-indigo-600">
                             {item.Preis} €
                           </p>
-                          <div className="flex flex-shrink-0 ml-2">
-                            <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
+                          <div className="ml-2 flex flex-shrink-0">
+                            <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                               {item.Tarif}
                             </p>
                           </div>
@@ -97,7 +97,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -110,9 +110,9 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               </svg>
                               0 € pro Tag
                             </p>
-                            <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -126,10 +126,10 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               {item.Inklusivkilometer} Inklusivkilometer
                             </p>
                           </div>
-                          <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
+                          <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
+                              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -154,12 +154,12 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                   <li key={item._id}>
                     <div className="block hover:bg-gray-50">
                       <div className="py-4 px-4 sm:px-6">
-                        <div className="flex justify-between items-center">
-                          <p className="text-sm font-medium text-indigo-600 truncate">
+                        <div className="flex items-center justify-between">
+                          <p className="truncate text-sm font-medium text-indigo-600">
                             {item.Preis} €
                           </p>
-                          <div className="flex flex-shrink-0 ml-2">
-                            <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
+                          <div className="ml-2 flex flex-shrink-0">
+                            <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                               {item.Tarif}
                             </p>
                           </div>
@@ -168,7 +168,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -181,9 +181,9 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               </svg>
                               {item.PreisproTag} € pro Tag
                             </p>
-                            <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -197,10 +197,10 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               {item.Inklusivkilometer} Inklusivkilometer
                             </p>
                           </div>
-                          <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
+                          <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
+                              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"
@@ -223,12 +223,12 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                   <li key={item._id}>
                     <div className="block hover:bg-gray-50">
                       <div className="py-4 px-4 sm:px-6">
-                        <div className="flex justify-between items-center">
-                          <p className="text-sm font-medium text-indigo-600 truncate">
+                        <div className="flex items-center justify-between">
+                          <p className="truncate text-sm font-medium text-indigo-600">
                             {item.Preis} €
                           </p>
-                          <div className="flex flex-shrink-0 ml-2">
-                            <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
+                          <div className="ml-2 flex flex-shrink-0">
+                            <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                               {item.Tarif}
                             </p>
                           </div>
@@ -237,7 +237,7 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                           <div className="sm:flex">
                             <p className="flex items-center text-sm text-gray-500">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -250,9 +250,9 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               </svg>
                               0 € pro Tag
                             </p>
-                            <p className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
                               <svg
-                                className="flex-shrink-0 mr-1.5 w-5 h-5"
+                                className="mr-1.5 h-5 w-5 flex-shrink-0"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
@@ -266,10 +266,10 @@ export default function Preisliste({ kurzzeit, langzeit, mehrkilometer }) {
                               {item.Inklusivkilometer} Inklusivkilometer
                             </p>
                           </div>
-                          <div className="flex items-center mt-2 text-sm text-gray-500 sm:mt-0">
+                          <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                             {/* <!-- Heroicon name: solid/calendar --> */}
                             <svg
-                              className="flex-shrink-0 mr-1.5 w-5 h-5 text-gray-400"
+                              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 20 20"
                               fill="currentColor"

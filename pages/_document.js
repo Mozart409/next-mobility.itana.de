@@ -100,7 +100,7 @@ class MyDocument extends Document {
             <Main />
             <NextScript />
           </div>
-          <rentware-checkout></rentware-checkout>
+          {/* <rentware-checkout></rentware-checkout> */}
         </body>
       </Html>
     )

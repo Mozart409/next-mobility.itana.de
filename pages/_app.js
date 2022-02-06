@@ -102,17 +102,17 @@ export default function MyApp({ Component, pageProps }) {
     }
   }, [])
 
-  useEffect(() => {
+  /*   useEffect(() => {
     window.RENTWARE_BASE_API_URL = 'https://itana.rentware.io'
     window.RENTWARE_LANGUAGE = 'de-DE'
-  }, [])
+  }, []) */
   return (
     <Layout>
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         type="module"
         src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
-      ></Script>
+      ></Script> */}
 
       <Component {...pageProps} />
     </Layout>

@@ -3,13 +3,14 @@ import Script from 'next/script';
 import Head from 'next/head';
 import {useEffect} from 'react';
 import '../lib/global.css';
+import toast, {Toaster} from 'react-hot-toast';
 
 export default function MyApp({Component, pageProps}) {
 	useEffect(() => {
 		if (
-			typeof window !== 'undefined'
-      && 'serviceWorker' in navigator
-      && window.workbox !== undefined
+			typeof window !== 'undefined' &&
+			'serviceWorker' in navigator &&
+			window.workbox !== undefined
 		) {
 			const wb = window.workbox;
 			// Add event listeners to handle any of PWA lifecycle event
@@ -36,22 +37,66 @@ export default function MyApp({Component, pageProps}) {
 				// `event.wasWaitingBeforeRegister` will be false if this is the first time the updated service worker is waiting.
 				// When `event.wasWaitingBeforeRegister` is true, a previously updated service worker is still waiting.
 				// You may want to customize the UI prompt accordingly.
-				if (
-					confirm(
-						'A newer version of this web app is available, reload to update?',
-					)
-				) {
+
+				const handleReload = t => {
+					toast.dismiss(t.id);
 					wb.addEventListener('controlling', event => {
 						window.location.reload();
 					});
 
 					// Send a message to the waiting service worker, instructing it to activate.
 					wb.messageSkipWaiting();
-				} else {
-					console.log(
-						'User rejected to reload the web app, keep using old version. New version will be automatically load when user open the app next time.',
-					);
-				}
+				};
+
+				toast.custom(
+					t => (
+						<>
+							<div
+								className={`${
+									t.visible ? 'animate-enter' : 'animate-leave'
+								} max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+							>
+								<div className="flex border-r border-gray-200">
+									<button
+										onClick={() => toast.dismiss(t.id)}
+										className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-itana-red/40 hover:text-itana-red focus:outline-none focus:ring-2 focus:ring-itana-red"
+									>
+										Close
+									</button>
+								</div>
+								<div className="flex-1 w-0 p-4">
+									<div className="flex items-start">
+										{/* <div className='flex-shrink-0 pt-0.5'>
+								<img
+								  className='h-10 w-10 rounded-full'
+								  src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixqx=6GHAjsWpt9&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80'
+								  alt=''
+								/>
+							  </div> */}
+										<div className="ml-3 flex-1">
+											<p className="text-sm font-medium text-gray-900 text-center">
+												A new version is available
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="flex border-l border-gray-200">
+									<button
+										onClick={handleReload}
+										className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-itana-red/40 hover:text-itana-red focus:outline-none focus:ring-2 focus:ring-itana-red"
+									>
+										Reload
+									</button>
+								</div>
+							</div>
+						</>
+					),
+					{
+						duration: 1000 * 60 * 3,
+						position: 'top-center',
+						icon: '👏',
+					}
+				);
 			};
 
 			wb.addEventListener('waiting', promptNewVersionAvailable);
@@ -69,7 +114,7 @@ export default function MyApp({Component, pageProps}) {
 					console.log(`Event ${event.type} is triggered.`);
 					console.log(event);
 				},
-				false,
+				false
 			);
 
 			/*  Wb.addEventListener("message", (event) => {
@@ -89,7 +134,7 @@ export default function MyApp({Component, pageProps}) {
 					console.log(`Event ${event.type} is triggered.`);
 					console.log(event);
 				},
-				false,
+				false
 			);
 
 			/*
@@ -119,7 +164,7 @@ export default function MyApp({Component, pageProps}) {
         type="module"
         src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
       ></Script> */}
-
+			<Toaster />
 			<Component {...pageProps} />
 		</Layout>
 	);

@@ -31,8 +31,13 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: Run a multi-line script
+
+      - name: RUN NPX
         run: npx --help
+
+      - name: DOWNLOAD VERCEL
+        run: npm install -g vercel
+
       - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v20
         with:

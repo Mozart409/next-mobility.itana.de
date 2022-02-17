@@ -22,23 +22,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - uses: actions/cache@v2
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-
-      - name: Install packages
-        run: yarn install
-
-      - run: yarn build
-        env:
-          RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}
-
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-args: '--prod' #Optional
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}} #Required
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}} #Required
-
+          RELATIVE_CI_KEY: ${{ secrets.RELATIVE_CI_KEY }}

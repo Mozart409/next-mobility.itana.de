@@ -37,7 +37,7 @@ const Dropdown = () => {
 					aria-expanded="true"
 					onClick={() => setDropDownOpen(!isDropDownOpen)}
 				>
-          Preise + Fahrzeuge
+					Preise + Fahrzeuge
 					{/* <!-- Heroicon name: solid/chevron-down --> */}
 					<svg
 						className="ml-2 -mr-1 h-5 w-5"
@@ -85,31 +85,31 @@ const Dropdown = () => {
 					>
 						<Link passHref href="/tesla/model-3srmieten/">
 							<a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model 3 SR+
+								Tesla Model 3 SR+
 							</a>
 						</Link>
 
 						<Link passHref href="/tesla/model-3-long-range-mieten/">
 							<a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model 3 Long Range
+								Tesla Model 3 Long Range
 							</a>
 						</Link>
 
 						<Link passHref href="/tesla/model-3-mieten/">
 							<a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model 3 Performance
+								Tesla Model 3 Performance
 							</a>
 						</Link>
 
 						<Link passHref href="/tesla/model-x-mieten/">
 							<a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model X
+								Tesla Model X
 							</a>
 						</Link>
 
 						<Link passHref href="/tesla-langzeitmiete/">
 							<a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Langzeitmiete
+								Tesla Langzeitmiete
 							</a>
 						</Link>
 					</div>
@@ -212,7 +212,7 @@ export default function Nav() {
 										href="https://itana.rentware.io/"
 										className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
 									>
-                    Tesla mieten
+										Tesla mieten
 									</a>
 
 									<Dropdown />
@@ -242,19 +242,19 @@ export default function Nav() {
 
 									<Link passHref href="/blog/">
 										<a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                      Blog
+											Blog
 										</a>
 									</Link>
 
 									<Link passHref href="/faq/">
 										<a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                      FAQ
+											FAQ
 										</a>
 									</Link>
 
 									<Link passHref href="/kontakt/">
 										<a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                      Kontakt
+											Kontakt
 										</a>
 									</Link>
 
@@ -286,54 +286,54 @@ export default function Nav() {
 								href="https://itana.rentware.io/"
 								className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
 							>
-                Tesla mieten
+								Tesla mieten
 							</a>
 
 							<Link passHref href="/tesla/model-3srmieten/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model 3 SR+
+									Tesla Model 3 SR+
 								</a>
 							</Link>
 
 							<Link passHref href="/tesla/model-3-long-range-mieten/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model 3 Long Range
+									Tesla Model 3 Long Range
 								</a>
 							</Link>
 
 							<Link passHref href="/tesla/model-3-mieten/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model 3 Performance
+									Tesla Model 3 Performance
 								</a>
 							</Link>
 
 							<Link passHref href="/tesla/model-x-mieten/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model X
+									Tesla Model X
 								</a>
 							</Link>
 
 							<Link passHref href="/tesla-langzeitmiete/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Langzeitmiete
+									Tesla Langzeitmiete
 								</a>
 							</Link>
 
 							<Link passHref href="/blog/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Blog
+									Blog
 								</a>
 							</Link>
 
 							<Link passHref href="/faq/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  FAQ
+									FAQ
 								</a>
 							</Link>
 
 							<Link passHref href="/kontakt/">
 								<a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Kontakt
+									Kontakt
 								</a>
 							</Link>
 
@@ -341,7 +341,7 @@ export default function Nav() {
 								href="tel:+4971149066450"
 								className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
 							>
-                +49 711 49 06 64 50
+								+49 711 49 06 64 50
 							</a>
 
 							<Bewertungen />

@@ -25,7 +25,7 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
 			</Head>
 			<section>
 				<h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
-          Tesla Model 3 LR mieten - Leichten und agilen Sportwagen fahren
+					Tesla Model 3 LR mieten - Leichten und agilen Sportwagen fahren
 				</h1>
 
 				<div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">

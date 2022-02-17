@@ -52,7 +52,7 @@ const CalendarInput: FC<ICalenderInput> = ({
 
 const today = new Date();
 
-let startDate2 = new Date();
+const startDate2 = new Date();
 startDate2.setDate(today.getDate() + 2);
 
 const calendarMachine = createMachine({
@@ -100,7 +100,7 @@ export const CalendarStateMachine = () => {
 
 	const canSubmit = calendarMachine.transition(state, 'SUBMIT').changed;
 
-	//const [state, send] = useMachine(toggleMachine);
+	// Const [state, send] = useMachine(toggleMachine);
 
 	return (
 		<form>

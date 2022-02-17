@@ -13,11 +13,11 @@ function NotFoundPage() {
 				<Link passHref href="/">
 					<div>
 						<h2 className="my-8 mt-4 mb-2 inline-block bg-yellow-400 p-3 text-2xl font-bold">
-              Diese Seite konnte nicht gefunden werden.
+							Diese Seite konnte nicht gefunden werden.
 						</h2>
 
 						<button className="mx-auto border-2 border-solid border-gray-900 bg-yellow-400 p-4 text-lg font-bold text-black hover:shadow-xl">
-              Startseite
+							Startseite
 						</button>
 					</div>
 				</Link>

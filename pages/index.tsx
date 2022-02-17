@@ -515,4 +515,5 @@ function IndexPage() {
 		</div>
 	);
 }
+
 export default IndexPage;

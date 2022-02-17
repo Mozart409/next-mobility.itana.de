@@ -108,7 +108,7 @@ export default function Preisliste({kurzzeit, langzeit, mehrkilometer}) {
 																	clipRule="evenodd"
 																/>
 															</svg>
-                              0 € pro Tag
+															0 € pro Tag
 														</p>
 														<p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
 															<svg
@@ -248,7 +248,7 @@ export default function Preisliste({kurzzeit, langzeit, mehrkilometer}) {
 																	clipRule="evenodd"
 																/>
 															</svg>
-                              0 € pro Tag
+															0 € pro Tag
 														</p>
 														<p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
 															<svg

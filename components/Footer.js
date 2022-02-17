@@ -28,7 +28,7 @@ export default function Footer() {
 								href="https://itana.de/impressum/"
 								className="text-base leading-6 text-gray-600 hover:text-gray-900"
 							>
-                Impressum
+								Impressum
 							</a>
 						</div>
 						<div className="py-2 px-5">
@@ -36,13 +36,13 @@ export default function Footer() {
 								href="https://itana.de/datenschutz/"
 								className="text-base leading-6 text-gray-600 hover:text-gray-900"
 							>
-                Datenschutz
+								Datenschutz
 							</a>
 						</div>
 					</nav>
 					<div className="mt-8">
 						<p className="text-center text-base leading-6 text-gray-600">
-              &copy; {new Date().getFullYear()} Itana GmbH.
+							&copy; {new Date().getFullYear()} Itana GmbH.
 						</p>
 					</div>
 				</div>

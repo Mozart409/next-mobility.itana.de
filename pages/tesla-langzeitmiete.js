@@ -81,8 +81,8 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
         </p> */}
 				<h1>Tesla Langzeitmiete</h1>
 				<p>
-          Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto? Wir
-          empfehlen die Tesla Langzeitmiete.
+					Brauchst Du geschäftlich ein zukunftsweisendes, besonderes Auto? Wir
+					empfehlen die Tesla Langzeitmiete.
 				</p>
 
 				<Image
@@ -105,29 +105,29 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 							<li>vergünstigte Konditionen</li>
 						</ul>
 						<p>
-              Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
+							Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
 							<b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist
-              der Mietzeitraum flexibel. <br />
+							der Mietzeitraum flexibel. <br />
 							<Link
 								passHref
 								className="font-semibold text-itana-red"
 								href="/kontakt/"
 							>
-                Kontaktiere uns jetzt,
+								Kontaktiere uns jetzt,
 							</Link>{' '}
-              gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
-              ein.
+							gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
+							ein.
 						</p>
 						<p>
-              Vorab kannst Du in unseren{' '}
+							Vorab kannst Du in unseren{' '}
 							<Link
 								passHref
 								className="font-semibold text-itana-red"
 								href="/faq/"
 							>
-                FAQs
+								FAQs
 							</Link>{' '}
-              stöbern.
+							stöbern.
 						</p>
 					</div>
 					<div>
@@ -143,9 +143,9 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 							<CTA title="Tesla Model 3 mieten" fillBG="true" />
 						</a>
 						<p>
-              Langzeitmiete für das Model 3
+							Langzeitmiete für das Model 3
 							<br />
-              ca. 250 km Reichweite in der Praxis
+							ca. 250 km Reichweite in der Praxis
 						</p>
 						<a
 							href="https://itana.rentware.io/"
@@ -156,9 +156,9 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 							<CTA title="Tesla Model 3 Long Range mieten" />
 						</a>
 						<p>
-              Langzeitmiete für das Tesla Model 3 Long Range:
+							Langzeitmiete für das Tesla Model 3 Long Range:
 							<br />
-              ca. 350 km Reichweite in der Praxis
+							ca. 350 km Reichweite in der Praxis
 						</p>
 						<a
 							href="https://itana.rentware.io/"
@@ -169,9 +169,9 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 							<CTA title="Tesla Model 3 Performance mieten" />
 						</a>
 						<p>
-              Langzeitmiete für das Model 3 Performance:
+							Langzeitmiete für das Model 3 Performance:
 							<br />
-              ca. 300 km Reichweite in der Praxis
+							ca. 300 km Reichweite in der Praxis
 						</p>
 						<a
 							href="https://itana.rentware.io/"
@@ -182,9 +182,9 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 							<CTA title="Tesla Model X mieten" />
 						</a>
 						<p>
-              Langzeitmiete für das Model X:
+							Langzeitmiete für das Model X:
 							<br />
-              ca. 270 km Reichweite in der Praxis
+							ca. 270 km Reichweite in der Praxis
 						</p>
 					</div>
 				</div>
@@ -193,13 +193,13 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 			<div className="lg:prose-md prose mx-auto mt-12">
 				<h2>Was bedeutet die Tesla Langzeitmiete für Dein Unternehmen?</h2>
 				<p>
-          Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt
-          den Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto
-          geleast oder gekauft, ist das Geld gebunden, das an anderer Stelle
-          kurzfristig gebraucht werden könnte und dann fehlt. In den letzten
-          Jahren
+					Unsere Tesla Langzeitmiete als Alternative zum eigenen Fuhrpark birgt
+					den Vorteil, die <b>Kapitalbindung</b> zu umgehen. Wird ein Auto
+					geleast oder gekauft, ist das Geld gebunden, das an anderer Stelle
+					kurzfristig gebraucht werden könnte und dann fehlt. In den letzten
+					Jahren
 					<b> mieten Unternehmen</b> ihre <b> Firmenautos</b> mit der Tesla
-          Langzeitmiete. So kannst Du Deinen
+					Langzeitmiete. So kannst Du Deinen
 					<b> Bedarf</b> an Fahrzeugen Deiner <b> Auftragslage anpassen</b>.
 				</p>
 				<ul className="list-inside">
@@ -211,11 +211,11 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 					<li>einfache Aufstockung Deines Fuhrparks</li>
 				</ul>
 				<p>
-          Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{' '}
+					Bei der Tesla Langzeitmiete bekommst Du das Elektroauto zum{' '}
 					<b>vereinbarten Preis</b>. Beim <b>Leasing</b> oder auch der{' '}
 					<b>Fahrzeugfinanzierung</b> würden noch <b>zusätzliche Kosten</b> wie
-          Inspektion, KFZ-Steuer etc. dazukommen. Daher prüfe, wer weitere
-          Kosten übernimmt, bevor Du einen Vertrag schließt:
+					Inspektion, KFZ-Steuer etc. dazukommen. Daher prüfe, wer weitere
+					Kosten übernimmt, bevor Du einen Vertrag schließt:
 				</p>
 				<ul className="list-inside">
 					<li>Haftpflichtversicherung </li>
@@ -229,16 +229,16 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 					<li>Zulassung </li>
 				</ul>
 				<p>
-          Wir von mobility empfehlen die Tesla Langzeitmiete!
+					Wir von mobility empfehlen die Tesla Langzeitmiete!
 					<br />
 					<Link
 						passHref
 						className="font-semibold text-itana-red"
 						href="/kontakt/"
 					>
-            Kontaktiere uns jetzt,
+						Kontaktiere uns jetzt,
 					</Link>{' '}
-          und genieße die volle Kostenkontrolle.
+					und genieße die volle Kostenkontrolle.
 				</p>
 			</div>
 		</div>

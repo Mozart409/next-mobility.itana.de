@@ -23,7 +23,7 @@ export default function FahrzeugKacheln() {
 									data-cy="KachelModel3SR"
 									className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
 								>
-                  Tesla Model 3 SR+ mieten ab 32,73 € / Tag
+									Tesla Model 3 SR+ mieten ab 32,73 € / Tag
 								</h2>
 							</div>
 						</div>
@@ -48,7 +48,7 @@ export default function FahrzeugKacheln() {
 									data-cy="KachelModel3LR"
 									className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
 								>
-                  Tesla Model 3 Long Range mieten ab 44,63 € / Tag
+									Tesla Model 3 Long Range mieten ab 44,63 € / Tag
 								</h2>
 							</div>
 						</div>
@@ -69,7 +69,7 @@ export default function FahrzeugKacheln() {
 									data-cy="KachelModel3Performance"
 									className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
 								>
-                  Tesla Model 3 Performance mieten ab 50,58 € / Tag
+									Tesla Model 3 Performance mieten ab 50,58 € / Tag
 								</h2>
 							</div>
 						</div>
@@ -89,7 +89,7 @@ export default function FahrzeugKacheln() {
 									data-cy="KachelModelX"
 									className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
 								>
-                  Tesla Model X mieten ab 74,38 € / Tag
+									Tesla Model X mieten ab 74,38 € / Tag
 								</h2>
 							</div>
 						</div>
@@ -110,7 +110,7 @@ export default function FahrzeugKacheln() {
 									data-cy="KachelLangzeit"
 									className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
 								>
-                  Tesla Langzeitmiete vs. Leasing
+									Tesla Langzeitmiete vs. Leasing
 								</h2>
 							</div>
 						</div>
@@ -128,7 +128,7 @@ export default function FahrzeugKacheln() {
 								/>
 
 								<h2 className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white">
-                  Häufig gestellte Fragen (FAQ)
+									Häufig gestellte Fragen (FAQ)
 								</h2>
 							</div>
 						</div>
@@ -146,7 +146,7 @@ export default function FahrzeugKacheln() {
 								/>
 
 								<h2 className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white">
-                  Wo kann ich meinen Tesla laden?
+									Wo kann ich meinen Tesla laden?
 								</h2>
 							</div>
 						</div>
@@ -163,7 +163,7 @@ export default function FahrzeugKacheln() {
 								/>
 
 								<h2 className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white">
-                  Schulung Elektromobilität
+									Schulung Elektromobilität
 								</h2>
 							</div>
 						</div>

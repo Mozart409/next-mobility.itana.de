@@ -17,7 +17,7 @@ function KontaktPage() {
 
 			<div className="lg:prose-md prose mx-auto">
 				<h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
-          So finden Sie uns
+					So finden Sie uns
 				</h1>
 
 				<section>
@@ -51,27 +51,27 @@ function KontaktPage() {
 					<section>
 						<h2>Itana GmbH</h2>
 						<p>
-              Itana GmbH <br />
-              Jörg Weißleder <br />
-              Maulbronner Weg 33
+							Itana GmbH <br />
+							Jörg Weißleder <br />
+							Maulbronner Weg 33
 							<br />
-              71706 Markgröningen
+							71706 Markgröningen
 							<br />
-              Telefon:{' '}
+							Telefon:{' '}
 							<a href="tel:+4971149066450" className="text-itana-red">
-                +49 711 49066 450
+								+49 711 49066 450
 							</a>
 							<br />
-              Telefax: +49 711 49066 455
+							Telefax: +49 711 49066 455
 							<br />
-              E-Mail:{' '}
+							E-Mail:{' '}
 							<a
 								href="mailto:mobility@itana.de"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-itana-red"
 							>
-                mobility@itana.de
+								mobility@itana.de
 							</a>
 							<br />
 							<a
@@ -80,7 +80,7 @@ function KontaktPage() {
 								rel="noopener noreferrer"
 								className="text-itana-red"
 							>
-                Öffnungszeiten
+								Öffnungszeiten
 							</a>
 						</p>
 					</section>

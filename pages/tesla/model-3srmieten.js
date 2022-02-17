@@ -25,7 +25,7 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
 			</Head>
 			<section>
 				<h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
-          Tesla Model 3 SR+ mieten - Leichten und agilen Sportwagen fahren
+					Tesla Model 3 SR+ mieten - Leichten und agilen Sportwagen fahren
 				</h1>
 
 				<div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
@@ -71,22 +71,22 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
 			<div className="my-24 mx-auto">
 				<div className="lg:prose-md prose mx-auto">
 					<h2>
-            Was sind die Unterschiede zwischen dem Model 3 Performance und dem
-            Model 3 SR+?
+						Was sind die Unterschiede zwischen dem Model 3 Performance und dem
+						Model 3 SR+?
 					</h2>
 					<p>
-            Auf den ersten Blick kann man die Modelle durch die Felgen
-            unterscheiden. Beim SR+ sind die Räder mit den Felgen mehr verdeckt
-            und dunkler.
+						Auf den ersten Blick kann man die Modelle durch die Felgen
+						unterscheiden. Beim SR+ sind die Räder mit den Felgen mehr verdeckt
+						und dunkler.
 						<br />
-            Der Standard Range Plus braucht laut Herstellerangaben von 0 auf 100
-            km/h 5,6 Sekunden, im Vergleich dazu braucht der Performance 3,4
-            Sekunden. <br />
-            Wir als Autovermietung in Stuttgart empfehlen Dir, den SR+ länger zu
-            mieten, dadurch ist der Preis geringer und Du kannst alles in Ruhe
-            ausprobieren. Der Fahrspaß wird Dir nicht entgehen, der SR+ hat
-            nicht so viel Leistung wie der Performance, ist aber leichter und
-            agiler. Wir sind auf Deine Meinung gespannt.
+						Der Standard Range Plus braucht laut Herstellerangaben von 0 auf 100
+						km/h 5,6 Sekunden, im Vergleich dazu braucht der Performance 3,4
+						Sekunden. <br />
+						Wir als Autovermietung in Stuttgart empfehlen Dir, den SR+ länger zu
+						mieten, dadurch ist der Preis geringer und Du kannst alles in Ruhe
+						ausprobieren. Der Fahrspaß wird Dir nicht entgehen, der SR+ hat
+						nicht so viel Leistung wie der Performance, ist aber leichter und
+						agiler. Wir sind auf Deine Meinung gespannt.
 					</p>
 				</div>
 			</div>
@@ -94,11 +94,11 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
 			<div className="lg:prose-md prose mx-auto mt-8">
 				<h2> Du möchtest günstig einen Tesla mieten?</h2>
 				<p>
-          Dann bist Du bei uns richtig. Vergleiche die Preise und prüfe
-          eventuelle Zusatzkosten bei anderen Anbietern. Unsere Preise sind
-          transparent, d.h. es kommen keine Zusatzkosten dazu, außer Du fährst
-          mehr Kilometer als vereinbart. Du kannst uns anrufen oder über die
-          Website einen Buchungszeitraum aussuchen und verbindlich buchen.
+					Dann bist Du bei uns richtig. Vergleiche die Preise und prüfe
+					eventuelle Zusatzkosten bei anderen Anbietern. Unsere Preise sind
+					transparent, d.h. es kommen keine Zusatzkosten dazu, außer Du fährst
+					mehr Kilometer als vereinbart. Du kannst uns anrufen oder über die
+					Website einen Buchungszeitraum aussuchen und verbindlich buchen.
 				</p>
 			</div>
 		</div>

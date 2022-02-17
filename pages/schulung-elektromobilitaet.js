@@ -33,18 +33,18 @@ export default function schulungElektromobilität({data}) {
 				/>
 
 				<h3>
-          Wir bieten intensive Schulungen und Vorträge für Autoverkäufer im
-          Bereich Elektromobilität an
+					Wir bieten intensive Schulungen und Vorträge für Autoverkäufer im
+					Bereich Elektromobilität an
 				</h3>
 				<p>
-          Kernpunkt ist die Wissensvermittlung für die Nutzenargumentation, um
-          die Kundenvorteile klar herauszustellen. Ziel der Schulung ist es, ein
-          Interessent mit allen wichtigen Informationen zur E-Mobilität zu
-          versorgen und zu überzeugen. Sie werden sich zukünftig auf Fragen
-          Ihrer Kunden bezügliche der Elektromobilität freuen. Mieten Sie einen
-          Tesla bei uns profitieren Sie von unserer Art die Dinge einfach zu
-          erklären. Sie werden nicht im Handbuch nachlesen müssen und vor
-          Fahrtantritt alle Fragen beantwortet haben.
+					Kernpunkt ist die Wissensvermittlung für die Nutzenargumentation, um
+					die Kundenvorteile klar herauszustellen. Ziel der Schulung ist es, ein
+					Interessent mit allen wichtigen Informationen zur E-Mobilität zu
+					versorgen und zu überzeugen. Sie werden sich zukünftig auf Fragen
+					Ihrer Kunden bezügliche der Elektromobilität freuen. Mieten Sie einen
+					Tesla bei uns profitieren Sie von unserer Art die Dinge einfach zu
+					erklären. Sie werden nicht im Handbuch nachlesen müssen und vor
+					Fahrtantritt alle Fragen beantwortet haben.
 				</p>
 				<CTA
 					fillBG="true"

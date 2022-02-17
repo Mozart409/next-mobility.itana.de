@@ -104,9 +104,6 @@ export const CalendarStateMachine = () => {
 
 	return (
 		<form>
-			{console.log('state', state)}
-			{console.log(startDate)}
-			{console.log(startDate2)}
 			<div className="my-8">
 				<div className="grid grid-cols-1 md:grid-cols-2">
 					<li className="overflow-hidden bg-white py-4 px-4 shadow sm:rounded-md sm:px-6">

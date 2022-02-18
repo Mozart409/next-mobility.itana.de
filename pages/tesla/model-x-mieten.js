@@ -64,7 +64,7 @@ function TeslaModelX({Kurzzeit, Langzeit, Mehrkilometer}) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model X mieten"
-          link="https://itana.rentware.io/"
+          link="/buchungs-anfrage/"
         />
       </section>
       <TeslaQuickLinks />

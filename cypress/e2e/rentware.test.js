@@ -56,7 +56,7 @@ rentWareTest(urls, () => {
       cy.get(selector)
         .children('.anfrage')
         .should('have.attr', 'href')
-        .and('deep.equal', 'https://itana.rentware.io/')
+        .and('deep.equal', '/buchungs-anfrage/')
       cy.go('back')
     })
 
@@ -68,7 +68,7 @@ rentWareTest(urls, () => {
       cy.get(selector)
         .children('.anfrage')
         .should('have.attr', 'href')
-        .and('deep.equal', 'https://itana.rentware.io/')
+        .and('deep.equal', '/buchungs-anfrage/')
       cy.go('back')
     })
 
@@ -80,7 +80,7 @@ rentWareTest(urls, () => {
       cy.get(selector)
         .children('.anfrage')
         .should('have.attr', 'href')
-        .and('deep.equal', 'https://itana.rentware.io/')
+        .and('deep.equal', '/buchungs-anfrage/')
       cy.go('back')
     })
 
@@ -92,7 +92,7 @@ rentWareTest(urls, () => {
       cy.get(selector)
         .children('.anfrage')
         .should('have.attr', 'href')
-        .and('deep.equal', 'https://itana.rentware.io/')
+        .and('deep.equal', '/buchungs-anfrage/')
       cy.go('back')
     })
   })

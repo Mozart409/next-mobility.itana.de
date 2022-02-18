@@ -279,14 +279,11 @@ export default function Nav() {
           >
             <div className="space-y-1 px-2 pt-2 pb-3">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-
-              <a
-                href="https://itana.rentware.io/"
-                className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
-              >
-                Tesla mieten
-              </a>
-
+              <Link href="/buchungs-anfrage/">
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Tesla mieten
+                </a>
+              </Link>
               <Link passHref href="/tesla/model-3srmieten/">
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 SR+

@@ -56,7 +56,7 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Long Range mieten"
-          link="https://itana.rentware.io/"
+          link="/buchungs-anfrage/"
         />
       </section>
       <TeslaQuickLinks />

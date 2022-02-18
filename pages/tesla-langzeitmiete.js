@@ -134,53 +134,41 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
             <p>Jetzt einen Tesla mieten!</p>
-            <a
-              href="https://itana.rentware.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="anfrage"
-            >
-              <CTA title="Tesla Model 3 mieten" fillBG="true" />
-            </a>
+            <Link href="/buchungs-anfrage/">
+              <a className="anfrage">
+                <CTA title="Tesla Model 3 mieten" fillBG="true" />
+              </a>
+            </Link>
             <p>
               Langzeitmiete für das Model 3
               <br />
               ca. 250 km Reichweite in der Praxis
             </p>
-            <a
-              href="https://itana.rentware.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="anfrage"
-            >
-              <CTA title="Tesla Model 3 Long Range mieten" />
-            </a>
+            <Link href="/buchungs-anfrage/">
+              <a className="anfrage">
+                <CTA title="Tesla Model 3 Long Range mieten" />
+              </a>
+            </Link>
             <p>
               Langzeitmiete für das Tesla Model 3 Long Range:
               <br />
               ca. 350 km Reichweite in der Praxis
             </p>
-            <a
-              href="https://itana.rentware.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="anfrage"
-            >
-              <CTA title="Tesla Model 3 Performance mieten" />
-            </a>
+            <Link href="/buchungs-anfrage/">
+              <a className="anfrage">
+                <CTA title="Tesla Model 3 Performance mieten" />
+              </a>
+            </Link>
             <p>
               Langzeitmiete für das Model 3 Performance:
               <br />
               ca. 300 km Reichweite in der Praxis
             </p>
-            <a
-              href="https://itana.rentware.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="anfrage"
-            >
-              <CTA title="Tesla Model X mieten" />
-            </a>
+            <Link href="/buchungs-anfrage/">
+              <a className="anfrage">
+                <CTA title="Tesla Model X mieten" />
+              </a>
+            </Link>
             <p>
               Langzeitmiete für das Model X:
               <br />

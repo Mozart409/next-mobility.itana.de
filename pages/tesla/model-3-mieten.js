@@ -56,7 +56,7 @@ function TeslaModel3Page({Kurzzeit, Langzeit, Mehrkilometer}) {
           fillBG="true"
           fullWidth="true"
           title="Tesla Model 3 Performance mieten"
-          link="https://itana.rentware.io/"
+          link="/buchungs-anfrage/"
         />
       </section>
       <TeslaQuickLinks />

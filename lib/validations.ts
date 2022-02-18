@@ -6,6 +6,7 @@ export const Buchung = z.object({
     'Model 3 Performance',
     'Model X',
     'Model 3 Long Range',
+    'Dacia Spring Electric',
   ]),
   startDate: z.string(),
   endDate: z.string(),

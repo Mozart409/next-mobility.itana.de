@@ -37,24 +37,24 @@ const APIBookingRequest = async (
 		
 		<h1>Buchungsanfrage</h1>
 		<h2>Vermietung</h2>
-		<p>Auto ${parse.car}</p><br />
-		<p>Mietbeginn ${parse.startDate}</p><br />
-		<p>Mietende ${parse.endDate}</p><br />
+		<p>Auto ${parse.car}</p>
+		<p>Mietbeginn ${parse.startDate}</p>
+		<p>Mietende ${parse.endDate}</p>
 		<h2>Persönliche Angabe</h2>
-		<p>Anrede ${parse.anrede}</p><br />
-		<p>Firma ${parse.company}</p><br />
-		<p>Vorname ${parse.firstName}</p><br />
-		<p>Nachname ${parse.lastName}</p><br />
-		<p>Geburtsdatum ${parse.birthday}</p><br />
-		<p>Telefon ${parse.phone}</p><br />
-		<p>E-Mail ${parse.email}</p><br />
+		<p>Anrede ${parse.anrede}</p>
+		<p>Firma ${parse.company}</p>
+		<p>Vorname ${parse.firstName}</p>
+		<p>Nachname ${parse.lastName}</p>
+		<p>Geburtsdatum ${parse.birthday}</p>
+		<p>Telefon ${parse.phone}</p>
+		<p>E-Mail ${parse.email}</p>
 		<h2>Anschrift</h2>
-		<p>Straße ${parse.street}</p><br />
-		<p>Stadt ${parse.city}</p><br />
-		<p>PLZ ${parse.zip}</p><br />
-		<p>Land ${parse.country}</p><br />
-		<p>Empfehlung ${parse.recommendation}</p><br />
-		<p>Nachricht ${parse.message}</p><br />
+		<p>Straße ${parse.street}</p>
+		<p>Stadt ${parse.city}</p>
+		<p>PLZ ${parse.zip}</p>
+		<p>Land ${parse.country}</p>
+		<p>Empfehlung ${parse.recommendation}</p>
+		<p>Nachricht ${parse.message}</p>
 		
 		</div>
 		</body>

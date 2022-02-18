@@ -10,7 +10,7 @@ export const Buchung = z.object({
   startDate: z.string(),
   endDate: z.string(),
 
-  anrede: z.enum(['Herr', 'Frau']).optional(),
+  anrede: z.enum(['Bitte wählen', 'Herr', 'Frau']),
   company: z.string().optional(),
   firstName: z.string(),
   lastName: z.string(),
@@ -20,14 +20,14 @@ export const Buchung = z.object({
 
   street: z.string(),
   city: z.string(),
-  zip: z.string(),
+  zip: z.number(),
   country: z.string(),
 
-  recomenndation: z.enum([
+  recommendation: z.enum([
     'Social Media',
     'Google',
     'Empfehlung',
-    'Anderweitig',
+    'Bitte wählen',
   ]),
 
   message: z.string(),

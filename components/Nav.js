@@ -209,7 +209,7 @@ export default function Nav() {
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
                   <Link href="/buchungs-anfrage/">
                     <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                      Tesla mieten
+                      Buchungs Anfrage
                     </a>
                   </Link>
 

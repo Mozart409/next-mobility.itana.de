@@ -506,7 +506,7 @@ function IndexPage() {
 
 			<div>
 				<Heading1 />
-				
+
 				<CarSearch />
 				<FahrzeugKacheln />
 				<FeatureSection />

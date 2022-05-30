@@ -245,11 +245,4 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
 	);
 }
 
-/* Export async function getStaticProps(context) {
-  const t3pPrice = await getT3PDataByLowestPrice('L', '30 Tage')
-  const txlPrice = await getTXDataByLowestPrice('L', '30 Tage')
-  const t3srPrice = await getT3SRDataByLowestPrice('L', '30 Tage')
-  return {
-    props: { t3pPrice, txlPrice, t3srPrice }
-  }
-} */
+

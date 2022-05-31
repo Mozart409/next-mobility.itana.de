@@ -28,6 +28,9 @@ const APIBookingRequest = async (
         text: `${content}`,
         html: `
 		<html>
+    <head>
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+    </head>
 		<body>
 		
 		<div>

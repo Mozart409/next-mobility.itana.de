@@ -5,7 +5,7 @@ import Link from 'next/link';
 import SEO from '@/ui/seo';
 
 const Newsfeed = () => (
-  <div className="bg-white pb-20 lg:pb-28">
+  <div className="bg-white pb-20 lg:pb-28 rounded-md p-4">
     <div className="mx-auto max-w-lg lg:max-w-7xl">
       <div>
         <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">

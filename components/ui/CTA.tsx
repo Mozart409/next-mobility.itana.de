@@ -26,7 +26,7 @@ const CTA: React.FC<IProps> = props => (
         >
           {props.title || 'Buchung jetzt anfragen'}
         </button>
-      </a>{' '}
+      </a>
     </Link>
   </div>
 );

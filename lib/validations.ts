@@ -2,12 +2,12 @@ import * as z from 'zod';
 
 export const Buchung = z.object({
   car: z.enum([
-    'Model 3 SR+',
-    'Model 3 Performance',
-    'Model Y Performance',
-    'Model X Long Range',
-    'Model 3 Long Range',
-    'Model Y Long Range',
+    'Tesla Model 3 SR+',
+    'Tesla Model 3 Performance',
+    'Tesla Model Y Performance',
+    'Tesla Model X Long Range',
+    'Tesla Model 3 Long Range',
+    'Tesla Model Y Long Range',
     'Dacia Spring Electric',
   ]),
   startDate: z.string(),

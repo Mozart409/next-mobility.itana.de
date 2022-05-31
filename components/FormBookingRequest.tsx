@@ -17,7 +17,7 @@ const FormBookingRequest = (props: Props) => {
         schema={Buchung}
         initialValues={{
           country: 'Deutschland',
-          car: 'Model 3 SR+',
+          car: 'Tesla Model 3 SR+',
           recommendation: 'Bitte wählen',
           anrede: 'Bitte wählen',
         }}

@@ -59,7 +59,7 @@ export const LabeledSelectField = forwardRef<
             {label}
           </label>
           <select
-            className="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm focus:ring-primary-500 focus:border-primary-500"
+            className="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm focus:ring-itana-red focus:border-itana-red"
             {...input}
             disabled={submitting}
             {...props}

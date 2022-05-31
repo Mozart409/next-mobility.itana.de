@@ -23,7 +23,7 @@ export const Buchung = z.object({
 
   street: z.string(),
   city: z.string(),
-  zip: z.number(),
+  zip: z.string(),
   country: z.string(),
 
   recommendation: z.enum([
@@ -33,7 +33,9 @@ export const Buchung = z.object({
     'Bitte wählen',
   ]),
 
-  message: z.string(),
+  message: z.string().optional(),
 
-  privacy: z.boolean(),
+  privacy: z.boolean({
+    required_error: 'Datenschutz muss akzeptiert werden',
+  }),
 });

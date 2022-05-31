@@ -2,16 +2,14 @@ import {Buchung} from 'lib/validations';
 import {NextApiRequest, NextApiResponse} from 'next';
 import {z} from 'zod';
 import sgMail from '@sendgrid/mail';
+
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-type BookingRequestData = {};
+
 type BuchungType = z.infer<typeof Buchung>;
-const APIBookingRequest = async (
-  req: NextApiRequest,
-  res: NextApiResponse<BookingRequestData>
-) => {
+const APIBookingRequest = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     try {
-      const parse: BuchungType = await Buchung.parse(req.body);
+      const parse: BuchungType = Buchung.parse(req.body);
 
       if (parse.privacy === false) {
         return res.status(400).json({
@@ -62,8 +60,8 @@ const APIBookingRequest = async (
       };
 
       try {
-        const email = await sgMail.send(msg);
-        return res.status(200).json({method: req.method, email});
+        const sgMessage = await sgMail.send(msg);
+        return res.status(202).json(sgMessage);
       } catch (error) {
         return res.status(500).json({error: error});
       }
@@ -75,7 +73,7 @@ const APIBookingRequest = async (
     // Process a POST request
   } else {
     // Handle any other HTTP method
-    res.status(500).json({error: 'Method not supported'});
+    res.status(405).json({error: 'Method not supported'});
   }
 };
 export default APIBookingRequest;

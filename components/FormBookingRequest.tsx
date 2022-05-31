@@ -7,9 +7,8 @@ import Link from 'next/link';
 import {Field} from 'react-final-form';
 import LabeledSelectField from './ui/LabeledSelectField';
 import toast from 'react-hot-toast';
-type Props = {};
 
-const FormBookingRequest = (props: Props) => {
+const FormBookingRequest = () => {
   return (
     <div>
       <Form
@@ -24,13 +23,22 @@ const FormBookingRequest = (props: Props) => {
         pageTitle="Buchungsanfrage"
         onSubmit={async values => {
           console.log(values);
+          const body = JSON.stringify(values);
+          /* 
+          const parse = Buchung.parse(body);
+
+          if (parse.privacy === false) {
+            return new Error(
+              'Bitte akzeptieren Sie die Datenschutzbestimmungen'
+            );
+          } */
           try {
             const response = await fetch('/api/booking-request/', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify(values),
+              body: body,
             });
             if (response.status === 200) {
               toast.success(
@@ -41,6 +49,9 @@ const FormBookingRequest = (props: Props) => {
               );
             }
           } catch (error) {
+            toast.error(
+              'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+            );
             console.error(error);
           }
         }}
@@ -65,13 +76,11 @@ const FormBookingRequest = (props: Props) => {
                 type="date"
                 name="startDate"
                 label="Abholdatum"
-                placeholder=""
               />
               <LabeledTextField
                 type="date"
                 name="endDate"
                 label="Rückgabedatum"
-                placeholder=""
               />
             </div>
           </div>
@@ -147,19 +156,9 @@ const FormBookingRequest = (props: Props) => {
                 label="Stadt"
                 placeholder="Stuttgart"
               />
-              <LabeledTextField
-                type="number"
-                name="zip"
-                label="Postleitzahl"
-                placeholder="70173"
-              />
+              <LabeledTextField type="text" name="zip" label="Postleitzahl" />
             </div>
-            <LabeledTextField
-              type="text"
-              name="country"
-              label="Land"
-              placeholder="Deutschland"
-            />
+            <LabeledTextField type="text" name="country" label="Land" />
           </div>
           <div className="space-y-4">
             <div>
@@ -181,13 +180,14 @@ const FormBookingRequest = (props: Props) => {
                 name={'message'}
                 component="textarea"
                 rows={8}
-                className="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm focus:ring-primary-500 focus:border-primary-500"
+                className="block w-full rounded-md border-gray-300 shadow-sm sm:text-sm focus:ring-itana-red focus:border-itana-red"
               />
             </div>
             <div className="relative flex items-start">
               <div className="flex items-center h-5">
                 <Field
                   component="input"
+                  required
                   id="privacy"
                   aria-describedby="privacy-description"
                   name="privacy"

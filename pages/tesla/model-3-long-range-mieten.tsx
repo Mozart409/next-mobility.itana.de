@@ -28,7 +28,7 @@ function TeslaModel3SRPage() {
           Tesla Model 3 LR mieten - Leichten und agilen Sportwagen fahren
         </h1>
 
-        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
+        <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto">
           <div className="mx-auto">
             <div className="relative">
               <Link
@@ -37,13 +37,15 @@ function TeslaModel3SRPage() {
                 title="Tesla Model 3 Long Range"
                 aria-label="Tesla Model 3 Long Range"
               >
-                <Image
-                  src="/images/cards/tesla-3-lr.jpg"
-                  className="mx-auto mt-4 h-96 rounded"
-                  alt="Tesla Model 3 Long Range mieten"
-                  height="600"
-                  width="1000"
-                />
+                <div>
+                  <Image
+                    src="/images/cards/tesla-3-lr.png"
+                    className="mx-auto mt-4 h-96 rounded"
+                    alt="Tesla Model 3 Long Range mieten"
+                    height="400"
+                    width="1000"
+                  />
+                </div>
               </Link>
             </div>
           </div>

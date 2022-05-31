@@ -3,6 +3,13 @@ import Link from 'next/link';
 
 import CTAFahrbereit from './CTAFahrbereit';
 
+import {
+  Model3LongRange,
+  Model3Performance,
+  Model3SR,
+  ModelXLR,
+} from 'lib/car-prices';
+
 export default function FahrzeugKacheln() {
   return (
     <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
@@ -23,7 +30,8 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3SR"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
-                  Tesla Model 3 SR+ mieten ab 32,73 € / Tag
+                  Tesla Model 3 SR+ mieten ab{' '}
+                  {Model3SR['Verlängerungstag 100 km']} / Tag
                 </h2>
               </div>
             </div>
@@ -48,7 +56,8 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3LR"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
-                  Tesla Model 3 Long Range mieten ab 44,63 € / Tag
+                  Tesla Model 3 Long Range mieten ab{' '}
+                  {Model3LongRange['Verlängerungstag 100 km']} / Tag
                 </h2>
               </div>
             </div>
@@ -69,7 +78,8 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModel3Performance"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
-                  Tesla Model 3 Performance mieten ab 50,58 € / Tag
+                  Tesla Model 3 Performance mieten ab{' '}
+                  {Model3Performance['Verlängerungstag 100 km']} / Tag
                 </h2>
               </div>
             </div>
@@ -89,7 +99,8 @@ export default function FahrzeugKacheln() {
                   data-cy="KachelModelX"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
-                  Tesla Model X mieten ab 74,38 € / Tag
+                  Tesla Model X mieten ab {ModelXLR['Verlängerungstag 100 km']}{' '}
+                  / Tag
                 </h2>
               </div>
             </div>

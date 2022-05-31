@@ -4,8 +4,10 @@ export const Buchung = z.object({
   car: z.enum([
     'Model 3 SR+',
     'Model 3 Performance',
-    'Model X',
+    'Model Y Performance',
+    'Model X Long Range',
     'Model 3 Long Range',
+    'Model Y Long Range',
     'Dacia Spring Electric',
   ]),
   startDate: z.string(),

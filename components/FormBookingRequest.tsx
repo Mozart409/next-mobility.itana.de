@@ -51,11 +51,13 @@ const FormBookingRequest = (props: Props) => {
               Mietvorgang
             </h2>
             <LabeledSelectField name={'car'} label={'Fahrzeug'}>
-              <option>Dacia Spring Electric</option>
-              <option>Tesla Model 3</option>
-              <option>Tesla Model 3 Long Range</option>
+              <option>Tesla Model 3 SR+</option>
               <option>Tesla Model 3 Performance</option>
-              <option>Tesla Model X</option>
+              <option>Tesla Model 3 Long Range</option>
+              <option>Tesla Model Y Performance</option>
+              <option>Tesla Model Y Long Range</option>
+              <option>Tesla Model X Long Range</option>
+              <option>Dacia Spring Electric</option>
             </LabeledSelectField>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -74,7 +76,7 @@ const FormBookingRequest = (props: Props) => {
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-semibold leading-7 text-gray-900 ">
+            <h2 className="text-lg font-semibold leading-7 text-gray-900">
               Persönliche Angaben
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

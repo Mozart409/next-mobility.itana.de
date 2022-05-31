@@ -37,7 +37,7 @@ export default function FahrzeugKacheln() {
             <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
-                  src="/images/cards/tesla-3-lr.jpg"
+                  src="/images/cards/tesla-3-lr.png"
                   height="300"
                   width="600"
                   className="h-72 w-full object-cover"

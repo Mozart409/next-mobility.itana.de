@@ -5,9 +5,9 @@ import FahrzeugKacheln from '@/ui/FahrzeugKacheln';
 import SEO from '@/ui/seo';
 import GoogleBewertungen from '@/ui/GoogleBewertungen';
 import {JsonLD} from 'components/JsonLD';
-import {CalendarStateMachine, CarSearch} from 'components/CarSearch';
+
 const Heading1 = () => (
-  <div className="bg-white py-2">
+  <div className="py-2">
     <div className="mx-auto max-w-screen-xl px-4 sm:px-2 lg:px-8">
       <div className="lg:text-center">
         <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
@@ -507,7 +507,6 @@ function IndexPage() {
       <div>
         <Heading1 />
 
-        <CarSearch />
         <FahrzeugKacheln />
         <FeatureSection />
         <ContentSection />

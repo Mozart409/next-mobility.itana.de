@@ -11,8 +11,8 @@ interface IProps {
 const CTA: React.FC<IProps> = props => (
   <div data-cy={props.data_cy}>
     <a
-      href={props.link || 'https://itana.rentware.io/'}
-      target="_blank"
+      href={props.link || '/buchungs-anfrage/'}
+      // target="_blank"
       rel="noopener noreferrer"
       className="anfrage"
     >

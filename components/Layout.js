@@ -3,7 +3,7 @@ import Nav from './Nav';
 
 export default function Layout({children}) {
   return (
-    <div className="flex min-h-screen flex-col scroll-smooth font-sans text-gray-900 antialiased">
+    <div className="flex min-h-screen flex-col scroll-smooth font-sans text-gray-900 antialiased bg-slate-100">
       <Nav />
       <div id="main">
         <main

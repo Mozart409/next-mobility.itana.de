@@ -6,7 +6,7 @@ import Head from 'next/head';
 
 const BuchungsAnfrage: NextPage<BuchungsAnfrageProps> = () => {
   return (
-    <div className="">
+    <div>
       <SEO
         title="Buchungsanfrage | Tesla mieten - Itana GmbH"
         description="Sofort eine Anfrage stellen"

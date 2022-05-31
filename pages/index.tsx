@@ -374,7 +374,7 @@ const FeatureSection = () => (
       <div className="lg:prose-md prose mx-auto">
         <h2 id="kundenzufriedenheit">Zufriedene Kunden</h2>
 
-        <p className="">
+        <p>
           Kunden, die bei unserem Tesla-Verleih ein Elektroauto gemietet haben,
           waren <b> sehr zufrieden</b>.{' '}
         </p>

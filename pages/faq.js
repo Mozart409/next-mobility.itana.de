@@ -55,7 +55,7 @@ function Collapse() {
   ];
   return (
     <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
-      <div className="">
+      <div>
         <h1 className="text-6xl font-black tracking-tight text-gray-900">
           Häufig gestellte Fragen
         </h1>
@@ -106,7 +106,7 @@ function CollapseVersicherung() {
   ];
   return (
     <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
-      <div className="">
+      <div>
         <h2 className="text-4xl font-black">Versicherung </h2>
         <div className="mt-6 cursor-pointer border-t-2 border-gray-200 pt-6 text-lg">
           {Display(items)}
@@ -144,7 +144,7 @@ function CollapseLeben() {
   ];
   return (
     <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
-      <div className="">
+      <div>
         <h2 className="text-4xl font-black">Rund ums Leben </h2>
         {Display(items)}
       </div>
@@ -207,7 +207,7 @@ function CollapseAufladen() {
   ];
   return (
     <div className="mx-auto max-w-4xl py-6 px-4 sm:py-8 sm:px-6 lg:px-8">
-      <div className="">
+      <div>
         <h2 className="text-4xl font-black">Das Elektroauto aufladen</h2>
         {Display(items)}
       </div>

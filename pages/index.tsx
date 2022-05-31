@@ -6,8 +6,6 @@ import SEO from '@/ui/seo';
 import GoogleBewertungen from '@/ui/GoogleBewertungen';
 import {JsonLD} from 'components/JsonLD';
 
-import CarSearch from '@/ui/CarSearch';
-
 const Heading1 = () => (
   <div className="py-2">
     <div className="mx-auto max-w-screen-xl px-4 sm:px-2 lg:px-8">
@@ -509,7 +507,6 @@ function IndexPage() {
       <div>
         <Heading1 />
 
-        <CarSearch />
         <FahrzeugKacheln />
         <FeatureSection />
         <ContentSection />

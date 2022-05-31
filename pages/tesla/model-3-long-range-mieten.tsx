@@ -56,7 +56,6 @@ function TeslaModel3SRPage() {
           fillBG={true}
           fullWidth={true}
           title="Tesla Model 3 Long Range mieten"
-          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

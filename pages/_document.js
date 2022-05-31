@@ -22,15 +22,8 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
 
-          <link rel="preconnect" href="https://w-cdn.rentware.io" />
           <link rel="preconnect" href="https://app.usercentrics.eu" />
           <link rel="preconnect" href="https://www.googletagmanager.com" />
-
-          {/* <Script
-            strategy="afterInteractive"
-            type="module"
-            src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
-          ></Script> */}
 
           <meta httpEquiv="content-type" content="text/html; charset=utf-8" />
           <meta name="robots" content="index,follow" />
@@ -99,7 +92,6 @@ class MyDocument extends Document {
             <Main />
             <NextScript />
           </div>
-          {/* <rentware-checkout></rentware-checkout> */}
         </body>
       </Html>
     );

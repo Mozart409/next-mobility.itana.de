@@ -53,19 +53,11 @@ function TeslaModelX() {
       </section>
 
       <section>
-        {/* <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
-          <rentware-article-booking
-            article-id="11JUVM"
-            view="calendar"
-          ></rentware-article-booking>
-        </div> */}
-
         <CTA
           data_cy="TeslaModelXMieten"
           fillBG={true}
           fullWidth={true}
           title="Tesla Model X mieten"
-          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

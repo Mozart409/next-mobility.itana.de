@@ -57,7 +57,6 @@ function TeslaModel3Page() {
           fillBG={true}
           fullWidth={true}
           title="Tesla Model 3 Performance mieten"
-          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />

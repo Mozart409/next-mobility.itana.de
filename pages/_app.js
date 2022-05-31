@@ -153,17 +153,8 @@ export default function MyApp({Component, pageProps}) {
     }
   }, []);
 
-  /*   UseEffect(() => {
-    window.RENTWARE_BASE_API_URL = 'https://itana.rentware.io'
-    window.RENTWARE_LANGUAGE = 'de-DE'
-  }, []) */
   return (
     <Layout>
-      {/* <Script
-        strategy="afterInteractive"
-        type="module"
-        src="https://w-cdn.rentware.io/dist/rentware-widgets.esm.js"
-      ></Script> */}
       <Toaster />
       <Component {...pageProps} />
     </Layout>

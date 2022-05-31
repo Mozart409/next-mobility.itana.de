@@ -51,19 +51,12 @@ function TeslaModel3SRPage() {
       </section>
 
       <section>
-        {/* <div className="grid grid-cols-1 justify-items-center mx-auto md:hidden">
-          <rentware-article-booking
-            article-id="9QD87M"
-            view="calendar"
-          ></rentware-article-booking>
-        </div> */}
         <div>
           <CTA
             data_cy="TeslaModel3StandardRangePlusMieten"
             fillBG={true}
             fullWidth={true}
             title="Tesla Model 3 SR+ mieten"
-            link="https://itana.rentware.io/"
           />
         </div>
       </section>

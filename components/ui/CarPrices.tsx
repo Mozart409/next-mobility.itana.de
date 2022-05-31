@@ -34,41 +34,105 @@ export const CarPrices: FC<Props> = ({data}) => {
           className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Tag mit 300 km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
+              </div>
+            </div>
             <div
               className={classNames(
-                'bg-pink-600 flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md'
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
               )}
             >
-              300 km
+              {data['Tag mit 300 km']}
             </div>
-            <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
+          </li>
+          <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
               <div className="flex-1 px-4 py-2 text-sm truncate">
-                {/*  <a
-                  href={project.href}
-                  className="text-gray-900 font-medium hover:text-gray-600"
-                >
-                  {project.name}
-                </a> */}
-                <p className="text-gray-500">{project.members} Members</p>
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Wochenende mit 500 km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
               </div>
-              <div className="flex-shrink-0 pr-2">
-                <button
-                  type="button"
-                  className="w-8 h-8 bg-white inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  <span className="sr-only">Open options</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    aria-hidden="true"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                  </svg>
-                </button>
+            </div>
+            <div
+              className={classNames(
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
+              )}
+            >
+              {data['WE mit 500 km']}
+            </div>
+          </li>
+          <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Woche mit 800 km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
               </div>
+            </div>
+            <div
+              className={classNames(
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
+              )}
+            >
+              {data['Woche mit 800 km']}
+            </div>
+          </li>
+          <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Monat mit 1000 km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
+              </div>
+            </div>
+            <div
+              className={classNames(
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
+              )}
+            >
+              {data['Monat mit 1000 km']}
+            </div>
+          </li>
+          <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Verlängerungstag 100 km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
+              </div>
+            </div>
+            <div
+              className={classNames(
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
+              )}
+            >
+              {data['Verlängerungstag 100 km']}
+            </div>
+          </li>
+          <li className="col-span-1 flex shadow-sm rounded-md">
+            <div className="flex-1 flex items-center justify-between border-t border-l border-b border-gray-200 bg-white rounded-l-md truncate">
+              <div className="flex-1 px-4 py-2 text-sm truncate">
+                <span className="text-gray-900 font-medium hover:text-gray-600">
+                  Zusatz km
+                </span>
+                {/* <p className="text-gray-500">{data['Tag mit 300 km']}</p> */}
+              </div>
+            </div>
+            <div
+              className={classNames(
+                'bg-itana-red flex-shrink-0 flex items-center justify-center w-20 text-white text-sm font-medium rounded-r-md'
+              )}
+            >
+              {data['Zusatz km']}
             </div>
           </li>
         </ul>

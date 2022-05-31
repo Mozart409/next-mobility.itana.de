@@ -10,7 +10,7 @@ import SEO from '@/ui/seo';
 import {CarPrices} from '@/ui/CarPrices';
 import {Model3LongRange} from 'lib/car-prices';
 
-function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
+function TeslaModel3SRPage() {
   return (
     <div>
       <SEO
@@ -53,8 +53,8 @@ function TeslaModel3SRPage({Kurzzeit, Langzeit, Mehrkilometer}) {
       <section>
         <CTA
           data_cy="TeslaModel3LongRangeMieten"
-          fillBG="true"
-          fullWidth="true"
+          fillBG={true}
+          fullWidth={true}
           title="Tesla Model 3 Long Range mieten"
           link="https://itana.rentware.io/"
         />

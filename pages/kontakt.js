@@ -21,22 +21,18 @@ function KontaktPage() {
         </h1>
 
         <section>
-          <div>
-            <div className="sm:max-w-max">
-              <Iframe
-                title="Google Maps"
-                url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6572191742066!2d9.098110951472483!3d48.90286950542604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d6c0c4e1f9d5%3A0xa49fe7c8f1996367!2sMaulbronner%20Weg%2033%2C%2071706%20Markgr%C3%B6ningen!5e0!3m2!1sde!2sde!4v1582817225514!5m2!1sde!2sde"
-                width="720"
-                height="480"
-                className="border-md mt-2 sm:max-w-max md:max-w-6xl"
-              />
+          <Iframe
+            title="Google Maps"
+            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.6572191742066!2d9.098110951472483!3d48.90286950542604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799d6c0c4e1f9d5%3A0xa49fe7c8f1996367!2sMaulbronner%20Weg%2033%2C%2071706%20Markgr%C3%B6ningen!5e0!3m2!1sde!2sde!4v1582817225514!5m2!1sde!2sde"
+            width="720"
+            height="480"
+            className="border-md w-full aspect-video"
+          />
 
-              <CTA
-                link="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
-                title="Google Maps"
-              />
-            </div>
-          </div>
+          <CTA
+            link="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
+            title="Google Maps"
+          />
         </section>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           <section>

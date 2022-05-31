@@ -7,10 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import SEO from '@/ui/seo';
+import {CarPrices} from '@/ui/CarPrices';
+import {ModelXLR} from 'lib/car-prices';
+import {FC} from 'react';
 
-import {getTXDataByArt} from 'lib/api';
-
-function TeslaModelX({Kurzzeit, Langzeit, Mehrkilometer}) {
+function TeslaModelX() {
   return (
     <div>
       <SEO
@@ -31,7 +32,7 @@ function TeslaModelX({Kurzzeit, Langzeit, Mehrkilometer}) {
 
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
-            <div className="relative bg-white rounded">
+            <div className="relative">
               <Link
                 passHref
                 href="#tesla-model-x"
@@ -61,13 +62,17 @@ function TeslaModelX({Kurzzeit, Langzeit, Mehrkilometer}) {
 
         <CTA
           data_cy="TeslaModelXMieten"
-          fillBG="true"
-          fullWidth="true"
+          fillBG={true}
+          fullWidth={true}
           title="Tesla Model X mieten"
-          link="/buchungs-anfrage/"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />
+      <section>
+        <CarPrices data={ModelXLR} />
+      </section>
+
       <div className="lg:prose-md prose mx-auto mt-24">
         <h2>Technische Fakten zum Tesla Model X</h2>
         <h3>Wie viel PS hat ein Tesla Model X?</h3>
@@ -220,15 +225,6 @@ function TeslaModelX({Kurzzeit, Langzeit, Mehrkilometer}) {
       </div>
     </div>
   );
-}
-
-export async function getStaticProps(context) {
-  const Kurzzeit = await getTXDataByArt('K');
-  const Langzeit = await getTXDataByArt('L');
-  const Mehrkilometer = await getTXDataByArt('M');
-  return {
-    props: {Kurzzeit, Langzeit, Mehrkilometer},
-  };
 }
 
 export default TeslaModelX;

@@ -8,9 +8,10 @@ import Link from 'next/link';
 
 import SEO from '@/ui/seo';
 
-import {getT3PDataByArt} from 'lib/api';
+import {CarPrices} from '@/ui/CarPrices';
+import {Model3Performance} from 'lib/car-prices';
 
-function TeslaModel3Page({Kurzzeit, Langzeit, Mehrkilometer}) {
+function TeslaModel3Page() {
   return (
     <div>
       <SEO
@@ -30,7 +31,7 @@ function TeslaModel3Page({Kurzzeit, Langzeit, Mehrkilometer}) {
 
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
-            <div className="relative bg-white rounded">
+            <div className="relative">
               <Link
                 passHref
                 href="#tesla-performance"
@@ -53,13 +54,16 @@ function TeslaModel3Page({Kurzzeit, Langzeit, Mehrkilometer}) {
       <section>
         <CTA
           data_cy="TeslaModel3PerformanceMieten"
-          fillBG="true"
-          fullWidth="true"
+          fillBG={true}
+          fullWidth={true}
           title="Tesla Model 3 Performance mieten"
-          link="/buchungs-anfrage/"
+          link="https://itana.rentware.io/"
         />
       </section>
       <TeslaQuickLinks />
+      <section>
+        <CarPrices data={Model3Performance} />
+      </section>
       <div className="my-24 mx-auto">
         <div className="lg:prose-md prose mx-auto">
           <h2>Bereit für eine Testfahrt mit einem Sportwagen?</h2>
@@ -187,15 +191,6 @@ function TeslaModel3Page({Kurzzeit, Langzeit, Mehrkilometer}) {
       </div>
     </div>
   );
-}
-
-export async function getStaticProps(context) {
-  const Kurzzeit = await getT3PDataByArt('K');
-  const Langzeit = await getT3PDataByArt('L');
-  const Mehrkilometer = await getT3PDataByArt('M');
-  return {
-    props: {Kurzzeit, Langzeit, Mehrkilometer},
-  };
 }
 
 export default TeslaModel3Page;

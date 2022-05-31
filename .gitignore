@@ -39,3 +39,6 @@ out
 
 **/public/precache.*.js
 **/public/sw.js
+
+
+**/public/workbox-*

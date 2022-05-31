@@ -18,7 +18,7 @@ const Bewertungen = () => (
         <YellowStar />
       </p> */}
       <p className="mt-2 text-center text-sm leading-6 text-white no-underline">
-        <b>32</b> Bewertungen <b>4,9/5</b> Stand 01/2022
+        <b>32</b> Bewertungen <b>4,9/5</b> Stand 06/2022
       </p>
     </a>
   </div>
@@ -199,7 +199,7 @@ export default function Nav() {
                     <img
                       className="hidden h-6 w-auto lg:block"
                       src="/images/mobility.itana.de-transparent.svg"
-                      alt="Workflow"
+                      alt="Itana Logo"
                     />
                   </a>
                 </Link>
@@ -207,11 +207,13 @@ export default function Nav() {
               <div className="hidden sm:ml-6 sm:block">
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-                  <Link href="/buchungs-anfrage/">
-                    <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                      Buchungs Anfrage
-                    </a>
-                  </Link>
+
+                  <a
+                    href="https://itana.rentware.io/"
+                    className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white"
+                  >
+                    Tesla mieten
+                  </a>
 
                   <Dropdown />
                   {/*  <Link passHref href="/tesla/model-3srmieten/">

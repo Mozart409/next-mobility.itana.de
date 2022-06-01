@@ -17,7 +17,7 @@ const Newsfeed = () => (
           {/* <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-06-12'>Juni 12, 2020</time>
           </p> */}
-          <Link passHref href="/photovoltaikanlage/" className="block">
+          <Link href="/photovoltaikanlage/" className="block">
             <div>
               <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Photovoltaikanlage
@@ -29,7 +29,7 @@ const Newsfeed = () => (
             </div>
           </Link>
           <div className="mt-3">
-            <Link passHref href="/photovoltaikanlage/">
+            <Link href="/photovoltaikanlage/">
               <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
@@ -40,7 +40,7 @@ const Newsfeed = () => (
           {/* <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-05-25'>Mai 25, 2020</time>
           </p> */}
-          <Link passHref href="/tesla-supercharger-leonberg/">
+          <Link href="/tesla-supercharger-leonberg/">
             <div className="block">
               <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Tesla Supercharger Leonberg
@@ -53,7 +53,7 @@ const Newsfeed = () => (
             </div>
           </Link>
           <div className="mt-3">
-            <Link passHref href="/tesla-supercharger-leonberg/">
+            <Link href="/tesla-supercharger-leonberg/">
               <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
@@ -64,7 +64,7 @@ const Newsfeed = () => (
           {/* <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-05-4'>Mai 4, 2020</time>
           </p> */}
-          <Link passHref href="/schulung-elektromobilitaet/" className="block">
+          <Link href="/schulung-elektromobilitaet/" className="block">
             <div>
               <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Schulung Elektromobilität
@@ -77,7 +77,7 @@ const Newsfeed = () => (
             </div>
           </Link>
           <div className="mt-3">
-            <Link passHref href="/schulung-elektromobilitaet/">
+            <Link href="/schulung-elektromobilitaet/">
               <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>
@@ -88,7 +88,7 @@ const Newsfeed = () => (
           {/*  <p className='text-sm leading-5 text-gray-500'>
             <time dateTime='2020-04-17'>April 17, 2020</time>
           </p> */}
-          <Link passHref href="/tesla-langzeitmiete/" className="block">
+          <Link href="/tesla-langzeitmiete/" className="block">
             <div>
               <h2 className="BlogTitle mt-2 mb-2 text-xl font-semibold leading-7 text-gray-900">
                 Tesla Langzeitmiete
@@ -102,7 +102,7 @@ const Newsfeed = () => (
             </div>
           </Link>
           <div className="mt-3">
-            <Link passHref href="/tesla-langzeitmiete/">
+            <Link href="/tesla-langzeitmiete/">
               <a className="text-base font-semibold leading-6 text-itana-red transition duration-150 ease-in-out hover:text-itana-red">
                 Weiter lesen
               </a>

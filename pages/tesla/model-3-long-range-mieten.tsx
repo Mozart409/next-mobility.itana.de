@@ -32,12 +32,10 @@ function TeslaModel3SRPage() {
           <div className="mx-auto">
             <div className="relative">
               <Link
-                passHref
                 href="#tesla-standard-range-plus"
-                title="Tesla Model 3 Long Range"
                 aria-label="Tesla Model 3 Long Range"
               >
-                <div>
+                <a title="Tesla Model 3 Long Range">
                   <Image
                     src="/images/cards/tesla-3-lr.png"
                     className="mx-auto mt-4 h-96 rounded"
@@ -45,7 +43,7 @@ function TeslaModel3SRPage() {
                     height="400"
                     width="1000"
                   />
-                </div>
+                </a>
               </Link>
             </div>
           </div>

@@ -12,7 +12,8 @@
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.4",

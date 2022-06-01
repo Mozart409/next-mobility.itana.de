@@ -108,11 +108,7 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
               <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist
               der Mietzeitraum flexibel. <br />
-              <Link
-                passHref
-                className="font-semibold text-itana-red"
-                href="/kontakt/"
-              >
+              <Link className="font-semibold text-itana-red" href="/kontakt/">
                 Kontaktiere uns jetzt,
               </Link>{' '}
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
@@ -120,11 +116,7 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             </p>
             <p>
               Vorab kannst Du in unseren{' '}
-              <Link
-                passHref
-                className="font-semibold text-itana-red"
-                href="/faq/"
-              >
+              <Link className="font-semibold text-itana-red" href="/faq/">
                 FAQs
               </Link>{' '}
               stöbern.
@@ -219,11 +211,7 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
         <p>
           Wir von mobility empfehlen die Tesla Langzeitmiete!
           <br />
-          <Link
-            passHref
-            className="font-semibold text-itana-red"
-            href="/kontakt/"
-          >
+          <Link className="font-semibold text-itana-red" href="/kontakt/">
             Kontaktiere uns jetzt,
           </Link>{' '}
           und genieße die volle Kostenkontrolle.

@@ -33,18 +33,18 @@ function TeslaModel3Page() {
           <div className="mx-auto">
             <div className="relative">
               <Link
-                passHref
                 href="#tesla-performance"
-                title="Tesla Model 3 Performance"
                 aria-label="Tesla Model 3 Performance"
               >
-                <Image
-                  src="/images/cards/tesla-3-performance.png"
-                  className="mx-auto mt-4 h-96 rounded"
-                  alt="Tesla Model 3 mieten"
-                  height="600"
-                  width="1000"
-                />
+                <a title="Tesla Model 3 Performance">
+                  <Image
+                    src="/images/cards/tesla-3-performance.png"
+                    className="mx-auto mt-4 h-96 rounded"
+                    alt="Tesla Model 3 mieten"
+                    height="600"
+                    width="1000"
+                  />
+                </a>
               </Link>
             </div>
           </div>

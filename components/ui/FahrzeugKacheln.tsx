@@ -15,8 +15,8 @@ export default function FahrzeugKacheln() {
     <div className="relative px-4 pt-4 pb-20 sm:px-6 lg:px-8 lg:pb-28">
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2">
-          <Link passHref className="Kachel" href="/tesla/model-3srmieten/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/tesla/model-3srmieten/">
+            <div className="Kachel flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/cards/tesla-3-sr.png"
@@ -37,12 +37,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
 
-          <Link
-            passHref
-            className="Kachel"
-            href="/tesla/model-3-long-range-mieten/"
-          >
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/tesla/model-3-long-range-mieten/">
+            <div className="Kachelflex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/cards/tesla-3-lr.png"
@@ -63,8 +59,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
 
-          <Link passHref className="Kachel" href="/tesla/model-3-mieten/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/tesla/model-3-mieten/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   src="/images/cards/tesla-3-performance.png"
@@ -84,8 +80,8 @@ export default function FahrzeugKacheln() {
               </div>
             </div>
           </Link>
-          <Link passHref className="Kachel" href="/tesla/model-x-mieten/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/tesla/model-x-mieten/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   className="h-72 w-full object-cover"
@@ -106,8 +102,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
 
-          <Link passHref className="Kachel" href="/tesla-langzeitmiete/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/tesla-langzeitmiete/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   className="h-72 w-full object-cover"
@@ -127,8 +123,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
           <CTAFahrbereit />
-          <Link passHref className="Kachel" href="/faq/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/faq/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   className="h-72 object-cover"
@@ -145,8 +141,8 @@ export default function FahrzeugKacheln() {
             </div>
           </Link>
 
-          <Link passHref className="Kachel" href="/faq/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/faq/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   className="h-72 w-full object-cover"
@@ -162,8 +158,8 @@ export default function FahrzeugKacheln() {
               </div>
             </div>
           </Link>
-          <Link passHref className="Kachel" href="/schulung-elektromobilitaet/">
-            <div className="flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+          <Link href="/schulung-elektromobilitaet/">
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
                   className="h-72 w-full object-cover"

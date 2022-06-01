@@ -33,19 +33,16 @@ function TeslaModelX() {
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <Link
-                passHref
-                href="#tesla-model-x"
-                title="Tesla Model X"
-                aria-label="Tesla Model X"
-              >
-                <Image
-                  src="/images/cards/tesla-model-x.png"
-                  className="mx-auto mt-4 h-96 rounded"
-                  alt="Tesla Model X mieten"
-                  height="600"
-                  width="1000"
-                />
+              <Link href="#tesla-model-x" aria-label="Tesla Model X">
+                <a title="Tesla Model X">
+                  <Image
+                    src="/images/cards/tesla-model-x.png"
+                    className="mx-auto mt-4 h-96 rounded"
+                    alt="Tesla Model X mieten"
+                    height="600"
+                    width="1000"
+                  />
+                </a>
               </Link>
             </div>
           </div>
@@ -183,11 +180,10 @@ function TeslaModelX() {
           Elektromobilit&auml;t beschreibt&nbsp;das Nutzen von Elektrofahrzeugen
           mit Nachhaltigkeitsaspekten.&nbsp;Wir setzen das zus&auml;tzliche mit
           unserer{' '}
-          <Link
-            className="font-semibold text-itana-red"
-            href="/photovoltaikanlage/"
-          >
-            <a>hauseigenen Photovoltaikanlage</a>
+          <Link href="/photovoltaikanlage/">
+            <a className="font-semibold text-itana-red">
+              hauseigenen Photovoltaikanlage
+            </a>
           </Link>{' '}
           um, mit der wir&nbsp;die Teslas laden. Dadurch wird die Sonnenenergie
           direkt f&uuml;r das E-Fahrzeug genutzt.&nbsp;

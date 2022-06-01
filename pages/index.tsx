@@ -114,7 +114,7 @@ const ContentSection = () => (
       Shops)
     </p>
     <br />
-    <Link passHref href="/tesla-supercharger-leonberg/">
+    <Link href="/tesla-supercharger-leonberg/">
       <a rel="noopener noreferrer"> Tipps zum Aufladen findest Du hier. </a>
     </Link>
     <br />
@@ -294,7 +294,7 @@ const ContentSection = () => (
       <br />
       <br />
       Wir bevorzugen regenerative Energien und haben eine
-      <Link passHref href="/photovoltaikanlage/">
+      <Link href="/photovoltaikanlage/">
         <a rel="noopener noreferrer"> hauseigene Photovoltaik-Anlage </a>
       </Link>
       mit der wir die E-Autos emissionsfrei laden. Bei Abholung ist der Akku

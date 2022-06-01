@@ -32,18 +32,18 @@ function TeslaModel3SRPage() {
           <div className="mx-auto">
             <div className="relative">
               <Link
-                passHref
                 href="#tesla-standard-range-plus"
-                title="Tesla Model 3 Standard Range Plus"
                 aria-label="Tesla Model 3 Standard Range Plus"
               >
-                <Image
-                  src="/images/cards/tesla-3-sr.png"
-                  className="mx-auto mt-4 h-96 rounded"
-                  alt="Tesla Model 3 Standard Range Plus mieten"
-                  height="600"
-                  width="1000"
-                />
+                <a title="Tesla Model 3 Standard Range Plus">
+                  <Image
+                    src="/images/cards/tesla-3-sr.png"
+                    className="mx-auto mt-4 h-96 rounded"
+                    alt="Tesla Model 3 Standard Range Plus mieten"
+                    height="600"
+                    width="1000"
+                  />
+                </a>
               </Link>
             </div>
           </div>

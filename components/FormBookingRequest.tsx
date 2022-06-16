@@ -1,27 +1,29 @@
 import React from 'react';
+import {useRouter} from 'next/router';
 
 import {LabeledTextField} from './ui/LabeledTextField';
 import {Form} from './ui/Form';
-import {Buchung} from 'lib/validations';
+import {ZodBuchung} from 'lib/validations';
 import Link from 'next/link';
 import {Field} from 'react-final-form';
 import LabeledSelectField from './ui/LabeledSelectField';
 import toast from 'react-hot-toast';
 
 const FormBookingRequest = () => {
+  const router = useRouter();
   return (
     <div>
       <Form
         submitText="Anfrage Abschicken"
-        schema={Buchung}
+        schema={ZodBuchung}
         initialValues={{
           country: 'Deutschland',
           car: 'Tesla Model 3 SR+',
           recommendation: 'Bitte wählen',
-          anrede: 'Bitte wählen',
+          anrede: 'Frau',
         }}
         pageTitle="Buchungsanfrage"
-        onSubmit={async values => {
+        onSubmit={async (values, event) => {
           console.log(values);
           const body = JSON.stringify(values);
           /* 
@@ -40,13 +42,16 @@ const FormBookingRequest = () => {
               },
               body: body,
             });
-            if (response.status === 200) {
+            console.log(response);
+            if (response.status >= 200 && response.status < 300) {
               toast.success(
                 'Vielen Dank für Ihre Anfrage. Wir werden uns so schnell wie möglich bei Ihnen melden.',
                 {
                   duration: 5000,
                 }
               );
+
+              router.push('/erfolg');
             }
           } catch (error) {
             toast.error(
@@ -90,7 +95,6 @@ const FormBookingRequest = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <LabeledSelectField name={'anrede'} label={'Anrede'}>
-                <option>Bitte wählen</option>
                 <option>Herr</option>
                 <option>Frau</option>
               </LabeledSelectField>
@@ -107,13 +111,13 @@ const FormBookingRequest = () => {
                 type="text"
                 name="firstName"
                 label="Vorname"
-                placeholder="Markus"
+                placeholder="Vorname"
               />
               <LabeledTextField
                 type="text"
                 name="lastName"
                 label="Nachname"
-                placeholder="Müller"
+                placeholder="Nachname"
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

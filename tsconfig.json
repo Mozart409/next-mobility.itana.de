@@ -19,7 +19,8 @@
     "paths": {
       "@/img/*": ["public/images/*"],
       "@/ui/*": ["components/ui/*"],
-      "@/api/*": ["lib/api.js"]
+      "@/utils/*": ["utils/*"],
+      "@/lib/*": ["lib/*"]
     }
   },
   "include": ["./**/*"],

@@ -14,13 +14,13 @@ class MyDocument extends Document {
             sizes="192x192"
             href="/images/icon-192.png"
           />
-          <link
+          {/* <link
             rel="preload"
             href="/fonts/inter-var-latin.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-          />
+          /> */}
 
           <link rel="preconnect" href="https://app.usercentrics.eu" />
           <link rel="preconnect" href="https://www.googletagmanager.com" />

@@ -178,7 +178,7 @@ function TeslaModelX() {
           Elektromobilit&auml;t beschreibt&nbsp;das Nutzen von Elektrofahrzeugen
           mit Nachhaltigkeitsaspekten.&nbsp;Wir setzen das zus&auml;tzliche mit
           unserer{' '}
-          <Link href="/photovoltaikanlage/">
+          <Link href={pagesPath.photovoltaikanlage.$url()}>
             <a className="font-semibold text-itana-red">
               hauseigenen Photovoltaikanlage
             </a>

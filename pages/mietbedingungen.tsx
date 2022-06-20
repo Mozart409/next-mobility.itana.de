@@ -40,7 +40,11 @@ function MietbedingungenPage() {
           </a>{' '}
           oder nutzen Sie unser{' '}
           <span className="text-itana-red">
-            <Link href="/kontakt/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href={pagesPath.kontakt.$url()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <a className="text-itana-red">Kontaktformular.</a>
             </Link>
           </span>

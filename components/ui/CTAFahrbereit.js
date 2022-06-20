@@ -9,14 +9,14 @@ const CTAFahrbereit = () => (
         </h2>
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">
-            <Link href="/buchungs-anfrage/">
+            <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="Kachel focus:shadow-outline inline-flex items-center justify-center rounded-md border border-transparent border-itana-red py-3 px-5 text-base font-semibold leading-6 text-gray-900 transition duration-150 ease-in-out hover:bg-red-500 hover:text-white focus:outline-none">
                 Tesla mieten
               </a>
             </Link>
           </div>
           <div className="ml-3 inline-flex">
-            <Link href="/tesla/model-3-mieten/">
+            <Link href={pagesPath.tesla.model_3_mieten.$url()}>
               <a className="Kachel focus:shadow-outline inline-flex items-center justify-center rounded-md border border-transparent bg-red-100 py-3 px-5 text-base font-semibold leading-6 text-gray-700 transition duration-150 ease-in-out hover:bg-red-50 hover:text-red-600 focus:border-indigo-300 focus:outline-none">
                 Mehr Informationen
               </a>

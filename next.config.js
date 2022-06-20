@@ -5,7 +5,6 @@
  **/
 
 const withPWA = require('next-pwa');
-const nextSafe = require('next-safe');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -13,9 +12,15 @@ const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self' usercentrics.eu app.usercentrics.eu;
   child-src 'self' mobility.itana.de;
+`;
+
+const ContentSecurityPolicyBackUp = `
+  default-src 'self';
+  script-src 'self' usercentrics.eu app.usercentrics.eu;
+  child-src 'self' mobility.itana.de;
   style-src 'self' mobility.itana.de;
-  font-src 'self';
-  img-src '*';
+  font-src 'self' mobility.itana.de;
+  img-src '*' 'self' mobility.itana.de;
 `;
 
 // @ts-ignore

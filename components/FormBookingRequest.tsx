@@ -206,11 +206,12 @@ const FormBookingRequest = () => {
                 <p id="privacy-description" className="text-gray-500">
                   Detaillierte Informationen zum Umgang mit Nutzerdaten findest
                   Du in unserer{' '}
-                  <Link href="/datenschutz">
-                    <a className="text-itana-red font-semibold">
-                      Datenschutzerklärung *
-                    </a>
-                  </Link>
+                  <a
+                    href="https://itana.de/datenschutz/"
+                    className="text-itana-red font-semibold"
+                  >
+                    Datenschutzerklärung *
+                  </a>
                 </p>
               </div>
             </div>

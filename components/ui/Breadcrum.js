@@ -30,7 +30,7 @@ export default function Breadcrum() {
           />
         </svg>
         <Link
-          href="/blog/"
+          href={pagesPath.blog.$url()}
           className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-700"
         >
           <a>Blog</a>

@@ -10,7 +10,7 @@ interface IProps {
 }
 const CTA: React.FC<IProps> = props => (
   <div data-cy={props.data_cy}>
-    <Link href="/buchungs-anfrage/">
+    <Link href={pagesPath.buchungs_anfrage.$url()}>
       <a className="anfrage">
         <button
           className={cx(

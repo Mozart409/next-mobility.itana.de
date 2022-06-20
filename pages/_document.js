@@ -3,30 +3,10 @@ import Script from 'next/script';
 import React from 'react';
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    console.log('Im being called');
-    const initialProps = await Document.getInitialProps(ctx);
-    const [csp, nonce] = generateCsp();
-
-    const res = ctx?.res;
-    if (res != null) {
-      console.log("I'm in");
-      res.setHeader('Content-Security-Policy', csp);
-    }
-    return {
-      ...initialProps,
-      nonce,
-    };
-  }
-
   render() {
-    // const [csp, nonce] = generateCsp();
-    const {nonce} = this.props;
-    console.log(nonce);
-
     return (
       <Html lang="de">
-        <Head nonce={nonce}>
+        <Head>
           <link
             rel="shortcut icon"
             type="image/png"
@@ -52,14 +32,21 @@ class MyDocument extends Document {
             content="y0fNm10Zw-mMjHsc7sW-SHicOMEldY3I6d2K4KGUBYY"
           />
 
-          <script
+          <Script
+            id="usercentrics-cmp"
+            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+            data-settings-id="oVM0OC3Mr"
+            strategy="afterInteractive"
+          ></Script>
+
+          {/* <script
             id="usercentrics-cmp"
             src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
             data-settings-id="oVM0OC3Mr"
             async
-          ></script>
+          ></script> */}
 
-          <script
+          {/*   <script
             data-usercentrics="Google Tag Manager"
             type="text/plain"
             async
@@ -73,7 +60,22 @@ class MyDocument extends Document {
               })(window,document,'script','dataLayer', 'GTM-K56QMGF');
               `,
             }}
-          />
+          /> */}
+
+          <Script
+            data-usercentrics="Google Tag Manager"
+            id="Google Tag Manager"
+            type="text/plain"
+            strategy="afterInteractive"
+          >
+            {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer', 'GTM-K56QMGF');
+        `}
+          </Script>
 
           {/* <script
             id="usercentrics-cmp"

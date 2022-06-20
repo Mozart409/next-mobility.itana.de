@@ -5,7 +5,7 @@ import Breadcrum from '@/ui/Breadcrum';
 import CTA from '@/ui/CTA';
 import SEO from '@/ui/seo';
 
-export default function schulungElektromobilität({data}) {
+export default function schulungElektromobilität() {
   return (
     <div>
       <SEO
@@ -48,10 +48,9 @@ export default function schulungElektromobilität({data}) {
           Fahrtantritt alle Fragen beantwortet haben.
         </p>
         <CTA
-          fillBG="true"
-          fullWidth="true"
+          fillBG={true}
+          fullWidth={true}
           title="Jetzt anrufen und Termin vereinbaren"
-          link="tel:+49 711 49066 450"
         />
       </div>
     </div>

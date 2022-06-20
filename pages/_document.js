@@ -13,13 +13,13 @@ class MyDocument extends Document {
             sizes="192x192"
             href="/images/icon-192.png"
           />
-          {/* <link
+          <link
             rel="preload"
             href="/fonts/inter-var-latin.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
-          /> */}
+          />
 
           <link rel="preconnect" href="https://app.usercentrics.eu" />
           <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -32,21 +32,14 @@ class MyDocument extends Document {
             content="y0fNm10Zw-mMjHsc7sW-SHicOMEldY3I6d2K4KGUBYY"
           />
 
-          <Script
-            id="usercentrics-cmp"
-            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
-            data-settings-id="oVM0OC3Mr"
-            strategy="afterInteractive"
-          ></Script>
-
-          {/* <script
+          <script
             id="usercentrics-cmp"
             src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
             data-settings-id="oVM0OC3Mr"
             async
-          ></script> */}
+          ></script>
 
-          {/*   <script
+          <script
             data-usercentrics="Google Tag Manager"
             type="text/plain"
             async
@@ -60,9 +53,16 @@ class MyDocument extends Document {
               })(window,document,'script','dataLayer', 'GTM-K56QMGF');
               `,
             }}
-          /> */}
+          />
 
-          <Script
+          {/* <Script
+            id="usercentrics-cmp"
+            src="https://app.usercentrics.eu/browser-ui/latest/loader.js"
+            data-settings-id="oVM0OC3Mr"
+            strategy="afterInteractive"
+          ></Script> */}
+
+          {/* <Script
             data-usercentrics="Google Tag Manager"
             id="Google Tag Manager"
             type="text/plain"
@@ -75,7 +75,7 @@ class MyDocument extends Document {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer', 'GTM-K56QMGF');
         `}
-          </Script>
+          </Script> */}
 
           {/* <script
             id="usercentrics-cmp"

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
+
 export default function Breadcrum() {
   return (
     <div aria-label="navigation" id="Breadcrum" className="mb-4">

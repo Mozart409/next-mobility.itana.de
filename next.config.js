@@ -9,9 +9,7 @@ const withPWA = require('next-pwa');
 const isDev = process.env.NODE_ENV === 'development';
 
 const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' usercentrics.eu app.usercentrics.eu;
-  child-src 'self' mobility.itana.de;
+  
 `;
 
 const ContentSecurityPolicyBackUp = `

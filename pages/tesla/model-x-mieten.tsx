@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {FC} from 'react';
 
+import {pagesPath} from '@/lib/$path';
 import {CarPrices} from '@/ui/CarPrices';
 import CTA from '@/ui/CTA';
 import SEO from '@/ui/seo';

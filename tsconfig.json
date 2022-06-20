@@ -1,3 +1,4 @@
+// @ts-ignore
 {
   "compilerOptions": {
     "outDir": "./next",
@@ -24,5 +25,16 @@
     }
   },
   "include": ["./**/*"],
-  "exclude": ["node_modules", ".next", "cypress", "public", "build", "dist"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "cypress",
+    "public",
+    "build",
+    "dist",
+    "tsconfig.json",
+    "package.json",
+    "yarn.lock",
+    "./lib/$path.ts"
+  ]
 }

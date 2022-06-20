@@ -2,6 +2,8 @@ import cx from 'classnames';
 import Link from 'next/link';
 import React from 'react';
 
+import {pagesPath} from '@/lib/$path';
+
 interface IProps {
   title: string;
   fillBG: boolean;

@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
 import SEO from '@/ui/seo';
 
 const Newsfeed = () => (

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
+
 const CTAFahrbereit = () => (
   <div className="border-1 flex overflow-hidden rounded-lg border border-gray-200 bg-gray-50">
     <div className="my-auto mx-auto text-center">

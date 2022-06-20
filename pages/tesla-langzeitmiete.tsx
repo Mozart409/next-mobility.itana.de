@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
 import Breadcrum from '@/ui/Breadcrum';
 import CTA from '@/ui/CTA';
 import SEO from '@/ui/seo';
@@ -135,7 +136,11 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             <p>Jetzt einen Tesla mieten!</p>
             <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 mieten" fillBG="true" />
+                <CTA
+                  title="Tesla Model 3 mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -145,7 +150,11 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             </p>
             <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 Long Range mieten" />
+                <CTA
+                  title="Tesla Model 3 Long Range mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -155,7 +164,11 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             </p>
             <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 Performance mieten" />
+                <CTA
+                  title="Tesla Model 3 Performance mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -165,7 +178,11 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             </p>
             <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model X mieten" />
+                <CTA
+                  title="Tesla Model X mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>

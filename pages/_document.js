@@ -4,10 +4,30 @@ import Script from 'next/script';
 import Document, {Html, Head, Main, NextScript} from 'next/document';
 
 class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    console.log('Im being called');
+    const initialProps = await Document.getInitialProps(ctx);
+    const [csp, nonce] = generateCsp();
+
+    const res = ctx?.res;
+    if (res != null) {
+      console.log("I'm in");
+      res.setHeader('Content-Security-Policy', csp);
+    }
+    return {
+      ...initialProps,
+      nonce,
+    };
+  }
+
   render() {
+    // const [csp, nonce] = generateCsp();
+    const {nonce} = this.props;
+    console.log(nonce);
+
     return (
       <Html lang="de">
-        <Head>
+        <Head nonce={nonce}>
           <link
             rel="shortcut icon"
             type="image/png"

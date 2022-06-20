@@ -1,9 +1,10 @@
 import sgMail from '@sendgrid/mail';
 import {NextApiRequest, NextApiResponse} from 'next';
-import {config} from '@/lib/config';
-import {ZodBuchung} from '@/lib/validations';
 import * as z from 'zod';
 import {ZodIssue} from 'zod';
+
+import {config} from '@/lib/config';
+import {ZodBuchung} from '@/lib/validations';
 
 const myError = new z.ZodError([]);
 sgMail.setApiKey(config.demoSGKey);

@@ -1,7 +1,8 @@
-import SEO from '@/ui/seo';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import SEO from '@/ui/seo';
 export default function ErfolgPage() {
   return (
     <>

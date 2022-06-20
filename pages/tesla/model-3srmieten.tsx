@@ -1,14 +1,12 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
-
-import CTA from '@/ui/CTA';
+import {Model3SR} from 'lib/car-prices';
 import Head from 'next/head';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SEO from '@/ui/seo';
-import {Model3SR} from 'lib/car-prices';
 import {CarPrices} from '@/ui/CarPrices';
+import CTA from '@/ui/CTA';
+import SEO from '@/ui/seo';
+import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
 
 function TeslaModel3SRPage() {
   return (

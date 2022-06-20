@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import SEO from '@/ui/seo';
 
 function Display(items) {

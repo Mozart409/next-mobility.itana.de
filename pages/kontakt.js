@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Iframe from 'react-iframe';
 import Image from 'next/image';
-import SEO from '@/ui/seo';
+import Iframe from 'react-iframe';
+
 import CTA from '@/ui/CTA';
+import SEO from '@/ui/seo';
 
 function KontaktPage() {
   return (

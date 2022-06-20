@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+
 import SEO from '@/ui/seo';
 
 function MobilityPage({data}) {

@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
+import {ExclamationCircleIcon} from '@heroicons/react/solid';
 import {forwardRef, PropsWithoutRef} from 'react';
 import {useField} from 'react-final-form';
-import {ExclamationCircleIcon} from '@heroicons/react/solid';
 
 export interface LabeledTextFieldProps
   extends PropsWithoutRef<JSX.IntrinsicElements['input']> {

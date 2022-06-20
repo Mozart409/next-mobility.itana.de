@@ -1,14 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
-import CTAFahrbereit from './CTAFahrbereit';
-
 import {
   Model3LongRange,
   Model3Performance,
   Model3SR,
   ModelXLR,
 } from 'lib/car-prices';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import CTAFahrbereit from './CTAFahrbereit';
 
 export default function FahrzeugKacheln() {
   return (

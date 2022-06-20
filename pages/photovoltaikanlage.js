@@ -1,9 +1,9 @@
-import Breadcrum from '@/ui/Breadcrum';
+import {JsonLD} from 'components/JsonLD';
 import Head from 'next/head';
 import Image from 'next/image';
 
+import Breadcrum from '@/ui/Breadcrum';
 import SEO from '@/ui/seo';
-import {JsonLD} from 'components/JsonLD';
 
 function photovoltaikanlagePage({data}) {
   const jsonld1 = {

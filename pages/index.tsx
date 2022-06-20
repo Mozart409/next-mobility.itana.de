@@ -1,10 +1,10 @@
+import {JsonLD} from 'components/JsonLD';
 import Head from 'next/head';
 import Link from 'next/link';
 
 import FahrzeugKacheln from '@/ui/FahrzeugKacheln';
-import SEO from '@/ui/seo';
 import GoogleBewertungen from '@/ui/GoogleBewertungen';
-import {JsonLD} from 'components/JsonLD';
+import SEO from '@/ui/seo';
 
 const Heading1 = () => (
   <div className="py-2">

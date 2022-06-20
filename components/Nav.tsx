@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import Link from 'next/link';
 import {Menu, Transition} from '@headlessui/react';
+import Link from 'next/link';
+import React, {useState} from 'react';
 
 const Bewertungen = () => (
   <div className="hidden px-3 xl:inline-block">

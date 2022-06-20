@@ -1,7 +1,8 @@
-import Breadcrum from '@/ui/Breadcrum';
-import CTA from '@/ui/CTA';
 import Head from 'next/head';
 import Image from 'next/image';
+
+import Breadcrum from '@/ui/Breadcrum';
+import CTA from '@/ui/CTA';
 import SEO from '@/ui/seo';
 
 export default function schulungElektromobilität({data}) {

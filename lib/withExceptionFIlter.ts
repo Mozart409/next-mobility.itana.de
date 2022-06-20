@@ -1,4 +1,4 @@
-import {NextApiRequest, NextApiResponse, NextApiHandler} from 'next';
+import {NextApiHandler, NextApiRequest, NextApiResponse} from 'next';
 import {ApiError} from 'next/dist/server/api-utils';
 
 export function withExceptionFilter(req: NextApiRequest, res: NextApiResponse) {

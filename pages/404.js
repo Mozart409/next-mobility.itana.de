@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+
 import SEO from '@/ui/seo';
 
 function NotFoundPage() {

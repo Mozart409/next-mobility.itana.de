@@ -1,10 +1,11 @@
-import Breadcrum from '@/ui/Breadcrum';
+import {JsonLD} from 'components/JsonLD';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import SEO from '@/ui/seo';
+
+import Breadcrum from '@/ui/Breadcrum';
 import CTA from '@/ui/CTA';
-import {JsonLD} from 'components/JsonLD';
+import SEO from '@/ui/seo';
 
 const InfoBanner = () => (
   <div className="border-l-4 border-itana-red bg-gray-50">

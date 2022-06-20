@@ -8,7 +8,7 @@
     "start": "next start",
     "dev:doppler": "doppler run yarn dev",
     "build:doppler": "doppler run next build",
-    "lint": "next lint",
+    "lint": "eslint --fix .",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "cy:open": "cypress open",
     "cy:run": "cypress run",

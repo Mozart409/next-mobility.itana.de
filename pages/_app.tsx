@@ -1,10 +1,11 @@
-import Layout from 'components/Layout';
-import Script from 'next/script';
-import Head from 'next/head';
-import {useEffect} from 'react';
 import '../lib/global.css';
-import toast, {Toaster} from 'react-hot-toast';
+
+import Layout from 'components/Layout';
 import type {AppProps} from 'next/app';
+import Head from 'next/head';
+import Script from 'next/script';
+import {useEffect} from 'react';
+import toast, {Toaster} from 'react-hot-toast';
 
 export default function MyApp({Component, pageProps}: AppProps) {
   useEffect(() => {

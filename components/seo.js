@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import config from '../siteconfig';
 
 export default function SEO({description, title}) {

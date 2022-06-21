@@ -23,7 +23,7 @@ export const ZodBuchung = z.object({
 
   street: z.string(),
   city: z.string(),
-  zip: z.string(),
+  zip: z.string().min(4).max(6),
   country: z.string(),
 
   recommendation: z

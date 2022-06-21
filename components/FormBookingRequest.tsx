@@ -1,7 +1,7 @@
 import {ZodBuchung} from 'lib/validations';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import React from 'react';
+import React, {useState} from 'react';
 import {Field} from 'react-final-form';
 import toast from 'react-hot-toast';
 
@@ -11,6 +11,22 @@ import {LabeledTextField} from './ui/LabeledTextField';
 
 const FormBookingRequest = () => {
   const router = useRouter();
+
+  let startDate = new Date();
+  startDate.setDate(startDate.getDate() + 3);
+
+  let endDate = new Date();
+  endDate.setDate(endDate.getDate() + 7);
+
+  const [startDateValue, setStartDateValue] = useState<Date>(startDate);
+
+  const [endDateValue, setEndDateValue] = useState<Date>(endDate);
+
+  /* const onSetStartDateValue = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    setStartDateValue(new Date(event.target.value));
+  }; */
   return (
     <div>
       <Form
@@ -21,6 +37,8 @@ const FormBookingRequest = () => {
           car: 'Tesla Model 3 SR+',
           recommendation: 'Bitte wählen',
           anrede: 'Frau',
+          startDate: startDateValue.toLocaleDateString('en-CA'),
+          endDate: endDateValue.toLocaleDateString('en-CA'),
         }}
         pageTitle="Buchungsanfrage"
         onSubmit={async (values, event) => {
@@ -52,10 +70,20 @@ const FormBookingRequest = () => {
               );
 
               router.push('/erfolg');
+            } else {
+              toast.error(
+                'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.',
+                {
+                  duration: 5000,
+                }
+              );
             }
           } catch (error) {
             toast.error(
-              'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+              'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.',
+              {
+                duration: 5000,
+              }
             );
             console.error(error);
           }
@@ -81,6 +109,8 @@ const FormBookingRequest = () => {
                 type="date"
                 name="startDate"
                 label="Abholdatum"
+                /* value={startDateValue.toLocaleDateString('en-CA')}
+                onChange={onSetStartDateValue} */
               />
               <LabeledTextField
                 type="date"

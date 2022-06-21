@@ -1,9 +1,12 @@
 import sgMail from '@sendgrid/mail';
+import Cors from 'cors';
+import DOMPurify from 'isomorphic-dompurify';
 import {NextApiRequest, NextApiResponse} from 'next';
 import * as z from 'zod';
 import {ZodIssue} from 'zod';
 
 import {config} from '@/lib/config';
+import initMiddleware from '@/lib/initMiddleware';
 import {ZodBuchung} from '@/lib/validations';
 
 const myError = new z.ZodError([]);
@@ -22,14 +25,27 @@ class ZodError extends Error {
 
 type BuchungType = z.infer<typeof ZodBuchung>;
 
+const cors = initMiddleware(
+  // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
+  Cors({
+    // Only allow requests with GET, POST and OPTIONS
+    methods: ['POST', 'OPTIONS'],
+    origin: ['http://localhost:3000', 'http://mobility.itana.de'],
+  })
+);
+
 async function myApiHandler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
+  await cors(req, res);
+
   if (req.method === 'POST') {
     try {
       const safeBody: BuchungType = ZodBuchung.parse(req.body);
-      const content = JSON.stringify(safeBody);
+
+      const dirty = JSON.stringify(safeBody);
+      var content = DOMPurify.sanitize(dirty);
       const msg = {
         to: config.emailTo,
         from: config.emailFrom,

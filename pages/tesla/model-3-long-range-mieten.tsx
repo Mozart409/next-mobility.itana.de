@@ -38,7 +38,7 @@ function TeslaModel3SRPage() {
                     src="/images/cards/tesla-3-lr.png"
                     className="mx-auto mt-4 h-96 rounded"
                     alt="Tesla Model 3 Long Range mieten"
-                    height="400"
+                    height="600"
                     width="1000"
                   />
                 </a>

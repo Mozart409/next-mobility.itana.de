@@ -13,7 +13,7 @@ function KontaktPage() {
         description="Können wir Dir bei Deinen Fragen helfen? Kontaktiere uns unverbindlich - wir freuen uns!"
       />
       <Head>
-        <link rel="canonical" href="https://itana.de/kontakt/" />
+        <link rel="canonical" href="https://mobility.itana.de/kontakt/" />
       </Head>
 
       <div className="lg:prose-md prose mx-auto">

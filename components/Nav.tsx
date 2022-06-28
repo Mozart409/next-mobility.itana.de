@@ -103,6 +103,18 @@ const Dropdown = () => {
               </a>
             </Link>
 
+            <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Tesla Model Y
+              </a>
+            </Link>
+
+            <Link href={pagesPath.tesla.model_y_performance_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Tesla Model Y Performance
+              </a>
+            </Link>
+
             <Link href={pagesPath.tesla.model_x_mieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model X
@@ -302,6 +314,18 @@ export default function Nav() {
               <Link href={pagesPath.tesla.model_3_mieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 Performance
+                </a>
+              </Link>
+
+              <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Tesla Model Y
+                </a>
+              </Link>
+
+              <Link href={pagesPath.tesla.model_y_performance_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Tesla Model Y Performance
                 </a>
               </Link>
 

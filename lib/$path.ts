@@ -38,6 +38,12 @@ export const pagesPath = {
     },
     "model_x_mieten": {
       $url: (url?: { hash?: string }) => ({ pathname: '/tesla/model-x-mieten' as const, hash: url?.hash })
+    },
+    "model_y_mieten": {
+      $url: (url?: { hash?: string }) => ({ pathname: '/tesla/model-y-mieten' as const, hash: url?.hash })
+    },
+    "model_y_performance_mieten": {
+      $url: (url?: { hash?: string }) => ({ pathname: '/tesla/model-y-performance-mieten' as const, hash: url?.hash })
     }
   },
   "tesla_langzeitmiete": {

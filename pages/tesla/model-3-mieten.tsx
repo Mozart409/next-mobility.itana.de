@@ -12,7 +12,7 @@ function TeslaModel3Page() {
   return (
     <div>
       <SEO
-        title="Tesla Model 3 mieten | Elektroauto mieten"
+        title={`Tesla Model 3 mieten in Stuttgart | ab ${Model3Performance['Verlängerungstag 100 km']} / Tag`}
         description="Tesla Model 3 mieten ✓ viel Beschleunigungsspaß ✓ App-Zugang auf ihrem Smartphone ✓ Sportwagen mieten ✓ ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>

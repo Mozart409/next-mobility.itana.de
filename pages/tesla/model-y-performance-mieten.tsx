@@ -1,21 +1,20 @@
-import {ModelXLR} from 'lib/car-prices';
+import {ModelYPerformance} from 'lib/car-prices';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import {pagesPath} from '@/lib/$path';
 import {CarPrices} from '@/ui/CarPrices';
 import CTA from '@/ui/CTA';
 import SEO from '@/ui/seo';
 import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
 
-function TeslaModelX() {
+function TeslaModelYPerformance() {
   return (
     <div>
       <SEO
-        title={`Tesla Model X mieten | ab ${ModelXLR['Verlängerungstag 100 km']}
+        title={`Tesla Model Y Performance mieten | ab ${ModelYPerformance['Verlängerungstag 100 km']}
         / Tag`}
-        description="Tesla Model X mieten | Bester Autoverleih | App Zugang auf ihrem Smartphone | SUV genießen ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
+        description="Tesla Model Y Performance mieten | Bester Autoverleih | App Zugang auf ihrem Smartphone | SUV genießen ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>
         <link
@@ -25,19 +24,22 @@ function TeslaModelX() {
       </Head>
       <section>
         <h1 className="text-xl font-bold leading-6 tracking-tight text-gray-900 sm:text-2xl sm:leading-8">
-          Tesla Model X mieten
+          Tesla Model Y Performance mieten
         </h1>
-        <h2>Komfortables SUV-Powerhouse mit enormer Reichweite</h2>
+        <h2>Der SUV-Crossover von Tesla</h2>
 
         <div className="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl">
           <div className="mx-auto">
             <div className="relative">
-              <Link href="#tesla-model-x" aria-label="Tesla Model X">
-                <a title="Tesla Model X">
+              <Link
+                href="#tesla-model-y-performance"
+                aria-label="Tesla Model Y Performance"
+              >
+                <a title="Tesla Model Y Performance">
                   <Image
-                    src="/images/cards/tesla-model-x.png"
+                    src="/images/cards/tesla-model-y-performance.png"
                     className="mx-auto mt-4 h-96 rounded"
-                    alt="Tesla Model X mieten"
+                    alt="Tesla Model Y Performance mieten"
                     height="600"
                     width="1000"
                   />
@@ -50,18 +52,18 @@ function TeslaModelX() {
 
       <section>
         <CTA
-          data_cy="TeslaModelXMieten"
+          data_cy="TeslaModelYPerformanceMieten"
           fillBG={true}
           fullWidth={true}
-          title="Tesla Model X mieten"
+          title="Tesla Model Y Performance mieten"
         />
       </section>
       <TeslaQuickLinks />
       <section>
-        <CarPrices data={ModelXLR} />
+        <CarPrices data={ModelYPerformance} />
       </section>
 
-      <div className="lg:prose-md prose mx-auto mt-24">
+      {/*  <div className="lg:prose-md prose mx-auto mt-24">
         <h2>Technische Fakten zum Tesla Model X</h2>
         <h3>Wie viel PS hat ein Tesla Model X?</h3>
         <p>
@@ -209,9 +211,9 @@ function TeslaModelX() {
           <li>einfach und g&uuml;nstig zum Leihen</li>
           <li>atemberaubende Teslas fahren</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }
 
-export default TeslaModelX;
+export default TeslaModelYPerformance;

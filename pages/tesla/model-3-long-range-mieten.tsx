@@ -12,7 +12,7 @@ function TeslaModel3SRPage() {
   return (
     <div>
       <SEO
-        title="Tesla Model 3 LR mieten in Stuttgart | 49,08 € / Tag für 30 Tage"
+        title={`Tesla Model 3 mieten in Stuttgart | ab ${Model3LongRange['Verlängerungstag 100 km']} / Tag`}
         description="Bestes Preis-Leistungs-Verhältnis ✓ E-Auto leihen | agiler Sportwagen ✓ Stuttgarter Autovermietung ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>

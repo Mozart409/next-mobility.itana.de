@@ -3,6 +3,8 @@ import {
   Model3LongRange,
   Model3Performance,
   ModelXLR,
+  ModelYLongRange,
+  ModelYPerformance,
 } from 'lib/car-prices';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -81,6 +83,51 @@ export default function FahrzeugKacheln() {
               </div>
             </div>
           </Link>
+
+          <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+              <div className="flex-shrink-0">
+                <Image
+                  className="h-72 w-full object-cover"
+                  height="300"
+                  width="600"
+                  src="/images/cards/tesla-model-y.png"
+                  alt="Tesla Model Y mieten"
+                />
+
+                <h2
+                  data-cy="KachelModelYLongRange"
+                  className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
+                >
+                  Tesla Model Y Long Range mieten ab{' '}
+                  {ModelYLongRange['Verlängerungstag 100 km']} / Tag
+                </h2>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+              <div className="flex-shrink-0">
+                <Image
+                  className="h-72 w-full object-cover"
+                  height="300"
+                  width="600"
+                  src="/images/cards/tesla-model-y-performance.png"
+                  alt="Tesla Model Y mieten"
+                />
+
+                <h2
+                  data-cy="KachelModelYPerformance"
+                  className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
+                >
+                  Tesla Model Y Performance mieten ab{' '}
+                  {ModelYPerformance['Verlängerungstag 100 km']} / Tag
+                </h2>
+              </div>
+            </div>
+          </Link>
+
           <Link href={pagesPath.tesla.model_x_mieten.$url()}>
             <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">

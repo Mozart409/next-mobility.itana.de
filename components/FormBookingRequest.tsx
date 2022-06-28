@@ -60,8 +60,9 @@ const FormBookingRequest = () => {
               },
               body: body,
             });
-            console.log(response);
+            //console.log(response);
             if (response.status >= 200 && response.status < 300) {
+              window.dataLayer.push({event: 'form-sent'});
               toast.success(
                 'Vielen Dank für Ihre Anfrage. Wir werden uns so schnell wie möglich bei Ihnen melden.',
                 {
@@ -71,6 +72,7 @@ const FormBookingRequest = () => {
 
               router.push('/erfolg');
             } else {
+              window.dataLayer.push({event: 'form-error'});
               toast.error(
                 'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.',
                 {

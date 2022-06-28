@@ -10,8 +10,12 @@ import initMiddleware from '@/lib/initMiddleware';
 import {ZodBuchung} from '@/lib/validations';
 
 const myError = new z.ZodError([]);
-sgMail.setApiKey(config.demoSGKey);
 
+if (process.env.NODE_ENV === 'production') {
+  sgMail.setApiKey(config.sgApiKey);
+} else {
+  sgMail.setApiKey(config.demoSGKey);
+}
 type ResponseData = {
   message: string;
   code: number;

@@ -1,4 +1,5 @@
 import {
+  DaciaSpringPrice,
   Model3,
   Model3LongRange,
   Model3Performance,
@@ -170,6 +171,29 @@ export default function FahrzeugKacheln() {
               </div>
             </div>
           </Link>
+
+          <Link href={pagesPath.dacia.spring_mieten.$url()}>
+            <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
+              <div className="flex-shrink-0">
+                <Image
+                  className="h-72 w-full object-cover"
+                  height="300"
+                  width="600"
+                  src="/images/cards/dacia-spring.png"
+                  alt="Dacia Spring mieten"
+                />
+
+                <h2
+                  data-cy="KachelModelX"
+                  className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
+                >
+                  Dacia Spring mieten ab{' '}
+                  {DaciaSpringPrice['Verlängerungstag 100 km']} / Tag
+                </h2>
+              </div>
+            </div>
+          </Link>
+
           <CTAFahrbereit />
           <Link href={pagesPath.faq.$url()}>
             <div className="flex Kachel flex-col overflow-hidden rounded-lg shadow-2xl bg-white">

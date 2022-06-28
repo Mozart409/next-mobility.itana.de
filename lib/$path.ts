@@ -8,6 +8,11 @@ export const pagesPath = {
   "buchungs_anfrage": {
     $url: (url?: { hash?: string }) => ({ pathname: '/buchungs-anfrage' as const, hash: url?.hash })
   },
+  "dacia": {
+    "spring_mieten": {
+      $url: (url?: { hash?: string }) => ({ pathname: '/dacia/spring-mieten' as const, hash: url?.hash })
+    }
+  },
   "erfolg": {
     $url: (url?: { hash?: string }) => ({ pathname: '/erfolg' as const, hash: url?.hash })
   },

@@ -126,6 +126,12 @@ const Dropdown = () => {
                 Tesla Langzeitmiete
               </a>
             </Link>
+
+            <Link href={pagesPath.dacia.spring_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Dacia Spring
+              </a>
+            </Link>
           </div>
         </div>
       </Transition>{' '}
@@ -338,6 +344,12 @@ export default function Nav() {
               <Link href={pagesPath.tesla_langzeitmiete.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Langzeitmiete
+                </a>
+              </Link>
+
+              <Link href={pagesPath.dacia.spring_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Dacia Spring
                 </a>
               </Link>
 

@@ -1,4 +1,4 @@
-export const Dacia = {
+export const DaciaSpringPrice = {
   Fahrzeug: 'Dacia Spring',
   'Tag (300)': '71.40 €',
   'Tag mit 300 km': '69.00 €',

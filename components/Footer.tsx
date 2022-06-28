@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
+
 export default function Footer() {
   return (
     <footer aria-label="footer" id="footer">
@@ -8,7 +10,7 @@ export default function Footer() {
           <nav className="-my-2 -mx-5 flex flex-wrap justify-center">
             <div className="py-2 px-5">
               <Link
-                href="/blog/"
+                href={pagesPath.blog.$url()}
                 className="text-base leading-6 text-gray-600 hover:text-gray-900"
               >
                 <a>Blog</a>
@@ -17,7 +19,7 @@ export default function Footer() {
 
             <div className="py-2 px-5">
               <Link
-                href="/mietbedingungen/"
+                href={pagesPath.mietbedingungen.$url()}
                 className="text-base leading-6 text-gray-600 hover:text-gray-900"
               >
                 <a>Mietbedingungen</a>

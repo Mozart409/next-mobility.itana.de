@@ -1,0 +1,5 @@
+{
+  "plugins": ["spell", "indefinite-article", "repeated-words", "syntax-urls"],
+  "dictionaries": ["dictionary/dictionary.txt"],
+  "files": ["**/*.{tsx,jsx}"]
+}

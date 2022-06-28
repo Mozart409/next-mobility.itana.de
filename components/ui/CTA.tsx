@@ -2,6 +2,8 @@ import cx from 'classnames';
 import Link from 'next/link';
 import React from 'react';
 
+import {pagesPath} from '@/lib/$path';
+
 interface IProps {
   title: string;
   fillBG: boolean;
@@ -10,7 +12,7 @@ interface IProps {
 }
 const CTA: React.FC<IProps> = props => (
   <div data-cy={props.data_cy}>
-    <Link href="/buchungs-anfrage/">
+    <Link href={pagesPath.buchungs_anfrage.$url()}>
       <a className="anfrage">
         <button
           className={cx(

@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import Iframe from 'react-iframe';
 import Image from 'next/image';
-import SEO from '@/ui/seo';
+import Iframe from 'react-iframe';
+
 import CTA from '@/ui/CTA';
+import SEO from '@/ui/seo';
 
 function KontaktPage() {
   return (
@@ -29,10 +30,13 @@ function KontaktPage() {
             className="border-md w-full aspect-video"
           />
 
-          <CTA
-            link="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
-            title="Google Maps"
-          />
+          <a
+            target="_blank"
+            href="https://www.google.de/maps/place/Itana+GmbH/@48.8582288,9.0693609,12z/data=!4m8!1m2!2m1!1sitana+gmbh!3m4!1s0x4799d6c0c4e1f9d5:0xdde5218653b7e1f0!8m2!3d48.902866!4d9.100305?hl=de"
+            rel="noreferrer"
+          >
+            <CTA title="Google Maps" fillBG={true} fullWidth={true} />
+          </a>
         </section>
         <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
           <section>

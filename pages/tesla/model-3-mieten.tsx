@@ -1,21 +1,18 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
-
-import CTA from '@/ui/CTA';
+import {Model3Performance} from 'lib/car-prices';
 import Head from 'next/head';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SEO from '@/ui/seo';
-
 import {CarPrices} from '@/ui/CarPrices';
-import {Model3Performance} from 'lib/car-prices';
+import CTA from '@/ui/CTA';
+import SEO from '@/ui/seo';
+import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
 
 function TeslaModel3Page() {
   return (
     <div>
       <SEO
-        title="Tesla Model 3 mieten | Elektroauto mieten"
+        title={`Tesla Model 3 mieten in Stuttgart | ab ${Model3Performance['Verlängerungstag 100 km']} / Tag`}
         description="Tesla Model 3 mieten ✓ viel Beschleunigungsspaß ✓ App-Zugang auf ihrem Smartphone ✓ Sportwagen mieten ✓ ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>

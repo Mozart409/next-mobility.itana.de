@@ -1,20 +1,18 @@
-import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
-
-import CTA from '@/ui/CTA';
+import {Model3LongRange} from 'lib/car-prices';
 import Head from 'next/head';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SEO from '@/ui/seo';
 import {CarPrices} from '@/ui/CarPrices';
-import {Model3LongRange} from 'lib/car-prices';
+import CTA from '@/ui/CTA';
+import SEO from '@/ui/seo';
+import TeslaQuickLinks from '@/ui/TeslaQuickLinks';
 
 function TeslaModel3SRPage() {
   return (
     <div>
       <SEO
-        title="Tesla Model 3 LR mieten in Stuttgart | 49,08 € / Tag für 30 Tage"
+        title={`Tesla Model 3 mieten in Stuttgart | ab ${Model3LongRange['Verlängerungstag 100 km']} / Tag`}
         description="Bestes Preis-Leistungs-Verhältnis ✓ E-Auto leihen | agiler Sportwagen ✓ Stuttgarter Autovermietung ► Mo-Fr von 8-18 Uhr | Jetzt anfragen ☎ +49 711 49066 450"
       />
       <Head>
@@ -32,7 +30,7 @@ function TeslaModel3SRPage() {
           <div className="mx-auto">
             <div className="relative">
               <Link
-                href="#tesla-standard-range-plus"
+                href="#tesla-long-range"
                 aria-label="Tesla Model 3 Long Range"
               >
                 <a title="Tesla Model 3 Long Range">
@@ -40,7 +38,7 @@ function TeslaModel3SRPage() {
                     src="/images/cards/tesla-3-lr.png"
                     className="mx-auto mt-4 h-96 rounded"
                     alt="Tesla Model 3 Long Range mieten"
-                    height="400"
+                    height="600"
                     width="1000"
                   />
                 </a>

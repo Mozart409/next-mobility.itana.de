@@ -1,7 +1,7 @@
 import Head from 'next/head';
-
 import Link from 'next/link';
 
+import {pagesPath} from '@/lib/$path';
 import SEO from '@/ui/seo';
 
 function MietbedingungenPage() {
@@ -41,7 +41,11 @@ function MietbedingungenPage() {
           </a>{' '}
           oder nutzen Sie unser{' '}
           <span className="text-itana-red">
-            <Link href="/kontakt/" target="_blank" rel="noopener noreferrer">
+            <Link
+              href={pagesPath.kontakt.$url()}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <a className="text-itana-red">Kontaktformular.</a>
             </Link>
           </span>

@@ -1,4 +1,4 @@
-export const Dacia = {
+export const DaciaSpringPrice = {
   Fahrzeug: 'Dacia Spring',
   'Tag (300)': '71.40 €',
   'Tag mit 300 km': '69.00 €',
@@ -14,8 +14,8 @@ export const Dacia = {
   'Monat mit 1000 km': '599.00 €',
 };
 
-export const Model3SR = {
-  Fahrzeug: 'Tesla Model 3 SR+',
+export const Model3 = {
+  Fahrzeug: 'Tesla Model 3',
   'Tag (300)': '130.90 €',
   'Tag mit 300 km': '129.00 €',
   'WE (480)': '253.62 €',

@@ -1,10 +1,12 @@
-import Breadcrum from '@/ui/Breadcrum';
+import {JsonLD} from 'components/JsonLD';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import SEO from '@/ui/seo';
+
+import {pagesPath} from '@/lib/$path';
+import Breadcrum from '@/ui/Breadcrum';
 import CTA from '@/ui/CTA';
-import {JsonLD} from 'components/JsonLD';
+import SEO from '@/ui/seo';
 
 const InfoBanner = () => (
   <div className="border-l-4 border-itana-red bg-gray-50">
@@ -108,7 +110,10 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
               Das <b>klassische Leasing</b> fordert einen Mietzeitraum von
               <b> mindestens zwei Jahren!</b> Bei der Tesla Langzeitmiete ist
               der Mietzeitraum flexibel. <br />
-              <Link className="font-semibold text-itana-red" href="/kontakt/">
+              <Link
+                className="font-semibold text-itana-red"
+                href={pagesPath.kontakt.$url()}
+              >
                 Kontaktiere uns jetzt,
               </Link>{' '}
               gerne gehen wir auf Deine persönlichen Wünsche und Bedürfnisse
@@ -116,7 +121,10 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             </p>
             <p>
               Vorab kannst Du in unseren{' '}
-              <Link className="font-semibold text-itana-red" href="/faq/">
+              <Link
+                className="font-semibold text-itana-red"
+                href={pagesPath.faq.$url()}
+              >
                 FAQs
               </Link>{' '}
               stöbern.
@@ -126,9 +134,13 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
             <h2>Empfehlungen bei der Tesla Langzeitmiete</h2>
             <InfoBanner />
             <p>Jetzt einen Tesla mieten!</p>
-            <Link href="/buchungs-anfrage/">
+            <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 mieten" fillBG="true" />
+                <CTA
+                  title="Tesla Model 3 mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -136,9 +148,13 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
               <br />
               ca. 250 km Reichweite in der Praxis
             </p>
-            <Link href="/buchungs-anfrage/">
+            <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 Long Range mieten" />
+                <CTA
+                  title="Tesla Model 3 Long Range mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -146,9 +162,13 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
               <br />
               ca. 350 km Reichweite in der Praxis
             </p>
-            <Link href="/buchungs-anfrage/">
+            <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model 3 Performance mieten" />
+                <CTA
+                  title="Tesla Model 3 Performance mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -156,9 +176,13 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
               <br />
               ca. 300 km Reichweite in der Praxis
             </p>
-            <Link href="/buchungs-anfrage/">
+            <Link href={pagesPath.buchungs_anfrage.$url()}>
               <a className="anfrage">
-                <CTA title="Tesla Model X mieten" />
+                <CTA
+                  title="Tesla Model X mieten"
+                  fillBG={true}
+                  fullWidth={false}
+                />
               </a>
             </Link>
             <p>
@@ -211,7 +235,10 @@ export default function langzeitmeitePage({t3pPrice, txlPrice, t3srPrice}) {
         <p>
           Wir von mobility empfehlen die Tesla Langzeitmiete!
           <br />
-          <Link className="font-semibold text-itana-red" href="/kontakt/">
+          <Link
+            className="font-semibold text-itana-red"
+            href={pagesPath.kontakt.$url()}
+          >
             Kontaktiere uns jetzt,
           </Link>{' '}
           und genieße die volle Kostenkontrolle.

@@ -1,8 +1,8 @@
-import React from 'react';
-import {NextPage} from 'next';
 import FormBookingRequest from 'components/FormBookingRequest';
 import SEO from 'components/seo';
+import {NextPage} from 'next';
 import Head from 'next/head';
+import React from 'react';
 
 const BuchungsAnfrage: NextPage<BuchungsAnfrageProps> = () => {
   return (

@@ -1,40 +1,69 @@
+// @ts-check
+
+/**
+ * @type {import('next').NextConfig}
+ **/
+
 const withPWA = require('next-pwa');
 
-const securityHeaders = [
-  {
-    key: 'X-DNS-Prefetch-Control',
-    value: 'on',
-  },
-];
+const isDev = process.env.NODE_ENV === 'development';
 
+const ContentSecurityPolicy = `
+  
+`;
+
+const ContentSecurityPolicyBackUp = `
+  default-src 'self';
+  script-src 'self' usercentrics.eu app.usercentrics.eu;
+  child-src 'self' mobility.itana.de;
+  style-src 'self' mobility.itana.de;
+  font-src 'self' mobility.itana.de;
+  img-src '*' 'self' mobility.itana.de;
+`;
+
+// @ts-ignore
 module.exports = withPWA({
-  env: {
-    API_KEY: process.env.API_KEY,
-  },
   trailingSlash: true,
   pwa: {
     dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
+    disable: isDev,
     register: false,
     skipWaiting: false,
   },
+
   async headers() {
-    return [
-      {
-        source: '/fonts/inter-var-latin.woff2',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-      {
-        // Apply these headers to all routes in your application.
-        source: '/:path*',
-        headers: securityHeaders,
-      },
-    ];
+    if (isDev) {
+      return [];
+    } else {
+      return [
+        {
+          source: '/:path*',
+          headers: [
+            {
+              key: 'X-DNS-Prefetch-Control',
+              value: 'on',
+            },
+            {
+              key: 'Strict-Transport-Security',
+              value: 'max-age=63072000; includeSubDomains; preload',
+            },
+            {
+              key: 'Content-Security-Policy',
+              value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
+            },
+          ],
+        },
+        {
+          source: '/fonts/inter-var-latin.woff2',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'public, max-age=31536000, immutable',
+            },
+          ],
+        },
+      ];
+    }
   },
   async redirects() {
     return [

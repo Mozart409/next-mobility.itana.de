@@ -1,27 +1,47 @@
-import React from 'react';
-
-import {LabeledTextField} from './ui/LabeledTextField';
-import {Form} from './ui/Form';
-import {Buchung} from 'lib/validations';
+import {ZodBuchung} from 'lib/validations';
 import Link from 'next/link';
+import {useRouter} from 'next/router';
+import React, {useState} from 'react';
 import {Field} from 'react-final-form';
-import LabeledSelectField from './ui/LabeledSelectField';
 import toast from 'react-hot-toast';
 
+import {Form} from './ui/Form';
+import LabeledSelectField from './ui/LabeledSelectField';
+import {LabeledTextField} from './ui/LabeledTextField';
+
 const FormBookingRequest = () => {
+  const router = useRouter();
+
+  let startDate = new Date();
+  startDate.setDate(startDate.getDate() + 3);
+
+  let endDate = new Date();
+  endDate.setDate(endDate.getDate() + 7);
+
+  const [startDateValue, setStartDateValue] = useState<Date>(startDate);
+
+  const [endDateValue, setEndDateValue] = useState<Date>(endDate);
+
+  /* const onSetStartDateValue = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    setStartDateValue(new Date(event.target.value));
+  }; */
   return (
     <div>
       <Form
         submitText="Anfrage Abschicken"
-        schema={Buchung}
+        schema={ZodBuchung}
         initialValues={{
           country: 'Deutschland',
-          car: 'Tesla Model 3 SR+',
+          car: 'Tesla Model 3',
           recommendation: 'Bitte wählen',
-          anrede: 'Bitte wählen',
+          anrede: 'Frau',
+          startDate: startDateValue.toLocaleDateString('en-CA'),
+          endDate: endDateValue.toLocaleDateString('en-CA'),
         }}
         pageTitle="Buchungsanfrage"
-        onSubmit={async values => {
+        onSubmit={async (values, event) => {
           console.log(values);
           const body = JSON.stringify(values);
           /* 
@@ -40,9 +60,21 @@ const FormBookingRequest = () => {
               },
               body: body,
             });
-            if (response.status === 200) {
+            //console.log(response);
+            if (response.status >= 200 && response.status < 300) {
+              window.dataLayer.push({event: 'form-sent'});
               toast.success(
                 'Vielen Dank für Ihre Anfrage. Wir werden uns so schnell wie möglich bei Ihnen melden.',
+                {
+                  duration: 5000,
+                }
+              );
+
+              router.push('/erfolg');
+            } else {
+              window.dataLayer.push({event: 'form-error'});
+              toast.error(
+                'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es noch einmal.',
                 {
                   duration: 5000,
                 }
@@ -50,7 +82,10 @@ const FormBookingRequest = () => {
             }
           } catch (error) {
             toast.error(
-              'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.'
+              'Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.',
+              {
+                duration: 5000,
+              }
             );
             console.error(error);
           }
@@ -62,7 +97,7 @@ const FormBookingRequest = () => {
               Mietvorgang
             </h2>
             <LabeledSelectField name={'car'} label={'Fahrzeug'}>
-              <option>Tesla Model 3 SR+</option>
+              <option>Tesla Model 3 </option>
               <option>Tesla Model 3 Performance</option>
               <option>Tesla Model 3 Long Range</option>
               <option>Tesla Model Y Performance</option>
@@ -76,6 +111,8 @@ const FormBookingRequest = () => {
                 type="date"
                 name="startDate"
                 label="Abholdatum"
+                /* value={startDateValue.toLocaleDateString('en-CA')}
+                onChange={onSetStartDateValue} */
               />
               <LabeledTextField
                 type="date"
@@ -90,7 +127,6 @@ const FormBookingRequest = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <LabeledSelectField name={'anrede'} label={'Anrede'}>
-                <option>Bitte wählen</option>
                 <option>Herr</option>
                 <option>Frau</option>
               </LabeledSelectField>
@@ -107,13 +143,13 @@ const FormBookingRequest = () => {
                 type="text"
                 name="firstName"
                 label="Vorname"
-                placeholder="Markus"
+                placeholder="Vorname"
               />
               <LabeledTextField
                 type="text"
                 name="lastName"
                 label="Nachname"
-                placeholder="Müller"
+                placeholder="Nachname"
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -202,11 +238,12 @@ const FormBookingRequest = () => {
                 <p id="privacy-description" className="text-gray-500">
                   Detaillierte Informationen zum Umgang mit Nutzerdaten findest
                   Du in unserer{' '}
-                  <Link href="/datenschutz">
-                    <a className="text-itana-red font-semibold">
-                      Datenschutzerklärung *
-                    </a>
-                  </Link>
+                  <a
+                    href="https://itana.de/datenschutz/"
+                    className="text-itana-red font-semibold"
+                  >
+                    Datenschutzerklärung *
+                  </a>
                 </p>
               </div>
             </div>

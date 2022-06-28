@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
-import Link from 'next/link';
 import {Menu, Transition} from '@headlessui/react';
+import Link from 'next/link';
+import React, {useState} from 'react';
+
+import {pagesPath} from '@/lib/$path';
 
 const Bewertungen = () => (
   <div className="hidden px-3 xl:inline-block">
@@ -83,33 +85,51 @@ const Dropdown = () => {
             aria-orientation="vertical"
             aria-labelledby="options-menu"
           >
-            <Link href="/tesla/model-3srmieten/">
+            <Link href={pagesPath.tesla.model_3srmieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model 3 SR+
+                Tesla Model 3
               </a>
             </Link>
 
-            <Link href="/tesla/model-3-long-range-mieten/">
+            <Link href={pagesPath.tesla.model_3_long_range_mieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model 3 Long Range
               </a>
             </Link>
 
-            <Link href="/tesla/model-3-mieten/">
+            <Link href={pagesPath.tesla.model_3_mieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model 3 Performance
               </a>
             </Link>
 
-            <Link href="/tesla/model-x-mieten/">
+            <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Tesla Model Y
+              </a>
+            </Link>
+
+            <Link href={pagesPath.tesla.model_y_performance_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Tesla Model Y Performance
+              </a>
+            </Link>
+
+            <Link href={pagesPath.tesla.model_x_mieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Model X
               </a>
             </Link>
 
-            <Link href="/tesla-langzeitmiete/">
+            <Link href={pagesPath.tesla_langzeitmiete.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                 Tesla Langzeitmiete
+              </a>
+            </Link>
+
+            <Link href={pagesPath.dacia.spring_mieten.$url()}>
+              <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                Dacia Spring
               </a>
             </Link>
           </div>
@@ -208,50 +228,50 @@ export default function Nav() {
                 <div className="inline-block align-middle">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
 
-                  <Link href="/buchungs-anfrage/">
+                  <Link href={pagesPath.buchungs_anfrage.$url()}>
                     <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       Tesla mieten
                     </a>
                   </Link>
 
                   <Dropdown />
-                  {/*  <Link  href="/tesla/model-3srmieten/">
+                  {/*  <Link  href={pagesPath.tesla.model_3srmieten.$url()}>
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
-                      Tesla Model 3 SR+
+                      Tesla Model 3 
                     </a>
                   </Link>
 
-                  <Link  href="/tesla/model-3-mieten/">
+                  <Link  href={pagesPath.tesla.model_3_mieten.$url()}>
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model 3 Performance
                     </a>
                   </Link>
 
-                  <Link  href="/tesla/model-x-mieten/">
+                  <Link  href={pagesPath.tesla.model_x_mieten.$url()}>
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Model X
                     </a>
                   </Link>
 
-                  <Link  href="/tesla-langzeitmiete/">
+                  <Link  href={pagesPath.tesla_langzeitmiete.$url()}>
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
                       Tesla Langzeitmiete
                     </a>
                   </Link> */}
 
-                  <Link href="/blog/">
+                  <Link href={pagesPath.blog.$url()}>
                     <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       Blog
                     </a>
                   </Link>
 
-                  <Link href="/faq/">
+                  <Link href={pagesPath.faq.$url()}>
                     <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       FAQ
                     </a>
                   </Link>
 
-                  <Link href="/kontakt/">
+                  <Link href={pagesPath.kontakt.$url()}>
                     <a className="rounded-md py-2 px-3 text-sm font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                       Kontakt
                     </a>
@@ -280,54 +300,72 @@ export default function Nav() {
           >
             <div className="space-y-1 px-2 pt-2 pb-3">
               {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-100 hover:bg-gray-700 hover:text-white" --> */}
-              <Link href="/buchungs-anfrage/">
+              <Link href={pagesPath.buchungs_anfrage.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla mieten
                 </a>
               </Link>
-              <Link href="/tesla/model-3srmieten/">
+              <Link href={pagesPath.tesla.model_3srmieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model 3 SR+
+                  Tesla Model 3
                 </a>
               </Link>
 
-              <Link href="/tesla/model-3-long-range-mieten/">
+              <Link href={pagesPath.tesla.model_3_long_range_mieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 Long Range
                 </a>
               </Link>
 
-              <Link href="/tesla/model-3-mieten/">
+              <Link href={pagesPath.tesla.model_3_mieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model 3 Performance
                 </a>
               </Link>
 
-              <Link href="/tesla/model-x-mieten/">
+              <Link href={pagesPath.tesla.model_y_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Tesla Model Y
+                </a>
+              </Link>
+
+              <Link href={pagesPath.tesla.model_y_performance_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Tesla Model Y Performance
+                </a>
+              </Link>
+
+              <Link href={pagesPath.tesla.model_x_mieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Model X
                 </a>
               </Link>
 
-              <Link href="/tesla-langzeitmiete/">
+              <Link href={pagesPath.tesla_langzeitmiete.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Tesla Langzeitmiete
                 </a>
               </Link>
 
-              <Link href="/blog/">
+              <Link href={pagesPath.dacia.spring_mieten.$url()}>
+                <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
+                  Dacia Spring
+                </a>
+              </Link>
+
+              <Link href={pagesPath.blog.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Blog
                 </a>
               </Link>
 
-              <Link href="/faq/">
+              <Link href={pagesPath.faq.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   FAQ
                 </a>
               </Link>
 
-              <Link href="/kontakt/">
+              <Link href={pagesPath.kontakt.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
                   Kontakt
                 </a>

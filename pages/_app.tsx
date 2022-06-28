@@ -1,17 +1,21 @@
-import Layout from 'components/Layout';
-import Script from 'next/script';
-import Head from 'next/head';
-import {useEffect} from 'react';
 import '../lib/global.css';
+
+import Layout from 'components/Layout';
+import type {AppProps} from 'next/app';
+import Head from 'next/head';
+import Script from 'next/script';
+import {useEffect} from 'react';
 import toast, {Toaster} from 'react-hot-toast';
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({Component, pageProps}: AppProps) {
   useEffect(() => {
     if (
       typeof window !== 'undefined' &&
       'serviceWorker' in navigator &&
+      // @ts-ignore
       window.workbox !== undefined
     ) {
+      // @ts-ignore
       const wb = window.workbox;
       // Add event listeners to handle any of PWA lifecycle event
       // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-window.Workbox#events

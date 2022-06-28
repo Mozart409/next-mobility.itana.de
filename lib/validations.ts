@@ -2,7 +2,7 @@ import * as z from 'zod';
 
 export const ZodBuchung = z.object({
   car: z.enum([
-    'Tesla Model 3 SR+',
+    'Tesla Model 3',
     'Tesla Model 3 Performance',
     'Tesla Model Y Performance',
     'Tesla Model X Long Range',
@@ -39,7 +39,7 @@ export const ZodBuchung = z.object({
 
 /* {
 	"country": "Deutschland",
-	"car": "Tesla Model 3 SR+",
+	"car": "Tesla Model 3",
 	"recommendation": "Bitte wählen",
 	"anrede": "Frau",
 	"startDate": "2022-06-17",

@@ -45,11 +45,11 @@ rentWareTest(urls, () => {
       cy.visit(baseUrl)
       cy.get('.Kachel').its('length').should('be.gte', 1)
 
-      /* cy.get('[data-cy="KachelModel3SR"]')
+      /* cy.get('[data-cy="KachelModel3"]')
     cy.get('a').contains('Tesla mieten') */
     })
-    it('Click Kachel Tesla Model 3SR and visit model 3 page', () => {
-      cy.get('[data-cy="KachelModel3SR"]').click()
+    it('Click Kachel Tesla Model 3 and visit model 3 page', () => {
+      cy.get('[data-cy="KachelModel3"]').click()
       cy.url().should('contain', '/tesla/model-3srmieten/')
       const selector = '[data-cy="TeslaModel3StandardRangePlusMieten"]'
       cy.get(selector).should('be.visible')

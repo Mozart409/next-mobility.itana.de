@@ -87,7 +87,7 @@ const Dropdown = () => {
           >
             <Link href={pagesPath.tesla.model_3srmieten.$url()}>
               <a className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
-                Tesla Model 3 SR+
+                Tesla Model 3
               </a>
             </Link>
 
@@ -219,7 +219,7 @@ export default function Nav() {
                   <Dropdown />
                   {/*  <Link  href={pagesPath.tesla.model_3srmieten.$url()}>
                     <a className="py-2 px-3 text-sm font-medium text-gray-100 rounded-md hover:text-white hover:bg-gray-700">
-                      Tesla Model 3 SR+
+                      Tesla Model 3 
                     </a>
                   </Link>
 
@@ -289,7 +289,7 @@ export default function Nav() {
               </Link>
               <Link href={pagesPath.tesla.model_3srmieten.$url()}>
                 <a className="block rounded-md py-2 px-3 text-base font-medium text-gray-100 hover:bg-gray-700 hover:text-white">
-                  Tesla Model 3 SR+
+                  Tesla Model 3
                 </a>
               </Link>
 

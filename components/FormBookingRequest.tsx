@@ -34,7 +34,7 @@ const FormBookingRequest = () => {
         schema={ZodBuchung}
         initialValues={{
           country: 'Deutschland',
-          car: 'Tesla Model 3 SR+',
+          car: 'Tesla Model 3',
           recommendation: 'Bitte wählen',
           anrede: 'Frau',
           startDate: startDateValue.toLocaleDateString('en-CA'),
@@ -97,7 +97,7 @@ const FormBookingRequest = () => {
               Mietvorgang
             </h2>
             <LabeledSelectField name={'car'} label={'Fahrzeug'}>
-              <option>Tesla Model 3 SR+</option>
+              <option>Tesla Model 3 </option>
               <option>Tesla Model 3 Performance</option>
               <option>Tesla Model 3 Long Range</option>
               <option>Tesla Model Y Performance</option>

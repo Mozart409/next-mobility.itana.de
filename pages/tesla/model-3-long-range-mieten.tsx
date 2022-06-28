@@ -30,7 +30,7 @@ function TeslaModel3SRPage() {
           <div className="mx-auto">
             <div className="relative">
               <Link
-                href="#tesla-standard-range-plus"
+                href="#tesla-long-range"
                 aria-label="Tesla Model 3 Long Range"
               >
                 <a title="Tesla Model 3 Long Range">

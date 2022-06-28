@@ -1,7 +1,7 @@
 import {
+  Model3,
   Model3LongRange,
   Model3Performance,
-  Model3SR,
   ModelXLR,
 } from 'lib/car-prices';
 import Image from 'next/image';
@@ -20,19 +20,19 @@ export default function FahrzeugKacheln() {
             <div className="Kachel flex flex-col overflow-hidden rounded-lg shadow-2xl bg-white">
               <div className="flex-shrink-0">
                 <Image
-                  src="/images/cards/tesla-3-sr.png"
+                  src="/images/cards/tesla-3.png"
                   height="300"
                   width="600"
                   className="h-72 w-full object-cover"
-                  alt="Tesla Model 3 Standard Range Plus"
+                  alt="Tesla Model 3"
                 />
 
                 <h2
-                  data-cy="KachelModel3SR"
+                  data-cy="KachelModel3"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
-                  Tesla Model 3 SR+ mieten ab{' '}
-                  {Model3SR['Verlängerungstag 100 km']} / Tag
+                  Tesla Model 3 mieten ab {Model3['Verlängerungstag 100 km']} /
+                  Tag
                 </h2>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function FahrzeugKacheln() {
                   height="300"
                   width="600"
                   className="h-72 w-full object-cover"
-                  alt="Tesla Model 3 Standard Range Plus"
+                  alt="Tesla Model 3 Long Range Plus"
                 />
 
                 <h2

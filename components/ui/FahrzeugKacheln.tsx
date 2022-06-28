@@ -184,7 +184,7 @@ export default function FahrzeugKacheln() {
                 />
 
                 <h2
-                  data-cy="KachelModelX"
+                  data-cy="DaciaSpring"
                   className="static box-border rounded-b bg-itana-red px-1 text-center text-lg text-white"
                 >
                   Dacia Spring mieten ab{' '}

@@ -1,9 +1,6 @@
 export declare global {
-  interface Window {
-    // fetch: (url: string, options?: {}) => Promise<any>;
-    workbox: any;
-  }
-  interface Window {
+  export interface Window {
     dataLayer: Record<string, any>[];
+    workbox: any;
   }
 }

@@ -1,6 +1,8 @@
 /// <reference types="Cypress" />
 // deepcode ignore ExtractPortToVariable/test: <please specify a reason of ignoring this>
 
+
+
 const cyView = require('cy-view')
 
 const devices = [
@@ -29,17 +31,35 @@ const rentWareTest = cyView(devices)
 
 rentWareTest(urls, () => {
   describe('Test conversion on multiple devices', () => {
-    /*  beforeEach(() => {
-      sizes.forEach((size) => {
-        // an array of different viewports
+     beforeEach(() => {
 
-        if (Cypress._.isArray(size)) {
-          cy.viewport(size[0], size[1])
-        } else {
-          cy.viewport(size)
-        }
-      })
-    }) */
+
+
+const acceptCookie = {
+        "action": "onUpdateServices",
+        "event": "consent_status",
+        "type": "explicit",
+        "Google Tag Manager": false,
+        "Google Ads": false,
+        "Google Ads Conversion Tracking": false,
+        "Google Analytics": false,
+        "DoubleClick Ad": false,
+        "Google Ads Conversion": false,
+        "Google Analytics manual": false,
+        "Google Maps": false,
+        "Google Fonts": false,
+        "sdk.arengu.com": false,
+        "Google Analytics 4": false,
+        "Vercel vitals": false,
+        "Argengu - sent form": false,
+        "Usercentrics Consent Management Platform": true,
+        "Arengu Forma": true
+    }
+
+     
+
+   //window.dataLayer.push(acceptCookie)
+    })
 
     it('visit homepage and click on kachel', function () {
       cy.visit(baseUrl)

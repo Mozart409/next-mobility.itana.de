@@ -3,7 +3,7 @@ import {defineConfig} from 'cypress';
 export default defineConfig({
   projectId: '5k6fpq',
   video: false,
-  screenshotOnRunFailure: true,
+  screenshotOnRunFailure: false,
   trashAssetsBeforeRuns: true,
   e2e: {
     baseUrl: 'http://localhost:3000',
